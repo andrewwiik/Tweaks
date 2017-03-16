@@ -1,0 +1,10 @@
+Package: com.creatix.carrot
+Name: Carrot
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks
+Version: 0.0.1-156
+Installed-Size: 198

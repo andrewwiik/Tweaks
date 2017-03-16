@@ -1,0 +1,10 @@
+Package: com.atwiiks.nobluemic
+Name: NoBlueMic
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: ATWiiks
+Author: ATWiiks
+Section: Tweaks
+Version: 0.0.1-1
+Installed-Size: 85

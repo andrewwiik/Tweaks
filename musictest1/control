@@ -1,0 +1,9 @@
+Package: com.andrewwiik.musictest1
+Name: Music Test1
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Andrew Wiik
+Author: Andrew Wiik
+Section: Tweaks

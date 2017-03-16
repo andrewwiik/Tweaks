@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+	<key>items</key>
+	<array>
+
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>footerText</key>
+		<string>'**' Proceding a description means it is required</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>footerText</key>
+		<string> </string>
+	</dict>
+
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>footerText</key>
+		<string>**Set title for the action</string>
+	</dict>
+	<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>Title</string>
+			<key>get</key>
+			<string>getTitle:</string>
+			<key>set</key>
+			<string>setTitle:</string>
+			<key>noAutoCorrect</key>
+			<false/>
+	</dict>
+
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>footerText</key>
+		<string>Set detail title for the action</string>
+	</dict>
+	<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>placeholder</key>
+			<string>Sub-Title</string>
+			<key>get</key>
+			<string>getSubTitle:</string>
+			<key>set</key>
+			<string>setSubTitle:</string>
+			<key>noAutoCorrect</key>
+			<false/>
+	</dict>
+
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>**Select the Application that this will be attached to</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>default</key>
+			<integer>1</integer>
+			<key>defaults</key>
+			<string>com.bolencki13.customft</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>validTitles</key>
+			<array>
+				<string>BundleID</string>
+				<string>AppList</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+			</array>
+		</dict>
+		<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>placeholder</key>
+				<string>BundleID</string>
+				<key>get</key>
+				<string>getBundleID:</string>
+				<key>set</key>
+				<string>setBundleID:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>isController</key>
+			<string>1</string>
+			<key>label</key>
+			<string>Select Application</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/Preferences/com.bolencki13.customft.plist</string>
+			<key>ALSingleEnabledMode</key>
+			<true/>
+			<key>ALSettingsKeyPrefix</key>
+			<string>Traverse-</string>
+			<key>ALSectionDescriptors</key>
+			<array>
+				<dict>
+				<key>cell-class-name</key>
+				<string>ALSwitchCell</string>
+				<key>icon-size</key>
+				<string>29</string>
+				<key>predicate</key>
+				<string>(isSystemApplication = TRUE) or (isSystemApplication = FALSE)</string>
+				<key>suppress-hidden-apps</key>
+				<string>1</string>
+				<key>title</key>
+				<string>Traverse</string>
+				</dict>
+			</array>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>**Select the action that will be triggered. (Putting %@ in URL Scheme will prompt for user input)</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>default</key>
+			<integer>1</integer>
+			<key>defaults</key>
+			<string>com.bolencki13.customft</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>validTitles</key>
+			<array>
+				<string>URL Scheme</string>
+				<string>Activator</string>
+				<string>Shell Script</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+			</array>
+		</dict>
+		<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>placeholder</key>
+				<string>URL Scheme</string>
+				<key>get</key>
+				<string>getURLScheme:</string>
+				<key>set</key>
+				<string>setURLScheme:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>bundle</key>
+			<string>LibActivator</string>
+			<key>isController</key>
+			<string>1</string>
+			<key>label</key>
+			<string>Activator Method</string>
+		</dict>
+		<dict>
+				<key>cell</key>
+				<string>PSEditTextCell</string>
+				<key>placeholder</key>
+				<string>Shell Script</string>
+				<key>get</key>
+				<string>getShellScript:</string>
+				<key>set</key>
+				<string>setShellScript:</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Traverse © bolencki13 2015-2016</string>
+		</dict>
+
+
+	</array>
+	<key>title</key>
+	<string>Traverse</string>
+	</dict>
+</plist>

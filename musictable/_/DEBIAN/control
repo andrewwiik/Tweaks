@@ -1,0 +1,10 @@
+Package: com.atwiiks.musictable
+Name: musictable
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: atwiiks
+Author: atwiiks
+Section: Tweaks
+Version: 0.0.1-2
+Installed-Size: 201

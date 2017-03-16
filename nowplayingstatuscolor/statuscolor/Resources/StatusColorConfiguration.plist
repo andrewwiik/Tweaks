@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.atwiiks.nowplayingstatuscolor</string>
+			<key>PostNotification</key>
+			<string>com.atwiiks.nowplayingstatuscolor/settingschanged</string>
+			<key>key</key>
+			<string>redandwhite</string>
+			<key>label</key>
+			<string>Red and White</string>
+		</dict>
+				<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.atwiiks.nowplayingstatuscolor</string>
+			<key>PostNotification</key>
+			<string>com.atwiiks.nowplayingstatuscolor/settingschanged</string>
+			<key>key</key>
+			<string>whiteandblack</string>
+			<key>label</key>
+			<string>White and Black</string>
+		</dict>
+				<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.atwiiks.nowplayingstatuscolor</string>
+			<key>PostNotification</key>
+			<string>com.atwiiks.nowplayingstatuscolor/settingschanged</string>
+			<key>key</key>
+			<string>blackandwhite</string>
+			<key>label</key>
+			<string>Black and White</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>CONFIGURATION</string>
+</dict>
+</plist>

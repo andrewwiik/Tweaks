@@ -1,0 +1,18 @@
+{
+	Filter = {
+		Executables = (
+			callservicesd,
+			imagent,
+			identityservicesd,
+		);
+		Bundles = (
+			"com.apple.Preferences",
+			"com.apple.facetime",
+			"com.apple.springboard",
+			"com.apple.mobilephone",
+			"com.apple.MobileSMS",
+			"com.apple.InCallService",
+		);
+		Mode = "Any";
+	};
+}

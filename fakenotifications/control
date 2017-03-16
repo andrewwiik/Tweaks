@@ -1,0 +1,9 @@
+Package: com.sadie.fakenotifications
+Name: FakeNotifications
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Sadie Kane
+Author: Sadie Kane
+Section: Tweaks

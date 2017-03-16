@@ -1,0 +1,2 @@
+@interface SBCCButtonLikeSectionView : UIControl
+@end

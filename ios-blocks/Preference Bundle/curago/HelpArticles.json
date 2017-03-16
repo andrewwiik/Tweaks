@@ -1,0 +1,21 @@
+[
+  {
+
+    "group1": {
+      "grouptitle": "General",
+      "articles": {
+        "FAQ": "Placeholder text!",
+        "Getting Started": "More placeholder text"
+      }
+    },
+
+    "group2": {
+      "grouptitle": "Testing second group",
+      "articles": {
+        "Blah": "Placeholder text!",
+        "Yarp": "More placeholder text"
+      }
+    }
+
+  }
+]

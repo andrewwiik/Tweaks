@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>General</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschanged</string>
+			<key>key</key>
+			<string>Enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Menu Activation Method:</string>
+			<key>footerText</key>
+			<string>How you want to activate a icon's shortcut menu.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>1</integer>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>activationType</string>
+			<key>label</key>
+			<string>Method</string>
+			<key>validTitles</key>
+			<array>
+				<string>Force Touch</string>
+				<string>Advanced Force Touch</string>
+				<string>Swipe Up</string>
+				<string>Swipe Down</string>
+				<string>Long Press</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<real>1</real>
+				<real>5</real>
+				<real>2</real>
+				<real>3</real>
+				<real>4</real>
+			</array>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschangeds</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Long Hold Duration:</string>
+			<key>footerText</key>
+			<string>If you are using the long hold gesture you can use the slider above to set how long you need to hodl until the shortcut menu presents</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschanged</string>
+			<key>default</key>
+			<real>0.5</real>
+			<key>min</key>
+			<real>0.1</real>
+			<key>max</key>
+			<real>3</real>
+			<key>showValue</key>
+			<true/>
+			<key>key</key>
+			<string>longPressHoldDuration</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Menu Force Sensitivity:</string>
+			<key>footerText</key>
+			<string>If you are using the Force Touch gesture you can use the slider above to set the amount of your finger touching the screen for the shortcut menu to present.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschanged</string>
+			<key>default</key>
+			<real>48.37</real>
+			<key>min</key>
+			<real>5</real>
+			<key>max</key>
+			<real>90</real>
+			<key>showValue</key>
+			<true/>
+			<key>key</key>
+			<string>menuForceSensitivity</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Editing Activation Method:</string>
+			<key>footerText</key>
+			<string>How you want to activate editing on the homescreen.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>1</integer>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>editingType</string>
+			<key>label</key>
+			<string>Method</string>
+			<key>validTitles</key>
+			<array>
+				<string>Defaults</string>
+				<string>Swipe Up</string>
+				<string>Swipe Down</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<real>1</real>
+				<real>2</real>
+				<real>3</real>
+			</array>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschangeds</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Should the Shortcut Menu close when you lift your finger from the screen.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschanged</string>
+			<key>key</key>
+			<string>autoClose</string>
+			<key>label</key>
+			<string>Automatically close menu</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Dynamic Shortcut Items</string>
+			<key>footerText</key>
+			<string>Enable this to make the max number of shortcuts of an icon be determined by how much space is available. You can set a custom number below if you want to limit the max number of items allow in the shrotcut menu.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschanged</string>
+			<key>key</key>
+			<string>dyanmicShortcutsEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>	
+		<dict>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschanged</string>
+			<key>default</key>
+			<string>11</string>
+			<key>key</key>
+			<string>maxItems</string>
+			<key>isNumeric</key>
+			<true/>
+			<key>label</key>
+			<string>Max Shortcuts:</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Folder Shortcut Items</string>
+			<key>footerText</key>
+			<string>Enable this to add shortcut items to a folder icon based on what apps are in the folder. </string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschanged</string>
+			<key>key</key>
+			<string>folderShortcutsEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Folder Shortcut Items (Alternative)</string>
+			<key>footerText</key>
+			<string>Enable this along with the switch above to add the shortcut items of the first app in the fodler to the folder icon.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschanged</string>
+			<key>key</key>
+			<string>folderShortcutsAlternativeEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Haptic Feedback</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschanged</string>
+			<key>key</key>
+			<string>hapticFeedbackEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Haptic Feedback Duration</string>
+			<key>footerText</key>
+			<string>How long Haptic Feedback should last in milliseconds</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>defaults</key>
+			<string>com.creatix.hoppin</string>
+			<key>PostNotification</key>
+			<string>com.creatix.hoppin.prefschanged</string>
+			<key>default</key>
+			<real>30.00</real>
+			<key>min</key>
+			<real>2</real>
+			<key>max</key>
+			<real>90</real>
+			<key>showValue</key>
+			<true/>
+			<key>key</key>
+			<string>hapticFeedbackDuration</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Hoppin</string>
+</dict>
+</plist>

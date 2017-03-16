@@ -1,0 +1,9 @@
+Package: com.atwiiks.mixitup
+Name: Mix it Up
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Shuffle your Music on iOS 8.4
+Maintainer: Andrew Wiik
+Author: Andrew Wiik
+Section: Tweaks

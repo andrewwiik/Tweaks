@@ -1,0 +1,10 @@
+Package: com.bolencki13.customft
+Name: Traverse
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Create custom 3D actions for apps
+Maintainer: Brian Olencki
+Author: Brian Olencki
+Section: Tweaks
+Depiction: http://cydia.bolencki13.com/repo/depictions/?p=com.bolencki13.customft
+Version: 1.2.0

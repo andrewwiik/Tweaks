@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = Apollo;
+	cell = PSLinkCell;
+	detail = ApolloListController;
+	icon = Apollo.png;
+	isController = 1;
+	label = Apollo;
+    };
+}

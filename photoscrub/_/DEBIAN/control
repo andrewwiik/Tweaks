@@ -1,0 +1,10 @@
+Package: com.creatix.photoscrub
+Name: PhotoScrub
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks
+Version: 0.0.1-5
+Installed-Size: 197

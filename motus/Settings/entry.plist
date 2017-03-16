@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = Motus;
+	cell = PSLinkCell;
+	detail = MotusListController;
+	icon = Motus.png;
+	isController = 1;
+	label = Motus;
+    };
+}

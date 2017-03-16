@@ -1,0 +1,28 @@
+{
+  bundle = AppList;
+  cell = PSLinkCell;
+  icon = "/Applications/Preferences.app/Settings.png";
+  isController = 1;
+  label = "Conditional WiFi";
+  ALSettingsPath = "/var/mobile/Library/Preferences/com.creatix.conditionalwifi.apps.plist";
+  ALSettingsKeyPrefix = "ConditionalWiFi-";
+  ALChangeNotification = "com.creatix.prefs.notification";
+  ALAllowsSelection = 1;
+  ALSectionDescriptors = (
+    {
+      title = "System Applications";
+      predicate = "isSystemApplication = TRUE";
+      "cell-class-name" = "ALSwitchCell";
+      "icon-size" = 29;
+      "suppress-hidden-apps" = 1;
+    },
+    {
+      title = "User Applications";
+      predicate = "isSystemApplication = FALSE";
+      "cell-class-name" = "ALSwitchCell";
+      "icon-size" = 29;
+      "suppress-hidden-apps" = 1;
+      "footer-title" = "© 2010-2012 Ryan Petrich";
+    }
+  );
+}

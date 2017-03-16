@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+     <key>title</key>
+	<string>iOS Blocks</string>
+	<key>items</key>
+	<array>
+	    <dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>It may take up to a week before you recieve a reply.</string>
+			<key>label</key>
+			<string>Send message:</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openInTwitter:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Via Twitter</string>
+			<key>icon</key>
+			<string>Twitter.png</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>composeSupportEmail:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Via Mail</string>
+			<key>icon</key>
+			<string>Mail.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Suggest ideas for improving iOS Blocks, and report bugs.</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>openHelpCenter:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Help Center</string>
+			<key>icon</key>
+			<string>Help.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>IBKCreatorController</string>
+			<key>label</key>
+			<string>Creators</string>
+			<key>isController</key>
+			<string>YES</string>
+			<key>icon</key>
+			<string>Theme.png</string>
+		</dict>
+	</array>
+</dict>
+</plist>

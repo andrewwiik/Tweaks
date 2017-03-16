@@ -1,0 +1,9 @@
+Package: com.dopeteam.dopelock
+Name: DopeLock
+Depends: mobilesubstrate, com.dba-tech.lockpages
+Version: 0.1.0
+Architecture: iphoneos-arm
+Description: Compatible with iOS 9. Supports iPhone, iPod and iPad. DopeLock nicely adds a page to your LockScreen. Just swipe left on it and you will see the “DopeView”. From here, your life on iOS becomes easier! Indeed, you can see what is planned for today and tomorrow. Also, you can check all your events and get some details for them directly on your LockScreen! You get a nice calendar view for the new following days with the events layout and detailed to you can stay on top of everything. Dopelock also includes the Today View from notification center to better summarize your day.
+Maintainer: DopeTeam
+Author: DopeTeam
+Section: Tweaks

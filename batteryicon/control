@@ -1,0 +1,9 @@
+Package: com.creatix.batteryicon
+Name: BatteryIcon
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Add an icon to see your battery stats!
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks

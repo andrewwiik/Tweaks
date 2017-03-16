@@ -1,0 +1,2 @@
+@interface NCNotificationContentView : UIView
+@end

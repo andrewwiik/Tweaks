@@ -1,0 +1,409 @@
+#import "headers.h"
+
+// %config(generator=internal);
+
+%hook CCUINightShiftSectionController
+- (BOOL)enabled {
+	return YES;
+}
+%end
+
+%hook CCUICellularDataSetting
++ (BOOL)isSupported:(int)arg1 {
+	return YES;
+}
++(BOOL)isInternalButton {
+	return YES;
+}
+%end
+
+%hook CCUIMuteSetting
++ (BOOL)isSupported:(int)arg1 {
+	return YES;
+}
++(BOOL)isInternalButton {
+	return YES;
+}
+%end
+
+%hook CCUILowPowerModeSetting
++ (BOOL)isSupported:(int)arg1 {
+	return YES;
+}
++(BOOL)isInternalButton {
+	return YES;
+}
+%end
+
+%hook CCUIPersonalHotspotSetting
++ (BOOL)isSupported:(int)arg1 {
+	return YES;
+}
++(BOOL)isInternalButton {
+	return YES;
+}
+%end
+
+@interface CCUIButtonLikeSectionSplitView : UIView
+@property (nonatomic, retain) CCUIControlCenterPushButton *leftSection;
+@property (nonatomic, retain) CCUIControlCenterPushButton *rightSection;
+@property (nonatomic, retain) CCUIControlCenterPushButton *middleSection;
+@property (nonatomic) unsigned long long mode;
+- (CCUIControlCenterPushButton *)_viewForSectionSlot:(int)slot;
+- (CGRect)_frameForSectionSlot:(int)slot;
+- (void)test3Buttons;
+@end
+
+CCUIControlCenterPushButton *nightShiftButton;
+
+%hook CCUINightShiftContentView
+- (CCUIControlCenterPushButton *)button {
+	CCUIControlCenterPushButton *orig = %orig;
+	if (orig) {
+		nightShiftButton = orig;
+	} 
+	return orig;
+}
+%end
+
+%hook CCUIButtonLikeSectionSplitView
+%property (nonatomic, retain) CCUIControlCenterPushButton *middleSection;
+
+- (CGRect)_frameForSectionSlot:(int)slot {
+	if (self.mode == 3) {
+		if (slot == 0) {
+			CGRect frame = CGRectMake(0,0,self.frame.size.height,self.frame.size.height);
+			return frame;
+		} else if (slot == 1) {
+			CGRect frame = CGRectMake(self.frame.size.height + 1,0,self.frame.size.width-2-(2*self.frame.size.height),self.frame.size.height);
+			return frame;
+		} else {
+			CGRect frame = CGRectMake(self.frame.size.width-self.frame.size.height,0,self.frame.size.height,self.frame.size.height);
+			return frame;
+		}
+	} else return %orig;
+}
+
+- (CCUIControlCenterPushButton *)_viewForSectionSlot:(int)slot {
+	if (self.mode == 3) {
+		if (slot == 0) {
+			return self.leftSection;
+		} else if (slot == 1) {
+			return self.middleSection;
+		} else {
+			return self.rightSection;
+		}
+	} else return %orig;
+}
+
+- (void)layoutSubviews {
+	%orig;
+	if ([[self valueForKey:@"_viewDelegate"] isKindOfClass:NSClassFromString(@"CCUIAirStuffSectionController")])
+		[self test3Buttons];
+	if (self.mode == 3) {
+		[self _viewForSectionSlot:0].frame = [self _frameForSectionSlot:0];
+		[self _viewForSectionSlot:0].roundCorners = 5;
+		[self _viewForSectionSlot:1].frame = [self _frameForSectionSlot:1];
+		[self _viewForSectionSlot:1].roundCorners = 0;
+		[self _viewForSectionSlot:2].frame = [self _frameForSectionSlot:2];
+		[self _viewForSectionSlot:2].roundCorners = 10;
+		[self _viewForSectionSlot:2].text = nil;
+		[self _viewForSectionSlot:0].text = nil;
+		//UIImageView *glyph0 = (UIImageView *)[[self _viewForSectionSlot:0] valueForKey:@"_glyphImageView"];
+		//CGRect glyph0Frame = glyph0.frame;
+		// UIImageView *glyph0 = (UIImageView *)[[self _viewForSectionSlot:0] valueForKey:@"_glyphImageView"];
+		// CGRect glyph0Frame = glyph0.frame;
+		// glyph0Frame.origin.x = ([self _viewForSectionSlot:0].frame.size.width-glyph0Frame.size.width)/2;
+		// glyph0.frame = glyph0Frame;
+		//((UIImageView *)[[self _viewForSectionSlot:0] valueForKey:@"_glyphImageView"]).center = CGPointMake([self _viewForSectionSlot:0].frame.size.width/2,[self _viewForSectionSlot:0].frame.size.height/2);
+		//((UIImageView *)[[self _viewForSectionSlot:2] valueForKey:@"_glyphImageView"]).center = CGPointMake([self _viewForSectionSlot:2].frame.size.width/2,[self _viewForSectionSlot:2].frame.size.height/2);
+
+	}
+}
+
+%new
+- (void)test3Buttons {
+
+	if (!self.middleSection) {
+		self.middleSection = nightShiftButton;
+		[nightShiftButton removeFromSuperview];
+		[self addSubview:self.middleSection];
+		self.mode = 3;
+		UIImageView *glyph0 = (UIImageView *)[[self _viewForSectionSlot:0] valueForKey:@"_glyphImageView"];
+		//CGRect glyph0Frame = glyph0.frame;
+		glyph0.translatesAutoresizingMaskIntoConstraints = NO;
+		CCUIControlCenterPushButton *push1 = [self _viewForSectionSlot:0];
+		[push1 addConstraint:[NSLayoutConstraint constraintWithItem:glyph0
+                                                      attribute:NSLayoutAttributeCenterX
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:push1
+                                                      attribute:NSLayoutAttributeCenterX
+                                                     multiplier:1
+                                                       constant:0]];
+
+		[push1 addConstraint:[NSLayoutConstraint constraintWithItem:glyph0
+                                                      attribute:NSLayoutAttributeCenterY
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:push1
+                                                      attribute:NSLayoutAttributeCenterY
+                                                     multiplier:1
+                                                       constant:0]];
+		glyph0 = (UIImageView *)[[self _viewForSectionSlot:0] valueForKey:@"_alteredStateGlyphImageView"];
+		glyph0.translatesAutoresizingMaskIntoConstraints = NO;
+		[push1 addConstraint:[NSLayoutConstraint constraintWithItem:glyph0
+                                                      attribute:NSLayoutAttributeCenterX
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:push1
+                                                      attribute:NSLayoutAttributeCenterX
+                                                     multiplier:1
+                                                       constant:0]];
+
+		[push1 addConstraint:[NSLayoutConstraint constraintWithItem:glyph0
+                                                      attribute:NSLayoutAttributeCenterY
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:push1
+                                                      attribute:NSLayoutAttributeCenterY
+                                                     multiplier:1
+                                                       constant:0]];
+
+		UIImageView *glyph2 = (UIImageView *)[[self _viewForSectionSlot:2] valueForKey:@"_glyphImageView"];
+		//CGRect glyph0Frame = glyph0.frame;
+		glyph2.translatesAutoresizingMaskIntoConstraints = NO;
+		CCUIControlCenterPushButton *push3 = [self _viewForSectionSlot:2];
+		[push3 addConstraint:[NSLayoutConstraint constraintWithItem:glyph2
+                                                      attribute:NSLayoutAttributeCenterX
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:push3
+                                                      attribute:NSLayoutAttributeCenterX
+                                                     multiplier:1
+                                                       constant:0]];
+
+		[push3 addConstraint:[NSLayoutConstraint constraintWithItem:glyph2
+                                                      attribute:NSLayoutAttributeCenterY
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:push3
+                                                      attribute:NSLayoutAttributeCenterY
+                                                     multiplier:1
+                                                       constant:0]];
+		glyph2 = (UIImageView *)[[self _viewForSectionSlot:2] valueForKey:@"_alteredStateGlyphImageView"];
+		glyph2.translatesAutoresizingMaskIntoConstraints = NO;
+		[push3 addConstraint:[NSLayoutConstraint constraintWithItem:glyph2
+                                                      attribute:NSLayoutAttributeCenterX
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:push3
+                                                      attribute:NSLayoutAttributeCenterX
+                                                     multiplier:1
+                                                       constant:0]];
+
+		[push3 addConstraint:[NSLayoutConstraint constraintWithItem:glyph2
+                                                      attribute:NSLayoutAttributeCenterY
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:push3
+                                                      attribute:NSLayoutAttributeCenterY
+                                                     multiplier:1
+                                                       constant:0]];
+
+	} else {
+		self.mode = 3;
+	}
+}
+%end
+
+@interface CCUIAirStuffSectionController : NSObject
+@end
+
+%hook CCUIAirStuffSectionController
+- (void)_updateAirDropControlAsEnabled:(BOOL)arg1 {
+	%orig;
+	CCUIControlCenterPushButton *airPlaySection = (CCUIControlCenterPushButton *)[self valueForKey:@"_airDropSection"];
+	airPlaySection.text = nil;
+	((UIImageView *)[airPlaySection valueForKey:@"_glyphImageView"]).center = CGPointMake(airPlaySection.frame.size.width/2,airPlaySection.frame.size.height/2);
+}
+- (void)_updateForAirPlayStateChange {
+	%orig;
+	CCUIControlCenterPushButton *airPlaySection = (CCUIControlCenterPushButton *)[self valueForKey:@"_airPlaySection"];
+	airPlaySection.text = nil;
+	((UIImageView *)[airPlaySection valueForKey:@"_glyphImageView"]).center = CGPointMake(airPlaySection.frame.size.width/2,airPlaySection.frame.size.height/2);
+}
+%end
+
+
+%hook CCUIButtonStackPagingView
+- (void)_organizeButtonsInPages {
+	UIStackView *_pagesStackView = (UIStackView *)[self valueForKey:@"_pagesStackView"];
+	UIScrollView *_scrollView = (UIScrollView *)[self valueForKey:@"_scrollView"];
+	if ([self.buttons count] > self.maxButtonsPerPage) {
+		[_scrollView setScrollEnabled:YES];
+		[_scrollView setDelaysContentTouches:YES];
+		[_scrollView setCanCancelContentTouches:YES];
+		int numberOfButtons = [self.buttons count];
+		int maxButtonsPerPage = self.maxButtonsPerPage;
+		int numberOfPagesNeeded = numberOfButtons/maxButtonsPerPage;
+		if (numberOfButtons%maxButtonsPerPage != 0) {
+			numberOfPagesNeeded++;
+		}
+
+		if ([_pagesStackView.arrangedSubviews count] != numberOfPagesNeeded) {
+			if ([_pagesStackView.arrangedSubviews count] > numberOfPagesNeeded) {
+				while ([_pagesStackView.arrangedSubviews count] > numberOfPagesNeeded) {
+					[_pagesStackView removeArrangedSubview:(UIView *)[_pagesStackView.arrangedSubviews objectAtIndex:[_pagesStackView.arrangedSubviews count]-1]];
+				}
+			} else {
+				while ([_pagesStackView.arrangedSubviews count] < numberOfPagesNeeded) {
+					CGRect buttonStackFrame = [_pagesStackView.arrangedSubviews objectAtIndex:[_pagesStackView.arrangedSubviews count]-1].frame;
+					buttonStackFrame.origin.x = buttonStackFrame.origin.x+buttonStackFrame.size.width;
+					CCUIButtonStack *buttonStack = [[NSClassFromString(@"CCUIButtonStack") alloc] initWithFrame:buttonStackFrame];
+					buttonStack.layoutDelegate = self;
+					[_pagesStackView addArrangedSubview:buttonStack];
+				}
+			}
+		}
+
+		for (CCUIButtonStack *buttonStack in _pagesStackView.arrangedSubviews) {
+			NSMutableArray *buttons = [buttonStack.buttons mutableCopy];
+			for (CCUIControlCenterPushButton *button in buttons) {
+				[buttonStack removeButton:button];
+			}
+		}
+
+		NSMutableArray *buttons = [self.buttons mutableCopy];
+		int currentPageIndex = 0;
+		while ([buttons count] > 0) {
+			if ([_pagesStackView.arrangedSubviews objectAtIndex:currentPageIndex]) {
+				CCUIButtonStack *buttonStack = (CCUIButtonStack *)[_pagesStackView.arrangedSubviews objectAtIndex:currentPageIndex];
+				CGFloat widthLeft = self.frame.size.width;
+				for (int x = 0; x < maxButtonsPerPage; x++) {
+					if ([buttons count] > 0) {
+						CCUIControlCenterPushButton *button = [buttons objectAtIndex:0];
+						button.hidden = NO;
+						button.tag = 666;
+						widthLeft -= button.frame.size.width;
+						[buttonStack addButton:button];
+						[buttons removeObject:button];
+					}
+				}
+				buttonStack.interButtonPadding = widthLeft/([buttonStack.buttons count]-1);
+				currentPageIndex++;
+			}
+		}
+
+		CGFloat totalWidth = 0;
+		totalWidth = self.frame.size.width*numberOfPagesNeeded;
+
+		CGSize contentSize = _scrollView.contentSize;
+		contentSize.width = totalWidth;
+		_scrollView.contentSize = contentSize;
+		self.pagingAxis = 0;
+	}
+}
+%end
+
+%hook CCUISettingsSectionController
+- (void)viewWillAppear:(BOOL)willAppear {
+	%orig;
+	if (self.view) {
+		self.view.maxButtonsPerPage = 4;
+	}
+}
+%end
+
+%hook CCUIShortcutModule
+- (BOOL)isRestricted {
+	return NO;
+}
+%end
+
+%hook UIView
+%new
+- (void)applyVibrantTestMask:(int)style {
+	[self nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:style]];
+}
+
+%new
+- (UIImage *)maskFromThisView {
+	UIImage *maskImage = [self _imageFromRect:CGRectMake(0,0,self.frame.size.width,self.frame.size.height)];
+	maskImage = [maskImage sbf_scaleImage:(CGFloat)1.0/(CGFloat)[UIScreen mainScreen].scale];
+	maskImage = [maskImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+
+	CGSize size = CGSizeMake(self.frame.size.width,self.frame.size.height);
+	UIGraphicsBeginImageContextWithOptions(size, YES, 0);
+	[[UIColor whiteColor] setFill];
+	UIRectFill(CGRectMake(0, 0, size.width, size.height));
+	UIImage *sourceImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+
+
+	UIGraphicsBeginImageContextWithOptions(sourceImage.size, NO, sourceImage.scale);
+	[sourceImage drawAtPoint:CGPointZero];
+	[maskImage drawAtPoint:CGPointZero blendMode:kCGBlendModeDestinationOut alpha:1.0f];
+	UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	return result;
+}
+%end
+
+%hook NCVibrantRuleStyling
+- (UIColor *)color {
+	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
+}
+- (UIColor *)_darkenColor {
+	return [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
+}
+%end
+
+%hook CCUIControlCenterButton
+- (id)ccuiPunchOutMaskForView:(UIView *)arg1 {
+	if (self.tag == 666) return nil;
+	if (arg1) {
+		if (arg1.tag == 666) {
+			return nil;
+		}
+	}
+	return %orig;
+}
+
+- (void)_updateBackgroundForStateChange {
+	%orig;
+	if (self.tag == 666) {
+		UIView *backgroundView = (UIView *)[self valueForKey:@"_backgroundFlatColorView"];
+		if (self.selected && backgroundView.layer.filters) {
+			[self nc_removeAllVibrantStyling];
+			return;
+		}
+		if ([self valueForKey:@"_selectedColor"]) {
+			if (![backgroundView.backgroundColor isEqual:[self valueForKey:@"_selectedColor"]]) {
+				if (![[UIColor colorWithRed:1 green:1 blue:1 alpha:0.5] isEqual:backgroundView.backgroundColor]) {
+					[backgroundView nc_removeAllVibrantStyling];
+					[backgroundView nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:4]];
+					return;
+				}
+			} else if ([backgroundView.backgroundColor isEqual:[self valueForKey:@"_selectedColor"]]) {
+				[backgroundView nc_removeAllVibrantStyling];
+			}
+		}
+	}
+}
+
+- (void)layoutSubviews {
+	%orig;
+	if (self.tag == 666) {
+		UIView *backgroundView = (UIView *)[self valueForKey:@"_backgroundFlatColorView"];
+		if (self.selected && backgroundView.layer.filters) {
+			[self nc_removeAllVibrantStyling];
+			return;
+		}
+		if ([self valueForKey:@"_selectedColor"]) {
+			if (![backgroundView.backgroundColor isEqual:[self valueForKey:@"_selectedColor"]] && ![[UIColor colorWithRed:1 green:1 blue:1 alpha:0.5] isEqual:backgroundView.backgroundColor]) {
+				[backgroundView nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:4]];
+				return;
+			} else if ([backgroundView.backgroundColor isEqual:[self valueForKey:@"_selectedColor"]]) {
+				[backgroundView nc_removeAllVibrantStyling];
+			}
+		}
+	}
+}
+
+%end
+
+
+

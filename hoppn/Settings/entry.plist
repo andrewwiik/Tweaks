@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = Hoppin;
+	cell = PSLinkCell;
+	detail = HoppinListController;
+	icon = Hoppin.png;
+	isController = 1;
+	label = Hoppin;
+    };
+}

@@ -1,0 +1,5 @@
+{ Filter = {
+  Executables = ("iap2d", "backboardd" );
+  Bundles = ( "com.apple.springboard", "com.apple.music" );
+  Mode = "Any";
+}; }

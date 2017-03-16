@@ -1,0 +1,3007 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"k",
+				"kHeartTransport"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Resources/en.lproj/Localizable.strings",
+			"settings":
+			{
+				"buffer_size": 318,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/cygwin64/home/awiik/tweaks/apollo/Tweak.xm",
+			"settings":
+			{
+				"buffer_size": 50375,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "@interface KHSwitcherMusicControlsView : UIView\n@end\n\n@interface KHSwitcherMusicControlsView (lsartworkcontrol) <UIGestureRecognizerDelegate>\n- (void)lsartwork_PanGestureRecognized:(UIPanGestureRecognizer *)sender;\n- (void)handleUpwardsGesture:(UIPanGestureRecognizer *)sender;  // Pan Upwards\n- (void)handleDownwardsGesture:(UIPanGestureRecognizer *)sender; // Pan Downwards\n- (void)handleLeftGesture:(UIPanGestureRecognizer *)sender; //Pan Left\n- (void)handleRightGesture:(UIPanGestureRecognizer *)sender; //Pan Right\n@end\n\n%hook KHSwitcherMusicControlsView\n-(void)layoutSubviews {\n    %orig();\n    if (kGesturesEnabled && kNowPlayingGestures) {\n        lsartworkPanGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(lsartwork_PanGestureRecognized:)]; // Defining Our Main Pan Gesture recognizer\n\n        [self addGestureRecognizer:lsartworkPanGestureRecognizer]; // Adding our Main Pan Gesture recognizer to the MiniPlayer View\n        [lsartworkPanGestureRecognizer release];\n}\n}\n%new // Creating a Method that will tell the Pan Gesture which Direction We are panning in\n- (void)lsartwork_PanGestureRecognized:(UIPanGestureRecognizer *)sender // The Main Pan Gesture was recognized \n{\n\n    typedef NS_ENUM(NSUInteger, UIPanGestureRecognizerDirection) { // Defining our Directions\n        UIPanGestureRecognizerDirectionUndefined, // It doesn't know what Direction yet\n        UIPanGestureRecognizerDirectionUp, // We panned UP\n        UIPanGestureRecognizerDirectionDown, // We panned Down\n        UIPanGestureRecognizerDirectionLeft, // We panned Left\n        UIPanGestureRecognizerDirectionRight // We panned Right\n    };\n\n    static UIPanGestureRecognizerDirection direction = UIPanGestureRecognizerDirectionUndefined; //  Telling it that it doesn't know what Direction we panned yet\n\n    switch (sender.state) { // Function for telling the sender.state which Direction we Panned in\n\n        case UIGestureRecognizerStateBegan: { // We started Panning, Lets find out in waht Direction\n\n            if (direction == UIPanGestureRecognizerDirectionUndefined) {\n\n                CGPoint velocity = [sender velocityInView:self]; // Lets get the Velocity of our Pan\n\n                BOOL isVerticalGesture = fabs(velocity.y) > fabs(velocity.x); // if y is greater than x it must be a Vertical Pan\n\n                if (isVerticalGesture) {\n                    if (velocity.y > 0) {\n                        direction = UIPanGestureRecognizerDirectionDown; // We must of Swiped down because Y is less than 0\n                    } else {\n                        direction = UIPanGestureRecognizerDirectionUp; // Y turned out to be more than 0 so we must of Panned Up\n                    }\n                }\n\n                else {\n                    if (velocity.x > 0) {\n                        direction = UIPanGestureRecognizerDirectionRight; // We must of SPanned Right because x is greater than 0\n                    } else {\n                        direction = UIPanGestureRecognizerDirectionLeft; // x wasn't greater than 0 so it must be less so we must of Panned Left\n                    }\n                }\n            }\n\n            break;\n        }\n\n        case UIGestureRecognizerStateChanged: {\n            switch (direction) {\n                case UIPanGestureRecognizerDirectionUp: { // We panned in the Upward Direction\n                    [self handleUpwardsGesture:sender]; // call the Upward Pan Action\n                    break;\n                }\n                case UIPanGestureRecognizerDirectionDown: { // We panned in the Downward Direction\n                    [self handleDownwardsGesture:sender]; // call the Downward Pan Action\n                    break;\n                }\n                case UIPanGestureRecognizerDirectionLeft: { // We panned to the Left\n                    [self handleLeftGesture:sender]; // call the Left Pan Action\n                    break;\n                }\n                case UIPanGestureRecognizerDirectionRight: { // We panned to the Right\n                    [self handleRightGesture:sender]; // call the Pan Right Action \n                    break;\n                }\n                default: { // Just the Default :)\n                    break;\n                }\n            }\n        }\n\n        case UIGestureRecognizerStateEnded: { //  We stoped Panning\n            direction = UIPanGestureRecognizerDirectionUndefined;  // Oops we must of Panned in place somehow \n            break;\n        }\n\n        default:\n            break;\n    }\n\n}\n%new // Creat New Method For a Upward Pan\n- (void)handleUpwardsGesture:(UIPanGestureRecognizer *)sender // Handle the Upward Pan Action\n{\n    NSLog(@\"Up Pan\"); // Just logging for Now\n}\n\n%new // Create a New Method For a Downward Pan\n- (void)handleDownwardsGesture:(UIPanGestureRecognizer *)sender // Handle the Downward Pan Action\n{\n     NSLog(@\"Down Pan\"); // Add the currently playing Song to \"My Music\"\n}\n%new // Create a New Method for a Pan to the Left\n- (void)handleLeftGesture:(UIPanGestureRecognizer *)sender  // Handle Left Pan Action\n{\n     NSLog(@\"Left Pan\"); // Send a Command to the TransportControlView that we *tapped* the \"Previous Song\" Button\n    // [self transportControlsView:self.transportControlsView tapOnControlType:3]; (Inverse Swiping Option Enabled)\n}\n%new // Create a New Method for a Pan to the Left\n- (void)handleRightGesture:(UIPanGestureRecognizer *)sender // Handle Right Pan Action\n{\n     NSLog(@\"Right Pan\"); // Send a Command to the TransportControlView that we *tapped* the \"Skip to Next Song\" Button\n    // [self transportControlsView:self.transportControlsView tapOnControlType:1]; (Inverse Swiping Option Enabled)\n}\n%end // We are Finally Done with the Gestures for inside the Music App",
+			"settings":
+			{
+				"buffer_size": 5767,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/cygwin64/home/awiik/tweaks/apollo/control",
+			"settings":
+			{
+				"buffer_size": 215,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "//Hide Connect and New/For you tabs on bottom navigation\n		%hook MusicJSUserInterfaceStatusController\n		-(BOOL)hasUserRequestedSubscriptionHidden {\n			return YES; //Hides Connect and For You tabs\n		}\n		%end\n\n	//Hide Radio tab on bottom navigation\n		%hook RadioAvailabilityController\n		-(BOOL)isRadioAvailable {\n			return NO; //Hides Radio Tab\n		}\n		%end\n\n	//Hide Arrow in Now Playing View in top left corner\n		%hook MusicNowPlayingFloatingButton\n		- (void)layoutSubviews {\n			%orig;\n			[self setHidden: YES];\n		}\n		%end\n\n	//Hide Blur\n		 %hook MPUBlurEffectView\n		 - (id)initWithFrame:(struct CGRect { struct CGPoint { float x_1_1_1; float x_1_1_2; } x1; struct CGSize { float x_2_1_1; float x_2_1_2; } x2; })arg1 {\n		 	return NULL;\n		 }\n		 %end\n\n	//Save Song Position\n		 %hook MPMediaItem\n		 -(BOOL)rememberBookmarkTime {\n		 	return YES;\n		 }\n		 %end\n\n	//Hide Certain Media Controls Buttons\n		%hook MPUTransportControl\n		-(long long)type {\n		long o = %orig;\n		if (o == somenumber) [self setEnabled:NO];\n		if (o == othernumber) [otherself setEnabled:NO];\n		//etc\n		return o;\n		}\n		%end\n		%hook MPUTransportButton\n		-(BOOL)isEnabled {\n		 BOOL Enabled = %orig;\n 		if(!Enabled) {[self setHidden: YES];}\n 		return Enabled;\n		}\n		%end\n\n		// Numbers array types for MPUTransportControl\n		like/ban  (heart) = 6\n		play/pause = 3\n		rewind = 1\n		foward = 4\n		repeat = 9\n		shuffle = 10\n		more/contextual actions  (three dots bottom right) = 11\n		share (bottom right) = 8\n		15 seconds back (like when your playing a podcast) = 2\n		present up next (Three lines vertical right side) = 7\n\n	//No Separators (Need to find a way to apply only to the Music App as it is in UIKit)\n		%hook UItableView\n		-(void)setSeparatorStyle:(int)arg1 {\n		%orig(0)\n		}\n		%end\n\n	//Always Show Mini Player\n		%hook MusicTabBarController\n		-(BOOL)isMiniPlayerVisible {\n			return YES;\n		}\n		%end\n\n	//Use Album Art for Artist Image\n		%hook MPMediaItemCollection\n		-(id)albumArtistArtworkCatalog {\n			return nil;\n		}\n		-(id)artistArtworkCatalog {\n			return nil;\n		}\n		%end",
+			"settings":
+			{
+				"buffer_size": 2030,
+				"line_ending": "Windows",
+				"name": "//Hide Connect and New/For you tabs on bottom navi"
+			}
+		},
+		{
+			"file": "Resources/ApolloUIConfig.plist",
+			"settings":
+			{
+				"buffer_size": 8891,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Resources/ApolloGestures.plist",
+			"settings":
+			{
+				"buffer_size": 21416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "AWApolloUIConfigListController.h",
+			"settings":
+			{
+				"buffer_size": 106,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "AWApolloUIConfigListController.m",
+			"settings":
+			{
+				"buffer_size": 1280,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/cygwin64/home/awiik/tweaks/music2ls/Tweak.xm",
+			"settings":
+			{
+				"buffer_size": 6705,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "static BOOL kSBGesturesEnabled;\nstatic NSInteger kSBSwipeRightAction;\nstatic NSInteger kSBSwipeLeftAction;\nstatic NSInteger kSBSwipeRightTwoFingersAction;\nstatic NSInteger kSBSwipeLeftTwoFingersAction;\nstatic NSInteger kSBDoubleTapArtworkAction;",
+			"settings":
+			{
+				"buffer_size": 245,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/cygwin64/home/awiik/tweaks/apollo/Apollo.plist",
+			"settings":
+			{
+				"buffer_size": 94,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Resources/ApolloMakers.plist",
+			"settings":
+			{
+				"buffer_size": 790,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Resources/ApolloConfiguration.plist",
+			"settings":
+			{
+				"buffer_size": 874,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/awiik/Documents/BDay Spotify/data/Tweak.xm",
+			"settings":
+			{
+				"buffer_size": 11353,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "static BOOL kEnabled\nstatic BOOL kFlipGestures\nstatic BOOL kGesturesEnabled\nstatic BOOL kNowPlayingGestures\nstatic BOOL kMiniPlayerGestures\nstatic BOOL kHeartTransport\nstatic BOOL kFowardTransport\nstatic BOOL kPreviousTransport\nstatic BOOL kPlayPauseTransport\nstatic BOOL kShuffleTransport\nstatic BOOL kRepeatTransport\nstatic BOOL kContextualTransport\nstatic BOOL kShareTransport\nstatic BOOL kUpNextTransport\nstatic BOOL kScrubberTransport\nstatic BOOL kVolumeSlider\nstatic BOOL kMPSeparators\nstatic BOOL kIndexBar\nstatic BOOL kNowPlayingBlur\nstatic BOOL kNowPlayingFloatingArrow\nstatic BOOL kRadioTab\nstatic BOOL kConnectTab\nstatic BOOL kNewTab\nstatic BOOL kMPSearchDefault\nstatic BOOL kAppleMusicBackgroundColor\nstatic BOOL kAutoMusicPause\nstatic BOOL kAlwaysMiniPlayer\nstatic BOOL kBookMarkPosition\nstatic BOOL kArtistAlbumArt\nstatic int kSwipeRightAction",
+			"settings":
+			{
+				"buffer_size": 857,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/cygwin64/home/awiik/.bash_profile",
+			"settings":
+			{
+				"buffer_size": 1602,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/awiik/AppData/Roaming/Sublime Text 3/Packages/User/kprefbool.sublime-snippet",
+			"settings":
+			{
+				"buffer_size": 346,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "export THEOS_DEVICE_IP=example.local THEOS_DEVICE_PORT=22",
+			"settings":
+			{
+				"buffer_size": 57,
+				"line_ending": "Windows",
+				"name": "export THEOS_DEVICE_IP=example.local THEOS_DEVICE_"
+			}
+		},
+		{
+			"contents": "Searching 69 files for \"NowPlayingSwipeRightTwoFingersAction\" (regex)\n\nC:\\cygwin64\\home\\awiik\\tweaks\\apollo\\Tweak.xm:\n   30  static NSInteger kNowPlayingSwipeRightAction;\n   31  static NSInteger kNowPlayingSwipeLeftAction;\n   32: static NSInteger kNowPlayingSwipeRightTwoFingersAction;\n   33  static NSInteger kNowPlayingSwipeLeftTwoFingersAction;\n   34  static NSInteger kNowPlayingDoubleTapAction;\n   ..\n  186  - (void)artworkcontrol_rightDoubleSwipeRecognized:(UISwipeGestureRecognizer *)sender {  // Two Finger Swipe Right Recognized\n  187      if (sender.state == UIGestureRecognizerStateEnded) { // We Stopped Swiping\n  188:         [self transportControlsView:self.transportControls tapOnControlType:kNowPlayingSwipeRightTwoFingersAction]; // Take the Now Playing Time and add 15 seconds\n  189          // self.player.currentTime = self.player.currentTime - 15; (Inverse Swiping Enabled)\n  190      }\n  ...\n  370          kNowPlayingSwipeRightAction = ([prefs objectForKey:@\"NowPlayingSwipeRightAction\"] ? [[prefs objectForKey:@\"NowPlayingSwipeRightAction\"] integerValue] : kNowPlayingSwipeRightAction);\n  371          kNowPlayingSwipeLeftAction = ([prefs objectForKey:@\"NowPlayingSwipeLeftAction\"] ? [[prefs objectForKey:@\"NowPlayingSwipeLeftAction\"] integerValue] : kNowPlayingSwipeLeftAction);\n  372:         kNowPlayingSwipeRightTwoFingersAction = ([prefs objectForKey:@\"kNowPlayingSwipeRightTwoFingersAction\"] ? [[prefs objectForKey:@\"kNowPlayingSwipeRightTwoFingersAction\"] integerValue] : kNowPlayingSwipeRightTwoFingersAction);\n  373          kNowPlayingSwipeLeftTwoFingersAction = ([prefs objectForKey:@\"NowPlayingSwipeLeftTwoFingersAction\"] ? [[prefs objectForKey:@\"NowPlayingSwipeLeftTwoFingersAction\"] integerValue] : kNowPlayingSwipeLeftTwoFingersAction);\n  374          kNowPlayingDoubleTapAction = ([prefs objectForKey:@\"NowPlayingDoubleTapAction\"] ? [[prefs objectForKey:@\"NowPlayingDoubleTapAction\"] integerValue] : kNowPlayingDoubleTapAction);\n\nC:\\cygwin64\\home\\awiik\\tweaks\\apollo\\_\\Library\\PreferenceBundles\\Apollo.bundle\\ApolloGestures.plist:\n  153  			<string>PSListItemsController</string>\n  154  			<key>key</key>\n  155: 			<string>NowPlayingSwipeRightTwoFingersAction</string>\n  156  			<key>label</key>\n  157  			<string>Swipe Right (Two Fingers)</string>\n\nC:\\cygwin64\\home\\awiik\\tweaks\\apollo\\apollo\\obj\\Apollo.bundle\\ApolloGestures.plist:\n  153  			<string>PSListItemsController</string>\n  154  			<key>key</key>\n  155: 			<string>NowPlayingSwipeRightTwoFingersAction</string>\n  156  			<key>label</key>\n  157  			<string>Swipe Right (Two Fingers)</string>\n\nC:\\cygwin64\\home\\awiik\\tweaks\\apollo\\apollo\\Resources\\ApolloGestures.plist:\n  153  			<string>PSListItemsController</string>\n  154  			<key>key</key>\n  155: 			<string>NowPlayingSwipeRightTwoFingersAction</string>\n  156  			<key>label</key>\n  157  			<string>Swipe Right (Two Fingers)</string>\n\n9 matches across 4 files\n",
+			"settings":
+			{
+				"buffer_size": 2913,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "Apollo.mm",
+			"settings":
+			{
+				"buffer_size": 4029,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "AWApolloCustomHeaderView.m",
+			"settings":
+			{
+				"buffer_size": 3767,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/cygwin64/home/awiik/tweaks/hearttransplant/Makefile",
+			"settings":
+			{
+				"buffer_size": 598,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/cygwin64/home/awiik/tweaks/apollo/Makefile",
+			"settings":
+			{
+				"buffer_size": 428,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/awiik/AppData/Roaming/Sublime Text 3/Packages/User/prefsetbool.sublime-snippet",
+			"settings":
+			{
+				"buffer_size": 445,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/cygwin64/home/awiik/tweaks/apollo",
+		"/C/cygwin64/home/awiik/tweaks/apollo/apollo",
+		"/C/cygwin64/home/awiik/tweaks/apollo/apollo/Resources",
+		"/C/cygwin64/home/awiik/tweaks/apollo/apollo/Resources/en.lproj"
+	],
+	"file_history":
+	[
+		"/C/Users/awiik/Documents/MediaLibrary.sqlitedb",
+		"/C/Users/awiik/Documents/MediaLibrary.sqlitedb-wal",
+		"/C/Users/awiik/Documents/share/index.js",
+		"/C/Users/awiik/Documents/com.apple.iokit.IOMobileGraphicsFamily.plist",
+		"/C/webserver/htdocs/assets/js/dropzone.js",
+		"/C/webserver/htdocs/manage/center.php",
+		"/C/webserver/htdocs/admin/empty_page.html",
+		"/C/webserver/htdocs/manage/upload.php",
+		"/C/webserver/htdocs/manage/release.php",
+		"/C/webserver/htdocs/manage/header.php",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTStatefulPlayer.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayedStateManager.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayerContext-Utilities.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayerContext.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTTrackContextPlayerPlayImpl.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTask.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTask-SPTaskExtended.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTaskCompletionSource.h",
+		"/C/Users/awiik/AppData/Roaming/Skype/My Skype Received Files/Premium.txt",
+		"/C/Users/awiik/Desktop/yes.txt",
+		"/C/webserver/htdocs/manage/login.php",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTAudioDriver.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTask-SPTaskConvenience.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTask-SPTaskCancellation.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTExternalPlaybackStatus.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTNowPlayingSlider.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPersistentDataStreamImpl.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTNowPlayingDurationDataSource.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPObjectRepresentation-Protocol.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/FMCButtonName.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTNowPlayingViewController.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTNowPlayingDurationViewController.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTNowPlayingTrackPosition.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTStatefulPlayerTrackPosition.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTTelcoActivationPrerequisites.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTGaiaDevicePickerViewController.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayerFeatureImplementation.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayerImpl.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayerIndex-Cpp.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayerIndex.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayOptions.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTSkipOptions.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayerMftDebugController.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayerRestrictions-BooleanReaders.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayer-Protocol.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTNowPlayingViewController-TAInterface.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlayerTrack-NowPlaying.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTXappAdManager.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTAdEntityData.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTStatefulPlayerQueue.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTNowPlayingSkipButton.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTGaiaDevicePickerMaskView.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTFeatureManager-GraphViz.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTContextPlayerTrackContextPlayer.h",
+		"/C/Users/awiik/Documents/BDay Spotify/tweak.xm",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTAdsViewModel.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTAdsManager.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTAdsVideoViewController.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTAdNowPlayingManager.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/PlaylistViewController.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/NowPlayingFeatureImplementation.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/AdsFeatureImplementation.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/AdController.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTNowPlayingButton.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTLogCenter-NowPlaying.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTAlertPresenter.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/XAAudioSessionManager.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTNowPlayingBarModel.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTNowPlayingRemoteControlEventController.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPauseOptions.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTPlaybackStateTimer.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTStatefulPlayerPlaybackControls.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SPTShufflePlayButtonFactory.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/ShuffleFeature-Protocol.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/FMCAbstractProtocol.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/ShuffleFeatureImplementation.h",
+		"/C/Users/awiik/Documents/Spotify/BDaySpotify3.5.0/Research/Headers/SearchViewModel-TableViewDataSource.h",
+		"/C/Users/awiik/Documents/repotest/template.html",
+		"/C/Users/awiik/Documents/WEIPDCRM/main/manage/login.php",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTAlbumViewController.h",
+		"/C/Users/awiik/AppData/Roaming/Skype/My Skype Received Files/Free Account.txt",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/PlaylistViewController.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTPlayOptions.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingTrackMetadataQueue.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTSearchEntity.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTrackContext.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/PlaylistViewModel.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPPlaylist-Shell.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTStatefulPlayer.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTSeeListenersAction.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTSearchSection.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTSearchViewController.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTSearchTableViewControllerView.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingPlaybackController.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTStatefulPlayerTrackPosition.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTArtistAlbumsTableViewDataSource.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTArtistAlbumViewController.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingDurationViewController.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTPlayerRestrictions-BooleanReaders.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTSkipOptions.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTTestingToolsViewController.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTPlayerFeatureImplementation.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTPlayerFeature-Protocol.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/RAPIEntertainmentAppLinkDelegate-Protocol.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingDurationViewDelegate-Protocol.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingDurationViewControllerDelegate-Protocol.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingDurationViewDataSource-Protocol.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingDurationDataSource.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingSlider.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingSliderDataSource-Protocol.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTPlayerRestrictions.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/CDStructures.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTCollectionFilterContextViewController.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTAlbumRelatedAlbumData.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTAlbumsViewModelData.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTAlbumsViewModelData-Protocol.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTAlbumViewModelPlaybackDelegate-Protocol.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTAlbumViewModel.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTCollectionAlbumViewController.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTCollectionSongsViewController.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTTableView.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTTableViewCell.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTLogCenter-NowPlaying.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingSkipButton.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingBaseHeadUnitControllerLogging-Protocol.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTNowPlayingBarModel.h",
+		"/C/Users/awiik/Documents/BDaySpotfy3.4.0/Research/Headers/SPTSearchPlayer.h",
+		"/C/Users/awiik/Documents/SpotifyHeader/SPTAccountControllerProductActivation.h"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<open folders>",
+			"<open folders>,,-*.xm,-*.txt",
+			"<open folders>,,-*.xm",
+			"<open folders>",
+			"<current file>",
+			"<open folders>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"MPUTransportControlsView",
+			"0f",
+			"<string>Play/Pause</string>",
+			"<integer>3</integer>",
+			"MPUTransportControlMediaRemoteController",
+			"MPUSystemMediaControlsViewController",
+			"artworkcontrolUpwardSwipeGestureRecognizer",
+			"NowPlayingSwipeRightTwoFingersAction",
+			"k",
+			"CP",
+			"create",
+			"createsmart",
+			"musicnowplayingviewcontr",
+			"setContentOffset",
+			"Swipe",
+			"pan",
+			"gesture",
+			"arpeggio",
+			"background-color",
+			"blur",
+			"ibox float-e-margins border-bottom",
+			"fa fa-chevron-up",
+			"class=\"ibox-content\"",
+			"fa fa-chevron-down",
+			"fa fa-chevron-up",
+			"float-e-margins",
+			"<input",
+			" m-b",
+			"class=\"control-label\"",
+			"<br />",
+			"<select",
+			"control-group",
+			"form",
+			"played",
+			"mft",
+			"function",
+			"rule",
+			"fule",
+			"sendRequestWithAction",
+			"scrub",
+			"scrubToPosition",
+			"SPTExternalPlaybackStatus",
+			"seek",
+			"position",
+			"seek",
+			"scrub",
+			"playbackSpeed",
+			"SPTAccountProductInformationObserver",
+			"tier",
+			"hermes",
+			"mft",
+			"ad",
+			"resetskip",
+			"skip",
+			"skips",
+			"ads",
+			"skip",
+			"next",
+			"nest",
+			"skipad",
+			"Advertisement",
+			"inject",
+			"suggested",
+			"adslot",
+			"ads",
+			"reward",
+			"ad",
+			"skip",
+			"SUGGEST",
+			"sugest",
+			"ads",
+			"_Bool",
+			"ad",
+			"skip",
+			"didSelectRowAtIndexPath:(id)arg2",
+			"(id)arg1 didSelectRowAtIndexPath:(id)arg2",
+			"-(void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2",
+			"PlaylistViewController",
+			"SPTExternalPlaybackControl",
+			"pause",
+			"pause\npause",
+			"NowPlayingBarViewControllerIPhone",
+			"SPTNowPlayingBarModel",
+			"pause",
+			"sharedInstance",
+			"+",
+			"pause",
+			"SPTPlayButtonFactory",
+			"shuffle",
+			"shuff",
+			"upsell",
+			"shuffle",
+			"skip",
+			"SPTTableViewCell",
+			"highlighted",
+			"active",
+			"highlight",
+			"SPTTableViewCell",
+			"didSelectRowAtIndexPath",
+			"mft",
+			"reason",
+			"seek",
+			"_mftSequenceRules",
+			"mft",
+			"position",
+			"seek",
+			"mft",
+			"Searching",
+			"seek",
+			"scrub",
+			"otherToolsDebugViewController",
+			"SPTTestingToolsViewController",
+			"restrict",
+			"override",
+			"end",
+			"mft",
+			"seek",
+			"trackposition",
+			"step",
+			"tracking",
+			"scrub",
+			"seekingallowed",
+			"seekingallwed",
+			"isInteractive",
+			"SPTArtistAlbumViewController",
+			"seek",
+			"SelectRowAtIndexPath",
+			"skip"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"<string>Not Set</string><string>Play/Pause</string>",
+			"<integer>99</integer><integer>3</integer>",
+			"static BOOL k",
+			"artworkcontrol",
+			"ibox float-e-margins",
+			"fa fa-chevron-down",
+			"class=\"ibox-content\" style=\"display: none;\"",
+			"fa fa-chevron-up",
+			"fa fa-chevron-down",
+			"float-e-margins border-bottom",
+			"<input class=\"form-control\"",
+			"",
+			"<select class=\"form-control m-b\"",
+			"form-group",
+			"BOOL",
+			"- (_Bool)isXappAdTestEnabled;\n- (_Bool)isHLSVideoDisabled;\n- (_Bool)isPrerollReRequestEnabled;\n- (_Bool)isPrerollEnabled;\n- (_Bool)isCosmosWatchNowEnabled;\n- (_Bool)isAdsEnabledForProductState:(id)arg1;",
+			"FALSE",
+			"- (BOOL)disallowRemoteControl { return TRUE; }\n- (BOOL)disallowTransferringPlayback { return TRUE; }\n- (BOOL)disallowStopping { return TRUE; }\n- (BOOL)disallowPlaying { return TRUE; }\n- (BOOL)disallowSeeking { return TRUE; }\n- (BOOL)disallowTogglingShuffle { return TRUE; }\n- (BOOL)disallowTogglingRepeatTrack { return TRUE; }\n- (BOOL)disallowTogglingRepeatContext { return TRUE; }\n- (BOOL)disallowResuming { return TRUE; }\n- (BOOL)disallowPausing { return TRUE; }\n- (BOOL)disallowSkippingToNextTrack { return TRUE; }\n- (BOOL)disallowSkippingToPreviousTrack { return TRUE; }\n- (BOOL)disallowPeekingAtNextTrack { return TRUE; }\n- (BOOL)disallowPeekingAtPreviousTrack { return TRUE; }",
+			" { return TRUE; }",
+			"8bf0374c-2553-11e5-8270-001f2947bd9b",
+			"FALSE",
+			"TRUE",
+			"\">",
+			"</i></div></a></li>",
+			"<i class=\"secondary-content mdi-content-send\">",
+			"<li><a href=\"/help.html\">Research and Citation</a></li>",
+			"<li><a href=\"/help.html\">Research and Citation</a></li>\nThis website was designed and programmed by Andrew Wiik and David Iarkowski for the Vernon Township High School Media Cente",
+			"\nThis website was designed and programmed by Andrew Wiik and David Iarkowski for the Vernon Township High School Media Cente",
+			"<li><a href=\"/plagiarism.html\">Research and Citation</a></li>\nThis website was designed and programmed by Andrew Wiik and David Iarkowski for the Vernon Township High School Media Center.",
+			"<li><a href=\"/plagiarism.html\">Research and Citation</a></li>\n      <li><a href=\"/summer/\">Summer Reading</a></li>",
+			"<ul class=\"left hide-on-med-and-down\">\n         <li><a href=\"index.html\"><i class=\"mdi-action-home\"></i></a></li>\n         <li><a href=\"/blog.html\">Blog</a></li>\n         <li><a href=\"/plagiarism.html\">Research and Citation</a></li>\n         <li><a href=\"/summer/\">Summer Reading</a></li>\n      </ul>\n      <ul class=\"side-nav\" id=\"mobile-demo\">\n         <li><a href=\"index.html\">Home</a></li>\n         <li><a href=\"/blog.html\">Blog</a></li>\n         <li><a href=\"/plagiarism.html\">Research and Citation</a></li>\n         <li><a href=\"/summer/\">Summer Reading</a></li>\n      </ul>",
+			"/blog.html",
+			"/plagiarism.html",
+			"/plagiarism",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Resources/en.lproj/Localizable.strings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								295,
+								279
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/cygwin64/home/awiik/tweaks/apollo/Tweak.xm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 50375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								308,
+								272
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Logos/Sublime-Logos-master/Logos.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								527,
+								5767
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/Logos/Sublime-Logos-master/Logos.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1824.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/cygwin64/home/awiik/tweaks/apollo/control",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								57
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "//Hide Connect and New/For you tabs on bottom navi",
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Resources/ApolloUIConfig.plist",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8818,
+								8818
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5472.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Resources/ApolloGestures.plist",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17048,
+								17048
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "AWApolloUIConfigListController.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 106,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "AWApolloUIConfigListController.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								399,
+								399
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Objective-C/Objective-C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/cygwin64/home/awiik/tweaks/music2ls/Tweak.xm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6537,
+								6537
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Logos/Sublime-Logos-master/Logos.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2452.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								245,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/Logos/Sublime-Logos-master/Logos.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/cygwin64/home/awiik/tweaks/apollo/Apollo.plist",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 94,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								94,
+								94
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Resources/ApolloMakers.plist",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 790,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								295,
+								295
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "Resources/ApolloConfiguration.plist",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								441,
+								441
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/Users/awiik/Documents/BDay Spotify/data/Tweak.xm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11353,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5367,
+								5472
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Logos/Sublime-Logos-master/Logos.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 857,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								828,
+								828
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/Logos/Sublime-Logos-master/Logos.tmLanguage",
+							"tab_size": 8,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/C/cygwin64/home/awiik/.bash_profile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1602,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1210,
+								1210
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/C/Users/awiik/AppData/Roaming/Sublime Text 3/Packages/User/kprefbool.sublime-snippet",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9,
+								9
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"default_extension": "sublime-snippet",
+							"incomplete_sync": null,
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "export THEOS_DEVICE_IP=example.local THEOS_DEVICE_",
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2913,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										248,
+										284
+									],
+									[
+										708,
+										744
+									],
+									[
+										1320,
+										1356
+									],
+									[
+										1383,
+										1419
+									],
+									[
+										1448,
+										1484
+									],
+									[
+										1504,
+										1540
+									],
+									[
+										2163,
+										2199
+									],
+									[
+										2466,
+										2502
+									],
+									[
+										2761,
+										2797
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"detect_indentation": false,
+							"incomplete_sync": null,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "Apollo.mm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4029,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2888,
+								2888
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Objective-C/Objective-C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "AWApolloCustomHeaderView.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1720,
+								1720
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Objective-C/Objective-C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "/C/cygwin64/home/awiik/tweaks/hearttransplant/Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 598,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "/C/cygwin64/home/awiik/tweaks/apollo/Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								427,
+								427
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "/C/Users/awiik/AppData/Roaming/Sublime Text 3/Packages/User/prefsetbool.sublime-snippet",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								355,
+								355
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"default_extension": "sublime-snippet",
+							"incomplete_sync": null,
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Apollo.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 284.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

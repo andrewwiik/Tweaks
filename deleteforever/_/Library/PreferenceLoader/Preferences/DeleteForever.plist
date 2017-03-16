@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = DeleteForever;
+	cell = PSLinkCell;
+	detail = DeleteForeverListController;
+	icon = DeleteForever.png;
+	isController = 1;
+	label = DeleteForever;
+    };
+}

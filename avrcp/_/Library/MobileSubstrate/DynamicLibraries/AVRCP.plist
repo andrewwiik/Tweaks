@@ -1,0 +1,6 @@
+{ Filter = {
+  Executables = ("BTAvrcp", "backboardd" );
+  Bundles = ( "com.apple.springboard", "com.apple.music" );
+  Mode = "Any";
+}; }
+

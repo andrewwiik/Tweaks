@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Allow shortcut menus activated through ControlCenter to be available on the lock screen.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.quickcenter</string>
+			<key>key</key>
+			<string>lockScreenAccessEnabled</string>
+			<key>PostNotification</key>
+			<string>com.creatix.quickcenter/settingschanged</string>
+			<key>label</key>
+			<string>Access on Lock Screen</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Allow access to shortcut menus activated through Control Center within apps. When disabled you can still access shortcut menus through Control Center from the Home Screen.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.quickcenter</string>
+			<key>PostNotification</key>
+			<string>com.creatix.quickcenter/settingschanged</string>
+			<key>key</key>
+			<string>inAppAccessEnabled</string>
+			<key>label</key>
+			<string>Access Within Apps</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enable or disable access to the WiFi shortcut menu while your device is locked to prevent someone from connecting your locked device to a malicious WiFi Network through Control Center.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.quickcenter</string>
+			<key>PostNotification</key>
+			<string>com.creatix.quickcenter/settingschanged</string>
+			<key>key</key>
+			<string>wiFiLockAccessEnabled</string>
+			<key>label</key>
+			<string>Wi-Fi Access on Lock Screen</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Security</string>
+</dict>
+</plist>

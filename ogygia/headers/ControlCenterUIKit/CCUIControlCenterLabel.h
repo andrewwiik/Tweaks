@@ -1,0 +1,2 @@
+@interface CCUIControlCenterLabel : UILabel
+@end

@@ -1,0 +1,10 @@
+{
+  entry = {
+    bundle = ColorBannersPrefs;
+    cell = PSLinkCell;
+    detail = ColorBannersPrefsListController;
+    icon = CBRPrefsIcon.png;
+    isController = 1;
+    label = ColorBanners;
+  };
+}

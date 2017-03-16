@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = exsto;
+	cell = PSLinkCell;
+	detail = exstoListController;
+	icon = exsto.png;
+	isController = 1;
+	label = Exsto;
+    };
+}

@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = settings;
+	cell = PSLinkCell;
+	detail = settingsListController;
+	icon = settings.png;
+	isController = 1;
+	label = MoreRecent;
+    };
+}

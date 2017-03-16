@@ -1,0 +1,10 @@
+Package: com.me.bubba
+Name: Bubba
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Bubba
+Author: Bubba
+Section: Tweaks
+Version: 0.0.1-13
+Installed-Size: 85

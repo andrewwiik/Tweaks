@@ -1,0 +1,9 @@
+Package: com.ziph0n.pokemonlock
+Name: Pokemon Lock
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Pokemon Go right on your lockscreen!
+Maintainer: Ziph0n
+Author: Ziph0n
+Section: Tweaks

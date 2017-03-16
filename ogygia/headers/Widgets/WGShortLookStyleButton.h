@@ -1,0 +1,2 @@
+@interface WGShortLookStyleButton : UIButton
+@end

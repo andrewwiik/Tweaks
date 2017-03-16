@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+	<key>items</key>
+	<array>
+
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>footerText</key>
+		<string>Change the blur style of the menus</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSSegmentCell</string>
+		<key>default</key>
+		<integer>1</integer>
+		<key>defaults</key>
+		<string>com.bolencki13.customft</string>
+		<key>detail</key>
+		<string>PSListItemsController</string>
+		<key>key</key>
+		<string>blur</string>
+		<key>validTitles</key>
+		<array>
+			<string>Extra Light</string>
+			<string>Light</string>
+			<string>Dark</string>
+		</array>
+		<key>validValues</key>
+		<array>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>2</integer>
+		</array>
+	</dict>
+
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>footerText</key>
+		<string>Show an 'Add Action' item within the menu. Allows adding of actions right from springboard</string>
+	</dict>
+
+	<dict>
+		<key>cell</key>
+		<string>PSSwitchCell</string>
+		<key>default</key>
+		<true/>
+		<key>defaults</key>
+		<string>com.bolencki13.customft</string>
+		<key>key</key>
+		<string>addMenu</string>
+		<key>label</key>
+		<string>'Add Action' Item</string>
+	</dict>
+
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>footerText</key>
+		<string>Only show the 'Add Action' item when there are no other shorcut items present. This can help remove clutter and actions being cut off by the screen</string>
+	</dict>
+
+	<dict>
+		<key>cell</key>
+		<string>PSSwitchCell</string>
+		<key>default</key>
+		<true/>
+		<key>defaults</key>
+		<string>com.bolencki13.customft</string>
+		<key>key</key>
+		<string>addNotEvery</string>
+		<key>label</key>
+		<string>Restrict 'Add Action'</string>
+	</dict>
+
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>footerText</key>
+		<string>Example URL Schemes. For more options, check TraverseDB.com</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSButtonCell</string>
+		<key>label</key>
+		<string>URL Scheme Exmaple #1</string>
+		<key>action</key>
+		<string>showExample1</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSButtonCell</string>
+		<key>label</key>
+		<string>URL Scheme Exmaple #2</string>
+		<key>action</key>
+		<string>showExample2</string>
+	</dict>
+
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>footerText</key>
+		<string>Traverse © bolencki13 2015-2016</string>
+	</dict>
+
+	</array>
+	<key>title</key>
+	<string>Traverse</string>
+	</dict>
+</plist>

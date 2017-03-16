@@ -1,0 +1,2 @@
+@interface CCUIControlCenterSlider : UIView
+@end

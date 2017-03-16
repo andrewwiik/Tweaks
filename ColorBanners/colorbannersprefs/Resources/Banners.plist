@@ -1,0 +1,131 @@
+{
+  title = "Banners";
+  items = (
+    {
+      cell = PSSwitchCell;
+      label = "Enabled";
+      key = "BannersEnabled";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs-main";
+    },
+
+    {
+      cell = PSGroupCell;
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Use Gradient";
+      key = "BannerGradient";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+    {
+      cell = PSSwitchCell;
+      set = "setBannerConstantColorsEnabled:forSpecifier:";
+      id = "CUSTOM_COLOR_MINUS_ONE";
+      label = "Use Constant Colors";
+      key = "BannerUseConstant";
+      default = 0;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+
+    {
+      cell = PSGroupCell;
+      label = "Constant Colors";
+      id = "CUSTOM_COLOR_GROUP";
+    },
+    {
+      cell = PSLinkCell;
+      cellClass = PFColorCell;
+      label = "Constant Background Color";
+      title = "Background Color";
+      color_key = "BannerBackgroundColor";
+      color_defaults = "com.golddavid.colorbanners";
+      color_postNotification = "com.golddavid.colorbanners/reloadprefs-banners";
+      color_fallback = "#ffffff";
+      usesRGB = 1;
+      usesAlpha = 0;
+    },
+
+    {
+      cell = PSGroupCell;
+      label = "Banner Background Alpha";
+    },
+    {
+      cell = PSSliderCell;
+      key = "BannerAlpha";
+      showValue = 1;
+      min = 0;
+      max = 1;
+      default = 0.7;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+
+    {
+      cell = PSGroupCell;
+      id = "AL GORE";
+      label = "AlGoreithmic Options";
+      footerText = "Analyzes the view located below the banner when deciding the text color. Use this if you have a fairly low alpha level.";
+    },
+    {
+      cell = PSSwitchCell;
+      set = "setDeepBannerAnalysisEnabled:forSpecifier:";
+      id = "LIVE_ANALYSIS_MINUS_ONE";
+      label = "Analyze Below Banner";
+      key = "WantsDeepBannerAnalyzing";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+    {
+      cell = PSSwitchCell;
+      id = "LIVE_ANALYSIS_CELL";
+      label = "Live Analysis";
+      key = "WantsLiveAnalysis";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+
+    {
+      cell = PSGroupCell;
+      footerText = "Hides the QuickReply rounded-rectangular text field.";
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Round Corners";
+      key = "RoundCorners";
+      default = 0;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Remove Banner Blur";
+      key = "RemoveBannersBlur";
+      default = 0;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Hide Grabber";
+      key = "HideGrabber";
+      default = 0;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Hide QR rounded-rect";
+      key = "HideQRRect";
+      default = 0;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    }
+  );
+}

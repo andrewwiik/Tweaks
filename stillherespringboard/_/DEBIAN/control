@@ -1,0 +1,10 @@
+Package: com.atwiiks.stillherespringboard
+Name: StillHereSpringboard
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Andrew Wiik
+Author: Andrew Wiik
+Section: Tweaks
+Version: 0.0.1-1
+Installed-Size: 85

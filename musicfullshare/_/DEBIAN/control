@@ -1,0 +1,10 @@
+Package: com.atwiiks.MusicFullShare
+Name: MusicFullShare
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Share Full Res Artwork in Music App
+Maintainer: Atwiiks
+Author: ATWiiks
+Section: Tweaks
+Version: 0.0.1-2
+Installed-Size: 85

@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = KeyForce;
+	cell = PSLinkCell;
+	detail = KeyForceListController;
+	icon = KeyForce.png;
+	isController = 1;
+	label = UniversalForce;
+    };
+}

@@ -1,0 +1,540 @@
+#!/usr/bin/env bash
+
+# Cydia Substrate - Powerful Code Insertion Platform
+# Copyright (C) 2008-2012  Jay Freeman (saurik)
+
+# GNU Lesser General Public License, Version 3 {{{
+#
+# Substrate is free software: you can redistribute it and/or modify it under
+# the terms of the GNU Lesser General Public License as published by the
+# Free Software Foundation, either version 3 of the License, or (at your
+# option) any later version.
+#
+# Substrate is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public
+# License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with Substrate.  If not, see <http://www.gnu.org/licenses/>.
+# }}}
+
+c=(
+    $'\e[0m'    #  0: neutral
+    $'\e[0;30m' #  1: black
+    $'\e[1;30m' #  2: dark gray
+    $'\e[0;31m' #  3: red
+    $'\e[1;31m' #  4: light red
+    $'\e[0;32m' #  5: green
+    $'\e[1;32m' #  6: light green
+    $'\e[0;33m' #  7: brown
+    $'\e[1;33m' #  8: yellow
+    $'\e[0;34m' #  9: blue
+    $'\e[1;34m' # 10: light blue
+    $'\e[0;35m' # 11: purple
+    $'\e[1;35m' # 12: light purple
+    $'\e[0;36m' # 13: cyan
+    $'\e[1;36m' # 14: light cyan
+    $'\e[0;37m' # 15: light gray
+    $'\e[1;37m' # 16: white
+)
+
+shopt -s nullglob
+shopt -s extglob
+
+# XXX: detect or something?
+# XXX: gcc?
+otool=otool
+lipo=lipo
+ldid=ldid
+
+function has() {
+    value=$1
+    shift 1
+
+    while [[ $# != 0 ]]; do
+        if [[ $1 == ${value} ]]; then
+            return 0
+        fi
+        shift 1
+    done
+
+    return 1
+}
+
+function fatal() {
+    echo "$(basename "$0"): $1" 1>&2
+    exit 1
+}
+
+function usage() {
+    echo "Usage: $(basename "$0") [<option | code>*] [-- <flag>*]"
+    echo "  option <- configuration for cycc itself"
+    echo "    -i#.#: build for iOS version #.#"
+    echo "    -m#.#: build for Mac OS X version #.#"
+    echo "    -oXXX: use output filename XXX"
+    echo "    -r#.#: build with gcc version #.#"
+    echo "    -s   : compile substrate extension"
+    echo "    -q   : don't print extra garbage"
+    echo "    -v   : also dump pre-processed code"
+    echo "  code <- set of source files to preprocess"
+    echo "  flag <- pass-through to gcc execution"
+}
+
+if [[ $# == 0 ]]; then
+    usage
+    exit 0
+fi
+
+gcc=g++
+ios=
+mac=
+output=
+
+declare -a modes
+declare -a codes
+
+while [[ $# != 0 ]]; do
+    if [[ ${1:0:1} != - ]]; then
+        codes+=("$1")
+    else case "${1:1:1}" in
+        # XXX: long arguments
+        (-) shift 1; break;;
+        (i) ios=${1:2};;
+        (m) mac=${1:2};;
+        (o) output=${1:2};;
+        (p) modes+=(package);;
+        (P) modes+=(package install);;
+        (q) modes+=(quiet);;
+        (r) gcc=${gcc}-${1:2};;
+        (s) modes+=(substrate);;
+        (v) modes+=(verbose);;
+        (V) modes+=(silly);;
+        (\?) usage; exit 0;;
+        (*) usage 1>&2; exit 1;;
+    esac fi
+    shift 1
+done
+
+if [[ ${#codes[@]} == 0 ]]; then
+    code=
+    ext=
+    name=
+elif [[ ${#codes[@]} == 1 ]]; then
+    code=${codes[0]}
+    ext=mm
+    name=${code%.${ext}}
+else
+    fatal 'more than one source code file unsupported'
+fi
+
+for code in "${codes[@]}"; do
+    if [[ ! -e "${code}" ]]; then
+        fatal "${code} does not exist"
+    fi
+done
+
+declare -a archs
+declare -a flags
+
+if has substrate "${modes[@]}" && [[ -z ${mac} && -z ${ios} ]]; then
+    # XXX: this should be based on the system you are currently running
+    mac=10.6
+fi
+
+if [[ -n ${mac} ]]; then
+    archs+=(i386 x86_64)
+fi
+
+if [[ -n ${ios} ]]; then
+    # XXX: if you are currently on an iphone, this will be incorrect
+    gcc=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/${gcc}${gvr}
+    archs+=(armv6)
+
+    sdks=(/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS*.sdk)
+
+    declare -a armv6
+    armv6+=(-mcpu=arm1176jzf-s -mthumb)
+    armv6+=(-miphoneos-version-min="${ios}")
+    armv6+=(-isysroot "${sdks[${#sdks[@]}-1]}")
+    armv6+=(-idirafter /usr/include)
+    armv6+=(-F/Library/Frameworks)
+
+    for flag in "${armv6[@]}"; do
+        flags+=(-Xarch_armv6 "${flag}")
+    done
+fi
+
+flags+=("$@")
+
+flags+=(-Wall) #XXX:-Werror
+flags+=(-fmessage-length=0)
+
+if [[ ${#codes[@]} != 0 ]]; then
+    declare -a extra
+
+    # XXX: this is duplicated (obviously)
+    if [[ ${#archs[@]} == 0 ]]; then
+        while IFS= read -r line; do
+            # XXX: deduplicate flags
+            for flag in ${line#%flag *}; do
+                extra+=("${flag}")
+            done
+        done < <("${gcc}" -E "${flags[@]}" "${codes[@]}" | grep '^%flag ')
+    else
+        for arch in "${archs[@]}"; do
+            while IFS= read -r line; do
+                # XXX: deduplicate flags
+                for flag in ${line#%flag *}; do
+                    extra+=("-Xarch_${arch}" "${flag}")
+                done
+            done < <("${gcc}" -arch "${arch}" -E "${flags[@]}" "${codes[@]}" | grep '^%flag ')
+        done
+    fi
+fi
+
+flags+=("${extra[@]}")
+
+if has substrate "${modes[@]}"; then
+    flags+=(-framework CydiaSubstrate)
+    flags+=(-dynamiclib)
+
+    if [[ -z ${output} ]]; then
+        output=${name}.dylib
+    fi
+fi
+
+function lower() {
+    tr '[:upper:]' '[:lower:]'
+}
+
+# XXX: this should ready some config file
+developer='Jay Freeman (saurik) <saurik@saurik.com>'
+namespace="com.saurik"
+
+function filter() {
+    sed -e '
+        /^'"$1"' / {
+            s/^'"$1"' *//;
+            p;
+        };
+    d;' "${codes[@]}"
+}
+
+function control() {
+    # XXX: use local
+    unset apt_architecture
+    unset apt_author
+    unset apt_depends
+    unset apt_description
+    unset apt_maintainer
+    unset apt_package
+    unset apt_priority
+    unset apt_section
+    unset apt_version
+
+    local line
+    while IFS= read -r line; do
+        if [[ ${line} =~ ^%apt\ *(\"?)([a-zA-Z_]*)\ *:\ *(.*) ]]; then
+            # "]]; then # XXX: vim's syntax highlighter went insane
+
+            local field value
+            field=${BASH_REMATCH[2]}
+            field=$(lower <<<${field})
+
+            value=${BASH_REMATCH[3]}
+
+            if [[ -n ${BASH_REMATCH[1]} ]]; then
+                value=${value%\"}
+            fi
+
+            if [[ ${field} == depends && ${value} != *${substrate}* ]]; then
+                value="${value}, ${substrate}"
+            fi
+
+            echo "${field}: ${value}"
+            eval "apt_${field}=\$'${value//"'"/$''\'}'"
+        fi
+    done < <(cat "${codes[@]}")
+
+    if [[ -z ${apt_architecture} && -n ${architecture} ]]; then
+        echo "architecture: ${architecture}"
+    fi
+
+    if [[ -z ${apt_author} && -n ${developer} ]]; then
+        echo "author: ${developer}"
+    fi
+
+    if [[ -z ${apt_depends} && -n ${substrate} ]]; then
+        echo "depends: ${substrate}"
+    fi
+
+    if [[ -z ${apt_maintainer} && -n ${developer} ]]; then
+        echo "maintainer: ${developer}"
+    fi
+
+    if [[ -z ${apt_package} && -n ${namespace} && -n ${name} ]]; then
+        echo "package: ${namespace}.$(lower <<<${name})"
+    fi
+
+    if [[ -z ${apt_priority} ]]; then
+        echo "priority: optional"
+    fi
+
+    if [[ -z ${apt_section} ]]; then
+        echo "section: Tweaks"
+    fi
+
+    if [[ -z ${apt_version} ]]; then
+        echo "version: ${CYCC_APT_VERSION:-0.9-1}"
+    fi
+}
+
+function process() {
+    local code=$1
+    shift 1
+
+    cat <<EOF
+#line 1 "${code}"
+EOF
+
+    /usr/bin/sed -e '
+        s/^%hook \(.*[^a-zA-Z$_0-9]\)\([a-zA-Z$_][a-zA-Z$_0-9]*\)(/#undef MSOldCall_'$'\\\n''#define MSOldCall_ _\2'$'\\\n''MSHook(\1, \2, /;
+        s/^%class \(.*\)/MSClassHook(\1)/;
+        s/%original/MSOldCall_/g;
+        /^%/ s/^.*//;
+        /'$'\\n''/ {
+            i\
+            %line
+            =;
+            s/$/'$'\\\n''%enil/;
+        };
+    ' "${code}" | sed -ne '
+        /^%line$/ { n; s/^/#line /; h; p; n; p; d; };
+        /^%enil$/ { x; s/^.*$//; x; d; };
+        x; /./ p; x; p;
+    '
+}
+
+if has verbose "${modes[@]}"; then
+    for code in "${codes[@]}"; do
+        process "${code}" | grep -Ev '^$|^#'
+        echo
+    done
+fi
+
+temp=$(mktemp ".cyc.XXX")
+declare -a temps
+temps+=("${temp}")
+
+declare -a posts
+for code in "${codes[@]}"; do
+    post=${temp}.${code}
+    process "${code}" >"${post}"
+    temps+=("${post}")
+    posts+=("${post}")
+done
+
+function clean() {
+    rm -rf "${temps[@]}"
+    temps=()
+}
+
+function try_() {
+    "$@"
+    exit=$?
+    if [[ ${exit} != 0 ]]; then
+        clean
+        exit "${exit}"
+    fi
+}
+
+function try() {
+    local first=$1
+    shift 1
+    if ! has quiet "${modes[@]}"; then
+        echo "${first##*/} ${c[2]}$@${c[0]}"
+    fi
+    try_ "${first}" "$@"
+}
+
+function tool() {
+    thin=$1
+    type=$("${otool}" -vh "${thin}" | sed -e 's/  */ /g; s/^ *//; /^MH_/ p; d;' | cut -d ' ' -f 5)
+    if [[ ${type} == @(EXECUTE|DYLIB|BUNDLE) ]]; then
+        try "${ldid}" -S "${thin}"
+    fi
+}
+
+if [[ -n ${output} ]] || has silly "${modes[@]}"; then
+    if ! has quiet "${modes[@]}"; then
+        echo "${gcc##*/}" "${c[2]}${flags[@]}${c[0]}"
+    fi
+
+    declare -a thins
+    for arch in "${archs[@]}"; do
+        unset extra
+        declare -a extra
+
+        if [[ -n ${output} ]]; then
+            thin="${temp}.${arch}"
+            thins+=("${thin}")
+            extra+=(-o "${thin}")
+        fi
+
+        if ! has quiet "${modes[@]}"; then
+            echo "    ${c[16]}${arch}${c[0]}: ${c[2]}-arch ${arch} ${extra[@]}${c[0]}"
+        fi
+
+        if has silly "${modes[@]}"; then
+            echo -n "${arch} "
+        fi
+
+        try_ "${gcc}" -arch "${arch}" "${flags[@]}" "${posts[@]}" "${extra[@]}"
+
+        if [[ -n ${output} ]]; then
+            temps+=("${thin}")
+            tool "${thin}"
+        fi
+    done
+
+    if [[ -n ${output} ]]; then
+        if [[ ${#thins[@]} == 1 ]]; then
+            cp -a "${thins[0]}" "${output}"
+        else
+            try "${lipo}" -create "${thins[@]}" -output "${output}"
+        fi
+    fi
+else
+    declare -a extra
+
+    for arch in "${archs[@]}"; do
+        extra+=(-arch "${arch}")
+    done
+
+    try "${gcc}" "${extra[@]}" "${flags[@]}" "${posts[@]}"
+fi
+
+if has package "${modes[@]}"; then
+    host=$(dpkg-architecture -qDEB_HOST_ARCH 2>/dev/null)
+
+    if has verbose "${modes[@]}"; then
+        substrate=mobilesubstrate
+        echo
+        control
+    fi
+
+    function field() {
+        sed -e '
+            /^'"$1"' *:/ {
+                s/^[^:]*: *//;
+                p;
+            };
+        d;' "${control}"
+    }
+
+    function list() {
+        local name=$1
+        local filter=$2
+
+        values=($(filter "$2"))
+        if [[ ${#values[@]} -ne 0 ]]; then
+            echo "        <key>${name}</key>"
+            echo '        <array>'
+            for value in $(filter "${filter}"); do
+                echo '            <string>'"${value}"'</string>'
+            done
+            echo '        </array>'
+        fi
+    }
+
+    function package() {
+        substrate=$1
+        architecture=$2
+
+        rm -rf "${temp}"/*
+
+        mkdir -p "${temp}"/DEBIAN
+        control="${temp}/DEBIAN/control"
+        control >"${control}"
+
+        target=${temp}/Library/MobileSubstrate/DynamicLibraries
+        mkdir -p "${target}"
+        cp -a "${output}" "${target}"
+
+        plist=${target}/${name}.plist
+
+        {
+            echo '<?xml version="1.0" encoding="UTF-8"?>'
+            echo '<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">'
+            echo '<plist version="1.0">'
+            echo '<dict>'
+
+	    echo '    <key>Filter</key>'
+	    echo '    <dict>'
+
+            fflags=0
+            for fflag in $(filter %fflag); do
+                fflags=$((${fflags} | ${fflag}))
+            done
+            if [[ -n ${fflags} ]]; then
+                echo '        <key>Flags</key>'
+                echo '        <integer>'"${fflags}"'</integer>'
+                echo
+            fi
+
+            list Bundles %bundle
+            list Classes %objcls
+            list Executables %exename
+
+            echo
+	    echo '        <key>Mode</key>'
+	    echo '        <string>Any</string>'
+
+	    echo '    </dict>'
+
+            echo '</dict>'
+            echo '</plist>'
+        } >"${plist}"
+
+        echo
+        cat "${plist}"
+        plutil -convert binary1 "${plist}"
+
+        package=$(field package)
+        version=$(field version)
+
+        echo
+        if has verbose "${modes[@]}"; then
+            (cd "${temp}" && find . -type f)
+        fi
+
+        deb=${package}_${version}_${architecture}.deb
+
+        { try dpkg-deb -b "${temp}" "${deb}" 2>&1 1>&3 | sed -e "
+            /^warning, \`[^\']*\' contains user-defined field \`[^\']*\'$/ d;
+            /^dpkg-deb: ignoring [0-9]* warnings about the control file(s)$/ d;
+        "; } 3>/dev/stdout
+
+        if has install "${modes[@]}" && [[ ${architecture} == ${host} ]]; then
+            echo
+            sudo dpkg -i "${deb}"
+        fi
+
+        ln -sf "${deb}" "${package}_${architecture}.deb"
+    }
+
+    # XXX: reuse earlier temp
+    temp=$(mktemp -d ".${name}.XXX")
+    temps+=("${temp}")
+
+    if has armv6 "${archs[@]}"; then
+        package mobilesubstrate iphoneos-arm
+    fi
+
+    if has i386 "${archs[@]}"; then
+        package com.saurik.substrate darwin-i386
+    fi
+fi
+
+clean

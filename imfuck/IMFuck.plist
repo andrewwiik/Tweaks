@@ -1,0 +1,5 @@
+{ Filter = {
+  Executables = ("imagent", "backboardd" );
+  Bundles = ( "com.apple.springboard", "com.apple.mobileSMS" );
+  Mode = "Any";
+}; }

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'calendar' target in the 'calendar' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

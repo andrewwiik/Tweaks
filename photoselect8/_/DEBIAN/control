@@ -1,0 +1,10 @@
+Package: com.creatix.photoselect8
+Name: PhotoSelect8
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks
+Version: 0.0.1-37
+Installed-Size: 197

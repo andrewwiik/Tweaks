@@ -1,0 +1,9 @@
+Package: com.creatix.morerecent
+Name: MoreRecent
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Scroll the "Recently Added" Section in the Music App!
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks

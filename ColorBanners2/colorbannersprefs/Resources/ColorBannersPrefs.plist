@@ -1,0 +1,61 @@
+{
+  title = "ColorBanners";
+  items = (
+    {
+      cell = PSGroupCell;
+      headerCellClass = ColorBannersHeaderCell;
+    },
+    {
+      cell = PSLinkListCell;
+      detail = ColorBannersBannerPrefsController;
+      label = "Banners";
+      icon = "Banners.png";
+      key = "BannersEnabled";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      get = "getLabelForSpecifier:";
+    },
+    {
+      cell = PSLinkListCell;
+      detail = ColorBannersLSPrefsController;
+      label = "Lock Screen";
+      icon = "LockScreen.png";
+      key = "LSEnabled";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      get = "getLabelForSpecifier:";
+    },
+    {
+      cell = PSLinkListCell;
+      detail = ColorBannersNCPrefsController;
+      label = "Notification Center";
+      icon = "NC.png";
+      key = "NCEnabled";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      get = "getLabelForSpecifier:";
+    },
+
+    {
+      cell = PSGroupCell;
+      label = "Testing";
+    },
+    {
+      cell = PSButtonCell;
+      label = "Test Banner";
+      action = "testBanner";
+    },
+    {
+      cell = PSButtonCell;
+      label = "Test Notification";
+      action = "testLockScreenNotification";
+    },
+
+    {
+      cell = PSGroupCell;
+      height = 20;
+      footerText = "© 2015 David Goldman
+Icon by Hœnir";
+    }
+  );
+}

@@ -1,0 +1,4 @@
+{ Filter = {
+  Bundles = ( "com.apple.InCallService", "com.apple.springboard" );
+  Mode = "Any";
+}; }

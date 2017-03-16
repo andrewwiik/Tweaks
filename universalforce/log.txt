@@ -1,0 +1,134 @@
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: Setting keep alive grace period to 35
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] interfacemanager-wow: Started simple timer <PCSimpleTimer: 0x1004b7a40> with fire date [2017-02-19 16:03:11 -0500]
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x103205080> initialized with target <PCSimpleTimer: 0x1004b7a40> selector _preventSleepFired timerSource <OS_dispatch_source: 0x100497620>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x100495060> initialized with target <PCSimpleTimer: 0x1004b7a40> selector _fireTimerFired timerSource <OS_dispatch_source: 0x10320a860>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] interfacemanager-wow: <PCSimpleTimer: 0x1004b7a40> created preventSleepTimer <PCDispatchTimer: 0x103205080> and fireTimer <PCDispatchTimer: 0x100495060> on queue <OS_dispatch_queue: PCSimpleTimer-timerQ[0x10043fde0]>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x100495060> start with target <CUTWeakReference: 0x1004825f0> selector _fireTimerFired firetime 18446744073709551615 timerSource <OS_dispatch_source: 0x10320a860>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x103205080> start with target <CUTWeakReference: 0x1004c4940> selector _preventSleepFired firetime 18446744073709551615 timerSource <OS_dispatch_source: 0x100497620>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x103205080> setFireDate 4001-01-01 00:00:00 +0000 and start with target <PCSimpleTimer: 0x1004b7a40> selector _preventSleepFired fireTime 18446744073709551615 deltaNanosec 2309-06-01 15:49:28 -0500 timerSource <OS_dispatch_source: 0x100497620>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x100495060> setFireDate 2017-02-19 21:03:11 +0000 and start with target <PCSimpleTimer: 0x1004b7a40> selector _fireTimerFired fireTime 2098014428200 deltaNanosec 2017-02-19 16:03:11 -0500 timerSource <OS_dispatch_source: 0x10320a860>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: Invalidating timer <PCPersistentTimer: 0x10049d570>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: Invalidating simple timer <PCSimpleTimer: 0x100481000>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x1004b4d70> is invalidated 
+Callstack (
+	0   PersistentConnection                0x0000000192d815cc <redacted> + 116
+	1   PersistentConnection                0x0000000192d7efb8 <redacted> + 292
+	2   PersistentConnection                0x0000000192d6b170 <redacted> + 188
+	3   PersistentConnection                0x0000000192d708dc <redacted> + 80
+	4   PersistentConnection                0x0000000192d6d2a0 <redacted> + 88
+	5   apsd                                0x000000010008a400 apsd + 140288
+	6   apsd                                0x000000010008a19c apsd + 139676
+	7   Foundation                          0x0000000190aae46c __NSFireDelayedPerform + 428
+	8   CoreFoundation                      0x000000018ff5f1d8 <redacted> + 28
+	9   CoreFoundation                      0x000000018ff5eeec <redacted> + 872
+	10  CoreFoundation                      0x000000018ff5e7a8 <redacted> + 244
+	11  CoreFoundation                      0x000000018ff5c3a4 <redacted> + 1572
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x1004b4d70> dealloced
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x1004d1b60> is invalidated 
+Callstack (
+	0   PersistentConnection                0x0000000192d815cc <redacted> + 116
+	1   PersistentConnection                0x0000000192d7efd4 <redacted> + 320
+	2   PersistentConnection                0x0000000192d6b170 <redacted> + 188
+	3   PersistentConnection                0x0000000192d708dc <redacted> + 80
+	4   PersistentConnection                0x0000000192d6d2a0 <redacted> + 88
+	5   apsd                                0x000000010008a400 apsd + 140288
+	6   apsd                                0x000000010008a19c apsd + 139676
+	7   Foundation                          0x0000000190aae46c __NSFireDelayedPerform + 428
+	8   CoreFoundation                      0x000000018ff5f1d8 <redacted> + 28
+	9   CoreFoundation                      0x000000018ff5eeec <redacted> + 872
+	10  CoreFoundation                      0x000000018ff5e7a8 <redacted> + 244
+	11  CoreFoundation                      0x000000018ff5c3a4 <redacted> + 1572
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x1004d1b60> dealloced
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: Canceling system wake for simpletimer [2017-02-19 16:12:14 -0500]
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: Request to schedule wake 0 date 2017-02-19 16:12:14 -0500 leeway 0 service identifier com.apple.apsd(push.apple.com)-NonCellular unique identifier <PCSimpleTimer: 0x100481000>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] interfacemanager-wow: Invalidating simple timer <PCSimpleTimer: 0x1004b7a40>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x103205080> is invalidated 
+Callstack (
+	0   PersistentConnection                0x0000000192d815cc <redacted> + 116
+	1   PersistentConnection                0x0000000192d7efb8 <redacted> + 292
+	2   PersistentConnection                0x0000000192d68a40 <redacted> + 56
+	3   PersistentConnection                0x0000000192d688b0 <redacted> + 120
+	4   PersistentConnection                0x0000000192d6d2f0 <redacted> + 168
+	5   apsd                                0x000000010008a400 apsd + 140288
+	6   apsd                                0x000000010008a19c apsd + 139676
+	7   Foundation                          0x0000000190aae46c __NSFireDelayedPerform + 428
+	8   CoreFoundation                      0x000000018ff5f1d8 <redacted> + 28
+	9   CoreFoundation                      0x000000018ff5eeec <redacted> + 872
+	10  CoreFoundation                      0x000000018ff5e7a8 <redacted> + 244
+	11  CoreFoundation                      0x000000018ff5c3a4 <redacted> + 157
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x103205080> dealloced
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x100495060> is invalidated 
+Callstack (
+	0   PersistentConnection                0x0000000192d815cc <redacted> + 116
+	1   PersistentConnection                0x0000000192d7efd4 <redacted> + 320
+	2   PersistentConnection                0x0000000192d68a40 <redacted> + 56
+	3   PersistentConnection                0x0000000192d688b0 <redacted> + 120
+	4   PersistentConnection                0x0000000192d6d2f0 <redacted> + 168
+	5   apsd                                0x000000010008a400 apsd + 140288
+	6   apsd                                0x000000010008a19c apsd + 139676
+	7   Foundation                          0x0000000190aae46c __NSFireDelayedPerform + 428
+	8   CoreFoundation                      0x000000018ff5f1d8 <redacted> + 28
+	9   CoreFoundation                      0x000000018ff5eeec <redacted> + 872
+	10  CoreFoundation                      0x000000018ff5e7a8 <redacted> + 244
+	11  CoreFoundation                      0x000000018ff5c3a4 <redacted> + 157
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x100495060> dealloced
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: Resuming push keep alive timer in normal mode with action PCActionMaintainPushKeepAliveInterval
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: Last timer interruption was early: [2017-02-19 16:02:11 -0500]. Expected fire time was [2017-02-19 16:11:54 -0500].
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: WiFi growth algorithm: received action PCActionMaintainPushKeepAliveInterval while in stage Backoff
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: <PCPersistentTimer: 0x1004b4da0> created <PCSimpleTimer: 0x1004ad7d0>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: Started simple timer <PCSimpleTimer: 0x1004ad7d0> with fire date [2017-02-19 16:12:46 -0500]
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x1032175d0> initialized with target <PCSimpleTimer: 0x1004ad7d0> selector _preventSleepFired timerSource <OS_dispatch_source: 0x1004ea060>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x100497700> initialized with target <PCSimpleTimer: 0x1004ad7d0> selector _fireTimerFired timerSource <OS_dispatch_source: 0x1004ea310>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: <PCSimpleTimer: 0x1004ad7d0> created preventSleepTimer <PCDispatchTimer: 0x1032175d0> and fireTimer <PCDispatchTimer: 0x100497700> on queue <OS_dispatch_queue: PCSimpleTimer-timerQ[0x100484e00]>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x100497700> start with target <CUTWeakReference: 0x10042eb90> selector _fireTimerFired firetime 18446744073709551615 timerSource <OS_dispatch_source: 0x1004ea310>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x1032175d0> start with target <CUTWeakReference: 0x100457d80> selector _preventSleepFired firetime 18446744073709551615 timerSource <OS_dispatch_source: 0x1004ea060>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x1032175d0> setFireDate 2017-02-19 21:12:31 +0000 and start with target <PCSimpleTimer: 0x1004ad7d0> selector _preventSleepFired fireTime 2111454890201 deltaNanosec 2017-02-19 16:12:31 -0500 timerSource <OS_dispatch_source: 0x1004ea060>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCDispatchTimer: 0x100497700> setFireDate 2017-02-19 21:12:46 +0000 and start with target <PCSimpleTimer: 0x1004ad7d0> selector _fireTimerFired fireTime 2111814890210 deltaNanosec 2017-02-19 16:12:46 -0500 timerSource <OS_dispatch_source: 0x1004ea310>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: <PCSimpleTimer: 0x1004ad7d0> Existing wake at (null) re-scheduling to 2017-02-19 16:12:31 -0500 with leeway of 0
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: Request to schedule wake 1 date 2017-02-19 16:12:31 -0500 leeway 0 service identifier com.apple.apsd(push.apple.com)-NonCellular unique identifier <PCSimpleTimer: 0x1004ad7d0>
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCInterfaceUsabilityMonitor: 0x100397790> [WWAN](pdp_ip0): isInterfaceUsable? NO reachable YES linkQuality -2 isNetworkCaptive? NO
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <PCInterfaceUsabilityMonitor: 0x100428cd0> [NonCellular](en0): isInterfaceUsable? YES reachable YES linkQuality 100 isNetworkCaptive? NO
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: <PCPersistentTimer: 0x1004b4da0> calculating _earlyFireDate. powerStateDetectionSupported = NO = (detectionSupported(YES) && (wwanIsUp(NO) || ! internetReachable(YES)))
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: <PCPersistentTimer: 0x1004b4da0> Device is plugged in, overriding earlyFireProportion to be 1.0
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: <PCPersistentTimer: 0x1004b4da0> Calculated minimum fire date [2017-02-19 16:12:46 -0500] (100%) with fire date [2017-02-19 16:12:46 -0500], start date [2017-02-19 16:02:11 -0500], minimum early fire proportion 0, power state detection supported: no, in high power state: no
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: PCPersistentTimer - updating timer guidance to 2017-02-19 16:12:46 -0500
+Feb 19 16:02:11 iPad UserEventAgent(PersistentConnection)[318] <Notice>: 2017-02-19 16:02:11 -0500 UserEventAgent[318]: <PCInterfaceUsabilityMonitor: 0x100376ec0> [NonCellular](en0): isInterfaceUsable? YES reachable YES linkQuality 100 isNetworkCaptive? NO
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-WWAN: <PCConnectionManager: 0x10031c230> _adjustPollTimerIfNecessary  rightStyle NO  isRunning NO  isInReconnectMode NO   intervalTimer (null)  firingIsImminent NO - should Adjust? NO
+Feb 19 16:02:11 iPad UserEventAgent(PersistentConnection)[318] <Notice>: 2017-02-19 16:02:11 -0500 UserEventAgent[318]: <PCInterfaceUsabilityMonitor: 0x100376ec0>: _flushStaleTransitionsOnIvarQueue: old: (
+) new: (
+)
+Feb 19 16:02:11 iPad dataaccessd(PersistentConnection)[484] <Notice>: 2017-02-19 16:02:11 -0500 dataaccessd[484] 489BE5E9-F9BD-45B1-A244-90DF375E5BAD: <PCConnectionManager: 0x1002de130> _adjustPollTimerIfNecessary  rightStyle NO  isRunning YES  isInReconnectMode NO   intervalTimer <PCPersistentTimer: 0x1003eaf60>  firingIsImminent NO - should Adjust? NO
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(push.apple.com)-NonCellular: <PCConnectionManager: 0x100321e40> _adjustPollTimerIfNecessary  rightStyle NO  isRunning YES  isInReconnectMode NO   intervalTimer <PCPersistentTimer: 0x1004b4da0>  firingIsImminent NO - should Adjust? NO
+Feb 19 16:02:11 iPad UserEventAgent(PersistentConnection)[318] <Notice>: 2017-02-19 16:02:11 -0500 UserEventAgent[318]: <PCInterfaceUsabilityMonitor: 0x100376ec0> [NonCellular](en0): isInterfaceHistoricallyUsable? YES trackUsability YES offTransitions (
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(sandbox.push.apple.com)-WWAN: <PCConnectionManager: 0x1004ec730> _adjustPollTimerIfNecessary  rightStyle NO  isRunning NO  isInReconnectMode NO   intervalTimer (null)  firingIsImminent NO - should Adjust? NO
+Feb 19 16:02:11 iPad UserEventAgent(PersistentConnection)[318] <Notice>: 2017-02-19 16:02:11 -0500 UserEventAgent[318] MailAutoFetch: <PCConnectionManager: 0x1002c1940> _adjustPollTimerIfNecessary  rightStyle NO  isRunning YES  isInReconnectMode NO   intervalTimer (null)  firingIsImminent NO - should Adjust? NO
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402] com.apple.apsd(sandbox.push.apple.com)-NonCellular: <PCConnectionManager: 0x1004bec30> _adjustPollTimerIfNecessary  rightStyle NO  isRunning NO  isInReconnectMode NO   intervalTimer (null)  firingIsImminent NO - should Adjust? NO
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: Enabling power monitoring for <PCSimpleTimer: 0x1004b7a40> - 5 timers
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: Disabling power monitoring for <PCSimpleTimer: 0x100481000> - 4 timers
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: Disabling power monitoring for <PCSimpleTimer: 0x1004b7a40> - 3 timers
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: Enabling power monitoring for <PCSimpleTimer: 0x1004ad7d0> - 4 timers
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: Cancelling scheduled wake for 2017-02-19 16:12:14 -0500 wake identifier com.apple.persistentconnection[apsd,402,0x100481000,com.apple.apsd(push.apple.com)-NonCellular]
+Feb 19 16:02:11 iPad dataaccessd(PersistentConnection)[484] <Notice>: 2017-02-19 16:02:11 -0500 dataaccessd[484]: <PCInterfaceUsabilityMonitor: 0x1003486e0> [NonCellular](en0): isInterfaceUsable? YES reachable YES linkQuality 100 isNetworkCaptive? NO
+Feb 19 16:02:11 iPad dataaccessd(PersistentConnection)[484] <Notice>: 2017-02-19 16:02:11 -0500 dataaccessd[484]: <PCInterfaceUsabilityMonitor: 0x1003486e0>: _flushStaleTransitionsOnIvarQueue: old: (
+) new: (
+)
+Feb 19 16:02:11 iPad dataaccessd(PersistentConnection)[484] <Notice>: 2017-02-19 16:02:11 -0500 dataaccessd[484]: <PCInterfaceUsabilityMonitor: 0x1003486e0> [NonCellular](en0): isInterfaceHistoricallyUsable? YES trackUsability YES offTransitions (
+Feb 19 16:02:11 iPad dataaccessd(PersistentConnection)[484] <Notice>: 2017-02-19 16:02:11 -0500 dataaccessd[484] 9852DCD9-793A-4838-B285-6A68661905AF: <PCConnectionManager: 0x100382fa0> _adjustPollTimerIfNecessary  rightStyle NO  isRunning YES  isInReconnectMode NO   intervalTimer (null)  firingIsImminent NO - should Adjust? NO
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: Wake cancel for 'com.apple.persistentconnection[apsd,402,0x100481000,com.apple.apsd(push.apple.com)-NonCellular]'(com.apple.persistentconnection[apsd,402,schedulingwake-com.apple.apsd(push.apple.com)-NonCellular-SystemWakeManager(0x1004ea4c0)]) completed for [2017-02-19 16:12:14 -0500] (took 0.004 seconds; result code 0)
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <APSCourier: 0x100423b40>: Sending keep alive message via conn: <APSCourierConnection: 0x10031c090> onInterface: NonCellular. Connected on 1 interfaces. Current link quality: wwan is off; wifi is good
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: Scheduling a wake for date 2017-02-19 16:12:31 -0500 leeway 0 wake identifier com.apple.persistentconnection[apsd,402,0x1004ad7d0,com.apple.apsd(push.apple.com)-NonCellular]
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: Wake schedule for 'com.apple.persistentconnection[apsd,402,0x1004ad7d0,com.apple.apsd(push.apple.com)-NonCellular]'(com.apple.persistentconnection[apsd,402,schedulingwake-com.apple.apsd(push.apple.com)-NonCellular-SystemWakeManager(0x1004c9a70)]) completed for [2017-02-19 16:12:31 -0500] (took 0.003 seconds; result code 0)
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <APSDecayTimer: 0x1003178d0>:APSNetworkMonitor decaying cost (1500 - 1) = 1499 for 5.055512 seconds
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <APSNetworkMonitor: 0x10042c310> wifi is historically cheap? NO  awakePercentage = 0.013351,  wifiGrowAttemptDelta 16  wifiKeepAliveInterval 600.000000
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <APSNetworkMonitor: 0x10042c310> _toggleWiFiAutoAssociateIfNecessary enabling wifi auto association highEnoughPushCost YES  wifiHistoricallyOK NO  serverLoadIsOK YES criticalReliability NO  serverSupportsDualMode YES  _dualMode 0 enableDualMode YES disableCostDrivenDualMode NO
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <APSCourier: 0x100423b40>: Outstanding data received: <1600> (length 2) onInterface: NonCellular. Connected on 1 interfaces.
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <APSCourier: 0x100423b40>: Stream processing: complete yes, invalid no, length parsed 2, parameters {
+    APSProtocolCommand = 22;
+}
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <APSCourier: 0x100423b40>: Received successful keep-alive ack on interface NonCellular: {
+    APSProtocolCommand = 22;
+}
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <APSNetworkMonitor: 0x10042c310> updating wifi keepAliveInterval 600.000000  growAttempts 78
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <APSCourier: 0x100423b40>: Calling into AWD for KeepAliveSent
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <APSCourier: 0x100423b40>: AWD for KeepAliveSent returned
+Feb 19 16:02:11 iPad apsd(PersistentConnection)[402] <Notice>: 2017-02-19 16:02:11 -0500 apsd[402]: <APSCourier: 0x100423b40>: Stream processing: complete no, invalid no, length parsed 0, parameters (null)

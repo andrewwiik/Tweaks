@@ -1,0 +1,2 @@
+@interface NCNotificationShortLookView : UIView
+@end

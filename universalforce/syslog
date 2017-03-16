@@ -1,0 +1,147 @@
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: --- syslogd restarted ---
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.AddressBookLegacy" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.CoreDuetAdmissionControl" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.HomeKit" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.appinstallation" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.clouddocs" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsAutocomplete" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.contacts.ContactsUICore" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.family.asl" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.iad.logging" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43: --- last message repeated 1 time ---
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.icloud.fmfd" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43: --- last message repeated 2 times ---
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.ind.asl" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.mobileme.fmf1" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.serverdocs" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: Configuration Notice:
+	ASL Module "com.apple.welcomemat" claims selected messages.
+	Those messages may not appear in standard system log files or in the ASL database.
+Feb 19 15:18:43 Andrews-iPhone http[2420]: MS:Notice: Injecting: (null) [http] (1348.22)
+Feb 19 15:18:43 Andrews-iPhone http[2420]: MS:Error: extension does not have filter
+Feb 19 15:18:43 Andrews-iPhone http[2420]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:43 Andrews-iPhone syslogd[2417]: ASL Sender Statistics
+Feb 19 15:18:43 Andrews-iPhone http[2420]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2420]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2420]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2420]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2421]: MS:Notice: Injecting: (null) [http] (1348.22)
+Feb 19 15:18:43 Andrews-iPhone http[2421]: MS:Error: extension does not have filter
+Feb 19 15:18:43 Andrews-iPhone http[2421]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2421]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2421]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2421]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2421]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2422]: MS:Notice: Injecting: (null) [http] (1348.22)
+Feb 19 15:18:43 Andrews-iPhone http[2422]: MS:Error: extension does not have filter
+Feb 19 15:18:43 Andrews-iPhone http[2422]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2422]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2422]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2422]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2422]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2423]: MS:Notice: Injecting: (null) [http] (1348.22)
+Feb 19 15:18:43 Andrews-iPhone http[2423]: MS:Error: extension does not have filter
+Feb 19 15:18:43 Andrews-iPhone http[2423]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2423]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2423]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2423]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2423]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2424]: MS:Notice: Injecting: (null) [http] (1348.22)
+Feb 19 15:18:43 Andrews-iPhone http[2424]: MS:Error: extension does not have filter
+Feb 19 15:18:43 Andrews-iPhone http[2424]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2424]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2424]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2424]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2424]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2425]: MS:Notice: Injecting: (null) [http] (1348.22)
+Feb 19 15:18:43 Andrews-iPhone http[2425]: MS:Error: extension does not have filter
+Feb 19 15:18:43 Andrews-iPhone http[2425]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2425]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2425]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:43 Andrews-iPhone http[2425]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:43 Andrews-iPhone http[2425]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2426]: MS:Notice: Injecting: (null) [http] (1348.22)
+Feb 19 15:18:44 Andrews-iPhone http[2426]: MS:Error: extension does not have filter
+Feb 19 15:18:44 Andrews-iPhone http[2426]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2426]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:44 Andrews-iPhone http[2426]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2426]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:44 Andrews-iPhone http[2426]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2427]: MS:Notice: Injecting: (null) [http] (1348.22)
+Feb 19 15:18:44 Andrews-iPhone http[2427]: MS:Error: extension does not have filter
+Feb 19 15:18:44 Andrews-iPhone http[2427]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2427]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:44 Andrews-iPhone http[2427]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2427]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:44 Andrews-iPhone http[2427]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2428]: MS:Notice: Injecting: (null) [http] (1348.22)
+Feb 19 15:18:44 Andrews-iPhone http[2428]: MS:Error: extension does not have filter
+Feb 19 15:18:44 Andrews-iPhone http[2428]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2428]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:44 Andrews-iPhone http[2428]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2428]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:44 Andrews-iPhone http[2428]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2429]: MS:Notice: Injecting: (null) [http] (1348.22)
+Feb 19 15:18:44 Andrews-iPhone http[2429]: MS:Error: extension does not have filter
+Feb 19 15:18:44 Andrews-iPhone http[2429]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2429]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:44 Andrews-iPhone http[2429]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2429]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:44 Andrews-iPhone http[2429]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2430]: MS:Notice: Injecting: (null) [http] (1348.22)
+Feb 19 15:18:44 Andrews-iPhone http[2430]: MS:Error: extension does not have filter
+Feb 19 15:18:44 Andrews-iPhone http[2430]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2430]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:44 Andrews-iPhone http[2430]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:44 Andrews-iPhone http[2430]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:44 Andrews-iPhone http[2430]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Notice: Injecting: (null) [uicache] (1348.22)
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Error: extension does not have filter
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Error: failure to check BatteryUsageEnhancer.dylib
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Notice: Loading: /Library/MobileSubstrate/DynamicLibraries/FLEXible.dylib
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Notice: Loading: /Library/MobileSubstrate/DynamicLibraries/Flex.dylib
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Error: failure to check Horseshoe.dylib
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Notice: Loading: /Library/MobileSubstrate/DynamicLibraries/JBFlexManager.dylib
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Notice: Loading: /Library/MobileSubstrate/DynamicLibraries/PeekaBoo.dylib
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: [PeekaBoo: Tweak.xm:648] ERROR: logos: nil class IGMainFeedViewController
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: [PeekaBoo: Tweak.xm:648] ERROR: logos: nil class NCTransitionManager
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Error: binary does not support this cpu type
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Error: failure to check UniversalForce.dylib
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Error: recompile with -Wl,-segalign,4000
+Feb 19 15:18:47 Andrews-iPhone uicache[2433]: MS:Error: failure to check xCon.dylib
+Feb 19 15:19:11 Andrews-iPhone iFile_[2329]: applicationWillEnterForeground:
+Feb 19 15:19:12 Andrews-iPhone iFile_[2329]: applicationDidBecomeActive:
+Feb 19 15:19:18 Andrews-iPhone iFile_[2329]: applicationWillResignActive:
+Feb 19 15:19:19 Andrews-iPhone iFile_[2329]: applicationDidEnterBackground:
+Feb 19 15:19:19 Andrews-iPhone iFile_[2329]: Could not set attributes on iFile's preferences
+Feb 19 15:19:31: --- last message repeated 1 time ---
+Feb 19 15:19:31 Andrews-iPhone iFile_[2329]: applicationWillEnterForeground:
+Feb 19 15:19:31 Andrews-iPhone iFile_[2329]: applicationDidBecomeActive:
+Feb 19 15:19:34 Andrews-iPhone iFile_[2329]: copying and adding 1 files

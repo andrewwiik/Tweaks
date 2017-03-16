@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Keep taking to take another photo. Tap away from the camera view to dismiss.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.bolencki13.pointandshoot</string>
+			<key>key</key>
+			<string>multiphoto</string>
+			<key>label</key>
+			<string>Multiple Photo</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Automatically displays camera instead of presenting normal options. Please also select which camera to show.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.bolencki13.pointandshoot</string>
+			<key>key</key>
+			<string>presentnow</string>
+			<key>label</key>
+			<string>Present Immediately</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>default</key>
+			<integer>1</integer>
+			<key>defaults</key>
+			<string>com.bolencki13.pointandshoot</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>presentnowcamera</string>
+			<key>validTitles</key>
+			<array>
+				<string>Back</string>
+				<string>Front</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Point-And-Shoot © bolencki13 2015</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Open Github Page</string>
+			<key>action</key>
+			<string>openGithubPage</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Point-And-Shoot</string>
+</dict>
+</plist>

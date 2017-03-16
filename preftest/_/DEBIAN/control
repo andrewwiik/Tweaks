@@ -1,0 +1,10 @@
+Package: edu.self.movecelll
+Name: MoveCelll
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Your Name
+Author: Your Name
+Section: Tweaks
+Version: 0.0.1-2
+Installed-Size: 106

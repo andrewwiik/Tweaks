@@ -1,0 +1,17 @@
+BUGS:
+
+- Editing mode
+- Corner clipping isn’t perfect
+- Adding icons to folders in editing mode leads to a crash
+
+OTHER WORK:
+
+- Handle edge case icons when generating icon co-ordinates
+? Handle edge cases when pinching to open
+- Make rotation look nicer
+- Allow user to have widgets “hover” (allows compatibility with stuff like GridLock)
+- Finish up on Help UI
+- Add “Setting up…” UI
+- Rewrite pinch handling to use a UIWindow over icons; kills all pinch issues
+- Add padlock image for iPad widget locking
+- Check that passcode popover on iPad iOS 8 looks right

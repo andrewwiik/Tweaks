@@ -1,0 +1,9 @@
+Package: com.creatix.conditionalwifi
+Name: ConditionalWiFi
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Block Apps from Accessing WiFi
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks

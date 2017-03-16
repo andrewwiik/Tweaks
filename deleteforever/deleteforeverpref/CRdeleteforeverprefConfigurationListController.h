@@ -1,0 +1,3 @@
+#import "CRdeleteforeverprefListController.h"
+@interface CRdeleteforeverprefConfigurationListController : CRdeleteforeverprefListController
+@end

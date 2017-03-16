@@ -1,0 +1,2 @@
+@interface MPAVController : NSObject
+@end

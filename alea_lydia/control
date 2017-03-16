@@ -1,0 +1,9 @@
+Package: com.creatix.alealydia
+Name: Alea_Lydia
+Depends: mobilesubstrate, com.cpdigitaldarkroom.lydia
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: A Awesome Custom Lydia View
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks

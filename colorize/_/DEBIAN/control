@@ -1,0 +1,10 @@
+Package: com.atwiiks.colorize
+Name: colorize
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Andrew Wiik
+Author: Andrew Wiik
+Section: Tweaks
+Version: 0.0.1-143
+Installed-Size: 85

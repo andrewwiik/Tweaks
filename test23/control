@@ -1,0 +1,9 @@
+Package: com.andy.test23
+Name: test23
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Andy
+Author: Andy
+Section: Tweaks

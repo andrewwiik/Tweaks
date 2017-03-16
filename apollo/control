@@ -1,0 +1,9 @@
+Package: com.atwiiks.apollo
+Name: Apollo
+Depends: mobilesubstrate
+Version: 2.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Andrew Wiik
+Author: Andrew Wiik
+Section: Tweaks

@@ -1,0 +1,11 @@
+Package: com.creatix.gazelle.music
+Name: Music
+Depends: mobilesubstrate, com.cpdigitaldarkroom.gazelle
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An Awesome Custom Gazelle View
+Maintainer: Creatix
+Author: Creatix
+Section: Addons (Gazelle)
+Tag: purpose::extension, compatible::ios8, compatible::ios9
+Icon: file:///Library/Application Support/Gazelle/Views/com.creatix.gazelle.music/Icon@2x.png

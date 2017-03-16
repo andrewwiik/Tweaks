@@ -1,0 +1,1743 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"farIco",
+				"farIconView"
+			],
+			[
+				"far",
+				"farIconView"
+			],
+			[
+				"widget",
+				"widgetCoord"
+			],
+			[
+				"SBIco",
+				"SBIconCoordinate"
+			],
+			[
+				"unsign",
+				"unsigned"
+			],
+			[
+				"pinch",
+				"pinchedIconView"
+			],
+			[
+				"SBICon",
+				"SBIconView"
+			],
+			[
+				"size",
+				"sizeForBundleID"
+			],
+			[
+				"CGSi",
+				"CGSize"
+			],
+			[
+				"CGRec",
+				"CGRectMake"
+			],
+			[
+				"SBIconLi",
+				"SBIconListView"
+			],
+			[
+				"pinc",
+				"pinchedIcon"
+			],
+			[
+				"insert",
+				"insertNode"
+			],
+			[
+				"initWith",
+				"initWithIdentifier"
+			],
+			[
+				"SBWDX",
+				"SBWDXWidgetIcon"
+			],
+			[
+				"isWDX",
+				"isWDXWidgetIcon"
+			],
+			[
+				"share",
+				"sharedHandler"
+			],
+			[
+				"remove",
+				"removeObjectForKey"
+			],
+			[
+				"hor",
+				"horiztonalSizes"
+			],
+			[
+				"SBIconCoo",
+				"SBIconCoordinateMake"
+			],
+			[
+				"coorid",
+				"coordinate"
+			],
+			[
+				"SBCoord",
+				"SBIconCoordinateMake"
+			],
+			[
+				"CGSI",
+				"CGSizeMake"
+			],
+			[
+				"block",
+				"blockSize"
+			],
+			[
+				"SBICo",
+				"SBIconModel"
+			],
+			[
+				"usnig",
+				"unsignedLongLongValue"
+			],
+			[
+				"SBIconList",
+				"SBIconListModel"
+			],
+			[
+				"nodes",
+				"nodesToRemove"
+			],
+			[
+				"objec",
+				"object"
+			],
+			[
+				"fix",
+				"fixedIcons"
+			],
+			[
+				"SBIC",
+				"SBIcon"
+			],
+			[
+				"origi",
+				"originalIcons"
+			],
+			[
+				"indexFor",
+				"indexForLeafIconWithIdentifier"
+			],
+			[
+				"obje",
+				"object"
+			],
+			[
+				"object",
+				"objectForKey"
+			],
+			[
+				"fixed",
+				"fixedIcons"
+			],
+			[
+				"inset",
+				"insertObject"
+			],
+			[
+				"ori",
+				"originalIconsFixed"
+			],
+			[
+				"bundle",
+				"bundleID"
+			],
+			[
+				"shared",
+				"sharedHandler"
+			],
+			[
+				"icon",
+				"iconIndexes"
+			],
+			[
+				"NSMut",
+				"NSMutableArray"
+			],
+			[
+				"NSMuta",
+				"NSMutableDictionary"
+			],
+			[
+				"orig",
+				"originalIcons"
+			],
+			[
+				"orign",
+				"originalIconsFixed"
+			],
+			[
+				"origina",
+				"originalIcons"
+			],
+			[
+				"origna",
+				"originalIconsFixed"
+			],
+			[
+				"original",
+				"originalIconsFixed"
+			],
+			[
+				"NSM",
+				"NSMutableArray"
+			],
+			[
+				"origin",
+				"originalIcons"
+			],
+			[
+				"unsi",
+				"unsigned"
+			],
+			[
+				"SBIc",
+				"SBIcon"
+			],
+			[
+				"index",
+				"indexWrapper"
+			],
+			[
+				"image",
+				"imageFromView"
+			],
+			[
+				"SBI",
+				"SBIcon"
+			],
+			[
+				"interfac",
+				"interface"
+			],
+			[
+				"SBIcon",
+				"SBIconImageView"
+			],
+			[
+				"SBWDXPl",
+				"SBWDXPlaceholderIconImageView"
+			],
+			[
+				"SBWD",
+				"SBWDXPlaceholderIcon"
+			],
+			[
+				"interfa",
+				"interface"
+			],
+			[
+				"interf",
+				"interface"
+			],
+			[
+				"prop",
+				"proposedOrder"
+			],
+			[
+				"pr",
+				"proposedOrder"
+			],
+			[
+				"CGPoi",
+				"CGPointMake"
+			],
+			[
+				"conte",
+				"contentView"
+			],
+			[
+				"MPU",
+				"MPUVibrantContentEffectView"
+			],
+			[
+				"content",
+				"contentView"
+			],
+			[
+				"UIVi",
+				"UIView"
+			],
+			[
+				"Music",
+				"MusicWidget"
+			],
+			[
+				"MUsic",
+				"MusicRemoteController"
+			],
+			[
+				"inter",
+				"interface"
+			],
+			[
+				"proper",
+				"property"
+			],
+			[
+				"replace",
+				"replaceCoords"
+			],
+			[
+				"SBIconCo",
+				"SBIconController"
+			],
+			[
+				"SBCo",
+				"SBIconCoordinateValue"
+			],
+			[
+				"prima",
+				"primaryWidgetCoordinates"
+			],
+			[
+				"ns",
+				"NSValue"
+			],
+			[
+				"SBic",
+				"SBIconCoordinateValue"
+			],
+			[
+				"setEff",
+				"setEffectImage"
+			],
+			[
+				"view",
+				"viewTemp"
+			],
+			[
+				"blur",
+				"blurView"
+			],
+			[
+				"CGRE",
+				"CGRectMake"
+			],
+			[
+				"initWi",
+				"initWithFrame"
+			],
+			[
+				"vie",
+				"viewTemp"
+			],
+			[
+				"current",
+				"currentNowPlayingArtwork"
+			],
+			[
+				"CGSize",
+				"CGSizeMake"
+			],
+			[
+				"pla",
+				"playController"
+			],
+			[
+				"upda",
+				"setShouldUpdateNowPlayingArtwork"
+			],
+			[
+				"UIView",
+				"UIViewController"
+			],
+			[
+				"reload",
+				"reloadCustomWidgetCoordinates"
+			],
+			[
+				"sbic",
+				"SBIconCoordinateValue"
+			],
+			[
+				"bundleIden",
+				"bundleIdentifier"
+			],
+			[
+				"vale",
+				"valueForKey"
+			],
+			[
+				"prm",
+				"primaryWidgetCoordinates"
+			],
+			[
+				"NSMU",
+				"NSMutableDictionary"
+			],
+			[
+				"insetr",
+				"insertionPath"
+			],
+			[
+				"primary",
+				"primaryWidgetIndex"
+			],
+			[
+				"iconCoo",
+				"iconCoordinateForIndex"
+			],
+			[
+				"iconCo",
+				"iconCoordinate"
+			],
+			[
+				"primar",
+				"primaryWidgetCoordinates"
+			],
+			[
+				"dragged",
+				"draggedIcon"
+			],
+			[
+				"cont",
+				"containsBundleID"
+			],
+			[
+				"taken",
+				"takenIconCoordinates"
+			],
+			[
+				"placeho",
+				"palceholderCoords"
+			],
+			[
+				"coordinatefor",
+				"iconCoordinateForIndex"
+			],
+			[
+				"valueWi",
+				"valueWithSBIconCoordinate"
+			],
+			[
+				"coordinateFor",
+				"coordinateForIconWithIndex"
+			],
+			[
+				"take",
+				"takenIconCoordinates"
+			],
+			[
+				"coord",
+				"coordinateForIndexOriginal"
+			],
+			[
+				"value",
+				"valueWithSBIconCoordinate"
+			],
+			[
+				"widg",
+				"widgetCoordinates"
+			],
+			[
+				"isEq",
+				"isEqualToString"
+			],
+			[
+				"SBFOl",
+				"SBFolderController"
+			],
+			[
+				"padd",
+				"horizontalIconPadding"
+			],
+			[
+				"iconAt",
+				"iconAtIndex"
+			],
+			[
+				"SBFOlder",
+				"SBFolderView"
+			],
+			[
+				"SBFOld",
+				"SBFolderView"
+			],
+			[
+				"touch",
+				"touchPoint"
+			],
+			[
+				"forto",
+				"iconListViewForTouch"
+			],
+			[
+				"SBFOLd",
+				"SBFolderView"
+			],
+			[
+				"defa",
+				"defaultIconSize"
+			],
+			[
+				"CGPO",
+				"CGPoint"
+			],
+			[
+				"drag",
+				"draggedIconView"
+			],
+			[
+				"drg",
+				"draggedIconView"
+			],
+			[
+				"SBIconView",
+				"SBIconViewMap"
+			],
+			[
+				"SBFolder",
+				"SBFolderView"
+			],
+			[
+				"contains",
+				"containsIcon"
+			],
+			[
+				"applic",
+				"applicationBundleID"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Tweak.xm",
+			"settings":
+			{
+				"buffer_size": 31727,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "IBIconHandler.zip",
+			"settings":
+			{
+				"buffer_size": 1533380,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Questions.md",
+			"settings":
+			{
+				"buffer_size": 18,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Old.xm",
+			"settings":
+			{
+				"buffer_size": 32502,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Older.xm",
+			"settings":
+			{
+				"buffer_size": 35071,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SBWDXPlaceholderIcon.xm",
+			"settings":
+			{
+				"buffer_size": 5402,
+				"line_ending": "Windows",
+				"name": "@implementation NSObject (LiberiOSIcons)"
+			}
+		},
+		{
+			"contents": "if ([[[self icon] applicationBundleID] isEqualToString:@\"com.apple.Music\"]) {\n\n				//self.clipsToBounds = YES;\n				if (!self.playController)\n				self.playController = [[%c(MPUNowPlayingController) alloc] init];\n				[self.playController setShouldUpdateNowPlayingArtwork:YES];\n				[self.playController _updateCurrentNowPlaying];\n\n				_UIBackdropViewSettings *blurSettings= [_UIBackdropViewSettings MPU_settingsForNowPlayingBackdrop];\n				MPUBlurEffectView *blurView = [[%c(MPUBlurEffectView) alloc] initWithFrame:CGRectZero];\n				[blurView setEffectSettings:blurSettings];\n				[blurView setEffectImage:[self updateArtwork]];\n				[blurView setReferenceView:blurView];\n				blurView.translatesAutoresizingMaskIntoConstraints = NO;\n				viewTemp.clipsToBounds = YES;\n				blurView.clipsToBounds = YES;\n				[viewTemp addSubview:blurView];\n\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:blurView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:blurView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:blurView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:2 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:blurView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:0]];\n				\n\n				MPUVibrantContentEffectView *contentView1 = [[%c(MPUVibrantContentEffectView) alloc] initWithFrame:CGRectMake(0,0,self.frame.size.width, self.frame.size.height)];\n				[contentView1 setReferenceView:blurView];\n				[contentView1 setEffectImage:[self updateArtwork]];\n				[contentView1 setEffectSettings:[_UIBackdropViewSettings MPU_settingsForNowPlayingVibrantContent]];\n				contentView1.translatesAutoresizingMaskIntoConstraints = NO;\n\n				[viewTemp addSubview:contentView1];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:contentView1 attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:contentView1 attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:contentView1 attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:2 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:contentView1 attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:0]];\n\n\n				UIImageView *artworkView = [[UIImageView alloc] initWithImage:[UIImage imageWithImage:[self.playController currentNowPlayingArtwork] scaledToSize:CGSizeMake(self.frame.size.height, self.frame.size.height)]];\n				artworkView.translatesAutoresizingMaskIntoConstraints = NO;\n				artworkView.clipsToBounds = YES;\n\n				[viewTemp addSubview:artworkView];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:artworkView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:artworkView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:artworkView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:artworkView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeHeight multiplier:1 constant:0]];\n			\n				// UIView *buddy = [[UIView alloc] init];\n				// buddy.backgroundColor = [UIColor clearColor];\n				// buddy.clipsToBounds = YES;\n				// [[contentView1.contentView superview] addSubview:buddy];\n				// [contentView1 setValue:buddy forKey:@\"contentView\"];\n\n				MPUMediaControlsTitlesView *titles = [[NSClassFromString(@\"MPUMediaControlsTitlesView\") alloc] initWithMediaControlsStyle:0];\n				[contentView1.contentView addSubview:titles];\n				titles.frame = CGRectMake(0,(self.frame.size.height+40)/2,self.frame.size.width - self.frame.size.height-30, 40);\n				titles.center = CGPointMake((self.frame.size.width-self.frame.size.height)/2, self.frame.size.height/2);\n				[titles updateTrackInformationWithNowPlayingInfo:[self.playController currentNowPlayingInfo]];\n			}\n\n\n%new\n- (void)fixLabels {\n	self.songLabel.translatesAutoresizingMaskIntoConstraints = NO;\n				self.songLabel.font = [UIFont fontWithName:@\".SFUIText-Regular\" size:17];\n				self.songLabel.text = (NSString *)[[self.playController currentNowPlayingInfo] objectForKey:@\"kMRMediaRemoteNowPlayingInfoTitle\"];\n				self.songLabel.textColor = [UIColor whiteColor];\n				//self.songLabel.opaque = NO;\n				//self.songLabel.layer.compositingFilter = [NSClassFromString(@\"CAFilter\") filterWithName:@\"plusD\"];\n				[[self.songLabel superview] addConstraint:[NSLayoutConstraint constraintWithItem:self.songLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:[self.songLabel superview] attribute:NSLayoutAttributeLeft multiplier:1 constant:40]];\n				[[self.songLabel superview] addConstraint:[NSLayoutConstraint constraintWithItem:self.songLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:[self.songLabel superview] attribute:NSLayoutAttributeCenterY multiplier:1 constant:2]];\n				\n				self.artistLabel.translatesAutoresizingMaskIntoConstraints = NO;\n				self.artistLabel.font = [UIFont fontWithName:@\".SFUIText-Regular\" size:12];\n				self.artistLabel.text = (NSString *)[[self.playController currentNowPlayingInfo] objectForKey:@\"kMRMediaRemoteNowPlayingInfoArtist\"];\n				self.artistLabel.textColor = [UIColor colorWithRed:0.3f green:0.3f blue:0.3f alpha:1.0f];\n				//self.artistLabel.opaque = NO;\n				//self.artistLabel.layer.compositingFilter = [NSClassFromString(@\"CAFilter\") filterWithName:@\"plusD\"];\n				[[self.artistLabel superview] addConstraint:[NSLayoutConstraint constraintWithItem:self.artistLabel attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:[self.artistLabel superview] attribute:NSLayoutAttributeLeft multiplier:1 constant:10]];\n				[[self.artistLabel superview] addConstraint:[NSLayoutConstraint constraintWithItem:self.artistLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.songLabel attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];\n}\n%new\n- (UIImage *)updateArtwork {\n	if (!self.playController) self.playController = [[%c(MPUNowPlayingController) alloc] init];\n			[self.playController setShouldUpdateNowPlayingArtwork:YES];\n			[self.playController _updateCurrentNowPlaying];\n			\n			return [UIImage imageWithImage:[self.playController currentNowPlayingArtwork] scaledToSize:CGSizeMake(self.frame.size.width-self.frame.size.height, self.frame.size.width-self.frame.size.height)];\n}\n\n\n\nf ([[[self icon] applicationBundleID] isEqualToString:@\"com.apple.Music\"]) {\n\n				//self.clipsToBounds = YES;\n				if (!self.playController)\n				self.playController = [[%c(MPUNowPlayingController) alloc] init];\n				[self.playController setShouldUpdateNowPlayingArtwork:YES];\n				[self.playController _updateCurrentNowPlaying];\n\n				_UIBackdropViewSettings *blurSettings= [_UIBackdropViewSettings MPU_settingsForNowPlayingBackdrop];\n				MPUBlurEffectView *blurView = [[%c(MPUBlurEffectView) alloc] initWithFrame:CGRectZero];\n				[blurView setEffectSettings:blurSettings];\n				[blurView setEffectImage:[self updateArtwork]];\n				[blurView setReferenceView:blurView];\n				blurView.translatesAutoresizingMaskIntoConstraints = NO;\n				viewTemp.clipsToBounds = YES;\n				blurView.clipsToBounds = YES;\n				[viewTemp addSubview:blurView];\n\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:blurView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:blurView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:blurView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:2 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:blurView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:0]];\n				\n\n				MPUVibrantContentEffectView *contentView1 = [[%c(MPUVibrantContentEffectView) alloc] initWithFrame:CGRectMake(0,0,self.frame.size.width, self.frame.size.height)];\n				[contentView1 setReferenceView:blurView];\n				[contentView1 setEffectImage:[self updateArtwork]];\n				[contentView1 setEffectSettings:[_UIBackdropViewSettings MPU_settingsForNowPlayingVibrantContent]];\n				contentView1.translatesAutoresizingMaskIntoConstraints = NO;\n\n				[viewTemp addSubview:contentView1];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:contentView1 attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:contentView1 attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:contentView1 attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:2 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:contentView1 attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:0]];\n\n\n				UIImageView *artworkView = [[UIImageView alloc] initWithImage:[UIImage imageWithImage:[self.playController currentNowPlayingArtwork] scaledToSize:CGSizeMake(self.frame.size.height, self.frame.size.height)]];\n				artworkView.translatesAutoresizingMaskIntoConstraints = NO;\n				artworkView.clipsToBounds = YES;\n\n				[viewTemp addSubview:artworkView];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:artworkView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:artworkView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:artworkView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:-1]];\n				[self addConstraint:[NSLayoutConstraint constraintWithItem:artworkView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeHeight multiplier:1 constant:0]];\n			\n				// UIView *buddy = [[UIView alloc] init];\n				// buddy.backgroundColor = [UIColor clearColor];\n				// buddy.clipsToBounds = YES;\n				// [[contentView1.contentView superview] addSubview:buddy];\n				// [contentView1 setValue:buddy forKey:@\"contentView\"];\n\n				MPUMediaControlsTitlesView *titles = [[NSClassFromString(@\"MPUMediaControlsTitlesView\") alloc] initWithMediaControlsStyle:0];\n				[contentView1.contentView addSubview:titles];\n				titles.frame = CGRectMake(0,(self.frame.size.height+40)/2,self.frame.size.width - self.frame.size.height-30, 40);\n				titles.center = CGPointMake((self.frame.size.width-self.frame.size.height)/2, self.frame.size.height/2);\n				[titles updateTrackInformationWithNowPlayingInfo:[self.playController currentNowPlayingInfo]];\n			}\n			if ([[[self icon] applicationBundleID] isEqualToString:@\"com.apple.Maps\"]) {\n				self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 200,200)];\n            	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@\"/var/mobile/Library/Widgets/FlipDate8/Widget.html\"]]];\n            	self.webView.backgroundColor = [UIColor clearColor];\n            	self.webView.opaque = NO;\n            	self.webView.scrollView.scrollEnabled = NO;\n            	self.webView.scrollView.scrollsToTop = NO;\n            	self.webView.scrollView.showsHorizontalScrollIndicator = NO;\n            	self.webView.scrollView.showsVerticalScrollIndicator = NO;\n            	self.webView.scrollView.minimumZoomScale = 1.0;\n            	self.webView.scrollView.maximumZoomScale = 1.0;\n            	self.webView.scalesPageToFit = NO;\n            	self.webView.suppressesIncrementalRendering = YES;\n           	 	[self.webView stringByEvaluatingJavaScriptFromString:@\"document.body.style.zoom = 1.0;\"];\n           		[self.webView stringByEvaluatingJavaScriptFromString:@\"document.documentElement.style.webkitUserSelect='none';\"];\n            	[self.webView stringByEvaluatingJavaScriptFromString:@\"document.documentElement.style.webkitTouchCallout='none';\"];\n            	[viewTemp addSubview:self.webView];\n			}",
+			"file": "Music.xm",
+			"file_size": 7575,
+			"file_write_time": 131065269602414862,
+			"settings":
+			{
+				"buffer_size": 13788,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "iOS_Blocks.plist",
+			"settings":
+			{
+				"buffer_size": 57,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#import \"headers.h\"\n\n@interface CRXMusicWidgetViewController : UIViewController\n@end",
+			"file": "CRXMusicWidgetController.h",
+			"file_size": 87,
+			"file_write_time": 131063572601873538,
+			"settings":
+			{
+				"buffer_size": 84,
+				"line_ending": "Windows",
+				"name": "#import \"headers.h\""
+			}
+		},
+		{
+			"file": "Music/CRXMusicWidgetController.m",
+			"settings":
+			{
+				"buffer_size": 363,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Music/CRXMusicWidgetController.h",
+			"settings":
+			{
+				"buffer_size": 85,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Makefile",
+			"settings":
+			{
+				"buffer_size": 338,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/C/home/awiik/theos/makefiles/package/deb.mk",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/cygwin64/home/awiik/theos/makefiles/package/deb.mk",
+			"settings":
+			{
+				"buffer_size": 2835,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "IBIconHandler.h",
+			"settings":
+			{
+				"buffer_size": 727,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "IBIconHandler.m",
+			"settings":
+			{
+				"buffer_size": 4380,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "SBHelpPlaceholderIcon.h",
+			"settings":
+			{
+				"buffer_size": 295,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "CustomIcon.xm",
+			"settings":
+			{
+				"buffer_size": 4315,
+				"line_ending": "Windows",
+				"name": "@implementation NSObject (LiberiOSIcons)"
+			}
+		},
+		{
+			"file": "SBHelpPlaceholderIcon.m",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "@class _UIBackdropView;\n@class _UIBackdropViewSettings;\n@class _UIBackdropViewSettingsCombiner;\n@class SBLeafIcon, SBIcon, SBIconView, SBIconImageView, SBWDXPlaceholderIcon, SBWDXPlaceholderIconView, SBWDXPlaceholderIconImageView;\n@class SBFolderView, MPUNowPlayingController;\ntypedef struct SBIconCoordinate {\n	long long row;\n	long long col;\n} SBIconCoordinate;\n\n\n@interface _UIBackdropView : UIView\n@property (nonatomic, retain) UIView *contentView;\n@property(retain) _UIBackdropViewSettings *outputSettings;\n- (id)initWithStyle:(int)arg1;\n- (id)initWithSettings:(_UIBackdropViewSettings *)arg1;\n- (void)transitionIncrementallyToPrivateStyle:(int)arg1 weighting:(CGFloat)arg2;\n- (void)transitionIncrementallyToStyle:(int)arg1 weighting:(CGFloat)arg2;\n- (void)transitionIncrementallyToSettings:(_UIBackdropViewSettings *)arg1 weighting:(CGFloat)arg2;\n- (void)setAppliesOutputSettingsAnimationDuration:(CGFloat)duation;\n- (void)transitionToSettings:(id)arg1;\n\n@end\n\n@interface _UIBackdropViewSettings : NSObject\n@property (nonatomic) BOOL appliesTintAndBlurSettings;\n@property (nonatomic) int blurHardEdges;\n@property (nonatomic, copy) NSString *blurQuality;\n@property (nonatomic) CGFloat blurRadius;\n@property (nonatomic) BOOL blursWithHardEdges;\n@property (nonatomic) float colorBurnTintAlpha;\n@property (nonatomic) float colorBurnTintLevel;\n@property (nonatomic, retain) UIImage *colorBurnTintMaskImage;\n@property (nonatomic) float colorOffsetAlpha;\n@property (nonatomic, retain) NSValue *colorOffsetMatrix;\n@property (nonatomic, retain) UIColor *colorTint;\n@property (nonatomic) CGFloat colorTintAlpha;\n@property (nonatomic) float colorTintMaskAlpha;\n@property (nonatomic, retain) UIImage *colorTintMaskImage;\n@property (nonatomic, readonly) UIColor *combinedTintColor;\n@property (nonatomic) BOOL darkenWithSourceOver;\n@property (nonatomic) float darkeningTintAlpha;\n@property (nonatomic) float darkeningTintBrightness;\n@property (nonatomic) float darkeningTintHue;\n@property (nonatomic, retain) UIImage *darkeningTintMaskImage;\n@property (nonatomic) float darkeningTintSaturation;\n@property (nonatomic) BOOL explicitlySetGraphicsQuality;\n@property (nonatomic) float extendedRangeClamp;\n@property (nonatomic) float filterMaskAlpha;\n@property (nonatomic, retain) UIImage *filterMaskImage;\n@property (nonatomic) int graphicsQuality;\n@property (nonatomic) CGFloat grayscaleTintAlpha;\n@property (nonatomic) float grayscaleTintLevel;\n@property (nonatomic) float grayscaleTintMaskAlpha;\n@property (nonatomic, retain) UIImage *grayscaleTintMaskImage;\n@property (nonatomic, retain) UIColor *legibleColor;\n@property (nonatomic) BOOL lightenGrayscaleWithSourceOver;\n@property (nonatomic) int renderingHint;\n@property (nonatomic) BOOL requiresColorStatistics;\n@property (nonatomic) float saturationDeltaFactor;\n@property (nonatomic) float scale;\n@property (nonatomic) int stackingLevel;\n@property (nonatomic) double statisticsInterval;\n@property (nonatomic, readonly) int style;\n@property (nonatomic) int suppressSettingsDidChange;\n@property (nonatomic) BOOL usesBackdropEffectView;\n@property (nonatomic) BOOL usesColorBurnTintView;\n@property (nonatomic) BOOL usesColorOffset;\n@property (nonatomic) BOOL usesColorTintView;\n@property (nonatomic) BOOL usesContentView;\n@property (nonatomic) BOOL usesDarkeningTintView;\n@property (nonatomic) BOOL usesGrayscaleTintView;\n@property (nonatomic) unsigned int version;\n@property (nonatomic) float zoom;\n@property (nonatomic) BOOL zoomsBack;\n+ (id)settingsForStyle:(int)arg1;\n+ (instancetype)settingsForStyle:(int)style weighting:(CGFloat)weight previousSettings:(_UIBackdropViewSettings *)previous;\n- (id)initWithDefaultValues;\n+ (id)MPU_settingsForNowPlayingBackdrop;\n+ (id)MPU_settingsForNowPlayingVibrantContent;\n@end\n\n@interface _UIBackdropViewSettingsCombiner : _UIBackdropViewSettings\n@property (nonatomic, retain) _UIBackdropViewSettings *inputSettingsA;\n@property (nonatomic, retain) _UIBackdropViewSettings *inputSettingsB;\n@property CGFloat weighting;\n@end\n\n\n\n\n@interface MPUEffectView : UIView\n\n\n\n+ (void)coordinateAsyncEffectViewPropertyChanges:(id)arg1 withAnimationBlock:(id)arg2;\n\n- (id)effectCache;\n- (id)effectImage;\n- (id)effectSettings;\n- (id)referenceView;\n- (void)setEffectCache:(id)arg1;\n- (void)setEffectImage:(id)arg1;\n- (void)setEffectSettings:(id)arg1;\n- (void)setReferenceView:(id)arg1;\n- (void)updateEffect;\n\n@end\n\n@interface MPUBlurEffectView : MPUEffectView\n\n\n- (id)blurImageView;\n- (id)blurView;\n- (id)initWithFrame:(CGRect)arg1;\n- (void)layoutSubviews;\n- (void)setBlurImageView:(id)arg1;\n- (void)setBlurView:(id)arg1;\n- (void)setReferenceView:(id)arg1;\n- (void)updateEffect;\n\n@end\n\n\n@interface MPUVibrantContentEffectView : MPUEffectView \n\n@property (nonatomic, readonly) UIView *contentView;\n@property (nonatomic, retain) UIView *vibrantContainer;\n@property (nonatomic, retain) UIView *maskedView;\n\n- (id)_layersNotWantingVibrancyForSubviewsOfView:(id)arg1;\n- (id)blurImageView;\n- (UIView*)contentView;\n- (void)disableVibrancyForLayer:(id)arg1;\n- (id)hitTest:(CGPoint)arg1 withEvent:(id)arg2;\n- (id)initWithFrame:(CGRect)arg1;\n- (id)layerPinningViewMap;\n- (void)layoutSubviews;\n- (id)plusDView;\n- (void)reenableVibrancyForLayer:(id)arg1;\n- (void)setBlurImageView:(id)arg1;\n- (void)setLayerPinningViewMap:(id)arg1;\n- (void)setPlusDView:(id)arg1;\n- (void)setReferenceView:(id)arg1;\n- (void)setTintingView:(id)arg1;\n- (void)setVibrancyEnabled:(BOOL)arg1;\n- (void)setVibrantContainer:(UIView*)arg1;\n- (void)tintColorDidChange;\n- (id)tintingView;\n- (void)updateEffect;\n- (void)updateVibrancyForContentView;\n- (BOOL)vibrancyEnabled;\n- (UIView*)vibrantContainer;\n\n@end\n@class MusicAVPlayer;\n@interface MusicAVPlayer : NSObject\n+(instancetype)sharedAVPlayer;\n-(id)init;\n@end\n\n\n@class MusicMiniPlayerViewController;\n\n@interface MusicMiniPlayerViewController : UIViewController\n\n- (id)initWithPlayer:(MusicAVPlayer *)arg1;\n\n@end\n\n@class MusicRemoteController;\n\n@interface MusicRemoteController : NSObject\n\n-(void)_playbackStateDidChangeNotification:(id)arg1;\n-(id)initWithPlayer:(MusicAVPlayer *)arg1;\n-(MusicAVPlayer *)player;\n-(id)init;\n@end\n\n@class MPUMediaControlsTitlesView;\n@interface MPUMediaControlsTitlesView : UIView\n- (id)initWithMediaControlsStyle:(int)arg1;\n- (void)updateTrackInformationWithNowPlayingInfo:(id)arg1;\n\n@end\n\n@interface SBIconListModel : NSObject\n- (BOOL)containsLeafIconWithIdentifier:(id)arg1;\n- (unsigned long long)indexForLeafIconWithIdentifier:(id)arg1;\n- (id)iconAtIndex:(unsigned long long)arg1 ;\n- (void)removeIcon:(id)icon;\n- (id)placeIcon:(id)arg1 atIndex:(unsigned long long *)arg2;\n@end\n\n@interface SBIcon : NSObject\n- (id)applicationBundleID;\n- (BOOL)isFolderIcon;\n- (id)icon;\n- (BOOL)isEmptyPlaceholder;\n- (BOOL)isPlaceholder;\n- (id)referencedIcon;\n@end\n\n@interface SBApplicationIcon : SBIcon\n- (id)leafIdentifier;\n@end\n\n@interface SBFolderIcon : SBIcon\n- (id)nodeDescriptionWithPrefix:(id)arg1;\n@end\n\n@interface SBFolder : NSObject\n@end\n\n@interface SBIconImageView : UIView\n@end\n\n@interface SBIconView : UIView\n@property (nonatomic, retain) MPUNowPlayingController *playController;\n@property (nonatomic) BOOL isBlockForm;\n@property (nonatomic, retain) UILabel *songLabel;\n@property (nonatomic, retain) UILabel *artistLabel;\n@property (nonatomic, retain) UIWebView *webView;\n+ (CGSize)defaultIconImageSize;\n+ (CGSize)defaultIconSize;\n- (SBIcon*)icon;\n- (SBIconImageView*)_iconImageView;\n- (void)reloadViews;\n- (UIImage *)updateArtwork;\n@end\n\n@interface SBLeafIcon : SBIcon\n- (id)initWithLeafIdentifier:(id)arg1 applicationBundleID:(id)arg2;\n- (id)initWithLeafIdentifier:(id)arg1;\n- (id)leafIdentifier;\n\n@end\n\n@interface SBIconListView : UIView\n@property (nonatomic, retain) NSMutableArray *fullWidgetCoordinates;\n@property (nonatomic, retain) NSMutableDictionary *primaryWidgetCoordinates;\n@property (nonatomic, retain) NSMutableDictionary *takenIconCoordinates;\n+ (unsigned long long)maxIcons;\n+ (unsigned long long)iconColumnsForInterfaceOrientation:(long long)arg1;\n+ (unsigned long long)iconRowsForInterfaceOrientation:(long long)arg1;\n- (id)icons;\n- (void)reloadWidgetLocations;\n- (void)reloadWidgetLocationForBundleIdentifier:(NSString *)arg1;\n- (SBIconListModel *)model;\n- (BOOL)isFull;\n- (SBIconCoordinate)iconCoordinateForIndex:(unsigned long long)arg1 forOrientation:(long long)arg2;\n- (SBIcon*)modifiedIconForIcon:(SBIcon*)icon;\n- (BOOL)containsIcon:(id)arg1;\n- (void)setIconsNeedLayout;\n- (void)layoutIconsIfNeeded:(double)arg1 domino:(BOOL)arg2;\n- (id)insertIcon:(id)arg1 atIndex:(unsigned long long)arg2 moveNow:(_Bool)arg3;\n- (unsigned long long)indexForCoordinate:(SBIconCoordinate)arg1 forOrientation:(long long)arg2;\n- (NSMutableArray*)testLayout;\n- (NSMutableArray*)testLayout1;\n- (struct CGPoint)centerForIconCoordinate:(struct SBIconCoordinate)arg1;\n- (id)iconAtPoint:(struct CGPoint)arg1 index:(unsigned long long *)arg2;\n- (NSMutableArray*)testIndex;\n- (id)placeIcon:(id)arg1 atIndex:(unsigned long long)arg2 moveNow:(_Bool)arg3 pop:(_Bool)arg4;\n- (NSMutableArray *)takenPlaces;\n- (id)insertIcon:(id)arg1 atIndex:(unsigned long long)arg2 moveNow:(_Bool)arg3 pop:(_Bool)arg4;\n- (void)setCoordinate:(SBIconCoordinate)coord forBundleIdentifier:(NSString*)bundleIdentifier;\n- (SBIconView*)viewForIcon:(id)arg1;\n- (CGFloat)verticalIconPadding;\n- (CGFloat)horizontalIconPadding;\n- (void)reloadCustomWidgetCoordinates;\n- (id)iconAtPoint:(struct CGPoint)arg1 index:(NSUInteger *)arg2 proposedOrder:(int *)arg3 grabbedIcon:(id)arg4;\n- (void)layoutIconsNow;\n@end\n\n@interface SBFolderController : NSObject\n// ivar SBIcon *_grabbedIcon;\n- (SBIconListView *)iconListViewForTouch:(UITouch *)arg1;\n- (SBFolderController *)contentView;\n- (SBIconListView *)iconListViewContainingIcon:(id)arg1;\n\n- (void)_resetDragPauseTimerForPoint:(struct CGPoint)arg1 inIconListView:(id)arg2;\n@end\n\n@interface SBFolderView : UIView\n@property(retain, nonatomic) SBFolder *folder; // @synthesize folder=_folder;\n@end\n@class SBIconModel;\n@interface SBIconModel : NSObject\n- (SBIcon *)leafIconForIdentifier:(id)arg1;\n@end\n\n\n@interface SBIconController : UIViewController\n+ (id)sharedInstance;\n- (SBIconModel *)model;\n- (SBIcon *)grabbedIcon;\n- (SBIconListView *)currentRootIconList;\n- (void)removeIcon:(id)arg1 compactFolder:(_Bool)arg2;\n- (void)getListView:(id*)arg1 folder:(id*)arg2 relativePath:(id*)arg3 forIndexPath:(id)arg4 createIfNecessary:(BOOL)arg5;\n- (id)insertIcon:(id)icon intoListView:(id)view iconIndex:(int)index moveNow:(BOOL)now pop:(BOOL)pop;\n- (id)insertIcon:(id)arg1 intoListView:(id)arg2 iconIndex:(long long)arg3 moveNow:(_Bool)arg4;\n- (void)compactIconsInIconListsInFolder:(id)arg1 moveNow:(_Bool)arg2 limitToIconList:(id)arg3;\n- (id)_currentFolderController;\n- (SBFolderController *)_rootFolderController;\n- (NSString *)_debugStringForIconOrder:(int)arg1;\n@end\n\n\n@interface SBApplication : NSObject\n@property(copy, nonatomic) NSArray *staticShortcutItems;\n- (NSString*)bundleIdentifier;\n- (id)urlScheme;\n@end\n\n@interface SBApplicationShortcutMenu : UIView\n@property(retain, nonatomic) SBApplication *application;\n- (id)initWithFrame:(CGRect)arg1 application:(id)arg2 iconView:(id)arg3 interactionProgress:(id)arg4 orientation:(long long)arg5;\n- (void)_setupViews;\n- (void)_peekWithContentFraction:(double)arg1 smoothedBlurFraction:(double)arg2;\n- (void)dismissAnimated:(_Bool)arg1 completionHandler:(id)arg2;\n- (id)_shortcutItemsToDisplay;\n@end\n\n@interface SBSApplicationShortcutIcon : NSObject\n@end\n\n@interface SBSApplicationShortcutItem : NSObject\n- (void)setIcon:(id)arg1;\n- (void)setLocalizedSubtitle:(id)arg1;\n- (void)setLocalizedTitle:(id)arg1;\n- (void)setType:(id)arg1;\n@end\n\n@interface SBSApplicationShortcutSystemIcon : SBSApplicationShortcutIcon\n- (id)initWithType:(UIApplicationShortcutIconType)arg1;\n@end\n\n@interface SBIconViewMap : NSObject\n+ (id)homescreenMap;\n- (id)mappedIconViewForIcon:(id)arg1;\n@end\n\n@interface SBRootFolder : NSObject\n- (id)indexPathForIcon:(id)arg1;\n- (id)listAtIndex:(unsigned long long)arg1;\n- (unsigned long long)indexOfList:(id)arg1;\n@end\n\n@interface SBPlaceholderIcon : SBIcon\n+ (id)emptyPlaceholder;\n+ (id)grabbedIconPlaceholder;\n@end\n\n@interface SBWDXPlaceholderIcon : SBLeafIcon\n- (id)initWithIdentifier:(NSString *)identifier;\n- (BOOL)isWDXPlaceholderIcon;\n- (NSString *)WDXidentifier;\n@end\n\n@interface SBWDXPlaceholderIconView : SBIconView\n@end\n\n@interface SBWDXPlaceholderIconImageView : SBIconImageView\n@end\n\n@interface SBWDXWidgetIcon : SBLeafIcon\n- (id)initWithIdentifier:(NSString *)identifier;\n- (BOOL)isWDXPlaceholderIcon;\n- (NSString *)WDXidentifier;\n@end\n\n@interface SBWDXWidgetIconView : SBIconView\n@end\n\n@interface SBWDXWidgetIconImageView : SBIconImageView\n@end\n\n\n@interface SBIconIndexMutableList : NSObject\n- (void)insertNode:(id)arg1 atIndex:(unsigned long long)arg2;\n- (void)removeNode:(id)arg1;\n- (NSArray *)nodes;\n@end\n\n\n\n",
+			"file": "headers.h",
+			"file_size": 13297,
+			"file_write_time": 131067806909063997,
+			"settings":
+			{
+				"buffer_size": 12799,
+				"line_ending": "Windows",
+				"name": "@interface MPUBlurEffectView : MPUEffectView {"
+			}
+		}
+	],
+	"build_system": "Packages/Markdown Preview/Markdown.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Markdown Preview/Markdown.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Markdown Preview/Markdown.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "instal",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/ios_blocks"
+	],
+	"file_history":
+	[
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/ios_blocks/buddy.h",
+		"/C/cygwin64/home/awiik/theos/bin/fakeroot.sh",
+		"/C/cygwin64/home/awiik/theos/bin/dm.pl",
+		"/C/Users/awiik/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/ios_blocks/SBWDXPlaceholderIcon.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/ios_blocks/Old.xm",
+		"/C/Users/awiik/Pictures/WUIDynamicWeatherBackground.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/alea_lydia/ALEWeatherViewController.m",
+		"/C/Users/awiik/AppData/Local/Temp/3e06b195-86f3-42b2-b06f-c0b2f702917c/control",
+		"/C/Users/awiik/AppData/Local/Temp/scp24386/var/theos/include/Stocks/StockChartDisplayMode.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp54995/var/theos/include/Stocks/StocksAssistantChartView.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp17316/var/theos/include/Stocks/StockChartData.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp16011/var/theos/include/Stocks/StockGraphImageSet.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp27448/var/theos/include/Stocks/StockGraphView.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp15024/var/theos/include/Stocks/Stock.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp44651/var/theos/include/Weather/City.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp43805/var/theos/include/Weather/WeatherIconsUtility.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp50075/var/theos/include/Weather/DayForecast.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp51048/var/theos/include/Weather/HourlyForecast.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp23579/var/theos/include/Stocks/ChartLabelInfoManager.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp18395/var/theos/include/Stocks/SPChartView.h",
+		"/C/Users/awiik/AppData/Local/Temp/scp00249/var/theos/include/Stocks/StockManager.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/alea/Tweak.xm",
+		"/C/Users/awiik/AppData/Local/Temp/scp06488/var/theos/include/Weather/WeatherImageLoader.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/notetest/Tweak.xm",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/banana/.theos/_/Library/PreferenceBundles/Banana.bundle/Banana",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/banana/.theos/_/Library/PreferenceBundles/Banana.bundle/Root.plist",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/banana/.theos/obj/debug/arm64/Banana.bundle/Banana",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/banana/.theos/obj/debug/armv7/Banana.bundle/Banana",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/banana/.theos/obj/debug/Banana.bundle/Root.plist",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMMissedConversationViewController.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMMissedConversationViewController.m",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMMissedConversationTableCell.m",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMMissedConversationTableCell.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMPrefManager.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMMessageCourier.m",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMPrefManager.m",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMPresentationWindow.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMPresentationWindow.m",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMMessageCourier.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/Madrid.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/Hooks/Madrid.xm",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/Hooks/IMDaemonController.xm",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMComposerViewController.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMHelpers.m",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/Makefile",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMHelpers.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/CPMComposerViewController.m",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/madrid/.gitignore",
+		"/C/Users/awiik/AppData/Local/Temp/scp47987/var/www/root-ioscreatix/bugs/bug.php",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/quickcenter/quickcenter/QCRCrashCell.m",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/quickcenter/quickcenter/exec_as_root.m",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/quickcenter/quickcenter/crashlog_util.h",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/quickcenter/quickcenter/crashlog_util.m",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/quickconnect/Tweak.xm",
+		"/C/cygwin64/home/awiik/Dropbox/tweaks/quicksugar/Tweak.xm",
+		"/C/Users/awiik/Downloads/products-WB0R5L90S (1)/Static_Seed_Project/index.html",
+		"/C/Users/awiik/Downloads/weather-icons-master/weather-icons-master/css/weather-icons.css",
+		"/C/Users/awiik/Music/TransCanada/test.html",
+		"/C/Users/awiik/Music/TransCanada/sdfjsdjf.txt",
+		"/C/Users/awiik/Desktop/syslog",
+		"/C/cygwin64/home/awiik/tweaks/floater/Interfaces.h",
+		"/C/cygwin64/home/awiik/tweaks/floater/_/DEBIAN/control",
+		"/C/cygwin64/home/awiik/tweaks/carrot/Settings/Makefile",
+		"/C/cygwin64/home/awiik/tweaks/carrot/Settings/Carrot.plist",
+		"/C/cygwin64/home/awiik/tweaks/carrot/Preferences/Resources/Carrot.plist",
+		"/C/cygwin64/home/awiik/tweaks/carrot/Preferences/Makefile",
+		"/C/cygwin64/home/awiik/tweaks/carrot/Preferences/Resources/SwitchService.plist",
+		"/C/Users/awiik/AppData/Roaming/Sublime Text 3/Packages/User/boolpref.sublime-snippet",
+		"/C/Users/awiik/AppData/Roaming/Sublime Text 3/Packages/User/iftruebool.sublime-snippet",
+		"/C/Users/awiik/AppData/Roaming/Sublime Text 3/Packages/User/ifequalstring.sublime-snippet",
+		"/C/Users/awiik/AppData/Roaming/Sublime Text 3/Packages/User/bundleif.sublime-snippet",
+		"/C/Users/awiik/AppData/Roaming/Sublime Text 3/Packages/User/interfaceview.sublime-snippet",
+		"/C/cygwin64/home/awiik/tweaks/locktest/LPViewController.m",
+		"/C/cygwin64/home/awiik/tweaks/pointandshoot/settings/Resources/settings.plist",
+		"/C/Users/awiik/AppData/Local/Temp/scp08080/var/www/root-ioscreatix/beta/style.css",
+		"/C/Users/awiik/AppData/Local/Temp/scp52012/var/www/root-ioscreatix/bugs/index.html",
+		"/C/Users/awiik/AppData/Local/Temp/scp49753/var/www/root-ioscreatix/index.html",
+		"/C/Users/awiik/AppData/Local/Temp/scp45341/var/www/root-ioscreatix/translate/index.html",
+		"/C/Users/awiik/AppData/Local/Temp/scp54745/var/www/root-ioscreatix/beta/index.html",
+		"/C/cygwin64/home/awiik/tweaks/keyforce/keyforceprefs/keyforceprefs.h",
+		"/C/cygwin64/home/awiik/tweaks/keyforce/keyforceprefs/keyforceprefs.mm",
+		"/C/cygwin64/home/awiik/tweaks/keyforce/Tweak.xm",
+		"/C/Users/awiik/Downloads/Lab07vst/Lab07vst/Lab07st.java",
+		"/C/Users/awiik/Downloads/Package List.txt",
+		"/C/Users/awiik/Downloads/MobileSlideShow_2015-10-16-232040_Saqers-iPhone.syslog",
+		"/C/Users/awiik/Downloads/MobileSlideShow_2015-10-18-143657_HMH (3).syslog",
+		"/C/cygwin64/home/awiik/theos/include/macros/march.h",
+		"/C/cygwin64/home/awiik/theos/include/Preferences/PSDetailController.h",
+		"/C/cygwin64/home/awiik/tweaks/universalforce/Messages.h",
+		"/D/autorun.inf",
+		"/D/files/main.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"iconviewfor",
+			"indexfor",
+			"iconatinde",
+			"iconviewfor",
+			"redColor",
+			"pinch",
+			"com.apple.m",
+			"com.apple.",
+			"inserticon",
+			"inserticon:",
+			"compact",
+			"SBIConView",
+			"IBiconNeedslayout",
+			"insertionp",
+			"ispau",
+			"isdropp",
+			"movenext",
+			"movenextpage",
+			"movenextpage'",
+			"%orig",
+			"setObject:",
+			"reloadcust",
+			"SBIconListModel",
+			"SBIconImageView",
+			"leafident",
+			"SBIcon",
+			"SBIconListModel",
+			"isregula",
+			"iconatpoint",
+			"SBIcon",
+			"listView",
+			"self removei",
+			"domino",
+			"reloadlistViewWith",
+			"reloadcustom",
+			"removeicon:",
+			"indexfor",
+			"isRegular",
+			"contentv",
+			"domino",
+			"indexforCoo",
+			"fullwidg",
+			"coordinateforindex",
+			"BLOCK_SIZE",
+			"listViewFor",
+			"iconatin",
+			"defaulticon",
+			"default",
+			"iconview",
+			"iconfor",
+			"index",
+			"needsre",
+			"reloadListview",
+			"contains",
+			"City",
+			"value",
+			"companyname",
+			"init",
+			"istrans",
+			"condition",
+			"tempature",
+			"Tempature",
+			"tempature",
+			"temperature",
+			"tempature",
+			"day",
+			"lang",
+			"day",
+			"dayfore",
+			"QCR",
+			"banana",
+			"QuickCenter",
+			"quickcenter",
+			"height",
+			"tempspe",
+			"divider",
+			"balloon",
+			"top",
+			"20",
+			"17",
+			"54",
+			"create",
+			"guidforco",
+			"release",
+			"autore",
+			"CNCo",
+			"{\n",
+			"show-tablet",
+			"hidden-tablet",
+			"hidden-tab",
+			"removeo",
+			"remove",
+			"itemview",
+			"flip:",
+			"holdtime",
+			"is6s",
+			"stepper",
+			"6s",
+			"_FSSwitch",
+			"_FSSW",
+			"snapshot",
+			"SBSApplicationshortcutItem",
+			"SBFOlderIconView",
+			"iconView",
+			"SBApplicationShortcutMenuItemView",
+			"iconviewhelp",
+			"camerav",
+			"flashlight",
+			"stringval",
+			"as_root",
+			"root",
+			"as",
+			"root",
+			"exec",
+			"notif",
+			"notifer",
+			"monitor",
+			"notifier",
+			"release",
+			"autore",
+			"retain",
+			"for (",
+			"for",
+			"form",
+			"image",
+			"74",
+			"personce",
+			"PersonCell"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"temperature",
+			"Temperature",
+			"temperature",
+			"BNA",
+			"Banana",
+			"banana",
+			"QCRPersonCell",
+			"QCRPersonDetailViewController",
+			"QCRPersonCell",
+			"periodrangemobile",
+			"Weather",
+			"Top",
+			"self",
+			"UIForceGestureRecognizer",
+			"last",
+			"lastRadius",
+			"_bodyInput",
+			"UniversalForce",
+			"[[%c(UIMutableApplicationShortcutItem) alloc]",
+			"",
+			",",
+			"",
+			"touchedIcon.delegate",
+			"touchedIcon ",
+			"touchedIcon",
+			"*groupController",
+			"STKGroupController ",
+			"30",
+			"75",
+			"100",
+			" [lastTouch y]",
+			" [touch x]",
+			" [lastTouch x]",
+			" [touch getQuality]",
+			" [touch getRadius]",
+			" [lastTouch getRadius]",
+			" [lastTouch getDensity]",
+			" [touch getDensity]",
+			"[touch getDensity]",
+			"[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(activateSwipeMenu:)];",
+			"<=",
+			">=",
+			"<=",
+			"BatteryIcon",
+			"/BatteryIcon/batterycharging",
+			"<=",
+			"[[[AWBatteryViewImage icon] webClip]"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\cygwin64\\home\\awiik\\Dropbox\\tweaks\\ios_blocks"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 15,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Tweak.xm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								564,
+								385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Logos.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "IBIconHandler.zip",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1533380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Questions.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								9
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Old.xm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32502,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27441,
+								27451
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Logos.tmLanguage"
+						},
+						"translation.x": 3.0,
+						"translation.y": 8853.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Older.xm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35071,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19742,
+								19841
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Logos.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6153.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "SBWDXPlaceholderIcon.xm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5402,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5053,
+								5053
+							]
+						],
+						"settings":
+						{
+							"auto_name": "@implementation NSObject (LiberiOSIcons)",
+							"syntax": "Packages/User/Logos.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3735.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Music.xm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7492,
+								13788
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Logos.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2250.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "iOS_Blocks.plist",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "CRXMusicWidgetController.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 84,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#import \"headers.h\"",
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Music/CRXMusicWidgetController.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								356,
+								356
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Music/CRXMusicWidgetController.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 85,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 338,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/C/home/awiik/theos/makefiles/package/deb.mk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/C/cygwin64/home/awiik/theos/makefiles/package/deb.mk",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2413,
+								2413
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+						},
+						"translation.x": 4.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "IBIconHandler.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								700,
+								708
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "IBIconHandler.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "SBHelpPlaceholderIcon.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "CustomIcon.xm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"auto_name": "@implementation NSObject (LiberiOSIcons)",
+							"syntax": "Packages/User/Logos.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2076.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "SBHelpPlaceholderIcon.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "headers.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12799,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11793,
+								11815
+							]
+						],
+						"settings":
+						{
+							"auto_name": "@interface MPUBlurEffectView : MPUEffectView {",
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 781.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Makefile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 374.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>General</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.peekaboo</string>
+			<key>PostNotification</key>
+			<string>com.creatix.peekaboo.prefschanged</string>
+			<key>key</key>
+			<string>Enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Peek Sensitivity:</string>
+			<key>footerText</key>
+			<string>The amount your finger touching the screen needed to peek into something.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>defaults</key>
+			<string>com.creatix.peekaboo</string>
+			<key>PostNotification</key>
+			<string>com.creatix.peekaboo.prefschanged</string>
+			<key>default</key>
+			<real>48.37</real>
+			<key>min</key>
+			<real>5</real>
+			<key>max</key>
+			<real>80</real>
+			<key>showValue</key>
+			<true/>
+			<key>key</key>
+			<string>peekForceSensitivity</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Pop Sensitivity:</string>
+			<key>footerText</key>
+			<string>The amount your finger touching the screen needed to pop into something.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>defaults</key>
+			<string>com.creatix.peekaboo</string>
+			<key>PostNotification</key>
+			<string>com.creatix.peekaboo.prefschanged</string>
+			<key>default</key>
+			<real>60.38</real>
+			<key>min</key>
+			<real>5</real>
+			<key>max</key>
+			<real>80</real>
+			<key>showValue</key>
+			<true/>
+			<key>key</key>
+			<string>popForceSensitivity</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Haptic Feedback</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.peekaboo</string>
+			<key>PostNotification</key>
+			<string>com.creatix.peekaboo.prefschanged</string>
+			<key>key</key>
+			<string>hapticFeedbackPeekEnabled</string>
+			<key>label</key>
+			<string>On Peek</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.peekaboo</string>
+			<key>PostNotification</key>
+			<string>com.creatix.peekaboo.prefschanged</string>
+			<key>key</key>
+			<string>hapticFeedbackPopEnabled</string>
+			<key>label</key>
+			<string>On Pop</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Messages App</string>
+			<key>footerText</key>
+			<string>If you experience lag while peeking at messages you can disable the message preview actions using the switch below, which should then decrease the lag.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.peekaboo</string>
+			<key>PostNotification</key>
+			<string>com.creatix.peekaboo.prefschanged</string>
+			<key>key</key>
+			<string>messageActionsEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Peek-a-Boo</string>
+</dict>
+</plist>

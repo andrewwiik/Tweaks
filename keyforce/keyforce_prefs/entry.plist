@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = keyforce_prefs;
+	cell = PSLinkCell;
+	detail = keyforce_prefsListController;
+	icon = keyforce_prefs.png;
+	isController = 1;
+	label = keyforce_prefs;
+    };
+}

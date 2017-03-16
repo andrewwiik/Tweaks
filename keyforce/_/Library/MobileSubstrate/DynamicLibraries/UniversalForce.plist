@@ -1,0 +1,5 @@
+Filter = {
+  Executables = ("imagent");
+  Bundles = ( "com.apple.UIKit", "com.apple.springboard" );
+  Mode = "Any";
+};

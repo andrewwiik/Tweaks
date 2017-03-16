@@ -1,0 +1,10 @@
+Package: com.cpdigitaldarkroom.hearttransplant
+Name: Heart Transplant
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Add to My Music by Liking a Song
+Maintainer: CP Digital Darkroom <tweaks@cpdigitaldarkroom.support>
+Author: CP Digital Darkroom <tweaks@cpdigitaldarkroom.support>
+Section: Tweaks
+Version: 1.0-3
+Installed-Size: 85

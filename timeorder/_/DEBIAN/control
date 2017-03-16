@@ -1,0 +1,10 @@
+Package: com.atwiiks.timeorder
+Name: TimeOrder
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: ATWiiks
+Author: ATWiiks
+Section: Tweaks
+Version: 0.0.1-13
+Installed-Size: 149

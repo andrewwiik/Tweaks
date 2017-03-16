@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>com.messages.creatix.block</string>
+	<key>CFBundleExecutable</key>
+	<string>Messages</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.messages.creatix.block</string>
+	<key>icon</key>
+	<string>Icon</string>
+	<key>usesHTML</key>
+	<false/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>MinimumOSVersion</key>
+	<string>7.0</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
+	<key>NSPrincipalClass</key>
+	<string>@@PROJECT</string>
+	<key>IBKSupportedApps</key>
+	<array>
+<string>com.apple.Music</string>
+<string>com.apple.Messages</string>
+<string>com.apple.News</string>
+</array>
+	<key>IBKCustomBlockSize</key>
+	<dict>
+		<key>columns</key>
+		<string>4</string>
+		<key>rows</key>
+		<string>2</string>
+	</dict>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>iPhoneOS</string>
+	</array>
+</dict>
+</plist>

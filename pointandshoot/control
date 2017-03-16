@@ -1,0 +1,10 @@
+Package: com.bolencki13.point-and-shoot
+Name: Point-And-Shoot
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Replace the camera shortcut
+Maintainer: Brian Olencki
+Author: Brian Olencki
+Section: Tweaks
+Depiction: http://cydia.bolencki13.com/repo/depictions/?p=com.bolencki13.point-and-shoot

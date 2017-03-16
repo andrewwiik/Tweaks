@@ -1,0 +1,1811 @@
+#include <MediaPlayer/MediaPlayer.h>
+#include <CoreGraphics/CoreGraphics.h>
+#import "headers.h"
+#import "CCXAirAndNightSectionController.h"
+
+
+@interface UIView (RemoveConstraints)
+
+- (void)removeAllConstraints;
+
+@end
+
+static BOOL darkmode = YES;
+
+void toggleDarkmode() {
+	if (darkmode) darkmode = NO;
+	else darkmode = YES;
+}
+
+
+@implementation UIView (RemoveConstraints)
+
+- (void)removeAllConstraints
+{
+    UIView *superview = self.superview;
+    while (superview != nil) {
+        for (NSLayoutConstraint *c in superview.constraints) {
+            if (c.firstItem == self || c.secondItem == self) {
+                [superview removeConstraint:c];
+            }
+        }
+        superview = superview.superview;
+    }
+
+    [self removeConstraints:self.constraints];
+    self.translatesAutoresizingMaskIntoConstraints = YES;
+}
+
+@end
+
+// %config(generator=internal);
+
+%hook CCUINightShiftSectionController
+- (BOOL)enabled {
+	return YES;
+}
+%end
+
+%hook CCUICellularDataSetting
++ (BOOL)isSupported:(int)arg1 {
+	return YES;
+}
++(BOOL)isInternalButton {
+	return YES;
+}
+%end
+
+%hook CCUIMuteSetting
++ (BOOL)isSupported:(int)arg1 {
+	return YES;
+}
++(BOOL)isInternalButton {
+	return YES;
+}
+%end
+
+%hook CCUILowPowerModeSetting
++ (BOOL)isSupported:(int)arg1 {
+	return YES;
+}
++(BOOL)isInternalButton {
+	return YES;
+}
+%end
+
+%hook CCUIPersonalHotspotSetting
++ (BOOL)isSupported:(int)arg1 {
+	return YES;
+}
++(BOOL)isInternalButton {
+	return YES;
+}
+%end
+
+CCUIControlCenterPushButton *nightShiftButton;
+
+// %hook CCUIButtonLikeSectionSplitView
+// %property (nonatomic, retain) CCUIControlCenterPushButton *middleSection;
+
+// - (CGRect)_frameForSectionSlot:(int)slot {
+// 	if (self.mode == 3) {
+// 		if (slot == 0) {
+// 			CGRect frame = CGRectMake(0,0,self.frame.size.height,self.frame.size.height);
+// 			return frame;
+// 		} else if (slot == 1) {
+// 			CGRect frame = CGRectMake(self.frame.size.height + 1,0,self.frame.size.width-2-(2*self.frame.size.height),self.frame.size.height);
+// 			return frame;
+// 		} else {
+// 			CGRect frame = CGRectMake(self.frame.size.width-self.frame.size.height,0,self.frame.size.height,self.frame.size.height);
+// 			return frame;
+// 		}
+// 	} else return %orig;
+// }
+
+// - (CCUIControlCenterPushButton *)_viewForSectionSlot:(int)slot {
+// 	if (self.mode == 3) {
+// 		if (slot == 0) {
+// 			return self.leftSection;
+// 		} else if (slot == 1) {
+// 			return self.middleSection;
+// 		} else {
+// 			return self.rightSection;
+// 		}
+// 	} else return %orig;
+// }
+
+// - (void)layoutSubviews {
+// 	%orig;
+// 	if ([[self valueForKey:@"_viewDelegate"] isKindOfClass:NSClassFromString(@"CCUIAirStuffSectionController")])
+// 		[self test3Buttons];
+// 	if (self.mode == 3) {
+// 		[self _viewForSectionSlot:0].frame = [self _frameForSectionSlot:0];
+// 		[self _viewForSectionSlot:0].roundCorners = 5;
+// 		[self _viewForSectionSlot:1].frame = [self _frameForSectionSlot:1];
+// 		[self _viewForSectionSlot:1].roundCorners = 0;
+// 		[self _viewForSectionSlot:2].frame = [self _frameForSectionSlot:2];
+// 		[self _viewForSectionSlot:2].roundCorners = 10;
+// 		[self _viewForSectionSlot:2].text = nil;
+// 		[self _viewForSectionSlot:0].text = nil;
+// 		//UIImageView *glyph0 = (UIImageView *)[[self _viewForSectionSlot:0] valueForKey:@"_glyphImageView"];
+// 		//CGRect glyph0Frame = glyph0.frame;
+// 		// UIImageView *glyph0 = (UIImageView *)[[self _viewForSectionSlot:0] valueForKey:@"_glyphImageView"];
+// 		// CGRect glyph0Frame = glyph0.frame;
+// 		// glyph0Frame.origin.x = ([self _viewForSectionSlot:0].frame.size.width-glyph0Frame.size.width)/2;
+// 		// glyph0.frame = glyph0Frame;
+// 		//((UIImageView *)[[self _viewForSectionSlot:0] valueForKey:@"_glyphImageView"]).center = CGPointMake([self _viewForSectionSlot:0].frame.size.width/2,[self _viewForSectionSlot:0].frame.size.height/2);
+// 		//((UIImageView *)[[self _viewForSectionSlot:2] valueForKey:@"_glyphImageView"]).center = CGPointMake([self _viewForSectionSlot:2].frame.size.width/2,[self _viewForSectionSlot:2].frame.size.height/2);
+
+// 	}
+// }
+
+// %new
+// - (void)test3Buttons {
+
+// 	if (!self.middleSection) {
+// 		self.middleSection = nightShiftButton;
+// 		[nightShiftButton removeFromSuperview];
+// 		[self addSubview:self.middleSection];
+// 		self.mode = 3;
+// 		UIImageView *glyph0 = (UIImageView *)[[self _viewForSectionSlot:0] valueForKey:@"_glyphImageView"];
+// 		//CGRect glyph0Frame = glyph0.frame;
+// 		glyph0.translatesAutoresizingMaskIntoConstraints = NO;
+// 		CCUIControlCenterPushButton *push1 = [self _viewForSectionSlot:0];
+// 		[push1 addConstraint:[NSLayoutConstraint constraintWithItem:glyph0
+//                                                       attribute:NSLayoutAttributeCenterX
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:push1
+//                                                       attribute:NSLayoutAttributeCenterX
+//                                                      multiplier:1
+//                                                        constant:0]];
+
+// 		[push1 addConstraint:[NSLayoutConstraint constraintWithItem:glyph0
+//                                                       attribute:NSLayoutAttributeCenterY
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:push1
+//                                                       attribute:NSLayoutAttributeCenterY
+//                                                      multiplier:1
+//                                                        constant:0]];
+// 		glyph0 = (UIImageView *)[[self _viewForSectionSlot:0] valueForKey:@"_alteredStateGlyphImageView"];
+// 		glyph0.translatesAutoresizingMaskIntoConstraints = NO;
+// 		[push1 addConstraint:[NSLayoutConstraint constraintWithItem:glyph0
+//                                                       attribute:NSLayoutAttributeCenterX
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:push1
+//                                                       attribute:NSLayoutAttributeCenterX
+//                                                      multiplier:1
+//                                                        constant:0]];
+
+// 		[push1 addConstraint:[NSLayoutConstraint constraintWithItem:glyph0
+//                                                       attribute:NSLayoutAttributeCenterY
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:push1
+//                                                       attribute:NSLayoutAttributeCenterY
+//                                                      multiplier:1
+//                                                        constant:0]];
+
+// 		UIImageView *glyph2 = (UIImageView *)[[self _viewForSectionSlot:2] valueForKey:@"_glyphImageView"];
+// 		//CGRect glyph0Frame = glyph0.frame;
+// 		glyph2.translatesAutoresizingMaskIntoConstraints = NO;
+// 		CCUIControlCenterPushButton *push3 = [self _viewForSectionSlot:2];
+// 		[push3 addConstraint:[NSLayoutConstraint constraintWithItem:glyph2
+//                                                       attribute:NSLayoutAttributeCenterX
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:push3
+//                                                       attribute:NSLayoutAttributeCenterX
+//                                                      multiplier:1
+//                                                        constant:0]];
+
+// 		[push3 addConstraint:[NSLayoutConstraint constraintWithItem:glyph2
+//                                                       attribute:NSLayoutAttributeCenterY
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:push3
+//                                                       attribute:NSLayoutAttributeCenterY
+//                                                      multiplier:1
+//                                                        constant:0]];
+// 		glyph2 = (UIImageView *)[[self _viewForSectionSlot:2] valueForKey:@"_alteredStateGlyphImageView"];
+// 		glyph2.translatesAutoresizingMaskIntoConstraints = NO;
+// 		[push3 addConstraint:[NSLayoutConstraint constraintWithItem:glyph2
+//                                                       attribute:NSLayoutAttributeCenterX
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:push3
+//                                                       attribute:NSLayoutAttributeCenterX
+//                                                      multiplier:1
+//                                                        constant:0]];
+
+// 		[push3 addConstraint:[NSLayoutConstraint constraintWithItem:glyph2
+//                                                       attribute:NSLayoutAttributeCenterY
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:push3
+//                                                       attribute:NSLayoutAttributeCenterY
+//                                                      multiplier:1
+//                                                        constant:0]];
+
+// 	} else {
+// 		self.mode = 3;
+// 	}
+// }
+// %end
+
+// %hook CCUIAirStuffSectionController
+// - (void)_updateAirDropControlAsEnabled:(BOOL)arg1 {
+// 	%orig;
+// 	CCUIControlCenterPushButton *airPlaySection = (CCUIControlCenterPushButton *)[self valueForKey:@"_airDropSection"];
+// 	airPlaySection.text = nil;
+// 	((UIImageView *)[airPlaySection valueForKey:@"_glyphImageView"]).center = CGPointMake(airPlaySection.frame.size.width/2,airPlaySection.frame.size.height/2);
+// }
+// - (void)_updateForAirPlayStateChange {
+// 	%orig;
+// 	CCUIControlCenterPushButton *airPlaySection = (CCUIControlCenterPushButton *)[self valueForKey:@"_airPlaySection"];
+// 	airPlaySection.text = nil;
+// 	((UIImageView *)[airPlaySection valueForKey:@"_glyphImageView"]).center = CGPointMake(airPlaySection.frame.size.width/2,airPlaySection.frame.size.height/2);
+// }
+// %end
+
+
+// %hook CCUIButtonStackPagingView
+// - (void)_organizeButtonsInPages {
+// 	UIStackView *_pagesStackView = (UIStackView *)[self valueForKey:@"_pagesStackView"];
+// 	UIScrollView *_scrollView = (UIScrollView *)[self valueForKey:@"_scrollView"];
+// 	if ([self.buttons count] > self.maxButtonsPerPage) {
+// 		[_scrollView setScrollEnabled:YES];
+// 		[_scrollView setDelaysContentTouches:YES];
+// 		[_scrollView setCanCancelContentTouches:YES];
+// 		int numberOfButtons = [self.buttons count];
+// 		int maxButtonsPerPage = self.maxButtonsPerPage;
+// 		int numberOfPagesNeeded = numberOfButtons/maxButtonsPerPage;
+// 		if (numberOfButtons%maxButtonsPerPage != 0) {
+// 			numberOfPagesNeeded++;
+// 		}
+
+// 		if ([_pagesStackView.arrangedSubviews count] != numberOfPagesNeeded) {
+// 			if ([_pagesStackView.arrangedSubviews count] > numberOfPagesNeeded) {
+// 				while ([_pagesStackView.arrangedSubviews count] > numberOfPagesNeeded) {
+// 					[_pagesStackView removeArrangedSubview:(UIView *)[_pagesStackView.arrangedSubviews objectAtIndex:[_pagesStackView.arrangedSubviews count]-1]];
+// 				}
+// 			} else {
+// 				while ([_pagesStackView.arrangedSubviews count] < numberOfPagesNeeded) {
+// 					CGRect buttonStackFrame = [_pagesStackView.arrangedSubviews objectAtIndex:[_pagesStackView.arrangedSubviews count]-1].frame;
+// 					buttonStackFrame.origin.x = buttonStackFrame.origin.x+buttonStackFrame.size.width;
+// 					CCUIButtonStack *buttonStack = [[NSClassFromString(@"CCUIButtonStack") alloc] initWithFrame:buttonStackFrame];
+// 					buttonStack.layoutDelegate = self;
+// 					[_pagesStackView addArrangedSubview:buttonStack];
+// 				}
+// 			}
+// 		}
+
+// 		for (CCUIButtonStack *buttonStack in _pagesStackView.arrangedSubviews) {
+// 			NSMutableArray *buttons = [buttonStack.buttons mutableCopy];
+// 			for (CCUIControlCenterPushButton *button in buttons) {
+// 				[buttonStack removeButton:button];
+// 			}
+// 		}
+
+// 		NSMutableArray *buttons = [self.buttons mutableCopy];
+// 		int currentPageIndex = 0;
+// 		while ([buttons count] > 0) {
+// 			if ([_pagesStackView.arrangedSubviews objectAtIndex:currentPageIndex]) {
+// 				CCUIButtonStack *buttonStack = (CCUIButtonStack *)[_pagesStackView.arrangedSubviews objectAtIndex:currentPageIndex];
+// 				CGFloat widthLeft = self.frame.size.width;
+// 				for (int x = 0; x < maxButtonsPerPage; x++) {
+// 					if ([buttons count] > 0) {
+// 						CCUIControlCenterPushButton *button = [buttons objectAtIndex:0];
+// 						button.hidden = NO;
+// 						//button.preventPunchOutMask = YES;
+// 						widthLeft -= button.frame.size.width;
+// 						[buttonStack addButton:button];
+// 						[buttons removeObject:button];
+// 					}
+// 				}
+// 				buttonStack.interButtonPadding = widthLeft/([buttonStack.buttons count]-1);
+// 				currentPageIndex++;
+// 			}
+// 		}
+
+// 		CGFloat totalWidth = 0;
+// 		totalWidth = self.frame.size.width*numberOfPagesNeeded;
+
+// 		CGSize contentSize = _scrollView.contentSize;
+// 		contentSize.width = totalWidth;
+// 		_scrollView.contentSize = contentSize;
+// 		self.pagingAxis = 0;
+// 	} else {
+// 		%orig;
+// 	}
+// }
+
+// - (NSInteger)pagingAxis {
+// 	return 0;
+// }
+// - (void)setPagingAxis:(NSInteger)axis {
+// 	%orig(0);
+// }
+// %end
+
+// %hook CCUIShortcutModule
+// - (BOOL)isRestricted {
+// 	return NO;
+// }
+// %end
+
+@interface UIView (CCXStuff)
+- (void)applyBackdropStyle:(NSString *)style;
+@end
+
+%hook UIView
+%new
+- (void)addWhiteThing {
+	[self applyBackdropStyle:@"_UIBackdropViewSettingsCCXDarkBlurred"];
+	UIView *whiteView = [[UIView alloc] initWithFrame:self.frame];
+	whiteView.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.7];
+	[[whiteView layer] setContentsMultiplyColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3].CGColor];
+	[self addSubview:whiteView];
+}
+
+%new
+- (void)applyVibrantTestMask:(int)style {
+	[self nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:style]];
+}
+
+%new
+- (UIImage *)maskFromThisView {
+	UIImage *maskImage = [self _imageFromRect:CGRectMake(0,0,self.frame.size.width,self.frame.size.height)];
+	maskImage = [maskImage sbf_scaleImage:(CGFloat)1.0/(CGFloat)[UIScreen mainScreen].scale];
+	maskImage = [maskImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+
+	CGSize size = CGSizeMake(self.frame.size.width,self.frame.size.height);
+	UIGraphicsBeginImageContextWithOptions(size, YES, 0);
+	[[UIColor whiteColor] setFill];
+	UIRectFill(CGRectMake(0, 0, size.width, size.height));
+	UIImage *sourceImage = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+
+
+	UIGraphicsBeginImageContextWithOptions(sourceImage.size, NO, sourceImage.scale);
+	[sourceImage drawAtPoint:CGPointZero];
+	[maskImage drawAtPoint:CGPointZero blendMode:kCGBlendModeDestinationOut alpha:1.0f];
+	UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
+	UIGraphicsEndImageContext();
+	return result;
+}
+%new
+- (void)addTestButtons {
+	CCXAirAndNightSectionController *controller = [[NSClassFromString(@"CCXAirAndNightSectionController") alloc] init];
+	[controller viewDidLoad];
+	[controller viewWillAppear:YES];
+	[self addSubview:controller.view];
+
+}
+%new
+- (void)applyBackdropStyle:(NSString *)style {
+
+	_UIBackdropViewSettings *backdropSettings = (_UIBackdropViewSettings *)[[NSClassFromString(style) alloc] init];
+	_UIBackdropView *backdropView = [[_UIBackdropView alloc] initWithSettings:backdropSettings];
+	[self addSubview:backdropView];
+}
+%end
+
+%hook NCVibrantRuleStyling
+- (UIColor *)color {
+	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
+}
+- (UIColor *)_darkenColor {
+	return [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
+}
+%end
+
+%hook CCUIControlCenterButton
+%property (nonatomic, retain) UIView *punchOutView;
+%property (nonatomic, assign) BOOL preventPunchOutMask;
+- (id)ccuiPunchOutMaskForView:(UIView *)arg1 {
+	if (self.preventPunchOutMask) return nil;
+	if (arg1) {
+		if ([arg1 isKindOfClass:NSClassFromString(@"CCUIControlCenterButton")]) {
+			if (((CCUIControlCenterButton *)arg1).preventPunchOutMask) {
+				return nil;
+			}
+		}
+	}
+	return %orig;
+}
+
+
+- (void)layoutSubviews {
+	%orig;
+	if (self.preventPunchOutMask) {
+		if (!self.punchOutView) {
+			if ([self valueForKey:@"_backgroundFlatColorView"]) {
+				UIView *realView = [self valueForKey:@"_backgroundFlatColorView"];
+				self.punchOutView = [[UIView alloc] initWithFrame:realView.frame];
+				self.punchOutView.layer.cornerRadius = realView.layer.cornerRadius;
+				self.punchOutView.userInteractionEnabled = realView.userInteractionEnabled;
+				[self addSubview:self.punchOutView];
+				[self sendSubviewToBack:self.punchOutView];
+				[self.punchOutView nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:4]];
+			}
+		} else {
+			UIView *realView = [self valueForKey:@"_backgroundFlatColorView"];
+			self.punchOutView.layer.cornerRadius = realView.layer.cornerRadius;
+			self.punchOutView.frame = realView.frame;
+			[self sendSubviewToBack:self.punchOutView];
+		}
+	}
+	if ([self valueForKey:@"_glyphImageView"]) {
+		[(UIView *)[self valueForKey:@"_glyphImageView"] nc_removeAllVibrantStyling];
+	}
+	if ([self valueForKey:@"_alteredStateGlyphImageView"]) {
+		[(UIView *)[self valueForKey:@"_alteredStateGlyphImageView"] nc_removeAllVibrantStyling];
+	}
+	if ([self valueForKey:@"_label"]) {
+		[(UIView *)[self valueForKey:@"_label"] nc_removeAllVibrantStyling];
+	}
+	if ([self valueForKey:@"_alteredStateLabel"]) {
+		[(UIView *)[self valueForKey:@"_alteredStateLabel"] nc_removeAllVibrantStyling];
+	}
+}
+
+- (void)_updateForStateChange {
+	%orig;
+	if (self.selected) {
+
+	}
+}
+
+%end
+
+%hook CCUIBrightnessSectionController
+- (BOOL)enabled {
+	return YES;
+}
+%end
+
+@interface CCXTestViewController : UIViewController
+- (CGSize)intrinsicContentSize;
+- (void)loadView;
+@end
+
+@interface CCTXTestView : UIView
+- (CGSize)intrinsicContentSize;
+@end
+
+@implementation CCTXTestView
+- (CGSize)intrinsicContentSize {
+	return CGSizeMake(400, 74);
+}
+@end
+
+@implementation CCXTestViewController 
+- (CGSize)intrinsicContentSize {
+	return CGSizeMake(400, 74);
+}
+- (void)loadView {
+	[super loadView];
+	self.view = [[CCTXTestView alloc] initWithFrame:CGRectMake(0,0,400,74)];
+
+}
+@end
+
+%subclass CCXControlCenterMediaControlsViewController : MPUControlCenterMediaControlsViewController <MPUControlCenterMediaControlsViewDelegate, SBUIIconForceTouchControllerDataSource, UIGestureRecognizerDelegate>
+%property (nonatomic, retain) SBUIIconForceTouchController *iconForceTouchController;
+%property (nonatomic, retain) SBUIForceTouchGestureRecognizer *forceTouchGestureRecognizer;
+
+
++ (Class)controlsViewClass {
+	return NSClassFromString(@"CCXControlCenterMediaControlsView");
+}
+
+%new
+- (CGRect)iconForceTouchController:(SBUIIconForceTouchController *)arg1 iconViewFrameForGestureRecognizer:(SBUIForceTouchGestureRecognizer *)arg2 {
+	return [self.view convertRect:arg2.view.frame toCoordinateSpace:[[UIScreen mainScreen] fixedCoordinateSpace]];
+}
+
+%new
+- (NSInteger)iconForceTouchController:(SBUIIconForceTouchController *)arg1 layoutStyleForGestureRecognizer:(SBUIForceTouchGestureRecognizer *)arg2 {
+	return 1;
+}
+
+%new
+- (UIView *)iconForceTouchController:(SBUIIconForceTouchController *)arg1 newIconViewCopyForGestureRecognizer:(SBUIForceTouchGestureRecognizer *)arg2 {
+	return [[UIView alloc] initWithFrame:CGRectMake(0,0,0,0)];
+}
+
+%new
+- (UIViewController *)iconForceTouchController:(SBUIIconForceTouchController *)arg1 primaryViewControllerForGestureRecognizer:(SBUIForceTouchGestureRecognizer *)arg2 {
+	CCXTestViewController *controller = [[CCXTestViewController alloc] init];
+	[controller loadView];
+	return controller;
+
+// 	CCXPopupControlCenterMediaControlsViewController *controller = [[NSClassFromString(@"CCXPopupControlCenterMediaControlsViewController") alloc] init];
+// 	[controller.view setUseCompactStyle:NO];
+// 	//[controller setDelegate:[[self valueForKey:@"_viewDelegate"] valueForKey:@"_delegate"]];
+// 	controller.view.frame = CGRectMake(0,0,[controller.view intrinsicContentSize].width,[controller.view intrinsicContentSize].height);
+// 	[controller.view layoutSubviews];
+// 	controller.fakeContentSize = YES;
+// 	return controller;
+// }
+}
+
+%new
+- (UIViewController *)iconForceTouchController:(SBUIIconForceTouchController *)arg1 secondaryViewControllerForGestureRecognizer:(SBUIForceTouchGestureRecognizer *)arg2 {
+	CCXPopupControlCenterMediaControlsViewController *controller = [[NSClassFromString(@"CCXPopupControlCenterMediaControlsViewController") alloc] init];
+	[controller.view setUseCompactStyle:NO];
+	//[controller setDelegate:[[self valueForKey:@"_viewDelegate"] valueForKey:@"_delegate"]];
+	controller.view.frame = CGRectMake(0,0,[controller.view intrinsicContentSize].width,[controller.view intrinsicContentSize].height);
+	[controller.view layoutSubviews];
+	controller.fakeContentSize = YES;
+	return controller;
+
+	// CCXPopupControlCenterMediaControlsViewController *controller = [[NSClassFromString(@"CCXPopupControlCenterMediaControlsViewController") alloc] init];
+	// [controller.view setUseCompactStyle:NO];
+	// //[controller setDelegate:[[self valueForKey:@"_viewDelegate"] valueForKey:@"_delegate"]];
+	// controller.view.frame = CGRectMake(0,0,[controller.view intrinsicContentSize].width,[controller.view intrinsicContentSize].height);
+	// [controller.view layoutSubviews];
+	// controller.fakeContentSize = YES;
+	// return controller;
+	// CCXTestViewController *controller = [CCXTestViewController alloc] init];
+	// [controller loadView];
+	// return controller;
+}
+
+- (void)viewDidLoad {
+	%orig;
+	self.forceTouchGestureRecognizer = [[NSClassFromString(@"SBUIForceTouchGestureRecognizer") alloc] initWithTarget:self action:nil];
+	self.forceTouchGestureRecognizer.delegate = self;
+	[[self.view artworkView] addGestureRecognizer:self.forceTouchGestureRecognizer];
+
+	self.iconForceTouchController = [[NSClassFromString(@"SBUIIconForceTouchController") alloc] init];
+	[self.iconForceTouchController setDataSource:self];
+	[self.iconForceTouchController setDelegate:self];
+	[self.iconForceTouchController startHandlingGestureRecognizer:self.forceTouchGestureRecognizer];
+}
+%end
+
+%subclass CCXPopupControlCenterMediaControlsViewController : MPUControlCenterMediaControlsViewController
+%property (nonatomic, assign) BOOL fakeContentSize;
+
++ (Class)controlsViewClass {
+	return NSClassFromString(@"CCXPopupControlCenterMediaControlsView");
+}
+%end
+
+%subclass CCXPopupControlCenterMediaControlsView : MPUControlCenterMediaControlsView
+- (CGSize)intrinsicContentSize {
+	CGSize orig = %orig;
+	if ([self delegate].fakeContentSize) {
+		CGFloat correctHeight = 0;
+		correctHeight += [self artworkView].frame.origin.x*2;
+		correctHeight += ((UIView *)[self valueForKey:@"_timeView"]).frame.origin.y;
+		correctHeight += ((UIView *)[self valueForKey:@"_timeView"]).frame.size.height + 2;
+		orig.height = correctHeight;
+		// NSLog(@"%@",[self artworkView]);
+	}
+	return orig;
+} // albumLabel is lowest in view;
+
+- (void)_layoutPhoneRegularStyle {
+	%orig;
+	if ([self valueForKey:@"_routingContainerView"])
+		[(UIView*)[self valueForKey:@"_routingContainerView"] setHidden:YES];
+	if ([self valueForKey:@"_routingView"])
+		[(UIView*)[self valueForKey:@"_routingView"] setHidden:YES];
+	if ([self valueForKey:@"_pickedRouteHeaderView"])
+		[(UIView*)[self valueForKey:@"_pickedRouteHeaderView"] setHidden:YES];
+	if ([self valueForKey:@"_volumeView"])
+		[(UIView*)[self valueForKey:@"_volumeView"] setHidden:YES];
+}
+
+- (void)layoutSubviews {
+	%orig;
+	if ([self superview]) {
+		if (self.frame.origin.y != [self artworkView].frame.origin.x) {
+			CGRect newFrame = self.frame;
+			newFrame.origin.y = [self artworkView].frame.origin.x;
+			newFrame.size.height = newFrame.size.height-newFrame.origin.y;
+			self.frame = newFrame;
+
+			
+		}
+	}
+
+	if ([self valueForKey:@"_routingContainerView"])
+		[(UIView*)[self valueForKey:@"_routingContainerView"] setHidden:YES];
+	if ([self valueForKey:@"_routingView"])
+		[(UIView*)[self valueForKey:@"_routingView"] setHidden:YES];
+	if ([self valueForKey:@"_pickedRouteHeaderView"])
+		[(UIView*)[self valueForKey:@"_pickedRouteHeaderView"] setHidden:YES];
+	if ([self valueForKey:@"_volumeView"])
+		[(UIView*)[self valueForKey:@"_volumeView"] setHidden:YES];
+
+	MPUControlCenterMetadataView *firstLabel = (MPUControlCenterMetadataView *)[self valueForKey:@"_titleLabel"];
+	MPUControlCenterMetadataView *middleLabel = (MPUControlCenterMetadataView *)[self valueForKey:@"_artistLabel"];
+	MPUControlCenterMetadataView *lastLabel = (MPUControlCenterMetadataView *)[self valueForKey:@"_albumLabel"];
+	UIView *controls = (UIView *)[self valueForKey:@"_transportControls"];
+	[controls removeAllConstraints];
+	[firstLabel removeAllConstraints];
+	[middleLabel removeAllConstraints];
+	[lastLabel removeAllConstraints];
+	lastLabel.translatesAutoresizingMaskIntoConstraints = NO;
+	firstLabel.translatesAutoresizingMaskIntoConstraints = NO;
+	middleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+	controls.translatesAutoresizingMaskIntoConstraints = NO;
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:firstLabel
+                                                      attribute:NSLayoutAttributeTop
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:[self artworkView]
+                                                      attribute:NSLayoutAttributeTop
+                                                     multiplier:1
+                                                       constant:0]];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:firstLabel
+                                                      attribute:NSLayoutAttributeLeft
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:[self artworkView]
+                                                      attribute:NSLayoutAttributeRight
+                                                     multiplier:1
+                                                       constant:[self artworkView].frame.origin.x]];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:firstLabel
+                                                      attribute:NSLayoutAttributeRight
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:self
+                                                      attribute:NSLayoutAttributeRight
+                                                     multiplier:1
+                                                       constant:-1*[self artworkView].frame.origin.x]];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:firstLabel
+                                                      attribute:NSLayoutAttributeHeight
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:nil
+                                                      attribute:NSLayoutAttributeNotAnAttribute
+                                                     multiplier:1
+                                                       constant:[firstLabel label].frame.size.height]];
+
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:middleLabel
+                                                      attribute:NSLayoutAttributeTop
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:firstLabel
+                                                      attribute:NSLayoutAttributeBottom
+                                                     multiplier:1
+                                                       constant:0]];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:middleLabel
+                                                      attribute:NSLayoutAttributeLeft
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:[self artworkView]
+                                                      attribute:NSLayoutAttributeRight
+                                                     multiplier:1
+                                                       constant:[self artworkView].frame.origin.x]];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:middleLabel
+                                                      attribute:NSLayoutAttributeRight
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:self
+                                                      attribute:NSLayoutAttributeRight
+                                                     multiplier:1
+                                                       constant:-1*[self artworkView].frame.origin.x]];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:middleLabel
+                                                      attribute:NSLayoutAttributeHeight
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:nil
+                                                      attribute:NSLayoutAttributeNotAnAttribute
+                                                     multiplier:1
+                                                       constant:[middleLabel label].frame.size.height]];
+
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:lastLabel
+                                                      attribute:NSLayoutAttributeTop
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:middleLabel
+                                                      attribute:NSLayoutAttributeBottom
+                                                     multiplier:1
+                                                       constant:0]];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:lastLabel
+                                                      attribute:NSLayoutAttributeLeft
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:[self artworkView]
+                                                      attribute:NSLayoutAttributeRight
+                                                     multiplier:1
+                                                       constant:[self artworkView].frame.origin.x]];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:lastLabel
+                                                      attribute:NSLayoutAttributeRight
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:self
+                                                      attribute:NSLayoutAttributeRight
+                                                     multiplier:1
+                                                       constant:-1*[self artworkView].frame.origin.x]];
+	[self addConstraint:[NSLayoutConstraint constraintWithItem:lastLabel
+                                                      attribute:NSLayoutAttributeHeight
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:nil
+                                                      attribute:NSLayoutAttributeNotAnAttribute
+                                                     multiplier:1
+                                                       constant:[lastLabel label].frame.size.height]];
+
+
+			NSLayoutConstraint *constant1 = [NSLayoutConstraint constraintWithItem:controls
+                                                      attribute:NSLayoutAttributeTop
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:lastLabel
+                                                      attribute:NSLayoutAttributeBottom
+                                                     multiplier:1
+                                                       constant:0];
+
+			NSLayoutConstraint *constant2 = [NSLayoutConstraint constraintWithItem:controls
+                                                      attribute:NSLayoutAttributeLeft
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:lastLabel
+                                                      attribute:NSLayoutAttributeLeft
+                                                     multiplier:1
+                                                       constant:0];
+			NSLayoutConstraint *constant3 = [NSLayoutConstraint constraintWithItem:controls
+                                                      attribute:NSLayoutAttributeRight
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:lastLabel
+                                                      attribute:NSLayoutAttributeRight
+                                                     multiplier:1
+                                                       constant:0];
+			NSLayoutConstraint *constant4 = [NSLayoutConstraint constraintWithItem:controls
+                                                      attribute:NSLayoutAttributeBottom
+                                                      relatedBy:NSLayoutRelationEqual
+                                                         toItem:[self artworkView]
+                                                      attribute:NSLayoutAttributeBottom
+                                                     multiplier:1
+                                                       constant:0];
+			constant1.priority = 1000;
+			constant2.priority = 1000;
+			constant3.priority = 1000;
+			constant4.priority = 1000;
+			[self addConstraint:constant1];
+			[self addConstraint:constant2];
+			[self addConstraint:constant3];
+			[self addConstraint:constant4];
+
+			[self setNeedsLayout];
+			[self updateConstraints];
+}
+
+- (void)_reloadNowPlayingInfoLabels {
+	%orig;
+	[self layoutSubviews];
+}
+%end
+
+%subclass CCXControlCenterMediaControlsView : MPUControlCenterMediaControlsView
+- (BOOL)useCompactStyle {
+	return YES;
+}
+- (void)setUseCompactStyle:(BOOL)arg1 {
+	%orig(YES);
+}
+- (void)setUseCompactStyle:(BOOL)arg1 animated:(BOOL)arg2 {
+	%orig(YES,arg2);
+}
+- (void)_layoutPhoneCompactStyle {
+	%orig;
+	if ([self valueForKey:@"_routingContainerView"])
+		[(UIView*)[self valueForKey:@"_routingContainerView"] setHidden:YES];
+	if ([self valueForKey:@"_routingView"])
+		[(UIView*)[self valueForKey:@"_routingView"] setHidden:YES];
+	if ([self valueForKey:@"_pickedRouteHeaderView"])
+		[(UIView*)[self valueForKey:@"_pickedRouteHeaderView"] setHidden:YES];
+	if ([self valueForKey:@"_volumeView"])
+		[(UIView*)[self valueForKey:@"_volumeView"] setHidden:YES];
+}
+- (void)_layoutPhoneLandscape {
+	[self _layoutPhoneCompactStyle];
+}
+- (void)_layoutPhoneRegularStyle {
+	[self _layoutPhoneCompactStyle];
+}
+- (BOOL)_routingViewShouldBeVisible {
+	return NO;
+}
+- (void)setRoutingView:(id)routingView {
+	%orig;
+	if ([self valueForKey:@"_routingContainerView"])
+		[(UIView*)[self valueForKey:@"_routingContainerView"] setHidden:YES];
+	if ([self valueForKey:@"_routingView"])
+		[(UIView*)[self valueForKey:@"_routingView"] setHidden:YES];
+	if ([self valueForKey:@"_pickedRouteHeaderView"])
+		[(UIView*)[self valueForKey:@"_pickedRouteHeaderView"] setHidden:YES];
+	if ([self valueForKey:@"_volumeView"])
+		[(UIView*)[self valueForKey:@"_volumeView"] setHidden:YES];
+	return;
+}
+- (id)routingView {
+	return nil;
+}
+- (void)_layoutExpandedRoutingViewUsingBounds:(CGRect)arg1 {
+	return;
+}
+
+- (void)_reloadNowPlayingInfoLabels {
+	%orig;
+	MPUControlCenterMetadataView *firstLabel = (MPUControlCenterMetadataView *)[self valueForKey:@"_titleLabel"];
+	MPUControlCenterMetadataView *middleLabel = (MPUControlCenterMetadataView *)[self valueForKey:@"_artistLabel"];
+	MPUControlCenterMetadataView *lastLabel = (MPUControlCenterMetadataView *)[self valueForKey:@"_albumLabel"];
+	MPUControlCenterMetadataView *otherLabel = (MPUControlCenterMetadataView *)[self valueForKey:@"_artistAlbumConcatenatedLabel"];
+
+	// First Label
+	[[firstLabel label].layer setContentsMultiplyColor:nil];
+	[[firstLabel label] nc_removeAllVibrantStyling];
+	[firstLabel nc_removeAllVibrantStyling];
+	//[firstLabel nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:4]];
+	//[[firstLabel label] nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:4]];
+	[[firstLabel label].layer setContentsMultiplyColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.5].CGColor];
+	[firstLabel setBackgroundColor:nil];
+	[firstLabel label].textColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
+
+	// Middle Label
+	[[middleLabel label].layer setContentsMultiplyColor:nil];
+	[[middleLabel label] nc_removeAllVibrantStyling];
+	[middleLabel nc_removeAllVibrantStyling];
+	//[middleLabel nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:4]];
+	//[[middleLabel label] nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:4]];
+	[[middleLabel label].layer setContentsMultiplyColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.5].CGColor];
+	[middleLabel setBackgroundColor:nil];
+	[middleLabel label].textColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
+
+	// Last Label
+	[[lastLabel label].layer setContentsMultiplyColor:nil];
+	[[lastLabel label] nc_removeAllVibrantStyling];
+	[lastLabel nc_removeAllVibrantStyling];
+	//[lastLabel nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:4]];
+	//[[lastLabel label] nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:4]];
+	[[lastLabel label].layer setContentsMultiplyColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.5].CGColor];
+	[lastLabel setBackgroundColor:nil];
+	[lastLabel label].textColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
+
+	// That other dumb Label
+	[[otherLabel label].layer setContentsMultiplyColor:nil];
+	[[otherLabel label] nc_removeAllVibrantStyling];
+	[otherLabel nc_removeAllVibrantStyling];
+	//[otherLabel nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:4]];
+	//[[otherLabel label] nc_applyVibrantStyling:[NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:4]];
+	[[otherLabel label].layer setContentsMultiplyColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0.5].CGColor];
+	[otherLabel setBackgroundColor:nil];
+	[otherLabel label].textColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
+}
+%end
+
+CCXControlCenterMediaControlsView *mediaControlsView;
+CCXControlCenterMediaControlsViewController *mediaViewController;
+// %hook CCUINightShiftContentView
+// - (CCUIControlCenterPushButton *)button {
+// 	CCUIControlCenterPushButton *orig = %orig;
+// 	if (orig) {
+// 		nightShiftButton = orig;
+// 	} 
+// 	if ([[self subviews] count] < 1) {
+// 		[self addMediaControlsView];
+// 	}
+// 	return orig;
+// }
+// - (BOOL)isHidden {
+// 	return YES;
+// }
+
+// %new
+// - (void)addMediaControlsView {
+// 	CCXControlCenterMediaControlsViewController *mediaController = [[NSClassFromString(@"CCXControlCenterMediaControlsViewController") alloc] init];
+// 	mediaViewController = mediaController;
+// 	[mediaController controlCenterWillBeginTransition];
+// 	[mediaController controlCenterDidFinishTransition];
+// 	[mediaController controlCenterWillPresent];
+// 	[mediaController viewWillAppear:YES];
+// 	mediaControlsView = (CCXControlCenterMediaControlsView *)mediaController.view;
+// 	[self addSubview:mediaController.view];
+// 	mediaController.view.frame = CGRectMake(-24,0,self.frame.size.width+24*2,self.frame.size.height);
+// 	[(CCXControlCenterMediaControlsView *)mediaController.view setDelegate:mediaController];
+// 	[mediaController setDelegate:[[self valueForKey:@"_viewDelegate"] valueForKey:@"_delegate"]];
+
+// }
+// %new
+// - (void)fixMedia {
+// 	[mediaControlsView setDelegate:mediaViewController];
+// }
+// %end
+
+%hook CCUICameraShortcut
+- (BOOL)isRestricted {
+	return NO;
+}
+%end
+// %hook CCUIControlCenterLabel
+// - (void)_updateEffects {
+// 	return;
+// }
+// %end
+
+
+
+
+// %hook CCUISystemControlsPageViewController
+// - (void)_updateColumns {
+// 	if ([(NSArray *)[self valueForKey:@"_columnStackViews"] count] > 0) {
+// 	UIStackView *stackView = (UIStackView *)[(NSArray *)[self valueForKey:@"_columnStackViews"] objectAtIndex:0];
+// 	NSMutableArray *views = [stackView.arrangedSubviews mutableCopy];
+// 	for (UIView *view in views) {
+// 		if ([view isKindOfClass:NSClassFromString(@"CCUINightShiftContentView")]) {
+// 			if ([views indexOfObject:view] == 1) return;
+// 			[stackView insertArrangedSubview:view atIndex:1];
+// 		}
+// 	}
+// 	}
+// 	%orig;
+// }
+// %end
+
+@interface SBUIAction : NSObject
+- (id)initWithTitle:(id)arg1 handler:(id /* block */)arg2;
+- (id)initWithTitle:(id)arg1 subtitle:(id)arg2 handler:(id /* block */)arg3;
+- (id)initWithTitle:(id)arg1 subtitle:(id)arg2 image:(id)arg3 badgeView:(id)arg4 handler:(id /* block */)arg5;
+- (id)initWithTitle:(id)arg1 subtitle:(id)arg2 image:(id)arg3 handler:(id /* block */)arg4;
+@end
+
+@interface CCUIWiFiSetting : CCUIButtonModule
+@end
+
+%hook BSPlatform 
+- (BOOL)hasOrbCapability {
+   return YES; // To support 3D touch emulating tweaks like Peek-a-boo
+}
+%end
+
+%hook CCUIWiFiSetting
+- (int)orbBehavior {
+   return 2; // returning 2 allows the 3D touch to be enabled and also tells it where to pull the options from.
+}
+
+- (NSArray *)buttonActions {
+   NSMutableArray *actions = [NSMutableArray new];
+
+   // SBUIAction can be thought of as an UIApplicationShortcutItem
+   SBUIAction *network = [[NSClassFromString(@"SBUIAction") alloc] initWithTitle:@"Network" subtitle:@"disconnected" handler:^(void) {
+       NSLog(@"Connected to Network");
+       [[self delegate] buttonModule:self willExecuteSecondaryActionWithCompletionHandler:nil]; // this must be called to dismiss the 3D Touch Menu
+   }];
+   [actions addObject:network];
+
+   return [actions copy];
+}
+%end
+
+@interface _UIBackdropViewSettingsATVAdaptiveLighten : _UIBackdropViewSettings
+@end
+
+@interface _UIBackdropViewSettingsCCXDarkBlurred : _UIBackdropViewSettingsATVAdaptiveLighten
+@end
+
+@interface _UIBackdropViewSettingsCCXDark : _UIBackdropViewSettingsATVAdaptiveLighten
+@end
+
+%subclass _UIBackdropViewSettingsCCXDarkBlurred : _UIBackdropViewSettingsATVAdaptiveLighten
+- (void)setDefaultValues {
+	%orig;
+	self.colorBurnTintAlpha = 0.6;
+	self.colorBurnTintLevel = 0;
+	self.colorOffsetAlpha = 1;
+	self.colorTint = [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:0.359];
+	self.colorTintAlpha = 0.0;
+	self.colorTintMaskAlpha = 1;
+	self.usesColorBurnTintView = YES;
+	self.usesColorOffset = YES;
+	self.usesColorTintView = YES;
+	self.darkeningTintAlpha = 0.5;
+	self.darkeningTintBrightness = 0.35;
+	self.darkeningTintHue = 0.8;
+	self.darkeningTintSaturation = 0;
+	self.usesDarkeningTintView = YES;
+	self.grayscaleTintAlpha = 0.5;
+	self.grayscaleTintLevel = 0.2;
+	self.lightenGrayscaleWithSourceOver = YES;
+	self.usesGrayscaleTintView = YES;
+	self.saturationDeltaFactor = 1.8;
+	self.lightenGrayscaleWithSourceOver = YES;
+	self.blurRadius = 30;
+}
+%end
+
+%subclass _UIBackdropViewSettingsCCXDark : _UIBackdropViewSettingsATVAdaptiveLighten
+- (void)setDefaultValues {
+	%orig;
+	self.colorBurnTintAlpha = 0.6;
+	self.colorBurnTintLevel = 0;
+	self.colorOffsetAlpha = 1;
+	self.colorTint = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.359];
+	self.colorTintAlpha = 0.0;
+	self.colorTintMaskAlpha = 1;
+	self.usesColorBurnTintView = YES;
+	self.usesColorOffset = YES;
+	self.usesColorTintView = YES;
+	self.darkeningTintAlpha = 0.5;
+	self.darkeningTintBrightness = 0.20;
+	self.darkeningTintHue = 0.8;
+	self.darkeningTintSaturation = 0;
+	self.usesDarkeningTintView = YES;
+	self.grayscaleTintAlpha = 0.5;
+	self.grayscaleTintLevel = 0.2;
+	self.lightenGrayscaleWithSourceOver = YES;
+	self.usesGrayscaleTintView = YES;
+	self.saturationDeltaFactor = 1.8;
+	self.lightenGrayscaleWithSourceOver = YES;
+	self.blurRadius = 30;
+}
+%end
+
+@interface UIView (CCX)
+- (void)applyBackdropStyle:(NSString *)style;
+- (CGFloat)_continuousCornerRadius;
+- (void)_setContinuousCornerRadius:(CGFloat)radius;
+@end
+
+@interface CCUIControlCenterPagePlatterView : UIView
+@end
+
+%hook CCUIControlCenterPagePlatterView
+- (void)setContentView:(UIView *)contentView {
+	%orig;
+	if ([self valueForKey:@"_baseMaterialView"]) {
+		if ([[self valueForKey:@"_baseMaterialView"] valueForKey:@"_backdropView"]) {
+			CGFloat cornerRadius = [(UIView *)[[self valueForKey:@"_baseMaterialView"] valueForKey:@"_backdropView"] _continuousCornerRadius];
+			[(UIView *)[[self valueForKey:@"_baseMaterialView"] valueForKey:@"_backdropView"] removeFromSuperview];
+			_UIBackdropViewSettings *backdropSettings = (_UIBackdropViewSettings *)[[NSClassFromString(@"_UIBackdropViewSettingsCCXDarkBlurred") alloc] init];
+			_UIBackdropView *backdropView = [[_UIBackdropView alloc] initWithSettings:backdropSettings];
+			[(UIView *)[self valueForKey:@"_baseMaterialView"] addSubview:backdropView];
+			[[self valueForKey:@"_baseMaterialView"] setValue:backdropView forKey:@"_backdropView"];
+			[backdropView _setContinuousCornerRadius:cornerRadius];
+		}
+	}
+	if ([self valueForKey:@"_whiteLayerView"]) {
+		//[(UIView *)[self valueForKey:@"_whiteLayerView"] setAlpha:0];
+		[[(UIView *)[self valueForKey:@"_whiteLayerView"] layer] setContentsMultiplyColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.15].CGColor];
+	}
+}
+- (void)layoutSubviews {
+	%orig;
+	if ([self valueForKey:@"_whiteLayerView"]) {
+		//[(UIView *)[self valueForKey:@"_whiteLayerView"] setAlpha:0];
+		[[(UIView *)[self valueForKey:@"_whiteLayerView"] layer] setContentsMultiplyColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.15].CGColor];
+	}
+}
+- (void)_rerenderPunchThroughMaskIfNecessary {
+	%orig;
+	if ([self valueForKey:@"_whiteLayerView"]) {
+		//[(UIView *)[self valueForKey:@"_whiteLayerView"] setAlpha:0];
+		[[(UIView *)[self valueForKey:@"_whiteLayerView"] layer] setContentsMultiplyColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.15].CGColor];
+	}
+}
+%end
+
+@interface CCUIControlCenterSlider : UIView
+@end
+%hook CCUIControlCenterSlider
+- (void)layoutSubviews {
+	%orig;
+	if ([self valueForKey:@"_maxValueHighlightedImageView"]) {
+		[(UIView *)[self valueForKey:@"_maxValueHighlightedImageView"] setAlpha:1];
+	}
+	if ([self valueForKey:@"_minValueHighlightedImageView"]) {
+		[(UIView *)[self valueForKey:@"_minValueHighlightedImageView"] setAlpha:1];
+	}
+}
+
+- (void)_configureHighlightedValueImagesLikeRegularValueImages {
+	%orig;
+	if ([self valueForKey:@"_maxValueHighlightedImageView"]) {
+		[(UIView *)[self valueForKey:@"_maxValueHighlightedImageView"] setAlpha:1];
+	}
+	if ([self valueForKey:@"_minValueHighlightedImageView"]) {
+		[(UIView *)[self valueForKey:@"_minValueHighlightedImageView"] setAlpha:1];
+	}
+}
+
+- (void)setAdjusting:(BOOL)adjusting {
+	%orig;
+	if ([self valueForKey:@"_maxValueHighlightedImageView"]) {
+		[(UIView *)[self valueForKey:@"_maxValueHighlightedImageView"] setAlpha:1];
+	}
+	if ([self valueForKey:@"_minValueHighlightedImageView"]) {
+		[(UIView *)[self valueForKey:@"_minValueHighlightedImageView"] setAlpha:1];
+	}
+}
+%end
+
+@interface MPUControlCenterTransportButton : UIView
+- (void)_updateEffectForStateChange:(NSUInteger)state;
+@end
+
+%hook MPUControlCenterTransportButton
+- (void)_updateEffectForStateChange:(NSUInteger)state {
+	%orig(1);
+}
+- (void)layoutSubviews {
+	%orig;
+	[self _updateEffectForStateChange:1];
+}
+%end
+
+// %hook CCUISystemControlsPageViewController
+// - (void)loadView {
+// 	%orig;
+// 	CCXAirAndNightSectionController *controller = [[NSClassFromString(@"CCXAirAndNightSectionController") alloc] init];
+// 	[(NSMutableArray *)[self valueForKey:@"_sectionList"] removeObject:[self valueForKey:@"_airStuffSection"]];
+// 	controller.delegate = self;
+// 	[self setValue:controller forKey:@"_airStuffSection"];
+// 	[(NSMutableArray *)[self valueForKey:@"_sectionList"] insertObject:controller atIndex:1];
+// }
+// %end
+
+// %hook NSBundle
+// + (id)bundleForClass:(Class)value {
+// 	if ([value isEqual:NSClassFromString(@"CCXAirAndNightSectionController")]) {
+// 		return %orig(NSClassFromString(@"CCUIAirStuffSectionController"));
+// 	} else if ([value isEqual:NSClassFromString(@"CCXTriButtonLikeSectionSplitView")]) {
+
+// 	} else return %orig;
+// }
+// %end
+
+// %hook CCUIButtonLikeSectionSplitView
+// - (BOOL)isHidden {
+// 	return YES;
+// }
+// %end
+
+
+@interface WGWidgetShortLookView : UIView
+@property (nonatomic, retain) UIView *multiplyView;
+- (void)setBackgroundView:(UIView *)view;
+- (CGFloat)cornerRadius;
+@end
+
+
+@interface NCMaterialView : UIView 
+
++(id)materialViewWithStyleOptions:(NSUInteger)arg1 ;
+@end
+
+@interface NCShortLookView : UIView
+@end
+
+
+%hook NCShortLookView
+// %property (nonatomic, retain) UIView *multiplyView;
+
+
+// - (UIView *)_newDefaultBackgroundView {
+// 	NCMaterialView *materialView = [NSClassFromString(@"NCMaterialView") materialViewWithStyleOptions:2];
+// 	UIView *multiplyView = [[UIView alloc] initWithFrame:CGRectMake(0,0,self.frame.size.width,self.frame.size.height)];
+// 	multiplyView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.3];
+// 	[multiplyView.layer setContentsMultiplyColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.15].CGColor];
+// 	[materialView addSubview:multiplyView];
+// 	// multiplyView.translatesAutoresizingMaskIntoConstraints = NO;
+
+// 	// [materialView addConstraint:[NSLayoutConstraint constraintWithItem:multiplyView
+// 	//                                                       attribute:NSLayoutAttributeLeft
+// 	//                                                       relatedBy:NSLayoutRelationEqual
+// 	//                                                          toItem:materialView
+// 	//                                                       attribute:NSLayoutAttributeLeft
+// 	//                                                      multiplier:1
+// 	//                                                        constant:0]];
+// 	// [materialView addConstraint:[NSLayoutConstraint constraintWithItem:multiplyView
+// 	//                                                       attribute:NSLayoutAttributeTop
+// 	//                                                       relatedBy:NSLayoutRelationEqual
+// 	//                                                          toItem:materialView
+// 	//                                                       attribute:NSLayoutAttributeTop
+// 	//                                                      multiplier:1
+// 	//                                                        constant:0]];
+// 	// [materialView addConstraint:[NSLayoutConstraint constraintWithItem:multiplyView
+// 	//                                                       attribute:NSLayoutAttributeWidth
+// 	//                                                       relatedBy:NSLayoutRelationEqual
+// 	//                                                          toItem:materialView
+// 	//                                                       attribute:NSLayoutAttributeWidth
+// 	//                                                      multiplier:1
+// 	//                                                        constant:0]];
+// 	// [materialView addConstraint:[NSLayoutConstraint constraintWithItem:multiplyView
+// 	//                                                       attribute:NSLayoutAttributeHeight
+// 	//                                                       relatedBy:NSLayoutRelationEqual
+// 	//                                                          toItem:materialView
+// 	//                                                       attribute:NSLayoutAttributeHeight
+// 	//                                                      multiplier:1
+// 	//                                                        constant:0]];
+// 	return materialView;
+// }
+
+// // - (void)addSubview:(UIView *)view {
+// // 	if ([view isKindOfClass:NSClassFromString(@"SBMultiVariantWallpaperEffectView")]) {
+// // 		view.hidden = YES;
+// // 		view.alpha = 0;
+// // 	}
+// // 	%orig;
+// // }
+// // -(void)setBackgroundView:(UIView *)view  {
+// // 	if (![view isKindOfClass:NSClassFromString(@"NCMaterialView")]) {
+// // 		[view removeFromSuperview];
+// // 		NCMaterialView *materialView = [NSClassFromString(@"NCMaterialView") materialViewWithStyleOptions:4];
+// // 		[self addSubview:materialView];
+// // 		[self sendSubviewToBack:materialView];
+// // 		[self setValue:@0 forKey:@"_usesBackgroundView"];
+
+// // 		%orig(materialView);
+// // 		if ([self valueForKey:@"_backgroundView"]) {
+// // 			if ([[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"]) {
+// // 				if (self.multiplyView) {
+// // 					[self.multiplyView removeFromSuperview];
+// // 					self.multiplyView = nil;
+// // 				}
+// // 				CGFloat cornerRadius = [(UIView *)[[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"] _continuousCornerRadius];
+// // 				[(UIView *)[[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"] removeFromSuperview];
+// // 				_UIBackdropViewSettings *backdropSettings = (_UIBackdropViewSettings *)[[NSClassFromString(@"_UIBackdropViewSettingsCCXDarkBlurred") alloc] init];
+// // 				_UIBackdropView *backdropView = [[_UIBackdropView alloc] initWithSettings:backdropSettings];
+// // 				[(UIView *)[self valueForKey:@"_backgroundView"] addSubview:backdropView];
+// // 				[[self valueForKey:@"_backgroundView"] setValue:backdropView forKey:@"_backdropView"];
+// // 				[backdropView _setContinuousCornerRadius:cornerRadius];
+// // 				self.multiplyView = [[UIView alloc] initWithFrame:CGRectMake(0,0,0,0)];
+// // 				self.multiplyView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.3];
+// // 				[self.multiplyView.layer setContentsMultiplyColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.15].CGColor];
+// // 				[(UIView *)[self valueForKey:@"_backgroundView"] addSubview:self.multiplyView];
+// // 				self.multiplyView.translatesAutoresizingMaskIntoConstraints = NO;
+// // 				[self.multiplyView _setContinuousCornerRadius:cornerRadius];
+
+// // 				[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+// // 	                                                      attribute:NSLayoutAttributeLeft
+// // 	                                                      relatedBy:NSLayoutRelationEqual
+// // 	                                                         toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+// // 	                                                      attribute:NSLayoutAttributeLeft
+// // 	                                                     multiplier:1
+// // 	                                                       constant:0]];
+// // 				[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+// // 	                                                      attribute:NSLayoutAttributeTop
+// // 	                                                      relatedBy:NSLayoutRelationEqual
+// // 	                                                         toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+// // 	                                                      attribute:NSLayoutAttributeTop
+// // 	                                                     multiplier:1
+// // 	                                                       constant:0]];
+// // 				[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+// // 	                                                      attribute:NSLayoutAttributeWidth
+// // 	                                                      relatedBy:NSLayoutRelationEqual
+// // 	                                                         toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+// // 	                                                      attribute:NSLayoutAttributeWidth
+// // 	                                                     multiplier:1
+// // 	                                                       constant:0]];
+// // 				[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+// // 	                                                      attribute:NSLayoutAttributeHeight
+// // 	                                                      relatedBy:NSLayoutRelationEqual
+// // 	                                                         toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+// // 	                                                      attribute:NSLayoutAttributeHeight
+// // 	                                                     multiplier:1
+// // 	                                                       constant:0]];
+// // 			}
+// // 		}
+// // 	} else %orig;
+// // }
+// - (void)_configureBackgroundViewIfNecessary {
+// 	%orig;
+// 	if ([[self valueForKey:@"_backgroundView"] isKindOfClass:NSClassFromString(@"NCMaterialView")]) {
+		
+
+// 	if ([self valueForKey:@"_backgroundView"]) {
+// 		if ([[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"]) {
+// 			if (self.multiplyView) {
+// 				[self.multiplyView removeFromSuperview];
+// 				self.multiplyView = nil;
+// 			}
+// 			CGFloat cornerRadius = [self cornerRadius];
+// 			[(UIView *)[[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"] removeFromSuperview];
+// 			_UIBackdropViewSettings *backdropSettings = (_UIBackdropViewSettings *)[[NSClassFromString(@"_UIBackdropViewSettingsCCXDarkBlurred") alloc] init];
+// 			_UIBackdropView *backdropView = [[_UIBackdropView alloc] initWithSettings:backdropSettings];
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addSubview:backdropView];
+// 			[[self valueForKey:@"_backgroundView"] setValue:backdropView forKey:@"_backdropView"];
+// 			[backdropView _setContinuousCornerRadius:cornerRadius];
+// 			self.multiplyView = [[UIView alloc] initWithFrame:CGRectMake(0,0,0,0)];
+// 			self.multiplyView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.3];
+// 			[self.multiplyView.layer setContentsMultiplyColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.15].CGColor];
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addSubview:self.multiplyView];
+// 			self.multiplyView.translatesAutoresizingMaskIntoConstraints = NO;
+// 			[self.multiplyView _setContinuousCornerRadius:cornerRadius];
+
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+//                                                       attribute:NSLayoutAttributeLeft
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+//                                                       attribute:NSLayoutAttributeLeft
+//                                                      multiplier:1
+//                                                        constant:0]];
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+//                                                       attribute:NSLayoutAttributeTop
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+//                                                       attribute:NSLayoutAttributeTop
+//                                                      multiplier:1
+//                                                        constant:0]];
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+//                                                       attribute:NSLayoutAttributeWidth
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+//                                                       attribute:NSLayoutAttributeWidth
+//                                                      multiplier:1
+//                                                        constant:0]];
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+//                                                       attribute:NSLayoutAttributeHeight
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+//                                                       attribute:NSLayoutAttributeHeight
+//                                                      multiplier:1
+//                                                        constant:0]];
+// 		}
+// 	}
+// 	}
+// }
+
+- (void)_configureMainOverlayViewIfNecessary {
+	%orig;
+	((UIView *)[self valueForKey:@"_mainOverlayView"]).backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.125];
+}
+- (void)_configureHeaderOverlayViewIfNecessary {
+	%orig;
+	((UIView *)[self valueForKey:@"_headerOverlayView"]).backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.225];
+}
+%end
+
+@interface SBSearchEtceteraTodayLayoutContentView : UIView
+@end
+
+// %hook SBSearchEtceteraTodayLayoutContentView
+// - (void)layoutSubviews {
+// 	%orig;
+// 	self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
+// }
+// - (UIColor *)backgroundColor {
+// 	return [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
+// }
+// - (void)setBackgroundColor:(UIColor *)color {
+// 	%orig([UIColor colorWithRed:0 green:0 blue:0 alpha:0.6]);
+// }
+// %end
+
+// UIImage *sharedImage;
+// static BOOL setShared = NO;
+
+// %hook _SBFakeBlurView
+// +(UIImage *)_imageForStyle:(NSInteger*)arg1 withSource:(id)arg2 {
+// 	if (!setShared) {
+
+// 		NSInteger ttr = 0;
+// 		sharedImage = %orig(&ttr,arg2);
+// 		UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectMake(0,0,sharedImage.size.width,sharedImage.size.height)];
+// 		UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,sharedImage.size.width,sharedImage.size.height)];
+// 		[window addSubview:imageView];
+// 		imageView.image = sharedImage;
+// 		_UIBackdropViewSettings *_backdropSettings = [NSClassFromString(@"_UIBackdropViewSettingsCCXDarkBlurred") new];
+// 		_UIBackdropView *_backdropView = [[_UIBackdropView alloc] initWithSettings:_backdropSettings];
+// 		[imageView addSubview:_backdropView];
+// 		UIView *multiplyView = [[UIView alloc] initWithFrame:imageView.frame];
+// 		multiplyView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.3];
+// 		[multiplyView.layer setContentsMultiplyColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.5].CGColor];
+// 		[imageView addSubview:multiplyView];
+// 		UIView *multiplyView1 = [[UIView alloc] initWithFrame:imageView.frame];
+// 		multiplyView1.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.1];
+// 		[imageView addSubview:multiplyView1];
+		
+// 		window.hidden = NO;
+// 		__block UIImage *thing;
+// 		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+// 	    	thing = [window _imageFromRect:window.frame];
+// 			thing = [thing sbf_scaleImage:(CGFloat)1.0/(CGFloat)[UIScreen mainScreen].scale]; 
+// 			sharedImage = thing;
+// 			window.hidden = YES;
+// 			window.alpha = 0;
+// 			window.userInteractionEnabled = NO;
+// 			// [UIWindow _removeWindowFromStack:window];
+
+// 		});
+// 		setShared = YES;
+// 	}
+// 	NSInteger style = *arg1;
+// 	if (style == (NSInteger)32) {
+
+// 		if (sharedImage) return sharedImage;
+// 		else return nil;
+
+// 		// UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+// 		// UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,image.size.width,image.size.height)];
+// 		// [window addSubview:imageView];
+// 		// imageView.image = image;
+// 		// _UIBackdropViewSettings *_backdropSettings = [NTXBackdropViewSettings watchNotificationsBackdropViewSettingsWithBlur:YES];
+// 		// _UIBackdropView *_backdropView = [[_UIBackdropView alloc] initWithSettings:_backdropSettings];
+// 		// [imageView addSubview:_backdropView];
+
+
+// 		// UIGraphicsBeginImageContext(CGSizeMake(imageView.frame.size.width, imageView.frame.size.height));
+// 		// CGContextRef context = UIGraphicsGetCurrentContext();
+// 		// UIImage *screenShot = UIGraphicsGetImageFromCurrentImageContext();
+// 		// UIGraphicsEndImageContext();
+// 		// return screenShot;
+// 		// return sharedImage;
+// 	} else return %orig;
+
+// }
+// %end
+
+// @interface SBWallpaperEffectView : UIView
+// @property(nonatomic) BOOL forcesOpaque; // @synthesize forcesOpaque=_forcesOpaque;
+// @property(nonatomic) int wallpaperStyle;
+// - (void)setStyle:(int)arg1;
+// - (instancetype)initWithWallpaperVariant:(int)arg1;
+// - (void)_setFrame:(CGRect)arg1 forceUpdateBackgroundImage:(BOOL)arg2 ;
+// @end
+
+// %hook SBWallpaperEffectView
+// - (void)_configureFromScratch {
+// 	NSInteger style = self.wallpaperStyle;
+// 	if (style == (NSInteger)32) {
+// 		[self setValue:@1 forKey:@"_forcesOpaque"];
+// 	}
+// 	%orig;
+// 	// MSHookIvar<BOOL>(self,@"_forcesOpaque") = NO;
+// }
+// // -(void)_configureForCurrentBlurStyle {
+// // 	MSHookIvar<BOOL>(self,"_forcesOpaque") = NO;
+// // 	%orig;
+// // }
+// %end
+
+// also need a 0.15 black view ontop of it all 
+
+//last view bg - black with 0.69 opacity
+// last view alpha - 0.3
+
+// @interface NCLookViewBackdropViewSettings : _UIBackdropViewSettings
+// @end
+
+@interface NCLookViewBackdropViewSettings : _UIBackdropViewSettings
+-(BOOL)_isDarkened;
+-(BOOL)_isBlurred;
+@end
+
+
+%hook NCLookViewBackdropViewSettings
++ (id)lookViewBackdropViewSettingsWithBlur:(BOOL)blur darken:(BOOL)darken {
+	if (darkmode) {
+	if (blur) {
+		return [NSClassFromString(@"_UIBackdropViewSettingsCCXDarkBlurred") new];
+	} else if (!blur && !darken) {
+		return [NSClassFromString(@"_UIBackdropViewSettingsCCXDark") new];
+	} else return %orig;
+} else return %orig;
+}
+%end
+
+@interface NCNotificationShortLookView : UIView
+@end
+
+%hook NCNotificationShortLookView
+
+- (void)layoutSubviews {
+	%orig;
+	if (darkmode) {
+	if ([[self valueForKey:@"_backgroundView"] isKindOfClass:NSClassFromString(@"NCMaterialView")]) {
+		if ([[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"]) {
+			if ([[[[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"] valueForKey:@"_inputSettings"] isKindOfClass:NSClassFromString(@"NCLookViewBackdropViewSettings")]) {
+				NCLookViewBackdropViewSettings *old = (NCLookViewBackdropViewSettings *)[[[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"] valueForKey:@"_inputSettings"];
+				if (![old _isDarkened] && ![old _isBlurred]) {
+					[(_UIBackdropView *)[[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"] transitionToSettings:[NSClassFromString(@"_UIBackdropViewSettingsCCXDark") new]];
+				} else if ([old _isBlurred] && ![old _isDarkened]) {
+					[(_UIBackdropView *)[[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"] transitionToSettings:[NSClassFromString(@"_UIBackdropViewSettingsCCXDarkBlurred") new]];
+				}
+			}
+		}
+	}
+	if ([self valueForKey:@"_mainOverlayView"])
+		((UIView *)[self valueForKey:@"_mainOverlayView"]).backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.125];
+	if ([self valueForKey:@"_headerOverlayView"])
+		((UIView *)[self valueForKey:@"_headerOverlayView"]).backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.225];
+}
+}
+%end
+// 	if ([[self valueForKey:@"_backgroundView"] isKindOfClass:NSClassFromString(@"NCMaterialView")]) {
+		
+
+// 	if ([self valueForKey:@"_backgroundView"]) {
+// 		if ([[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"]) {
+// 			if (self.multiplyView) {
+// 				[self.multiplyView removeFromSuperview];
+// 				self.multiplyView = nil;
+// 			}
+// 			CGFloat cornerRadius = [self cornerRadius];
+// 			[(UIView *)[[self valueForKey:@"_backgroundView"] valueForKey:@"_backdropView"] removeFromSuperview];
+// 			_UIBackdropViewSettings *backdropSettings = (_UIBackdropViewSettings *)[[NSClassFromString(@"_UIBackdropViewSettingsCCXDarkBlurred") alloc] init];
+// 			_UIBackdropView *backdropView = [[_UIBackdropView alloc] initWithSettings:backdropSettings];
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addSubview:backdropView];
+// 			[[self valueForKey:@"_backgroundView"] setValue:backdropView forKey:@"_backdropView"];
+// 			[backdropView _setContinuousCornerRadius:cornerRadius];
+// 			self.multiplyView = [[UIView alloc] initWithFrame:CGRectMake(0,0,0,0)];
+// 			self.multiplyView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.3];
+// 			[self.multiplyView.layer setContentsMultiplyColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.15].CGColor];
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addSubview:self.multiplyView];
+// 			self.multiplyView.translatesAutoresizingMaskIntoConstraints = NO;
+// 			[self.multiplyView _setContinuousCornerRadius:cornerRadius];
+
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+//                                                       attribute:NSLayoutAttributeLeft
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+//                                                       attribute:NSLayoutAttributeLeft
+//                                                      multiplier:1
+//                                                        constant:0]];
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+//                                                       attribute:NSLayoutAttributeTop
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+//                                                       attribute:NSLayoutAttributeTop
+//                                                      multiplier:1
+//                                                        constant:0]];
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+//                                                       attribute:NSLayoutAttributeWidth
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+//                                                       attribute:NSLayoutAttributeWidth
+//                                                      multiplier:1
+//                                                        constant:0]];
+// 			[(UIView *)[self valueForKey:@"_backgroundView"] addConstraint:[NSLayoutConstraint constraintWithItem:self.multiplyView
+//                                                       attribute:NSLayoutAttributeHeight
+//                                                       relatedBy:NSLayoutRelationEqual
+//                                                          toItem:(UIView *)[self valueForKey:@"_backgroundView"]
+//                                                       attribute:NSLayoutAttributeHeight
+//                                                      multiplier:1
+//                                                        constant:0]];
+// 		}
+// 	}
+// 	}
+// }
+// // - (BOOL)_isDarkened {
+// // 	return YES;
+// // }
+
+// // - (id)init {
+// // 	return [[NSClassFromString(@"_UIBackdropViewSettingsCCXDarkBlurred") alloc] init];
+// // }
+// - (void)setDefaultValues {
+// 	%orig;
+// 	self.colorBurnTintAlpha = 0.3;
+// 	self.colorBurnTintLevel = 0;
+// 	self.colorOffsetAlpha = 1;
+// 	self.colorTint = [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:0.359];
+// 	self.colorTintAlpha = 0.0;
+// 	self.colorTintMaskAlpha = 1;
+// 	self.usesColorBurnTintView = YES;
+// 	self.usesColorOffset = YES;
+// 	self.usesColorTintView = YES;
+// 	self.darkeningTintAlpha = 0.2;
+// 	self.darkeningTintBrightness = 0.35;
+// 	self.darkeningTintHue = 0.0;
+// 	self.darkeningTintSaturation = 0;
+// 	self.usesDarkeningTintView = YES;
+// 	self.grayscaleTintAlpha = 0.5;
+// 	self.grayscaleTintLevel = 0.2;
+// 	self.lightenGrayscaleWithSourceOver = YES;
+// 	self.usesGrayscaleTintView = YES;
+// 	self.saturationDeltaFactor = 1.8;
+// 	self.lightenGrayscaleWithSourceOver = YES;
+// 	self.blurRadius = 40;
+// }
+// %end
+
+
+
+
+
+// %hook NCVibrantWidgetPrimaryHighlightStyling
+// - (CGFloat)alpha {
+// 	return 1;
+// }
+// - (UIColor *)color {
+// 	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
+// }
+// %end
+
+// %hook NCVibrantWidgetPrimaryStyling
+// - (CGFloat)alpha {
+// 	return 1;
+// }
+// - (UIColor *)color {
+// 	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.6];
+// }
+
+// %end
+
+// %hook NCVibrantWidgetQuaternaryStyling
+// - (CGFloat)alpha {
+// 	return 1;
+// }
+// - (UIColor *)color {
+// 	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.05];
+// }
+
+// %end
+
+// %hook NCVibrantWidgetSecondaryHighlightStyling
+// - (CGFloat)alpha {
+// 	return 1;
+// }
+// - (UIColor *)color {
+// 	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.42];
+// }
+
+// %end
+
+// %hook NCVibrantWidgetSecondaryStyling
+// - (CGFloat)alpha {
+// 	return 1;
+// }
+// - (UIColor *)color {
+// 	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
+// }
+// %end
+
+// %hook NCVibrantWidgetTertiaryStyling
+// - (CGFloat)alpha {
+// 	return 1.0;
+// }
+// - (UIColor *)color {
+// 	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.13];
+// }
+// %end
+
+// extern NSString * const kCAFilterVibrantLight;
+// extern NSString * const kCAFilterVibrantDark;
+
+// %hook NCPlusDStyling
+// - (NSString *)blendMode {
+// 	return kCAFilterVibrantDark;
+// }
+// - (BOOL)_inputReversed {
+// 	return YES;
+// }
+// %end
+
+// %hook UILabel
+// - (void)nc_applyVibrantStyling:(id)style {
+// 	%orig([NSClassFromString(@"NCVibrantStyling") vibrantStylingWithStyle:7]);
+// }
+// %end
+@interface NCLookHeaderContentView : UIView
+@end
+
+%hook NCLookHeaderContentView
+-(void)_configureTitleLabelForShortLook {
+	%orig;
+	[(UILabel *)[self valueForKey:@"_titleLabel"] nc_removeAllVibrantStyling];
+	[(UILabel *)[self valueForKey:@"_titleLabel"] setTextColor:[UIColor whiteColor]];
+}
+-(void)_configureDateLabelForShortLook {
+	%orig;
+	[(UILabel *)[self valueForKey:@"_dateLabel"] nc_removeAllVibrantStyling];
+	[(UILabel *)[self valueForKey:@"_dateLabel"] setTextColor:[UIColor whiteColor]];
+}
+-(void)_configureUtilityButtonIfNecessary {
+	%orig;
+	[(UILabel *)[(UIButton *)[self valueForKey:@"_utilityButton"] titleLabel] nc_removeAllVibrantStyling];
+	[(UILabel *)[(UIButton *)[self valueForKey:@"_utilityButton"] titleLabel] setTextColor:[UIColor whiteColor]];
+}
+%end
+%hook NCVibrantWidgetPrimaryHighlightStyling
+- (CGFloat)alpha {
+	return 1;
+}
+- (UIColor *)color {
+	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
+}
+%end
+
+%hook NCVibrantWidgetPrimaryStyling
+- (CGFloat)alpha {
+	return 1;
+}
+- (UIColor *)color {
+	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.7];
+}
+
+%end
+
+%hook NCVibrantWidgetQuaternaryStyling
+- (CGFloat)alpha {
+	return 1;
+}
+- (UIColor *)color {
+	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.05];
+}
+
+%end
+
+%hook NCVibrantWidgetSecondaryHighlightStylingZ
+- (CGFloat)alpha {
+	return 1;
+}
+- (UIColor *)color {
+	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.42];
+}
+
+%end
+
+%hook NCVibrantWidgetSecondaryStyling
+- (CGFloat)alpha {
+	return 1;
+}
+- (UIColor *)color {
+	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5];
+}
+%end
+
+%hook NCVibrantWidgetTertiaryStyling
+- (CGFloat)alpha {
+	return 1.0;
+}
+- (UIColor *)color {
+	return [UIColor colorWithRed:1 green:1 blue:1 alpha:0.13];
+}
+%end
+
+extern NSString * const kCAFilterVibrantLight;
+extern NSString * const kCAFilterVibrantDark;
+
+%hook NCPlusDStyling
+- (NSString *)blendMode {
+	return kCAFilterVibrantDark;
+}
+- (BOOL)_inputReversed {
+	return YES;
+}
+%end
+
+@interface NCNotificationContentView : UIView
+@end
+
+%hook NCNotificationContentView
+- (void)layoutSubviews {
+	%orig;
+
+	NSMutableArray *labels = [NSMutableArray new];
+	[labels addObject:[NSString stringWithFormat:@"_outgoingSecondaryLabel"]];
+	[labels addObject:[NSString stringWithFormat:@"_outgoingPrimaryLabel"]];
+	[labels addObject:[NSString stringWithFormat:@"_outgoingPrimarySubtitleLabel"]];
+	[labels addObject:[NSString stringWithFormat:@"_secondaryLabel"]];
+	[labels addObject:[NSString stringWithFormat:@"_primarySubtitleLabel"]];
+	[labels addObject:[NSString stringWithFormat:@"_hintTextLabel"]];
+	[labels addObject:[NSString stringWithFormat:@"_primaryLabel"]];
+	
+	for (NSString *labelString in labels) {
+		UILabel *label = (UILabel *)[self valueForKey:[NSString stringWithFormat:@"%@", labelString]];
+		if (label) {
+			[label nc_removeAllVibrantStyling];
+			[label setTextColor:[UIColor whiteColor]];
+		}
+	}
+}
+%end
+
+
+%hook NCNotificationSectionListViewController
+-(BOOL)collectionView:(id)arg1 canPerformAction:(SEL)arg2 forItemAtIndexPath:(id)arg3 withSender:(id)arg4 {
+	// if([[CPGPresentationWindow sharedWindow] presented]){
+	// 	[[CPGPresentationWindow sharedWindow] tearDownAnimated:YES];
+	// }
+	return %orig;
+}
+-(void)notificationListCell:(id)arg1 requestsPerformAction:(id)arg2 forNotificationRequest:(id)arg3 completion:(id)arg4 {
+	HBLogInfo(@"notificationListCell:requestsPerformAction:");
+	toggleDarkmode();
+	// if([[CPGPresentationWindow sharedWindow] presented]){
+	// 	[[CPGPresentationWindow sharedWindow] tearDownAnimated:YES];
+	// }
+	%orig;
+}
+-(BOOL)collectionView:(id)arg1 shouldSelectItemAtIndexPath:(id)arg2 {
+	HBLogInfo(@"collectionView:shouldSelectItemAtIndexPath:");
+	toggleDarkmode();
+	BOOL should = %orig;
+	// if(should) {
+	// 	if([[CPGPresentationWindow sharedWindow] presented]){
+	// 		[[CPGPresentationWindow sharedWindow] tearDownAnimated:YES];
+	// 	}
+	// }
+	return should;
+}
+%end

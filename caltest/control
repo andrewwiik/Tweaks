@@ -1,0 +1,9 @@
+Package: com.andrewwiik.caltest
+Name: CalTest
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Andrew
+Author: Andrew
+Section: Tweaks

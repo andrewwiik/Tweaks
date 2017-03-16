@@ -1,0 +1,8 @@
+Package: com.andrewwiik.templatetest
+Name: Template Test
+Depends: mobilesubstrate, com.iosblocks.curago, firmware (>= 7.0)
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: A Block for iOS Block!
+Author: Andrew Wiik
+Section: Blocks (iOS Blocks)

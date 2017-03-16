@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+			<key>key</key>
+			<string>GesturesEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Now Playing (Music App)</string>
+		</dict>
+		<dict>
+					<key>cell</key>
+					<string>PSSwitchCell</string>
+					<key>default</key>
+					<false/>
+					<key>defaults</key>
+					<string>com.atwiiks.apollo</string>
+					<key>PostNotification</key>
+					<string>com.atwiiks.apollo/settingschanged</string>
+					<key>key</key>
+					<string>NowPlayingGestures</string>
+					<key>label</key>
+					<string>NOWPLAYINGGESTURES</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>NowPlayingSwipeRightAction</string>
+			<key>label</key>
+			<string>Swipe Right</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>NowPlayingSwipeLeftAction</string>
+			<key>label</key>
+			<string>Swipe Left</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>NowPlayingSwipeRightTwoFingersAction</string>
+			<key>label</key>
+			<string>Swipe Right (Two Fingers)</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>NowPlayingSwipeLeftTwoFingersAction</string>
+			<key>label</key>
+			<string>Swipe Left (Two Fingers)</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>NowPlayingDoubleTapAction</string>
+			<key>label</key>
+			<string>Double Tap</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>MiniPlayer (Music App)</string>
+		</dict>
+		<dict>
+					<key>cell</key>
+					<string>PSSwitchCell</string>
+					<key>default</key>
+					<false/>
+					<key>defaults</key>
+					<string>com.atwiiks.apollo</string>
+					<key>PostNotification</key>
+					<string>com.atwiiks.apollo/settingschanged</string>
+					<key>key</key>
+					<string>MiniPlayerGestures</string>
+					<key>label</key>
+					<string>MINIPLAYERGESTURES</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>MiniPlayerSwipeRightAction</string>
+			<key>label</key>
+			<string>Swipe Right</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>MiniPlayerSwipeLeftAction</string>
+			<key>label</key>
+			<string>Swipe Left</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Control Center</string>
+		</dict>
+		<dict>
+					<key>cell</key>
+					<string>PSSwitchCell</string>
+					<key>default</key>
+					<false/>
+					<key>defaults</key>
+					<string>com.atwiiks.apollo</string>
+					<key>PostNotification</key>
+					<string>com.atwiiks.apollo/settingschanged</string>
+					<key>key</key>
+					<string>CCGesturesEnabled</string>
+					<key>label</key>
+					<string>Enabled</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>CCSwipeLeftAction</string>
+			<key>label</key>
+			<string>Swipe Left</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Share</string>
+				<string>Pick Song</string>
+				<string>Launch Now Playing App</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>11</integer>
+				<integer>12</integer>
+				<integer>13</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>CCSwipeRightAction</string>
+			<key>label</key>
+			<string>Swipe Right</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Share</string>
+				<string>Pick Song</string>
+				<string>Launch Now Playing App</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>11</integer>
+				<integer>12</integer>
+				<integer>13</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>CCSwipeLeftTwoFingersAction</string>
+			<key>label</key>
+			<string>Swipe Left (Two Fingers)</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Share</string>
+				<string>Pick Song</string>
+				<string>Launch Now Playing App</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>11</integer>
+				<integer>12</integer>
+				<integer>13</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>CCSwipeRightTwoFingersAction</string>
+			<key>label</key>
+			<string>Swipe Right (Two Fingers)</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Share</string>
+				<string>Pick Song</string>
+				<string>Launch Now Playing App</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>11</integer>
+				<integer>12</integer>
+				<integer>13</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>CCShortPressAction</string>
+			<key>label</key>
+			<string>ShortPress</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Share</string>
+				<string>Pick Song</string>
+				<string>Launch Now Playing App</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>11</integer>
+				<integer>12</integer>
+				<integer>13</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>CCLongPressAction</string>
+			<key>label</key>
+			<string>Long Press</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Share</string>
+				<string>Pick Song</string>
+				<string>Launch Now Playing App</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>11</integer>
+				<integer>12</integer>
+				<integer>13</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>CCDoubleTapAction</string>
+			<key>label</key>
+			<string>Double Tap</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Share</string>
+				<string>Pick Song</string>
+				<string>Launch Now Playing App</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>11</integer>
+				<integer>12</integer>
+				<integer>13</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+	<key>cell</key>
+	<string>PSGroupCell</string>
+	<key>label</key>
+	<string>LockScreen</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSSwitchCell</string>
+		<key>default</key>
+		<false/>
+		<key>defaults</key>
+		<string>com.atwiiks.apollo</string>
+		<key>PostNotification</key>
+		<string>com.atwiiks.apollo/settingschanged</string>
+		<key>key</key>
+		<string>LSGesturesEnabled</string>
+		<key>label</key>
+		<string>Enabled</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>LSSwipeLeftAction</string>
+			<key>label</key>
+			<string>Swipe Left</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>LSSwipeRightAction</string>
+			<key>label</key>
+			<string>Swipe Right</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>LSShortPressAction</string>
+			<key>label</key>
+			<string>ShortPress</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>LSLongPressAction</string>
+			<key>label</key>
+			<string>Long Press</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>LSDoubleTapAction</string>
+			<key>label</key>
+			<string>Double Tap</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>SBDoubleTapArtworkAction</string>
+			<key>label</key>
+			<string>Double Tap LS Artwork</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Auxo Legacy</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>AuxoLegacySwipeRightAction</string>
+			<key>label</key>
+			<string>Swipe Right</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>99</integer>
+			<key>defaults</key>
+			<string>com.atwiiks.apollo</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>AuxoLegacySwipeLeftAction</string>
+			<key>label</key>
+			<string>Swipe Left</string>
+			<key>validTitles</key>
+			<array>
+				<string>Not Set</string>
+				<string>Next Song</string>
+				<string>Previous Song</string>
+				<string>Play/Pause</string>
+				<string>15 Seconds Forward</string>
+				<string>15 Seconds Back</string>
+				<string>Like/Heart Song</string>
+				<string>Present Up Next</string>
+				<string>Set Shuffling</string>
+				<string>Set Repeating</string>
+				<string>Show Context Menu</string>
+				<string>Decrease Volume</string>
+				<string>Increase Volume</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>99</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>10</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>14</integer>
+				<integer>15</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.atwiiks.apollo/settingschanged</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>GESTURES</string>
+</dict>
+</plist>

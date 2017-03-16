@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>group1</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTitleValue</string>
+			<key>label</key>
+			<string>Title</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>group2</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>edu.self.movecelllpref</string>
+			<key>key</key>
+			<string>switchA</string>
+			<key>label</key>
+			<string>switchA</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>MoveCellPref</string>
+</dict>
+</plist>

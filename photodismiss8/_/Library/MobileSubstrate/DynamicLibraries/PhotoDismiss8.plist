@@ -1,0 +1,5 @@
+{ Filter = {
+  Bundles = ( "com.apple.PhotosUI", "com.apple.PhotoLibrary" );
+  Mode = "Any";
+}; }
+

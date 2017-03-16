@@ -1,0 +1,11 @@
+Package: com.zachatrocity.exsto
+Name: Exsto
+Depends: mobilesubstrate
+Version: 0.0.1.2-1
+Architecture: iphoneos-arm
+Description: Unleash your folders
+Depiction: http://www.zachatrocity.com/repo/depic/com.atrocity.exsto/index.html
+Maintainer: Zach Russell
+Author: Zach Russell <http://www.zachatrocity.com>
+Homepage: http://www.zachatrocity.com
+Section: Tweaks

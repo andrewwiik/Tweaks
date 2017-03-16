@@ -1,0 +1,9 @@
+Package: com.creatix.quickcenter
+Name: QuickCenter
+Depends: mobilesubstrate, jp.ashikase.libcrashreport, jp.ashikase.libpackageinfo, jp.ashikase.libsymbolicate
+Version: 0.0.5
+Architecture: iphoneos-arm
+Description: Extend your Control Center!
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks

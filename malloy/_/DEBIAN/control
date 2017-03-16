@@ -1,0 +1,10 @@
+Package: com.atwiiks.malloy
+Name: Malloy
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Private Request
+Maintainer: Andrew Wiik
+Author: Andrew Wiik
+Section: Tweaks
+Version: 0.0.1-17
+Installed-Size: 90

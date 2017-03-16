@@ -1,0 +1,2 @@
+@interface CCUIControlCenterPagePlatterView : UIView
+@end

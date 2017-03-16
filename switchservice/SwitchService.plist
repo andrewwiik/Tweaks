@@ -1,0 +1,5 @@
+Filter = {
+  Executables = ("imagent");
+  Bundles = ( "com.apple.MobileSMS", "com.apple.mobilesms.notification" );
+  Mode = "Any";
+};

@@ -1,0 +1,9 @@
+Package: com.fgfg.fgfgfg
+Name: testing
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: dfgdfsd
+Author: dfgdfsd
+Section: Tweaks

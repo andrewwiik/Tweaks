@@ -1,0 +1,2 @@
+void enableFakeIdiom();
+void disableFakeIdiom();

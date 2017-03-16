@@ -1,0 +1,10 @@
+Package: com.facebook.pop
+Name: pop
+Depends: 
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome framework of some sort!!
+Maintainer: Facebook
+Author: Facebook
+Section: System
+Tag: role::developer

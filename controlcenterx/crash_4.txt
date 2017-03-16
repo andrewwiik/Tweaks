@@ -1,0 +1,841 @@
+Mar  5 12:24:40 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:40 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:40 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:40 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:40 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Mar  5 12:24:40 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Mar  5 12:24:40 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:40 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:40 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:40 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:40 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:41 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:41 Andrews-iPhone deleted(CacheDelete)[646] <Notice>: <private>: Successful Request
+Mar  5 12:24:41 Andrews-iPhone deleted(CacheDelete)[646] <Notice>: <private>: Completion callback
+Mar  5 12:24:41 Andrews-iPhone deleted[646] <Notice>: <private> took 3.799566 seconds, returned: <private>
+Mar  5 12:24:41 Andrews-iPhone deleted[646] <Notice>: <private> updateInfo: <private>
+Mar  5 12:24:41 Andrews-iPhone deleted[646] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Mar  5 12:24:41 Andrews-iPhone deleted(CacheDelete)[646] <Notice>: Connection to <private> was invalidated.
+Mar  5 12:24:41 Andrews-iPhone deleted[646] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Mar  5 12:24:41 Andrews-iPhone CacheDeleteAppContainerCaches(CacheDelete)[940] <Notice>: newConnection invalidated
+Mar  5 12:24:41 Andrews-iPhone deleted[646] <Notice>: updating service info amount: 637292544, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Mar  5 12:24:41 Andrews-iPhone deleted[646] <Notice>: sendNotification: TRUE
+Mar  5 12:24:41 Andrews-iPhone deleted[646] <Notice>: re-started persitence timer
+Mar  5 12:24:41 Andrews-iPhone deleted[646] <Notice>: PurgeableSpace result: <private>
+Mar  5 12:24:41 Andrews-iPhone deleted[646] <Notice>: SYNC purgeable op results: <private>
+Mar  5 12:24:41 Andrews-iPhone SpringBoard(KeyboardArbiter)[851] <Info>: HW kbd: currently com.apple.springboard ((null) < com.apple.springboard)
+Mar  5 12:24:41 Andrews-iPhone locationd[304] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/Routine.bundle'
+Mar  5 12:24:41 Andrews-iPhone SpringBoard(libsystem_trace.dylib)[851] <Notice>: subsystem: com.apple.SpringBoard, category: SystemGestureControlCenter, enable_level: 1, persist_level: 0, default_ttl: 0, info_ttl: 0, debug_ttl: 0, generate_symptoms: 0, enable_oversize: 0, privacy_setting: 0, enable_private_data: 0
+Mar  5 12:24:41 Andrews-iPhone SpringBoard[851] <Notice>: Adding idle timer disabled reason: Control Center Reveal
+Mar  5 12:24:41 Andrews-iPhone SpringBoard[851] <Notice>: Undimming for source: springboard request
+Mar  5 12:24:41 Andrews-iPhone SpringBoard[851] <Notice>: returning the workspace lock time (30.000000) from _nextLockTimeDuration
+Mar  5 12:24:41 Andrews-iPhone SpringBoard[851] <Notice>: returning -1 from _nextIdleTimeDuration because of these idleTimerDisabledReasons: <private>
+Mar  5 12:24:41 Andrews-iPhone SpringBoard[851] <Notice>: Disabling idle timer because the next idle duration < 0.
+Mar  5 12:24:41 Andrews-iPhone SpringBoard[851] <Notice>: Setting _lastBKUserEventTimerMode=0 with duration=-1.000000
+Mar  5 12:24:41 Andrews-iPhone SpringBoard(BackBoardServices)[851] <Info>: Resetting user event timer to Disabled duration -1
+Mar  5 12:24:41 Andrews-iPhone SpringBoard[851] <Notice>: Enabling global orientation lock override for reason: Control Center, new orientation: 0, forced NO
+Mar  5 12:24:41 Andrews-iPhone SpringBoard[851] <Notice>: SB orientation locked: YES; user lock: YES, overrides: {(
+    "Control Center"
+)}
+Mar  5 12:24:41 Andrews-iPhone SpringBoard[851] <Notice>: SB orientation locked: YES; user lock: YES, overrides: {(
+    "Control Center"
+)}
+Mar  5 12:24:41 Andrews-iPhone SpringBoard[851] <Notice>: SB orientation locked: YES; user lock: YES, overrides: {(
+    "Control Center"
+)}
+Mar  5 12:24:41 Andrews-iPhone sharingd[300] <Notice>: Skipping request for advertising: advertisingEnabled NO, currentConsoleUser YES, state PoweredOff, shouldNotAdvertiseRequestersCount 1, shouldStart YES
+Mar  5 12:24:41 Andrews-iPhone sharingd[300] <Notice>: Stopping Advertising Request
+Mar  5 12:24:41 Andrews-iPhone sharingd[300] <Notice>: Resuming continuation advertising
+Mar  5 12:24:41 Andrews-iPhone sharingd[300] <Notice>: Stopping response advertisement
+Mar  5 12:24:41 Andrews-iPhone sharingd[300] <Notice>: Resuming continuation advertising
+Mar  5 12:24:41 Andrews-iPhone sharingd[300] <Notice>: SystemUI changed: 0x10 -> 0x11
+Mar  5 12:24:41 Andrews-iPhone identityservicesd[280] <Notice>: stopAdvertisingOfType:TetheringTargetPresence
+Mar  5 12:24:41 Andrews-iPhone identityservicesd(WirelessProximity)[280] <Notice>: Continuity stop advertising of type: 13
+Mar  5 12:24:41 Andrews-iPhone identityservicesd[280] <Notice>: stopAdvertisingOfType:TetheringSourcePresence
+Mar  5 12:24:41 Andrews-iPhone identityservicesd(WirelessProximity)[280] <Notice>: Continuity stop advertising of type: 14
+Mar  5 12:24:41 Andrews-iPhone wirelessproxd[296] <Notice>: Stop advertising for process identityservicesd (280) of type 13
+Mar  5 12:24:41 Andrews-iPhone wirelessproxd[296] <Notice>: Trying to remove an advertising request when there are no advert requests
+Mar  5 12:24:41 Andrews-iPhone wirelessproxd[296] <Notice>: Stop advertising for process identityservicesd (280) of type 14
+Mar  5 12:24:41 Andrews-iPhone wirelessproxd[296] <Notice>: Trying to remove an advertising request when there are no advert requests
+Mar  5 12:24:41 Andrews-iPhone identityservicesd[280] <Notice>: calling continuityDidStopAdvertisingOfType:TetheringTargetPresence
+Mar  5 12:24:41 Andrews-iPhone identityservicesd[280] <Notice>: calling continuityDidStopAdvertisingOfType:TetheringSourcePresence
+Mar  5 12:24:41 Andrews-iPhone sharingd[300] <Notice>: Target stopped advertising request
+Mar  5 12:24:41 Andrews-iPhone sharingd[300] <Notice>: Source stopped advertising response
+Mar  5 12:24:42 Andrews-iPhone locationd[304] <Notice>: Incrementing METs -- mets:<private> metsFromGrade:<private>
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CFNetwork)[851] <Notice>: TIC TCP Conn Start [2:0x174386f50]
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(libsystem_network.dylib)[851] <Info>: nw_endpoint_handler_start [2 cydia.a3tweaks.com:80 initial path (null)]
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(libsystem_network.dylib)[851] <Info>: nw_connection_endpoint_report [2 cydia.a3tweaks.com:80 initial path (null)] reported event path:start
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(libsystem_network.dylib)[851] <Info>: nw_connection_endpoint_report [2 cydia.a3tweaks.com:80 waiting path (satisfied)] reported event path:satisfied
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(libsystem_network.dylib)[851] <Info>: nw_connection_endpoint_report [2 cydia.a3tweaks.com:80 waiting path (satisfied)] skipping state update
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(libsystem_network.dylib)[851] <Info>: nw_connection_endpoint_report [2 cydia.a3tweaks.com:80 in_progress resolver (satisfied)] reported event resolver:start_dns
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  13: connect_callback: Adding FD for uid 501
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  13: DNSServiceCreateConnection START PID[851](SpringBoard)
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  13: Result code socket 15 created 00000000 00000001
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  13: DNSServiceGetAddrInfo(4000D000, 0, 3, cydia.a3tweaks.com.) START PID[851](SpringBoard)
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: GetServerForQuestion: 000000012C005C40 DNS server (000000012BE126F0) 216.6.136.140:53 (Penalty Time Left 0) (Scope None:0000000000000000:-1) found for name cydia.a3tweaks.com. (AAAA)
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: InitDNSConfig: question 000000012C005C40 cydia.a3tweaks.com. (AAAA) Timeout 30, DNS Server 216.6.136.140:53
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: ShouldSuppressUnicastQuery: Query suppressed for cydia.a3tweaks.com., qtype AAAA, since DNS Configuration does not allow (req_A is true and req_AAAA is false)
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: GetServerForQuestion: 000000012C0058C8 DNS server (000000012BE126F0) 216.6.136.140:53 (Penalty Time Left 0) (Scope None:0000000000000000:-1) found for name cydia.a3tweaks.com. (Addr)
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: InitDNSConfig: question 000000012C0058C8 cydia.a3tweaks.com. (Addr) Timeout 30, DNS Server 216.6.136.140:53
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: ShouldSuppressUnicastQuery: Query not suppressed for cydia.a3tweaks.com., qtype Addr, DNSServer . 216.6.136.140:53 allows A queries
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  13: Result code socket 15 closed  00000000 00000001 (0)
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: GenerateNegativeResponse: Generating negative response for question cydia.a3tweaks.com. (AAAA)
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: queryrecord_result_callback: Suppressed question cydia.a3tweaks.com. (AAAA)
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  13: DNSServiceGetAddrInfo(cydia.a3tweaks.com., AAAA) ADD    0 cydia.a3tweaks.com. AAAA
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: -- Sent UDP DNS Query (flags 0100) RCODE: NoErr (0) RD ID: 38349 24 bytes from port 55275 to 216.6.136.140:53 --
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  1 Questions
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  0 cydia.a3tweaks.com. Addr
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  0 Answers
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  0 Authorities
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  0 Additionals
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: --------------
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: -- Received UDP DNS Response (flags 8583) RCODE: NXDomain (3) AA RD RA ID: 38349 85 bytes from 216.6.136.140:53 to 192.168.8.102:55275 --
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  1 Questions
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  0 cydia.a3tweaks.com. Addr
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  0 Answers
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  1 Authorities
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  0 TTL     180   65 a3tweaks.com. SOA ns1.dreamhost.com. hostmaster.dreamhost.com. 2017030302 20688 1800 1814400 14400
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  0 Additionals
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: --------------
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: mDNSCoreReceiveResponse ignoring   65 a3tweaks.com. SOA ns1.dreamhost.com. hostmaster.dreamhost.com. 2017030302 20688 1800 1814400 14400
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>: queryrecord_result_callback: Retrying question cydia.a3tweaks.com. (Addr) after appending search domains
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  13: RetryQuestionWithSearchDomains: Not appending search domains - SuppressQuery 1, SearchListIndex 0, AppendSearchDomains 0
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  13: DNSServiceGetAddrInfo(cydia.a3tweaks.com., Addr) ADD    0 cydia.a3tweaks.com. Addr
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(libsystem_network.dylib)[851] <Info>: nw_connection_endpoint_report [2 cydia.a3tweaks.com:80 in_progress resolver (satisfied)] reported event path:trigger
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(libsystem_network.dylib)[851] <Info>: nw_endpoint_resolver_update [2 cydia.a3tweaks.com:80 in_progress resolver (satisfied)] resolution failed
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  13: DNSServiceCreateConnection STOP PID[851](SpringBoard)
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  13: DNSServiceGetAddrInfo(cydia.a3tweaks.com.) STOP PID[851](SpringBoard)
+Mar  5 12:24:42 Andrews-iPhone mDNSResponder[457] <Info>:  13: Removing FD
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(libsystem_network.dylib)[851] <Info>: nw_connection_endpoint_report [2 cydia.a3tweaks.com:80 failed resolver (satisfied)] reported event resolver:receive_dns, error Error Domain=kNWErrorDomainDNS Code=-65554 "DNS failed due to NoSuchRecord" UserInfo={NSDescription=DNS failed due to NoSuchRecord}
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CFNetwork)[851] <Notice>: TIC TCP Conn Event [2:0x174386f50]: 3 Err(-65554)
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CFNetwork)[851] <Error>: TIC TCP Conn Failed [2:0x174386f50]: 12:8 Err(-65554)
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CFNetwork)[851] <Notice>: TIC TCP Conn Cancel [2:0x174386f50]
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CFNetwork)[851] <Notice>: TIC TCP Conn Destroyed [2:0x174386f50]
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(libsystem_network.dylib)[851] <Info>: nw_endpoint_handler_cancel [2 cydia.a3tweaks.com:80 failed resolver (satisfied)]
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CFNetwork)[851] <Notice>: _CFNetworkIsConnectedToInternet returning 1, flagsValid: 1, flags: 0x2
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CFNetwork)[851] <Error>: HTTP load failed (error code: -1003 [12:8])
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CFNetwork)[851] <Error>: NSURLConnection finished with error - code -1003
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: Cannot find executable for CFBundle 0x100e83580 </var/db/stash/_.AVUdOG/Switches/AirplaneMode.bundle> (not loaded)
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: Cannot find executable for CFBundle 0x100e72b50 </var/db/stash/_.AVUdOG/Switches/Wifi.bundle> (not loaded)
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: Cannot find executable for CFBundle 0x100e87e90 </var/db/stash/_.AVUdOG/Switches/LowPower.bundle> (not loaded)
+Mar  5 12:24:42 Andrews-iPhone mediaserverd(CoreMedia)[242] <Notice>: -CMSessionMgr- cmsmHandleApplicationStateChange: CMSession: Client com.apple.MobileAddressBook.ContactsCoreSpotlightExtension with pid '922' is now Background Suspended. Background entitlement: NO
+Mar  5 12:24:42 Andrews-iPhone mediaserverd(AudioToolbox)[242] <Notice>: 1067: pid 922(ContactsCoreSpot)
+Mar  5 12:24:42 Andrews-iPhone UserEventAgent(AppleAwatchd-plugin)[316] <Info>: 8403463918: watchdog: cannot find fg property
+Mar  5 12:24:42 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: 922 com.apple.MobileAddressBook.ContactsCoreSpotlightExtension: BackgroundTaskSuspended (most elevated: BackgroundTaskSuspended)
+Mar  5 12:24:42 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: Entry, display name com.apple.MobileAddressBook.ContactsCoreSpotlightExtension uuid 57F84E36-8569-39AB-9E6E-F7F1AA1ED81A pid 922 isFront 0
+Mar  5 12:24:42 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: Check for bundle name com.apple.MobileAddressBook returns 0
+Mar  5 12:24:42 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: app name com.apple.MobileAddressBook isForeground 0  hasForegroundApps 0, current idea of foreground 1 disp (null)
+Mar  5 12:24:42 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: Going to background, new flags 0x0 enabled 0
+Mar  5 12:24:42 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: Continue with bundle name com.apple.MobileAddressBook, is front 0
+Mar  5 12:24:42 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: com.apple.MobileAddressBook: Foreground: false
+Mar  5 12:24:42 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: Remove appCompactState key com.apple.MobileAddressBook
+Mar  5 12:24:42 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: CFSM2 foreground (current/proposed/state) in = (1/0/1)
+Mar  5 12:24:42 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: CFSM2 foreground (current/state) out = (1/3)
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: Cannot find executable for CFBundle 0x100e867d0 </var/db/stash/_.AVUdOG/Switches/Bluetooth.bundle> (not loaded)
+Mar  5 12:24:42 Andrews-iPhone CommCenter[334] <Notice>: #I BundleID: <private> is no longer a foreground app
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: Cannot find executable for CFBundle 0x100e7c840 </var/db/stash/_.AVUdOG/Switches/Respring.bundle> (not loaded)
+Mar  5 12:24:42 Andrews-iPhone sharingd[300] <Info>: SFOperationCallBack (<0x1005bb5b0>{kind = Information}, event = Information, results = 0x1005b8fd0)
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(Sharing)[851] <Info>: SFOperationCallBack (<private>, event = Information, results = <private>)
+Mar  5 12:24:42 Andrews-iPhone sharingd[300] <Info>: Discoverable mode off: wifi=1, bluetooth=0, carplay=0, dnd=0, finder=0
+Mar  5 12:24:42 Andrews-iPhone sharingd[300] <Info>: SFOperationCallBack (<0x10067ac30>{kind = Controller}, event = Information, results = 0x10065d630)
+Mar  5 12:24:42 Andrews-iPhone sharingd[300] <Info>: SFOperationCallBack (<0x1005b8e20>{kind = Information}, event = Information, results = 0x1005b8920)
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(Sharing)[851] <Info>: SFOperationCallBack (<private>, event = Information, results = <private>)
+Mar  5 12:24:42 Andrews-iPhone sharingd[300] <Info>: Discoverable mode off: wifi=1, bluetooth=0, carplay=0, dnd=0, finder=0
+Mar  5 12:24:42 Andrews-iPhone sharingd[300] <Info>: SFOperationCallBack (<0x10068aca0>{kind = Controller}, event = Information, results = 0x10065a070)
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: Cannot find executable for CFBundle 0x100e85b00 </var/db/stash/_.AVUdOG/Switches/Flashlight.bundle> (not loaded)
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: Cannot find executable for CFBundle 0x100e7c660 </var/db/stash/_.AVUdOG/Switches/Hotspot.bundle> (not loaded)
+Mar  5 12:24:42 Andrews-iPhone awdd[375] <Info>: life:#I No activities remaining; cancelling activity timer.
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:42 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: Cannot find executable for CFBundle 0x100e77fe0 </var/db/stash/_.AVUdOG/Switches/Settings.bundle> (not loaded)
+Mar  5 12:24:42 Andrews-iPhone awdd[375] <Info>: agg:#I Stopping periodic timer because no more work is pending (gen=18)
+Mar  5 12:24:42 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: Cannot find executable for CFBundle 0x100d75f30 </var/db/stash/_.AVUdOG/Switches/NightShift.bundle> (not loaded)
+Mar  5 12:24:43 Andrews-iPhone mediaremoted[244] <Notice>: Returning now playing info of length: 0, artwork: (null)
+Mar  5 12:24:43 Andrews-iPhone mediaremoted[244] <Notice>: Returning now playing application is playing = 0.
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(Horseshoe.dylib)[851] <Notice>: SWITCHES: (
+    "com.atwiiks.controlcenterx.mini-media-player",
+    "com.apple.controlcenter.quick-launch",
+    "com.apple.controlcenter.settings",
+    "com.atwiiks.controlcenterx.air-night",
+    "com.atwiiks.controlcenterx.multi-slider"
+Mar  5 12:24:43 Andrews-iPhone sharingd[300] <Info>: SFOperationCallBack (<0x10066e260>{kind = Information}, event = Information, results = 0x10068ada0)
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(Sharing)[851] <Info>: SFOperationCallBack (<private>, event = Information, results = <private>)
+Mar  5 12:24:43 Andrews-iPhone sharingd[300] <Info>: Discoverable mode off: wifi=1, bluetooth=0, carplay=0, dnd=0, finder=0
+Mar  5 12:24:43 Andrews-iPhone sharingd[300] <Info>: SFOperationCallBack (<0x100678010>{kind = Controller}, event = Information, results = 0x100696e20)
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(QuartzCore)[851] <Notice>: CoreAnimation: zPosition should be within (-FLT_MAX, FLT_MAX) range.
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:43 Andrews-iPhone mediaremoted[244] <Notice>: ERROR: now playing client could not be found for supported commands message: <private>
+Mar  5 12:24:43 Andrews-iPhone locationd[304] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/TimeZone.bundle'
+Mar  5 12:24:43 Andrews-iPhone mediaremoted[244] <Notice>: ERROR: now playing client could not be found for supported commands message: <private>
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(libsystem_trace.dylib)[851] <Notice>: subsystem: com.apple.UIKit, category: LayoutConstraints, enable_level: 0, persist_level: 0, default_ttl: 0, info_ttl: 0, debug_ttl: 0, generate_symptoms: 0, enable_oversize: 1, privacy_setting: 2, enable_private_data: 0
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(UIKit)[851] <Error>: Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+    "<NSLayoutConstraint:0x174891170 H:|-(24)-[UIStackView:0x106b85e90]   (active, names: '|':UIView:0x10a5c5140 )>",
+    "<NSLayoutConstraint:0x1748911c0 H:[UIStackView:0x106b85e90]-(24)-|   (active, names: '|':UIView:0x10a5c5140 )>",
+    "<NSLayoutConstraint:0x174892f20 'UISV-canvas-connection' UILayoutGuide:0x170593db0'UIViewLayoutMarginsGuide'.leading == CCUIBrightnessContentView:0x106bd57e0.leading   (active)>",
+    "<NSLayoutConstraint:0x174893ce0 'UISV-canvas-connection' UILayoutGuide:0x170593db0'UIViewLayoutMarginsGuide'.trailing == CCUIBrightnessContentView:0x106bd57e0.trailing   (active)>",
+    "<NSLayoutConstraint:0x1748941e0 'UISV-canvas-connection' UILayoutGuide:0x17438c640'UIViewLayoutMarginsGuide'.leading == UIStackView:0x100ee1100.leading   (active)>",
+    "<NSLayoutConstraint:0x174894230 'UISV-canvas-connection' UILayoutGuide:0x17438c640'UIViewLayoutMarginsGuide'.trailing == UIStackView:0x100ee1100.trailing   (active)>",
+    "<NSLayoutConstraint:0x1748943c0 'UIView-Encapsulated-Layout-Width' UIView:0x10a5c5140.width == 16   (active)>",
+    "<NSLayoutConstraint:0x17089dfb0 'UIView-leftMargin-guide-constraint' H:|-(0)-[UILayoutGuide:0x170593db0'UIViewLayoutMarginsGuide'](LTR)   (active, names: '|':UIStackView:0x100ee1100 )>",
+    "<NSLayoutConstraint:0x1748940f0 'UIView-leftMargin-guide-constraint' H:|-(0)-[UILayoutGuide:0x17438c640'UIViewLayoutMarginsGuide'](LTR)   (active, names: '|':UIStackView:0x106b85e90 )>",
+    "<NSLayoutConstraint:0x17089e050 'UIView-rightMargin-guide-constraint' H:[UILayoutGuide:0x170593db0'UIViewLayoutMarginsGuide']-(0)-|(LTR)   (active, names: '|':UIStackView:0x100ee1100 )>",
+    "<NSLayoutConstraint:0x174894190 'UIView-rightMargin-guide-constraint' H:[UILayoutGuide:0x17438c640'UIViewLayoutMarginsGuide']-(0)-|(LTR)   (active, names: '|':UIStackView:0x106b85e90 )>"
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x174893ce0 'UISV-canvas-connection' UILayoutGuide:0x170593db0'UIViewLayoutMarginsGuide'.trailing == CCUIBrightnessContentView:0x106bd57e0.trailing   (active)>
+Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
+The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(UIKit)[851] <Error>: Unable to simultaneously satisfy constraints.
+	Probably at least one of the constraints in the following list is one you don't want. 
+	Try this: 
+		(1) look at each constraint and try to figure out which you don't expect; 
+		(2) find the code that added the unwanted constraint or constraints and fix it. 
+(
+    "<NSLayoutConstraint:0x174891170 H:|-(24)-[UIStackView:0x106b85e90]   (active, names: '|':UIView:0x10a5c5140 )>",
+    "<NSLayoutConstraint:0x1748911c0 H:[UIStackView:0x106b85e90]-(24)-|   (active, names: '|':UIView:0x10a5c5140 )>",
+    "<NSLayoutConstraint:0x1748943c0 'UIView-Encapsulated-Layout-Width' UIView:0x10a5c5140.width == 16   (active)>"
+Will attempt to recover by breaking constraint 
+<NSLayoutConstraint:0x1748911c0 H:[UIStackView:0x106b85e90]-(24)-|   (active, names: '|':UIView:0x10a5c5140 )>
+Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
+The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKit/UIView.h> may also be helpful.
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:43 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x101ab7c00] Created session
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x101ab7c00] Decoding: C0 0x00500050 0x000A354A 0x11111100 0x00000000 908
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x101ab7c00] Options: 80x80 [FFFFFFFF,FFFFFFFF] 0001D060
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x101ab7c00] Decoding completed without errors
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x10124b600] Created session
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x10124b600] Decoding: C0 0x00500050 0x000A354A 0x11111100 0x00000000 946
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x10124b600] Options: 80x80 [FFFFFFFF,FFFFFFFF] 0001D060
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x10124b600] Decoding completed without errors
+Mar  5 12:24:43 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x1012da800] Created session
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x1012da800] Decoding: C0 0x00500050 0x000A354A 0x11111100 0x00000000 906
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x1012da800] Options: 80x80 [FFFFFFFF,FFFFFFFF] 0001D060
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x1012da800] Decoding completed without errors
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd4 0x02 0x0b 0x00
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd4, 0x2, 0xb, 00}
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: Cannot find executable for CFBundle 0x100e878d0 </var/db/stash/_.AVUdOG/Switches/Data.bundle> (not loaded)
+Mar  5 12:24:44 Andrews-iPhone CommCenter[334] <Notice>: #I   ==== client 851 (<private>) registered for event kCTEventRegistrationDataStatus(55) (now total 54)
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x1012da800] Releasing session
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x10124b600] Releasing session
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(AppleJPEG)[851] <Notice>: [0x101ab7c00] Releasing session
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(Sharing)[851] <Info>: SFOperationCallBack (<private>, event = Information, results = <private>)
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(ControlCenterUI)[851] <Notice>: -[CCUIAirStuffSectionController discoveryControllerVisibilityDidChange:] visibility = 1
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(ControlCenterUI)[851] <Notice>: -[CCUIAirStuffSectionController discoveryControllerSettingsDidChange:] discoverableMode = 0
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(Sharing)[851] <Info>: SFOperationCallBack (<private>, event = Information, results = <private>)
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(ControlCenterUI)[851] <Notice>: -[CCUIAirStuffSectionController discoveryControllerVisibilityDidChange:] visibility = 1
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(ControlCenterUI)[851] <Notice>: -[CCUIAirStuffSectionController discoveryControllerSettingsDidChange:] discoverableMode = 0
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(MediaRemote)[851] <Notice>: Process 851 is requesting now playing info.
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(Sharing)[851] <Info>: SFOperationCallBack (<private>, event = Information, results = <private>)
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(ControlCenterUI)[851] <Notice>: -[CCUIAirStuffSectionController discoveryControllerVisibilityDidChange:] visibility = 1
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(ControlCenterUI)[851] <Notice>: -[CCUIAirStuffSectionController discoveryControllerSettingsDidChange:] discoverableMode = 0
+Mar  5 12:24:44 Andrews-iPhone mediaremoted[244] <Notice>: ERROR: now playing client could not be found for supported commands message: <private>
+Mar  5 12:24:44 Andrews-iPhone mediaremoted[244] <Notice>: ERROR: now playing client could not be found for supported commands message: <private>
+Mar  5 12:24:44 Andrews-iPhone CommCenter[334] <Notice>: #I CSIAppInfo.AppObserver: observe: 1. app got notification state: 2 for app: <private>; front app = <private>; calls = 0; inc = 0; active=false
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:44 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(Horseshoe.dylib)[851] <Notice>: TRANSITION ENDED WITH VELOCITY
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(Horseshoe.dylib)[851] <Notice>: Gesture Ended: <SBScreenEdgePanGestureRecognizer: 0x100ef14d0; baseClass = UIScreenEdgePanGestureRecognizer; state = Ended; delaysTouchesBegan = YES; view = <FBSystemGestureView 0x100e05040>; targets= <(
+    "(action=_handleShowControlCenterGesture:, target=<SBControlCenterController 0x106b89610>)",
+    "(action=_systemGestureChanged:, target=<SBMainDisplaySystemGestureManager 0x1704a6540>)",
+    "(action=_externalGestureRecognizerChanged:, target=<_FBSystemGestureManager 0x174a6c340>)"
+)>>
+Mar  5 12:24:44 Andrews-iPhone SpringBoard(UIKit)[851] <Notice>: Unbalanced calls to begin/end appearance transitions for <CCUIControlCenterViewController: 0x106b861f0>.
+Mar  5 12:24:45 Andrews-iPhone SpringBoard(Horseshoe.dylib)[851] <Notice>: WE DID IT WOOH
+Mar  5 12:24:45 Andrews-iPhone SpringBoard[851] <Notice>: Removing idle timer disabled reason: Control Center Reveal (remaining count=1)
+Mar  5 12:24:45 Andrews-iPhone SpringBoard[851] <Notice>: returning the workspace lock time (30.000000) from _nextLockTimeDuration
+Mar  5 12:24:45 Andrews-iPhone SpringBoard[851] <Notice>: returning the workspace dim time (20.000000) from _nextIdleTimeDuration
+Mar  5 12:24:45 Andrews-iPhone SpringBoard[851] <Notice>: Setting next idle duration (source:0) to: 20.000000 retroactively lockAfterDim: 10.000000
+Mar  5 12:24:45 Andrews-iPhone SpringBoard[851] <Notice>: Setting _lastBKUserEventTimerMode=3 with duration=20.000000
+Mar  5 12:24:45 Andrews-iPhone SpringBoard(BackBoardServices)[851] <Info>: Resetting user event timer to IdleRetroactively duration 20
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:45 Andrews-iPhone locationd[304] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/PrivateFrameworks/HomeKitDaemon.framework'
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:45 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:45 Andrews-iPhone locationd[304] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/PrivateFrameworks/PassKitCore.framework'
+Mar  5 12:24:45 Andrews-iPhone locationd[304] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/PassbookRelevancy.bundle'
+Mar  5 12:24:46 Andrews-iPhone locationd[304] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/PrivateFrameworks/PassKitCore.framework'
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/mobile/Library/Assets : No such file or directory
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/mobile/Library/ConfigurationProfiles : No such file or directory
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/mobile/Library/Maps : No such file or directory
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/mobile/Library/MobileInstallation : No such file or directory
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/mobile/Library/SafeHarbor : No such file or directory
+Mar  5 12:24:46 Andrews-iPhone locationd[304] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/MagicalMoments.bundle'
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/mobile/Library/Twitter : No such file or directory
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/mobile/Library/WebKit : No such file or directory
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/mobile/Library/com.apple.iTunesStore : No such file or directory
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/wireless/Library/CallHistory : No such file or directory
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/db/datadetectors : Permission denied
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/db/dhcpclient : Permission denied
+Mar  5 12:24:46 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/db/diagnostics : Permission denied
+Mar  5 12:24:46 Andrews-iPhone SpringBoard(Horseshoe.dylib)[851] <Notice>: TRANSITION ENDED WITH VELOCITY
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:46 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:47 Andrews-iPhone apsd(PersistentConnection)[410] <Notice>: 2017-03-05 12:24:47 -0500 apsd[410]: Looking up connection on peer: 15d9a350   found <APSConnectionServer: 0x115e922e0>
+Mar  5 12:24:47 Andrews-iPhone syncdefaultsd[509] <Info>: marked "com.me.keyvalueservice" topic as "opportunistic" on <private>
+Mar  5 12:24:47 Andrews-iPhone locationd[304] <Notice>: Incrementing METs -- mets:<private> metsFromGrade:<private>
+Mar  5 12:24:47 Andrews-iPhone apsd(PersistentConnection)[410] <Notice>: 2017-03-05 12:24:47 -0500 apsd[410]: peer(509) received XPC_ERROR_CONNECTION_INVALID
+Mar  5 12:24:47 Andrews-iPhone SpringBoard(Horseshoe.dylib)[851] <Notice>: WE DID IT WOOH
+Mar  5 12:24:47 Andrews-iPhone awdd[375] <Info>: conn:#I Got xpc error connection invalid on connection 0x0x12de2aee0
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316] BTA-com.apple.ios.itunesstored.background-task: Invalidating simple timer <PCSimpleTimer: 0x10371b6f0>
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: <PCDispatchTimer: 0x10036b5a0> is invalidated 
+Callstack (
+	0   PersistentConnection                0x000000018aaf85cc <redacted> + 116
+	1   PersistentConnection                0x000000018aaf5fb8 <redacted> + 292
+	2   com.apple.BackgroundTaskAgentPlugin 0x00000001007d7b34 com.apple.BackgroundTaskAgentPlugin + 15156
+	3   com.apple.BackgroundTaskAgentPlugin 0x00000001007d6d8c com.apple.BackgroundTaskAgentPlugin + 11660
+	4   com.apple.BackgroundTaskAgentPlugin 0x00000001007d6978 com.apple.BackgroundTaskAgentPlugin + 10616
+	5   libdispatch.dylib                   0x0000000186baa1bc <redacted> + 16
+	6   libdispatch.dylib                   0x0000000186bb6f94 <redacted> + 576
+	7   libdispatch.dylib                   0x0000000186bc3634 <redacted> + 204
+	8   libdispatch.dylib                   0x0000000186bac160 <redacted> + 820
+	9   libdispatch.dylib                   0x0000000186bb8210 <redacted> + 468
+	10  libdispatch.dylib                   0x0000000186bad9a4 <redact
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: <PCDispatchTimer: 0x10036b5a0> dealloced
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: <PCDispatchTimer: 0x1003958c0> is invalidated 
+Callstack (
+	0   PersistentConnection                0x000000018aaf85cc <redacted> + 116
+	1   PersistentConnection                0x000000018aaf5fd4 <redacted> + 320
+	2   com.apple.BackgroundTaskAgentPlugin 0x00000001007d7b34 com.apple.BackgroundTaskAgentPlugin + 15156
+	3   com.apple.BackgroundTaskAgentPlugin 0x00000001007d6d8c com.apple.BackgroundTaskAgentPlugin + 11660
+	4   com.apple.BackgroundTaskAgentPlugin 0x00000001007d6978 com.apple.BackgroundTaskAgentPlugin + 10616
+	5   libdispatch.dylib                   0x0000000186baa1bc <redacted> + 16
+	6   libdispatch.dylib                   0x0000000186bb6f94 <redacted> + 576
+	7   libdispatch.dylib                   0x0000000186bc3634 <redacted> + 204
+	8   libdispatch.dylib                   0x0000000186bac160 <redacted> + 820
+	9   libdispatch.dylib                   0x0000000186bb8210 <redacted> + 468
+	10  libdispatch.dylib                   0x0000000186bad9a4 <redact
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: <PCDispatchTimer: 0x1003958c0> dealloced
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316] BTA-com.apple.ios.itunesstored.background-task: Started simple timer <PCSimpleTimer: 0x100397940> with fire date [2017-03-05 12:49:56 -0500]
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: <PCDispatchTimer: 0x1003958c0> initialized with target <PCSimpleTimer: 0x100397940> selector _preventSleepFired timerSource <OS_dispatch_source: 0x100386290>
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: <PCDispatchTimer: 0x1003c2800> initialized with target <PCSimpleTimer: 0x100397940> selector _fireTimerFired timerSource <OS_dispatch_source: 0x100389940>
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316] BTA-com.apple.ios.itunesstored.background-task: <PCSimpleTimer: 0x100397940> created preventSleepTimer <PCDispatchTimer: 0x1003958c0> and fireTimer <PCDispatchTimer: 0x1003c2800> on queue <OS_dispatch_queue: PCSimpleTimer-timerQ[0x100333f60]>
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: <PCDispatchTimer: 0x1003c2800> start with target <CUTWeakReference: 0x1003bca00> selector _fireTimerFired firetime 18446744073709551615 timerSource <OS_dispatch_source: 0x100389940>
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: <PCDispatchTimer: 0x1003958c0> start with target <CUTWeakReference: 0x100378250> selector _preventSleepFired firetime 18446744073709551615 timerSource <OS_dispatch_source: 0x100386290>
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: <PCDispatchTimer: 0x1003958c0> setFireDate 4001-01-01 00:00:00 +0000 and start with target <PCSimpleTimer: 0x100397940> selector _preventSleepFired fireTime 18446744073709551615 deltaNanosec 2309-06-15 12:12:04 -0500 timerSource <OS_dispatch_source: 0x100386290>
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: Disabling power monitoring for <PCSimpleTimer: 0x10371b6f0> - 2 timers
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: Enabling power monitoring for <PCSimpleTimer: 0x100397940> - 3 timers
+Mar  5 12:24:47 Andrews-iPhone UserEventAgent(PersistentConnection)[316] <Notice>: 2017-03-05 12:24:47 -0500 UserEventAgent[316]: <PCDispatchTimer: 0x1003c2800> setFireDate 2017-03-05 17:49:56 +0000 and start with target <PCSimpleTimer: 0x100397940> selector _fireTimerFired fireTime 44750961357 deltaNanosec 2017-03-05 12:49:56 -0500 timerSource <OS_dispatch_source: 0x100389940>
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:47 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: getattrlistbulk on entry 0 in /private/var/mobile/Library/Logs//MobileBackup returned error Permission denied
+Mar  5 12:24:47 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/root/Library/Maps/DiagnosticsLogs : No such file or directory
+Mar  5 12:24:47 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/mobile/Library/Maps/DiagnosticLogs : No such file or directory
+Mar  5 12:24:47 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/mobile/Library/BatteryLife : No such file or directory
+Mar  5 12:24:47 Andrews-iPhone CacheDeleteDaily(MobileSystemServices)[912] <Notice>: 0x16dec7000 diskUsageList: Failed to open directory /private/var/mobile/Library/Assets/ : No such file or directory
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:47 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:47 Andrews-iPhone deleted[646] <Notice>: sending notification: CACHE_DELETE_PURGEABLE_UPDATED
+Mar  5 12:24:47 Andrews-iPhone deleted[646] <Notice>: persistence timer fired
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:48 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:49 Andrews-iPhone locationd[304] <Notice>: {"msg":"adapter details", "adaperDescription":"usb host", "batteryChargerType":"kChargerTypeUsb"}
+Mar  5 12:24:49 Andrews-iPhone locationd[304] <Notice>: {"msg":"battery capacity info", "batteryStatus":"<private>", "":"", "currentCapacity":"", "maximumCapacity":"900", "batteryIsDifferent":"-36"}
+Mar  5 12:24:49 Andrews-iPhone locationd[304] <Info>: Fence: Got kNotificationBattery, level, <private>, charged, <private>, connected, <private>, wasConnected, <private>
+Mar  5 12:24:49 Andrews-iPhone powerd[256] <Notice>: Battery capacity change posted with value 0xb003c
+Mar  5 12:24:49 Andrews-iPhone powerd[256] <Notice>: Battery time remaining posted. Capacity:0x3c
+Mar  5 12:24:49 Andrews-iPhone SpringBoard(BatteryCenter)[851] <Notice>: Power sources changed
+Mar  5 12:24:49 Andrews-iPhone SpringBoard(BatteryCenter)[851] <Notice>: Query power sources
+Mar  5 12:24:49 Andrews-iPhone SpringBoard(BatteryCenter)[851] <Notice>: Got a list of 1 sources
+Mar  5 12:24:49 Andrews-iPhone SpringBoard(BatteryCenter)[851] <Notice>: Found 1 power sources
+Mar  5 12:24:49 Andrews-iPhone SpringBoard(BatteryCenter)[851] <Notice>: Found power source: {
+    "Battery Provides Time Remaining" = 1;
+    BatteryHealth = Good;
+    Current = 1000;
+    "Current Capacity" = 60;
+    DesignCycleCount = 300;
+    "Is Charging" = 1;
+    "Is Finishing Charge" = 0;
+    "Is Present" = 1;
+    "Max Capacity" = 100;
+    Name = "InternalBattery-0";
+    "Power Source ID" = 16777315;
+    "Power Source State" = "AC Power";
+    "Raw External Connected" = 1;
+    "Show Charging UI" = 1;
+    "Time to Empty" = 0;
+    "Time to Full Charge" = 0;
+    "Transport Type" = Internal;
+    Type = InternalBattery;
+Mar  5 12:24:49 Andrews-iPhone SpringBoard(BatteryCenter)[851] <Notice>: Found device: <BCBatteryDevice: 0x1742ef600; vendor = Apple; productIdentifier = 0; parts = (null); identifier = 16777315; matchIdentifier = (null); baseIdentifier = InternalBattery-0; name = iPhone; groupName =InternalBattery-0; percentCharge = 60; lowBattery = NO; connected = YES; charging = YES; internal = YES; powerSource = YES; poweredSoureState = AC Power; transportType = 1 >
+Mar  5 12:24:49 Andrews-iPhone coreduetd[398] <Notice>: CDDBatteryMonitor:	received batterycallback, currentPercentage:60.000000!
+Mar  5 12:24:49 Andrews-iPhone coreduetd[398] <Notice>: CDDBatteryMonitor:	Notifying battery change for BON calculation!
+Mar  5 12:24:49 Andrews-iPhone coreduetd[398] <Notice>: BatteryConditionChange: device:0, batteryLevel:60, isConnectedToCharger:1
+Mar  5 12:24:49 Andrews-iPhone coreduetd[398] <Notice>: No change in Local BON: 101.
+Mar  5 12:24:49 Andrews-iPhone coreduetd[398] <Info>: monitor: batteryPercentage=60%
+Mar  5 12:24:49 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: Trigger: <private> is now [60]
+Mar  5 12:24:49 Andrews-iPhone securityd[407] <Notice>: cert[0]: NonEmptySubject =(leaf)[]> 0
+Mar  5 12:24:49 Andrews-iPhone securityd[407] <Notice>: cert[0]: AnchorTrusted =(leaf)[force]> 0
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:49 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: *** NSForwarding: warning: object 0x170256e30 of class 'CCXSettingsFlipControlCenterTogglesViewController' does not implement methodSignatureForSelector: -- trouble ahead
+Mar  5 12:24:49 Andrews-iPhone SpringBoard(CoreFoundation)[851] <Notice>: *** NSForwarding: warning: object 0x170256e30 of class 'CCXSettingsFlipControlCenterTogglesViewController' does not implement doesNotRecognizeSelector: -- abort
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:49 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:49 Andrews-iPhone routined(libcoreroutine.dylib)[248] <Info>: dominant motion activity change from, <private>, to, <private>
+Mar  5 12:24:49 Andrews-iPhone routined(libcoreroutine.dylib)[248] <Info>: Processing realtime <private>: <private>
+Mar  5 12:24:49 Andrews-iPhone routined(libcoreroutine.dylib)[248] <Debug>: Object, <private>, active transactions, 1
+Mar  5 12:24:49 Andrews-iPhone routined(libcoreroutine.dylib)[248] <Debug>: total active transactions, 1
+Mar  5 12:24:49 Andrews-iPhone routined(libcoreroutine.dylib)[248] <Debug>: begin transaction
+Mar  5 12:24:50 Andrews-iPhone routined(libcoreroutine.dylib)[248] <Info>: Dropping notification of predicted applications because there are no predicted applications.
+Mar  5 12:24:50 Andrews-iPhone routined(libcoreroutine.dylib)[248] <Debug>: total active transactions, 0
+Mar  5 12:24:50 Andrews-iPhone routined(libcoreroutine.dylib)[248] <Debug>: end transaction
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:50 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:50 Andrews-iPhone locationd[304] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/PrivateFrameworks/CoreParsec.framework'
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: Attempting to suspend based on triggers: <private>
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: Evaluating 103 activities based on triggers
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:25.878528, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:25.878528, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:26.378576, denominator:26.430000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:25.878528, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:25.878528, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:25.878528, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:25.878528, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:25.878528, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:25.878528, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:25.878528, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:25.878528, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:39.278528, denominator:39.430000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[448] <Notice>: <private>:[
+<private> ] sumScores:25.878528, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Mar  5 12:24:51 Andrews-iPhone SpringBoard(CoreMotion)[851] <Notice>: Notify from, FaceUp -> LandscapeRight
+Mar  5 12:24:51 Andrews-iPhone SpringBoard(CoreMotion)[851] <Info>: Sending orientation changed notification
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:51 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:52 Andrews-iPhone SpringBoard(CoreMotion)[851] <Notice>: Notify from, LandscapeRight -> FaceUp
+Mar  5 12:24:52 Andrews-iPhone SpringBoard(CoreMotion)[851] <Info>: Sending orientation changed notification
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:52 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: CFSM2 foreground (current/proposed/state) in = (1/0/3)
+Mar  5 12:24:52 Andrews-iPhone symptomsd(SymptomEvaluator)[506] <Notice>: CFSM2 foreground (current/state) out = (0/2)
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:52 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:53 Andrews-iPhone locationd[304] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/PrivateFrameworks/CoreParsec.framework'
+Mar  5 12:24:53 Andrews-iPhone locationd[304] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/PrivateFrameworks/FMF.framework'
+Mar  5 12:24:53 Andrews-iPhone deleted(CacheDelete)[646] <Notice>: <private>: Successful Request
+Mar  5 12:24:53 Andrews-iPhone deleted(CacheDelete)[646] <Notice>: <private>: Completion callback
+Mar  5 12:24:53 Andrews-iPhone deleted(CacheDelete)[646] <Notice>: Connection to <private> was invalidated.
+Mar  5 12:24:53 Andrews-iPhone CommCenter[334] <Notice>: #watchdog #I Callback Watchdog: checkin 13
+Mar  5 12:24:53 Andrews-iPhone CommCenter[334] <Notice>: #watchdog #I Server Watchdog: checkin 13
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:53 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:54 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:55 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:56 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:56 Andrews-iPhone routined(libcoreroutine.dylib)[248] <Debug>: caching CMMotionActivity, <private>, RTMotionActivity, <private>
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:57 Andrews-iPhone iaptransportd[322] <Notice>: CIapPortAppleIDBus: Auth timer timeout completed on pAIDBPort:d0, portID:01 downstream port
+Mar  5 12:24:57 Andrews-iPhone kernel(IOAccessoryManager)[0] <Notice>: IOAccessoryManager::configureAllowedFeatures: tristar: revoking mask=0xffff
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:57 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:58 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:59 Andrews-iPhone routined(libcoreroutine.dylib)[248] <Debug>: caching CMMotionActivity, <private>, RTMotionActivity, <private>
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:24:59 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:25:00 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:25:00 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:25:00 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Mar  5 12:25:00 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Mar  5 12:25:00 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Mar  5 12:25:00 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Mar  5 12:25:00 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Mar  5 12:25:00 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Mar  5 12:25:00 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:25:00 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Mar  5 12:25:00 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Mar  5 12:25:00 Andrews-iPhone routined(libcoreroutine.dylib)[248] <Debug>: caching CMMotionActivity, <private>, RTMotionActivity, <private>
+Mar  5 12:25:00 Andrews-iPhone cloudd(CFNetwork)[568] <Notice>: TIC TCP Conn Cancel [2:0x10036c370]
+Mar  5 12:25:00 Andrews-iPhone cloudd(libsystem_network.dylib)[568] <Info>: nw_endpoint_handler_cancel [2 p19-ckdatabase.icloud.com:443 ready resolver (satisfied)]
+Mar  5 12:25:00 Andrews-iPhone cloudd(libsystem_network.dylib)[568] <Info>: nw_endpoint_handler_cancel [2.1 17.248.135.115:443 ready socket-flow (satisfied)]
+Mar  5 12:25:00 Andrews-iPhone cloudd(libsystem_network.dylib)[568] <Notice>: __nw_socket_service_writes_block_invoke sendmsg(fd 10, 31 bytes): socket has been closed
+Mar  5 12:25:00 Andrews-iPhone cloudd(libsystem_network.dylib)[568] <Info>: nw_endpoint_flow_protocol_disconnected [2.1 17.248.135.115:443 cancelled socket-flow (null)] Output protocol disconnected

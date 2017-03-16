@@ -1,0 +1,9 @@
+Package: com.creatix.madriddelete
+Name: MadridDelete
+Depends: mobilesubstrate
+Version: 0.0.8
+Architecture: iphoneos-arm
+Description: Delete SMS and iMessages from the Lockscreen and Notification Center
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks

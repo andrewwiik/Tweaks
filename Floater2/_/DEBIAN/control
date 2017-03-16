@@ -1,0 +1,9 @@
+Package: com.bolencki13.floater
+Name: Floater
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Brian Olencki
+Author: Brian Olencki
+Version: 1.0.0-229
+Installed-Size: 137

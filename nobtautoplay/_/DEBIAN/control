@@ -1,0 +1,10 @@
+Package: com.atwiiks.nobtautoplay
+Name: NoBTAutoPlay
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Andrew Wiik
+Author: Andrew Wiik
+Section: Tweaks
+Version: 0.0.1-12
+Installed-Size: 85

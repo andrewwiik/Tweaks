@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+     <key>title</key>
+	<string>Creators</string>
+	<key>items</key>
+	<array>
+     	<dict>
+           	<key>cell</key>
+           	<string>PSGroupCell</string>
+           	<key>label</key>
+           	<string>Designers</string>
+         </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Jay Machalani</string>
+			<key>icon</key>
+			<string>CreatorImages/JayMachalani.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Aesign</string>
+			<key>icon</key>
+			<string>CreatorImages/Aesign.jpg</string>
+		</dict>
+		<dict>
+           	<key>cell</key>
+           	<string>PSGroupCell</string>
+           	<key>label</key>
+           	<string>Developers</string>
+         </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Matt Clarke</string>
+			<key>icon</key>
+			<string>CreatorImages/Matchstic.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Gabriele Filipponi</string>
+			<key>icon</key>
+			<string>CreatorImages/gabrielefilipp5.png</string>
+		</dict>
+	</array>
+</dict>
+</plist>

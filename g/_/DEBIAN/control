@@ -1,0 +1,10 @@
+Package: dfgdf.fdgdfg.fgdfg
+Name: g
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: dfgdfg
+Author: dfgdfg
+Section: Tweaks
+Version: 0.0.1-1
+Installed-Size: 69

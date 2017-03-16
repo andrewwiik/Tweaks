@@ -1,0 +1,69 @@
+{
+  title = "Notification Center";
+  items = (
+    {
+      cell = PSSwitchCell;
+      label = "Enabled";
+      key = "NCEnabled";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs-main";
+    },
+
+    {
+      cell = PSGroupCell;
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Use Gradient";
+      key = "NCGradient";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+    {
+      cell = PSSwitchCell;
+      set = "setNCConstantColorsEnabled:forSpecifier:";
+      id = "CUSTOM_COLOR_MINUS_ONE";
+      label = "Use Constant Colors";
+      key = "NCUseConstant";
+      default = 0;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+
+    {
+      cell = PSGroupCell;
+      label = "Constant Colors";
+      id = "CUSTOM_COLOR_GROUP";
+    },
+    {
+      cell = PSLinkCell;
+      cellClass = PFColorCell;
+      label = "Constant Background Color";
+      title = "Background Color";
+      color_key = "NCBackgroundColor";
+      color_defaults = "com.golddavid.colorbanners";
+      color_postNotification = "com.golddavid.colorbanners/reloadprefs-nc";
+      color_fallback = "#ffffff";
+      usesRGB = 1;
+      usesAlpha = 0;
+    },
+
+    {
+      cell = PSGroupCell;
+      label = "Notification Background Alpha";
+      footerText = "Changes may require a respring to properly take effect.";
+    },
+    {
+      cell = PSSliderCell;
+      key = "NCAlpha";
+      showValue = 1;
+      min = 0;
+      max = 1;
+      default = 0.7;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    }
+  );
+}

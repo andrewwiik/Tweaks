@@ -1,0 +1,9 @@
+Package: com.atwiiks.notificationsxlite
+Name: NotificationsX Lite
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Lite version of NotificationsX
+Maintainer: Creatix
+Author: ATWiiks
+Section: Tweaks

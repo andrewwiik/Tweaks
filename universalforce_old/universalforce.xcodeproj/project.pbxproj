@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		465EF9A31D1A05E000E55E34 /* NSString+Creatix.h in Headers */ = {isa = PBXBuildFile; fileRef = 465EF9A01D1A05E000E55E34 /* NSString+Creatix.h */; };
+		465EF9A41D1A05E000E55E34 /* NSString+Creatix.m in Sources */ = {isa = PBXBuildFile; fileRef = 465EF9A11D1A05E000E55E34 /* NSString+Creatix.m */; };
+		465EF9A51D1A05E000E55E34 /* UITouch+Creatix.h in Headers */ = {isa = PBXBuildFile; fileRef = 465EF9A21D1A05E000E55E34 /* UITouch+Creatix.h */; };
+		465EF9A71D1A060C00E55E34 /* UITouch+Creatix.m in Sources */ = {isa = PBXBuildFile; fileRef = 465EF9A61D1A060C00E55E34 /* UITouch+Creatix.m */; };
+		465EF9A91D1A069100E55E34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465EF9A81D1A069100E55E34 /* UIKit.framework */; };
+		46E323071D1A028300224D0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E323061D1A028300224D0F /* Foundation.framework */; };
+		46E323121D1A028300224D0F /* universalforce.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46E323111D1A028300224D0F /* universalforce.mm */; };
+		46E3231D1D1A02DC00224D0F /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E3231C1D1A02DC00224D0F /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		465EF9A01D1A05E000E55E34 /* NSString+Creatix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Creatix.h"; sourceTree = "<group>"; };
+		465EF9A11D1A05E000E55E34 /* NSString+Creatix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Creatix.m"; sourceTree = "<group>"; };
+		465EF9A21D1A05E000E55E34 /* UITouch+Creatix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+Creatix.h"; sourceTree = "<group>"; };
+		465EF9A61D1A060C00E55E34 /* UITouch+Creatix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+Creatix.m"; sourceTree = "<group>"; };
+		465EF9A81D1A069100E55E34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		465EF9AA1D1A0A3700E55E34 /* Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Additions.h; sourceTree = "<group>"; };
+		46E323031D1A028300224D0F /* universalforce.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = universalforce.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E323061D1A028300224D0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46E3230B1D1A028300224D0F /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		46E3230C1D1A028300224D0F /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		46E3230E1D1A028300224D0F /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		46E3230F1D1A028300224D0F /* universalforce-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "universalforce-Prefix.pch"; sourceTree = "<group>"; };
+		46E323101D1A028300224D0F /* universalforce.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = universalforce.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		46E323111D1A028300224D0F /* universalforce.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = universalforce.mm; sourceTree = "<group>"; };
+		46E323161D1A028300224D0F /* universalforce.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = universalforce.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/universalforce.plist; sourceTree = "<group>"; };
+		46E3231C1D1A02DC00224D0F /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/theos/vendor/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46E322FF1D1A028300224D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E323071D1A028300224D0F /* Foundation.framework in Frameworks */,
+				465EF9A91D1A069100E55E34 /* UIKit.framework in Frameworks */,
+				46E3231D1D1A02DC00224D0F /* libsubstrate.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		465EF99F1D1A05CF00E55E34 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				465EF9A01D1A05E000E55E34 /* NSString+Creatix.h */,
+				465EF9A11D1A05E000E55E34 /* NSString+Creatix.m */,
+				465EF9A21D1A05E000E55E34 /* UITouch+Creatix.h */,
+				465EF9A61D1A060C00E55E34 /* UITouch+Creatix.m */,
+				465EF9AA1D1A0A3700E55E34 /* Additions.h */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		46E322F81D1A028300224D0F = {
+			isa = PBXGroup;
+			children = (
+				46E323081D1A028300224D0F /* universalforce */,
+				46E323051D1A028300224D0F /* Frameworks */,
+				46E323041D1A028300224D0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46E323041D1A028300224D0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46E323031D1A028300224D0F /* universalforce.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46E323051D1A028300224D0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				465EF9A81D1A069100E55E34 /* UIKit.framework */,
+				46E3231C1D1A02DC00224D0F /* libsubstrate.dylib */,
+				46E323061D1A028300224D0F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46E323081D1A028300224D0F /* universalforce */ = {
+			isa = PBXGroup;
+			children = (
+				465EF99F1D1A05CF00E55E34 /* Additions */,
+				46E323101D1A028300224D0F /* universalforce.xm */,
+				46E323111D1A028300224D0F /* universalforce.mm */,
+				46E323091D1A028300224D0F /* Package */,
+				46E3230D1D1A028300224D0F /* Supporting Files */,
+			);
+			path = universalforce;
+			sourceTree = "<group>";
+		};
+		46E323091D1A028300224D0F /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				46E3230A1D1A028300224D0F /* DEBIAN */,
+				46E323131D1A028300224D0F /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		46E3230A1D1A028300224D0F /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				46E3230B1D1A028300224D0F /* control.txt */,
+				46E3230C1D1A028300224D0F /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		46E3230D1D1A028300224D0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46E3230E1D1A028300224D0F /* PackageVersion.plist */,
+				46E3230F1D1A028300224D0F /* universalforce-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46E323131D1A028300224D0F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				46E323141D1A028300224D0F /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		46E323141D1A028300224D0F /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				46E323151D1A028300224D0F /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		46E323151D1A028300224D0F /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				46E323161D1A028300224D0F /* universalforce.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		46E323001D1A028300224D0F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465EF9A51D1A05E000E55E34 /* UITouch+Creatix.h in Headers */,
+				465EF9A31D1A05E000E55E34 /* NSString+Creatix.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		46E323021D1A028300224D0F /* universalforce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E323191D1A028300224D0F /* Build configuration list for PBXNativeTarget "universalforce" */;
+			buildPhases = (
+				46E322FD1D1A028300224D0F /* ShellScript */,
+				46E322FE1D1A028300224D0F /* Sources */,
+				46E322FF1D1A028300224D0F /* Frameworks */,
+				46E323001D1A028300224D0F /* Headers */,
+				46E323011D1A028300224D0F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = universalforce;
+			productName = universalforce;
+			productReference = 46E323031D1A028300224D0F /* universalforce.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46E322F91D1A028300224D0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					46E323021D1A028300224D0F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 46E322FC1D1A028300224D0F /* Build configuration list for PBXProject "universalforce" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 46E322F81D1A028300224D0F;
+			productRefGroup = 46E323041D1A028300224D0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46E323021D1A028300224D0F /* universalforce */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46E322FD1D1A028300224D0F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		46E323011D1A028300224D0F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$iOSOpenDevPath/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46E322FE1D1A028300224D0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465EF9A71D1A060C00E55E34 /* UITouch+Creatix.m in Sources */,
+				46E323121D1A028300224D0F /* universalforce.mm in Sources */,
+				465EF9A41D1A05E000E55E34 /* NSString+Creatix.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		46E323171D1A028300224D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		46E323181D1A028300224D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		46E3231A1D1A028300224D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/vendor/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				THEOS = /opt/theos;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		46E3231B1D1A028300224D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/vendor/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				THEOS = /opt/theos;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46E322FC1D1A028300224D0F /* Build configuration list for PBXProject "universalforce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E323171D1A028300224D0F /* Debug */,
+				46E323181D1A028300224D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46E323191D1A028300224D0F /* Build configuration list for PBXNativeTarget "universalforce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E3231A1D1A028300224D0F /* Debug */,
+				46E3231B1D1A028300224D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46E322F91D1A028300224D0F /* Project object */;
+}

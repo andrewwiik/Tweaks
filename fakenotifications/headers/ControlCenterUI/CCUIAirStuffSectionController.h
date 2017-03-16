@@ -1,0 +1,4 @@
+#import <ControlCenterUI/CCUIControlCenterSectionViewController.h>
+
+@interface CCUIAirStuffSectionController : CCUIControlCenterSectionViewController
+@end

@@ -1,0 +1,1212 @@
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag[8680] <Info>: Initializing os_log handles for all categories...
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag[8680] <Info>: Initialized os_log handles for all categories.
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Info>: Initializing os_log handles for all categories...
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Info>: Initialized os_log handles for all categories.
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Info>: Updated destination root directory to: <private>
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag[8680] <Notice>: Initializing XPC transport.
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag[8680] <Notice>: started listener for service com.apple.symptom_diagnostics_collection
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag[8680] <Notice>: Initializing CacheDelete callbacks.
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(CacheDelete)[8680] <Notice>: entitlements: <private>
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(CacheDelete)[8680] <Notice>: entitlements: <private>
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(CacheDelete)[8680] <Notice>: entitlements: <private>
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(CacheDelete)[8680] <Notice>: entitlements: <private>
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(CacheDelete)[8680] <Notice>: Registered: <private>, result: 0
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag[8680] <Notice>: Initializing signal handlers.
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag[8680] <Notice>: Scheduling idle-exit timer to run in 120 seconds.
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(CacheDelete)[8680] <Notice>: listener: <private>
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Notice>: Preparing to purge orphaned payload files from 0 known cases. (filesize only)
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Info>: Payload attachments contain 0 recorded files.
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Info>: Record shows no stored files available for purging.
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Notice>: CacheDelete reporting 0 bytes available for purging.
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Notice>: CacheDelete gave back: <private>
+Feb 20 18:58:10 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:10 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:10 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.656991 seconds, returned: <private>
+Feb 20 18:58:10 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:10 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:10 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:10 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 0, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:10 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:10 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:10 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:10 Andrews-iPhone symptomsd-diag(CacheDelete)[8680] <Notice>: newConnection invalidated
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:09 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:10 Andrews-iPhone coreduetd[5766] <Info>: Peer closed the connection.
+Feb 20 18:58:11 Andrews-iPhone locationd[346] <Info>: Notifying clients on temperature update,temperature,<private>
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:11 Andrews-iPhone SpringBoard(KeyboardArbiter)[8653] <Info>: HW kbd: currently com.apple.springboard ((null) < com.apple.springboard)
+Feb 20 18:58:11 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:11 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:11 Andrews-iPhone deleted[5988] <Notice>: <private> took 1.752916 seconds, returned: <private>
+Feb 20 18:58:11 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:11 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:11 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:11 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 510189568, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:11 Andrews-iPhone deleted[5988] <Notice>: sendNotification: TRUE
+Feb 20 18:58:11 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:11 Andrews-iPhone deleted[5988] <Notice>: PurgeableSpace result: <private>
+Feb 20 18:58:11 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:11 Andrews-iPhone deleted[5988] <Notice>: SYNC purgeable op results: <private>
+Feb 20 18:58:11 Andrews-iPhone deleted[5988] <Notice>: volume: /private/var, total: 1072360201
+Feb 20 18:58:11 Andrews-iPhone atc(CacheDelete)[300] <Notice>: setting target uid to: 501 for service: com.apple.cache_delete
+Feb 20 18:58:11 Andrews-iPhone atc(CacheDelete)[300] <Notice>: connection invalidated
+Feb 20 18:58:11 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: newConnection invalidated
+Feb 20 18:58:11 Andrews-iPhone atc(UserDataPlugin)[300] <Notice>: <private>|including purgeable user data from CacheDelete: {
+    "CACHE_DELETE_TOTAL_AVAILABLE" = 1072360201;
+    "CACHE_DELETE_VOLUME" = "/private/var";
+    "com.apple.TextInput.CacheDelete" = 0;
+    "com.apple.WebBookmarks.CacheDelete" = 10562453;
+    "com.apple.activity_tracing.cache-delete" = 0;
+    "com.apple.assetsd.cacheDelete" = 17132;
+    "com.apple.bird.cache-delete" = 121226;
+    "com.apple.coresymbolicationd.cache-delete" = 169377792;
+    "com.apple.logd.cachedelete" = 120213432;
+    "com.apple.medialibraryd.cacheDelete" = 135002534;
+    "com.apple.mobile.cache_delete_app_container_caches" = 510189568;
+    "com.apple.mobile.cache_delete_itunes_store" = 112011789;
+    "com.apple.mobile.cache_delete_nano_resource_grabber" = 0;
+    "com.apple.mobileassetd.cache-delete" = 14863360;
+    "com.apple.mobilemail.CacheDelete" = 0;
+    "com.apple.ondemandd.CacheDelete" = 0;
+    "com.apple.quicklook.ThumbnailsAgent.CacheDelete" = 0;
+    "com.apple.replayd-cache-delete" = 68;
+    "com.apple.revisiond.cache-delete" = 847;
+    "com.apple.symptomsd-diag.CacheDelete" = 0;
+    "com.apple.symptomsd.CacheDelete" = 0;
+    "com.apple.sysdiagnose.CacheDelete" = 0;
+Feb 20 18:58:11 Andrews-iPhone CacheDeleteAppContainerCaches(CacheDelete)[6393] <Notice>: newConnection invalidated
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:10 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:11 Andrews-iPhone locationd[346] <Notice>: Incrementing METs -- mets:<private> metsFromGrade:<private>
+Feb 20 18:58:12 Andrews-iPhone locationd[346] <Info>: Notifying clients on temperature update,temperature,<private>
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:11 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:12 Andrews-iPhone SpringBoard(KeyboardArbiter)[8653] <Info>: HW kbd: currently com.apple.springboard ((null) < com.apple.springboard)
+Feb 20 18:58:13 Andrews-iPhone timed(LinkSource)[344] <Info>: Already syncing RTC
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Info>: Notifying clients on temperature update,temperature,<private>
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:13 Andrews-iPhone apsd(PersistentConnection)[467] <Notice>: 2017-02-20 18:58:13 -0500 apsd[467]: copyTokenForDomain push.apple.com (null)
+Feb 20 18:58:13 Andrews-iPhone apsd(PersistentConnection)[467] <Notice>: 2017-02-20 18:58:13 -0500 apsd[467]: <APSCourier: 0x10050ece0>: __processStoredIncomingMessageForConnection: <APSConnectionServer: 0x100484d70>
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/Traffic.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/CompassCalibration.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/TimeZone.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/MotionCalibration.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/AppGenius.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/MotionCalibration.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/MotionCalibration.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/Routine.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/AppSuggestions.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/Traffic.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/AppGenius.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client 'com.apple.AppStore'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/Routine.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/Traffic.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/Traffic.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/Routine.bundle'
+Feb 20 18:58:13 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/AppGenius.bundle'
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:12 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:14 Andrews-iPhone locationd[346] <Info>: Notifying clients on temperature update,temperature,<private>
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(KeyboardArbiter)[8653] <Info>: HW kbd: currently com.apple.springboard ((null) < com.apple.springboard)
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::setDeviceMotionUpdateInterval changing update interval to: <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::minimumUpdateIntervalChanged,notification,<private>,minimumUpdateInterval,<private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/Routine.bundle'
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Set device motion sensor status <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Set device motion sensor status <private>
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:13 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::setDeviceMotionUpdateInterval changing update interval to: <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::minimumUpdateIntervalChanged,notification,<private>,minimumUpdateInterval,<private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:14 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:15 Andrews-iPhone locationd[346] <Info>: Notifying clients on temperature update,temperature,<private>
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:14 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/PrivateFrameworks/PassKitCore.framework'
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(KeyboardArbiter)[8653] <Info>: HW kbd: currently com.apple.springboard ((null) < com.apple.springboard)
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Info>: Notifying clients on temperature update,temperature,<private>
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/PassbookRelevancy.bundle'
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/PrivateFrameworks/PassKitCore.framework'
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Set device motion sensor status <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::setDeviceMotionUpdateInterval changing update interval to: <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::minimumUpdateIntervalChanged,notification,<private>,minimumUpdateInterval,<private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/PrivateFrameworks/CoreParsec.framework'
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Device is stationary and Timeout exceeded, turning off device motion gyro heartbeat and bias estimator.
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Set device motion sensor status <private>
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: Client com.apple.springboard disconnected
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Info>: CLGyroBiasEstimator removing client <private>
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Info>: CLGyroBiasEstimator,SPUEnabled,<private>,BuildingGYTT,<private>,NumClients,<private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Set device motion sensor status <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Sent kCLConnectionMessageWatchdog message
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: Client com.apple.springboard connected
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: getClientEffectiveRegistrationResult, /System/Library/CoreServices/SpringBoard.app/SpringBoard, com.apple.springboard, , CLClientRegistrationResult, kCLClientRegistrationResultFailedUnavailable, CLCommonLocationServicesEnabled, 0
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: location disabled system-wide, denying executable com.apple.springboard
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: getClientEffectiveRegistrationResult, /System/Library/CoreServices/SpringBoard.app/SpringBoard, com.apple.springboard, , CLClientRegistrationResult, kCLClientRegistrationResultFailedUnavailable, CLCommonLocationServicesEnabled, 0
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: location disabled system-wide, denying executable com.apple.springboard
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageGyroBiasEstimation' received from client 'com.apple.springboard'
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Info>: CLDaemonClient received GyroBiasEstimation request,client,<private>,subscribe,<private>
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: Client com.apple.springboard (0x102865a00) is subscribing to notification kCLConnectionMessageGyroBiasEstimation
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Info>: CLDaemonClient got gyro bias estimation subscription request,isBuildingGYTT,<private>
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Info>: CLGyroBiasEstimator unknown client instance <private>
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Info>: CLGyroBiasEstimator adding client <private>, sending out cached gyro bias,bias.x,<private>,bias.y,<private>,bias.z,<private>,var.x,<private>,var.y,<private>,var.z,<private>
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Info>: CLGyroBiasEstimator,SPUEnabled,<private>,BuildingGYTT,<private>,NumClients,<private>
+Feb 20 18:58:16 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client 'com.apple.springboard'
+Feb 20 18:58:16 Andrews-iPhone parsecd(CFNetwork)[541] <Notice>: TIC TCP Conn Cancel [40:0x1003b7810]
+Feb 20 18:58:16 Andrews-iPhone parsecd(libsystem_network.dylib)[541] <Info>: nw_endpoint_handler_cancel [45 api-glb-nyc.smoot.apple.com:443 ready resolver (satisfied)]
+Feb 20 18:58:16 Andrews-iPhone parsecd(libsystem_network.dylib)[541] <Info>: nw_endpoint_handler_cancel [45.1 17.249.121.246:443 ready socket-flow (satisfied)]
+Feb 20 18:58:16 Andrews-iPhone parsecd(libsystem_network.dylib)[541] <Notice>: __nw_socket_service_writes_block_invoke sendmsg(fd 12, 31 bytes): socket has been closed
+Feb 20 18:58:16 Andrews-iPhone parsecd(libsystem_network.dylib)[541] <Info>: nw_endpoint_flow_protocol_disconnected [45.1 17.249.121.246:443 cancelled socket-flow (null)] Output protocol disconnected
+Feb 20 18:58:16 Andrews-iPhone parsecd(CFNetwork)[541] <Notice>: TIC TCP Conn Destroyed [40:0x1003b7810]
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::setDeviceMotionUpdateInterval changing update interval to: <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::minimumUpdateIntervalChanged,notification,<private>,minimumUpdateInterval,<private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:16 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:15 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:17 Andrews-iPhone locationd[346] <Info>: Notifying clients on temperature update,temperature,<private>
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:17 Andrews-iPhone routined(libcoreroutine.dylib)[290] <Debug>: caching CMMotionActivity, <private>, RTMotionActivity, <private>
+Feb 20 18:58:17 Andrews-iPhone deleted[5988] <Notice>: sending notification: CACHE_DELETE_PURGEABLE_UPDATED
+Feb 20 18:58:17 Andrews-iPhone deleted[5988] <Notice>: persistence timer fired
+Feb 20 18:58:17 Andrews-iPhone SpringBoard(KeyboardArbiter)[8653] <Info>: HW kbd: currently com.apple.springboard ((null) < com.apple.springboard)
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:16 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:17 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::setDeviceMotionUpdateInterval changing update interval to: <private>
+Feb 20 18:58:17 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::minimumUpdateIntervalChanged,notification,<private>,minimumUpdateInterval,<private>
+Feb 20 18:58:17 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:17 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:17 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:17 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:17 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:17 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:17 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:17 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::setDeviceMotionUpdateInterval changing update interval to: <private>
+Feb 20 18:58:18 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::minimumUpdateIntervalChanged,notification,<private>,minimumUpdateInterval,<private>
+Feb 20 18:58:18 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/PrivateFrameworks/HomeKitDaemon.framework'
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Notifying clients on temperature update,temperature,<private>
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Unregistering for gyro notifications
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Unregistering for gyro temperature notifications
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Unregistering for magnetometer notifications
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:18 Andrews-iPhone locationd[346] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:17 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:19 Andrews-iPhone atc(UserDataPlugin)[300] <Notice>: <private>|found 107 app docs, 1882296320 bytes (510189568 bytes purgeable)
+Feb 20 18:58:19 Andrews-iPhone atc(UserDataPlugin)[300] <Notice>: <private>|found 137441280 bytes of purgeable user data from CacheDelete
+Feb 20 18:58:19 Andrews-iPhone atc(UserDataPlugin)[300] <Notice>: <private>|found 10875 items, 2405269504 bytes, (647753728 bytes purgeable)
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(KeyboardArbiter)[8653] <Info>: HW kbd: currently com.apple.springboard ((null) < com.apple.springboard)
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(AirTraffic)[300] <Notice>: <private>
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 14 files [1626112 bytes] of logs in '/private/var/log/'
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 27 files [1077248 bytes] of logs in '/private/var/logs/'
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 68 files [62210048 bytes] of logs in '/private/var/wireless/Library/Logs/'
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::setDeviceMotionUpdateInterval changing update interval to: <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::minimumUpdateIntervalChanged,notification,<private>,minimumUpdateInterval,<private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 281 files [18235392 bytes] of logs in '/private/var/mobile/Library/Logs/'
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 0 files [0 bytes] of logs in '/var/mobile/Library/BatteryLife'
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 4 files [12288 bytes] of logs in '/var/root/Library/Logs'
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 0 files [0 bytes] of logs in '/var/root/Library/Maps/DiagnosticsLogs'
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 0 files [0 bytes] of logs in '/var/mobile/Library/Maps/DiagnosticLogs'
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 0 files [0 bytes] of logs in '/var/mobile/Library/Caches/com.apple.springboard/CoreMotion/'
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 0 files [0 bytes] of logs in '/var/mobile/Library/Caches/com.apple.backboardd/CoreMotion/'
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 0 files [0 bytes] of logs in '/var/mobile/Library/Caches/com.apple.mediaserverd/CoreMotion/'
+Feb 20 18:58:19 Andrews-iPhone atc(LogsPlugin)[300] <Notice>: <private>|found 0 files [0 bytes] of logs in '/var/root/Library/Caches/locationd/locationd.log'
+Feb 20 18:58:19 Andrews-iPhone atc(CacheDelete)[300] <Notice>: got a connection for: com.apple.cache_delete
+Feb 20 18:58:19 Andrews-iPhone atc(CacheDelete)[300] <Notice>: got proxy: <private> for service: com.apple.cache_delete
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: forceRefresh requesting new results from all services
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: CACHE_DELETE_URGENCY: 3
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: urgency: 3, urgencyLimit: 3
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: NOT using cached purgeable values for <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: callingProcess: (null), refreshAll is TRUE, servicesToQuery: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: 98 self.urgency: 3, self.urgencyLimit: 3
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone symptomsd-diag(CacheDelete)[8680] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Notice>: Preparing to purge orphaned payload files from 0 known cases. (filesize only)
+Feb 20 18:58:19 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Info>: Payload attachments contain 0 recorded files.
+Feb 20 18:58:19 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Info>: Record shows no stored files available for purging.
+Feb 20 18:58:19 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Notice>: CacheDelete reporting 0 bytes available for purging.
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone symptomsd-diag(SymptomDiagnosticManagement)[8680] <Notice>: CacheDelete gave back: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone medialibraryd(CacheDelete)[450] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone sysdiagnose(CacheDelete)[6380] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone mobileassetd(CacheDelete)[470] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.021794 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 0, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: creating persistence timer
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: started persistence timer
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone CacheDeleteITunesStore(CacheDelete)[6391] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone bird(CacheDelete)[607] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone symptomsd(CacheDelete)[524] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone webbookmarksd(CacheDelete)[5323] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone routined(libcoreroutine.dylib)[290] <Debug>: caching CMMotionActivity, <private>, RTMotionActivity, <private>
+Feb 20 18:58:19 Andrews-iPhone revisiond(CacheDelete)[5904] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone symptomsd-diag(CacheDelete)[8680] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.047305 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 120213432, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.046034 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 0, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone symptomsd(SymptomEvaluator)[524] <Error>: CacheDelete failed to retrieve files: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone com.apple.quicklook.ThumbnailsAgent(CacheDelete)[6383] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone com.apple.quicklook.ThumbnailsAgent[6383] <Info>: #CacheDelete computing purgeable space on <private> with urgency 3
+Feb 20 18:58:19 Andrews-iPhone medialibraryd(MusicLibrary)[450] <Notice>: Purgeable database free space: 0 bytes
+Feb 20 18:58:19 Andrews-iPhone aslmanager(CacheDelete)[5730] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone medialibraryd(MusicLibrary)[450] <Notice>: Purgeable tracks size: 135002534 bytes
+Feb 20 18:58:19 Andrews-iPhone medialibraryd(MusicLibrary)[450] <Notice>: Purgeable artwork size: 0 bytes
+Feb 20 18:58:19 Andrews-iPhone medialibraryd(MusicLibrary)[450] <Notice>: Purgeable database size: 0 bytes
+Feb 20 18:58:19 Andrews-iPhone medialibraryd(MusicLibrary)[450] <Notice>: Purgeable size of 135002534 bytes for urgency 2, includeAutoFilledTracks=0
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.048389 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> returned an invalid CACHE_DELETE_AMOUNT, using zero
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 0, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.061734 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 121226, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone atc(AirTrafficDevice)[300] <Notice>: <ATLegacyMessageLink: 0x1003e89c0, wifi=0> ---> [Ping Request. id=15, Session=0, params=(null)]
+Feb 20 18:58:19 Andrews-iPhone coresymbolicationd(CacheDelete)[5289] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone sysdiagnose(CacheDelete)[6380] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connecting to <private>
+Feb 20 18:58:19 Andrews-iPhone kbd(CacheDelete)[562] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.080492 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone appstored(CacheDelete)[543] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone CacheDeleteAppContainerCaches(CacheDelete)[6393] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone bird(CacheDelete)[607] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone appstored[543] <Error>: <private>
+Feb 20 18:58:19 Andrews-iPhone coreduetd[5766] <Info>: Got new incoming XPC connection...
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone coreduetd[5766] <Info>: client_has_coreduetd_allow: xpc_dictionary_get_bool() returned YES
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone aslmanager(CacheDelete)[5730] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone kbd(CacheDelete)[562] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone assetsd(CacheDelete)[5325] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone replayd(CacheDelete)[6387] <Notice>: listener: <private>
+Feb 20 18:58:19 Andrews-iPhone replayd[6387] <Notice>: RPRecordingManager: cache delete purgeable space callback
+Feb 20 18:58:19 Andrews-iPhone revisiond(CacheDelete)[5904] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone webbookmarksd(CacheDelete)[5323] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone com.apple.quicklook.ThumbnailsAgent(CacheDelete)[6383] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone symptomsd(CacheDelete)[524] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone medialibraryd(CacheDelete)[450] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone coresymbolicationd(CacheDelete)[5289] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone coreduetd[5766] <Info>: Incoming using send_message_with_reply
+Feb 20 18:58:19 Andrews-iPhone coreduetd[5766] <Info>: Received [CDDProtocolMessageTypeTIdForAttribute] message, msgtype = [50], from clientId [44]...
+Feb 20 18:58:19 Andrews-iPhone coreduetd[5766] <Info>: attribute <private>, client 44, is found Id 20499
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone appstored(CacheDelete)[543] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone coreduetd[5766] <Info>: Incoming using send_message_with_reply
+Feb 20 18:58:19 Andrews-iPhone coreduetd[5766] <Info>: Received [CDDProtocolMessageTypeTHistoryQuery] message, msgtype = [10], from clientId [44]...
+Feb 20 18:58:19 Andrews-iPhone replayd(CacheDelete)[6387] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::setDeviceMotionUpdateInterval changing update interval to: <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::minimumUpdateIntervalChanged,notification,<private>,minimumUpdateInterval,<private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:19 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 847, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.123306 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 10562453, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.115890 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 0, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.134937 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 0, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.153493 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 135002534, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.116838 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 169377792, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.129016 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 0, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.119674 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 0, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.109131 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 0, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.085019 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 68, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone mobileassetd[470] <Notice>: 14863360 bytes reclaimable (urgency=3)
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.179940 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 14863360, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone mobileassetd(CacheDelete)[470] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.115776 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 17132, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone assetsd(CacheDelete)[5325] <Notice>: newConnection invalidated
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> took 0.202626 seconds, returned: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 112011789, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:19 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:19 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:19 Andrews-iPhone CacheDeleteITunesStore(CacheDelete)[6391] <Notice>: newConnection invalidated
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:18 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:20 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/LocationBundles/MagicalMoments.bundle'
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:20 Andrews-iPhone locationd[346] <Notice>: {"msg":"adapter details", "adaperDescription":"usb host", "batteryChargerType":"kChargerTypeUsb"}
+Feb 20 18:58:20 Andrews-iPhone locationd[346] <Notice>: {"msg":"battery capacity info", "batteryStatus":"<private>", "":"", "currentCapacity":"", "maximumCapacity":"945", "batteryIsDifferent":"-36"}
+Feb 20 18:58:20 Andrews-iPhone locationd[346] <Info>: Fence: Got kNotificationBattery, level, <private>, charged, <private>, connected, <private>, wasConnected, <private>
+Feb 20 18:58:20 Andrews-iPhone coreduetd[5766] <Notice>: CDDBatteryMonitor:	received batterycallback, currentPercentage:63.000000!
+Feb 20 18:58:20 Andrews-iPhone coreduetd[5766] <Notice>: CDDBatteryMonitor:	Notifying battery change for BON calculation!
+Feb 20 18:58:20 Andrews-iPhone powerd[298] <Notice>: Battery capacity change posted with value 0xb003f
+Feb 20 18:58:20 Andrews-iPhone SpringBoard(BatteryCenter)[8653] <Notice>: Power sources changed
+Feb 20 18:58:20 Andrews-iPhone SpringBoard(BatteryCenter)[8653] <Notice>: Query power sources
+Feb 20 18:58:20 Andrews-iPhone powerd[298] <Notice>: Battery time remaining posted. Capacity:0x3f
+Feb 20 18:58:20 Andrews-iPhone SpringBoard(BatteryCenter)[8653] <Notice>: Got a list of 1 sources
+Feb 20 18:58:20 Andrews-iPhone SpringBoard(BatteryCenter)[8653] <Notice>: Found 1 power sources
+Feb 20 18:58:20 Andrews-iPhone SpringBoard(BatteryCenter)[8653] <Notice>: Found power source: {
+    "Battery Provides Time Remaining" = 1;
+    BatteryHealth = Good;
+    Current = 2100;
+    "Current Capacity" = 63;
+    DesignCycleCount = 300;
+    "Is Charging" = 1;
+    "Is Finishing Charge" = 0;
+    "Is Present" = 1;
+    "Max Capacity" = 100;
+    Name = "InternalBattery-0";
+    "Power Source ID" = 19529827;
+    "Power Source State" = "AC Power";
+    "Raw External Connected" = 1;
+    "Show Charging UI" = 1;
+    "Time to Empty" = 0;
+    "Time to Full Charge" = 0;
+    "Transport Type" = Internal;
+    Type = InternalBattery;
+Feb 20 18:58:20 Andrews-iPhone SpringBoard(BatteryCenter)[8653] <Notice>: Found device: <BCBatteryDevice: 0x1700fc800; vendor = Apple; productIdentifier = 0; parts = (null); identifier = 19529827; matchIdentifier = (null); baseIdentifier = InternalBattery-0; name = iPhone; groupName =InternalBattery-0; percentCharge = 63; lowBattery = NO; connected = YES; charging = YES; internal = YES; powerSource = YES; poweredSoureState = AC Power; transportType = 1 >
+Feb 20 18:58:20 Andrews-iPhone coreduetd[5766] <Info>: monitor: batteryPercentage=63%
+Feb 20 18:58:20 Andrews-iPhone coreduetd[5766] <Notice>: BatteryConditionChange: device:0, batteryLevel:63, isConnectedToCharger:1
+Feb 20 18:58:20 Andrews-iPhone coreduetd[5766] <Notice>: No change in Local BON: 101.
+Feb 20 18:58:20 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: Trigger: <private> is now [63]
+Feb 20 18:58:20 Andrews-iPhone securityd[447] <Notice>: cert[0]: NonEmptySubject =(leaf)[]> 0
+Feb 20 18:58:20 Andrews-iPhone securityd[447] <Notice>: cert[0]: AnchorTrusted =(leaf)[force]> 0
+Feb 20 18:58:20 Andrews-iPhone coreduetd[5766] <Info>: Peer closed the connection.
+Feb 20 18:58:20 Andrews-iPhone securityd[447] <Notice>: cert[0]: NonEmptySubject =(leaf)[]> 0
+Feb 20 18:58:20 Andrews-iPhone securityd[447] <Notice>: cert[0]: AnchorTrusted =(leaf)[force]> 0
+Feb 20 18:58:20 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Successful Request
+Feb 20 18:58:20 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: <private>: Completion callback
+Feb 20 18:58:20 Andrews-iPhone deleted[5988] <Notice>: <private> took 1.269787 seconds, returned: <private>
+Feb 20 18:58:20 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: Connection to <private> was invalidated.
+Feb 20 18:58:20 Andrews-iPhone deleted[5988] <Notice>: <private> updateInfo: <private>
+Feb 20 18:58:20 Andrews-iPhone deleted[5988] <Notice>: ENTRY, operation: CACHE_DELETE_PURGEABLE_OPERATION, serviceID: <private> info: <private>
+Feb 20 18:58:20 Andrews-iPhone deleted[5988] <Notice>: updating cache for service: <private>, volume: /private/var, amounts: <private>
+Feb 20 18:58:20 Andrews-iPhone deleted[5988] <Notice>: updating service info amount: 510189568, serviceID: <private>, volume: /private/var, urgency: 3 pushed: FALSE
+Feb 20 18:58:20 Andrews-iPhone deleted[5988] <Notice>: sendNotification: FALSE
+Feb 20 18:58:20 Andrews-iPhone deleted[5988] <Notice>: re-started persitence timer
+Feb 20 18:58:20 Andrews-iPhone SpringBoard(KeyboardArbiter)[8653] <Info>: HW kbd: currently com.apple.springboard ((null) < com.apple.springboard)
+Feb 20 18:58:20 Andrews-iPhone CacheDeleteAppContainerCaches(CacheDelete)[6393] <Notice>: newConnection invalidated
+Feb 20 18:58:20 Andrews-iPhone deleted[5988] <Notice>: PurgeableSpace result: <private>
+Feb 20 18:58:20 Andrews-iPhone deleted[5988] <Notice>: SYNC purgeable op results: <private>
+Feb 20 18:58:20 Andrews-iPhone deleted[5988] <Notice>: volume: /private/var, total: 1072360201
+Feb 20 18:58:20 Andrews-iPhone atc(CacheDelete)[300] <Notice>: setting target uid to: 501 for service: com.apple.cache_delete
+Feb 20 18:58:20 Andrews-iPhone atc(CacheDelete)[300] <Notice>: connection invalidated
+Feb 20 18:58:20 Andrews-iPhone deleted(CacheDelete)[5988] <Notice>: newConnection invalidated
+Feb 20 18:58:20 Andrews-iPhone atc(AirTrafficDevice)[300] <Notice>: Merging purgeable metrics from CacheDelete: {
+    "CACHE_DELETE_TOTAL_AVAILABLE" = 1072360201;
+    "CACHE_DELETE_VOLUME" = "/private/var";
+    "com.apple.TextInput.CacheDelete" = 0;
+    "com.apple.WebBookmarks.CacheDelete" = 10562453;
+    "com.apple.activity_tracing.cache-delete" = 0;
+    "com.apple.assetsd.cacheDelete" = 17132;
+    "com.apple.bird.cache-delete" = 121226;
+    "com.apple.coresymbolicationd.cache-delete" = 169377792;
+    "com.apple.logd.cachedelete" = 120213432;
+    "com.apple.medialibraryd.cacheDelete" = 135002534;
+    "com.apple.mobile.cache_delete_app_container_caches" = 510189568;
+    "com.apple.mobile.cache_delete_itunes_store" = 112011789;
+    "com.apple.mobile.cache_delete_nano_resource_grabber" = 0;
+    "com.apple.mobileassetd.cache-delete" = 14863360;
+    "com.apple.mobilemail.CacheDelete" = 0;
+    "com.apple.ondemandd.CacheDelete" = 0;
+    "com.apple.quicklook.ThumbnailsAgent.CacheDelete" = 0;
+    "com.apple.replayd-cache-delete" = 68;
+    "com.apple.revisiond.cache-delete" = 847;
+    "com.apple.symptomsd-diag.CacheDelete" = 0;
+    "com.apple.symptomsd.CacheDelete" = 0;
+    "com.apple.sysdiagnose.CacheDelete" = 0;
+Feb 20 18:58:20 Andrews-iPhone atc(AirTrafficDevice)[300] <Notice>: updated storage usage metrics in 17.08s
+Feb 20 18:58:20 Andrews-iPhone atc(AirTrafficDevice)[300] <Notice>: <ATLegacyMessageLink: 0x1003e89c0, wifi=0> ---> [AssetMetrics Request. id=16, Session=0, params={
+    Application =     {
+        "_Count" = 15;
+        "_PhysicalSize" = 816771072;
+        "_PurgeableSize" = 0;
+    };
+    Book =     {
+        "_Count" = 1;
+        "_PhysicalSize" = 90300416;
+    };
+    Logs =     {
+        "_Count" = 394;
+        "_PhysicalSize" = 83161088;
+    };
+    Media =     {
+        Music =         {
+            "_Count" = 0;
+            "_PhysicalSize" = 103718912;
+            "_PurgeableSize" = 103718912;
+        };
+    };
+    Photo =     {
+        CameraRoll =         {
+            "_Count" = 4874;
+            "_PhysicalSize" = 4229999725;
+            "_PurgeableSize" = 20480;
+        };
+        Photo =         {
+            "_Count" = 0;
+            "_PhysicalSize" = 0;
+            "_PurgeableSize" = 0;
+        };
+    };
+    Proofing =     {
+        "_Count" = 0;
+        "_PhysicalSize" = 0;
+    };
+    Ringtone =     {
+        "_Count" = 0;
+        "_PhysicalSize" = 0;
+    };
+    UserData =     {
+        "_Count" = 10875;
+        "_PhysicalSize" = 2405269504;
+        "_PurgeableSize" = 647753728;
+    };
+    VoiceMemo =     {
+        "_Count" = 0;
+        "_PhysicalSize" = 0;
+    };
+    "_FreeSize" = 2795188224;
+    "_PhysicalSize" = 12072910848;
+    "_PurgeableSize" = 1072360201;
+}]
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:19 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:21 Andrews-iPhone SpringBoard(KeyboardArbiter)[8653] <Info>: HW kbd: currently com.apple.springboard ((null) < com.apple.springboard)
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:20 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Set device motion sensor status <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:22 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Set device motion sensor status <private>
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: Attempting to suspend based on triggers: <private>
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: Evaluating 105 activities based on triggers
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:22 Andrews-iPhone DuetHeuristic-BM(DuetActivitySchedulerDaemon)[512] <Notice>: <private>:[
+<private> ] sumScores:25.909773, denominator:26.030000, FinalDecision: Must Not Proceed FinalScore: 0.000000}
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:21 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:23 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client '/System/Library/PrivateFrameworks/CoreParsec.framework'
+Feb 20 18:58:22 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:22 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:22 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:22 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:22 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:22 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:22 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:22 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:22 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:22 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:22 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(KeyboardArbiter)[8653] <Info>: HW kbd: currently com.apple.springboard ((null) < com.apple.springboard)
+Feb 20 18:58:23 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client 'com.apple.HealthKit'
+Feb 20 18:58:23 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client 'com.apple.HealthKit'
+Feb 20 18:58:23 Andrews-iPhone locationd[346] <Notice>: message 'kCLConnectionMessageWatchdog' received from client 'com.apple.HealthKit'
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::setDeviceMotionUpdateInterval changing update interval to: <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::minimumUpdateIntervalChanged,notification,<private>,minimumUpdateInterval,<private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Set device motion sensor status <private>
+Feb 20 18:58:23 Andrews-iPhone CommCenter[376] <Notice>: #watchdog #I Callback Watchdog: checkin 2369
+Feb 20 18:58:23 Andrews-iPhone CommCenter[376] <Notice>: #watchdog #I Server Watchdog: checkin 2369
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Set device motion sensor status <private>
+Feb 20 18:58:24 Andrews-iPhone SpringBoard(KeyboardArbiter)[8653] <Info>: HW kbd: currently com.apple.springboard ((null) < com.apple.springboard)
+Feb 20 18:58:24 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::setDeviceMotionUpdateInterval changing update interval to: <private>
+Feb 20 18:58:24 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: CLDeviceMotion::minimumUpdateIntervalChanged,notification,<private>,minimumUpdateInterval,<private>
+Feb 20 18:58:24 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:24 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:24 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:24 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:24 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:24 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:24 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:24 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:23 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:25 Andrews-iPhone CommCenter(libH5Dynamic.dylib)[376] <Info>: reading up to 208
+Feb 20 18:58:25 Andrews-iPhone CommCenter(libH5Dynamic.dylib)[376] <Info>: 0: READ done 0, error 0, data_p 0x14d06e8f0, c->protocol.raw_read_bytes 0x0
+Feb 20 18:58:25 Andrews-iPhone CommCenter(libH5Dynamic.dylib)[376] <Info>: size of raw read bytes 208
+Feb 20 18:58:25 Andrews-iPhone CommCenter(libH5Dynamic.dylib)[376] <Info>: seq_num 1, ack_num 5, data_integrity 1, reliable 1, payload length 200, hci_packet_type 1
+Feb 20 18:58:25 Andrews-iPhone CommCenter(libH5Dynamic.dylib)[376] <Info>: RECEIVED DATA PACKET
+Feb 20 18:58:25 Andrews-iPhone CommCenter(libH5Dynamic.dylib)[376] <Info>: peer_power_state 0, new 0
+Feb 20 18:58:25 Andrews-iPhone CommCenter(libH5Dynamic.dylib)[376] <Info>: GENERATE AN ACK
+Feb 20 18:58:25 Andrews-iPhone CommCenter(libH5Dynamic.dylib)[376] <Info>: ext_seq_mode 0, packet_type 0, seq_num 0, ack_num 2, data_integrity 1, reliable 0, payload length 0, ext_seq_num 0
+Feb 20 18:58:25 Andrews-iPhone CommCenter(libH5Dynamic.dylib)[376] <Info>: 0: size of data_p 10, reliable_transport 0
+Feb 20 18:58:25 Andrews-iPhone CommCenter(libH5Dynamic.dylib)[376] <Info>: WRITE done 1, error 0, data 0x1ab3b9140
+Feb 20 18:58:25 Andrews-iPhone CommCenter(libATCommandStudioDynamic.dylib)[376] <Notice>: QMI: Svc=0xe7(ELQM) Ind MsgId=0x0002 Bin=[<private>]
+Feb 20 18:58:25 Andrews-iPhone symptomsd(SymptomEvaluator)[524] <Notice>: eLQM: Received BB link fingerprint notification (type = 17): payload = <01000000 9def0809 f6020000 00000000 00000000 64000000 32000000 0a000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000>
+Feb 20 18:58:25 Andrews-iPhone symptomsd(SymptomEvaluator)[524] <Notice>: eLQM: Link fingerprint for Cell 0: Cell Id = <private>, Duration = (758, 0, 0), LQM = (100, 50, 10), Throughput(UL, DL) = (0, 0) Kbps
+Feb 20 18:58:25 Andrews-iPhone symptomsd(SymptomEvaluator)[524] <Notice>: eLQM: Link fingerprint for Cell 1: Cell Id = <private>, Duration = (0, 0, 0), LQM = (0, 0, 0), Throughput(UL, DL) = (0, 0) Kbps
+Feb 20 18:58:25 Andrews-iPhone symptomsd(SymptomEvaluator)[524] <Notice>: eLQM: Link fingerprint for Cell 2: Cell Id = <private>, Duration = (0, 0, 0), LQM = (0, 0, 0), Throughput(UL, DL) = (0, 0) Kbps
+Feb 20 18:58:25 Andrews-iPhone symptomsd(SymptomEvaluator)[524] <Notice>: eLQM: Link fingerprint for Cell 3: Cell Id = <private>, Duration = (0, 0, 0), LQM = (0, 0, 0), Throughput(UL, DL) = (0, 0) Kbps
+Feb 20 18:58:25 Andrews-iPhone symptomsd(SymptomEvaluator)[524] <Notice>: eLQM: Link fingerprint for Cell 4: Cell Id = <private>, Duration = (0, 0, 0), LQM = (0, 0, 0), Throughput(UL, DL) = (0, 0) Kbps
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd6 0x02 0x0d 0x00
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd6, 0x2, 0xd, 00}
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:24 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:25 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:25 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:25 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: txBufferLength=7 rxBufferLength=23
+Feb 20 18:58:25 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Wrote:     7B | 0x80 0x10 0x00 0x07 0x00 0x00 0x00
+Feb 20 18:58:25 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>:  Read:    23B | 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x80 0x20 0x00 0x10 0x00 0x00 0x00 0x11 0x01 0x01 0x00 0x04 0xd5 0x02 0x0c 0x00
+Feb 20 18:58:25 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: Status={0x80, 0x20, 00, 0x10, 00, 00, 00, 0x11, 0x1, 0x1, 00, 0x4, 0xd5, 0x2, 0xc, 00}
+Feb 20 18:58:25 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit, err=0x0
+Feb 20 18:58:25 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: mask=0xFF, bad=false
+Feb 20 18:58:25 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:25 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: entry
+Feb 20 18:58:25 Andrews-iPhone kernel(AppleBiometricSensor)[0] <Debug>: exit
+Feb 20 18:58:26 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:26 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:26 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:26 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:26 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:26 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:26 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: IOHIDServiceClientSetProperty() successfully set property for event <private>
+Feb 20 18:58:26 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Property for usage pair {<private>,<private>}: {<private> = <private>} was set <private>
+Feb 20 18:58:26 Andrews-iPhone SpringBoard(CoreMotion)[8653] <Info>: Set device motion sensor status <private>

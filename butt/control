@@ -1,0 +1,9 @@
+Package: com.butt.butt
+Name: butt
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: butt
+Author: butt
+Section: Tweaks

@@ -1,0 +1,4 @@
+{ Filter = {
+  Bundles = ( "com.apple.springboard", "com.apple.Preferences" );
+  Mode = "Any";
+}; }

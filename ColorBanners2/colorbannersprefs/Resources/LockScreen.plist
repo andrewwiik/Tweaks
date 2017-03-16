@@ -1,0 +1,118 @@
+{
+  title = "Lock Screen";
+  items = (
+    {
+      cell = PSSwitchCell;
+      label = "Enabled";
+      key = "LSEnabled";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs-main";
+    },
+
+    {
+      cell = PSGroupCell;
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Use Gradient";
+      key = "LSGradient";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+    {
+      cell = PSSwitchCell;
+      set = "setLSConstantColorsEnabled:forSpecifier:";
+      id = "CUSTOM_COLOR_MINUS_ONE";
+      label = "Use Constant Colors";
+      key = "LSUseConstant";
+      default = 0;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+
+    {
+      cell = PSGroupCell;
+      label = "Constant Colors";
+      id = "CUSTOM_COLOR_GROUP";
+    },
+    {
+      cell = PSLinkCell;
+      cellClass = PFColorCell;
+      label = "Constant Background Color";
+      title = "Background Color";
+      color_key = "LSBackgroundColor";
+      color_defaults = "com.golddavid.colorbanners";
+      color_postNotification = "com.golddavid.colorbanners/reloadprefs-ls";
+      color_fallback = "#ffffff";
+      usesRGB = 1;
+      usesAlpha = 0;
+    },
+
+    {
+      cell = PSGroupCell;
+      label = "Notification Background Alpha";
+    },
+    {
+      cell = PSSliderCell;
+      key = "LSAlpha";
+      showValue = 1;
+      min = 0;
+      max = 1;
+      default = 0.7;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+
+    {
+      cell = PSGroupCell;
+      footerText = "Remove the notification list's blur.";
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Show separators";
+      key = "ShowSeparators";
+      default = 0;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Disable dimming";
+      key = "DisableDimming";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Color Dismiss Button";
+      key = "ColorDismissButton";
+      default = 1;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Remove Blur";
+      key = "RemoveBlur";
+      default = 0;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    },
+
+    {
+      cell = PSGroupCell;
+      footerText = "Enable this if you're using a low alpha level with a dark lockscreen wallpaper.";
+    },
+    {
+      cell = PSSwitchCell;
+      label = "Prefer White Text";
+      key = "PrefersWhiteText";
+      default = 0;
+      defaults = "com.golddavid.colorbanners";
+      PostNotification = "com.golddavid.colorbanners/reloadprefs";
+    }
+  );
+}

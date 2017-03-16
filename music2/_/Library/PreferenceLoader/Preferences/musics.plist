@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = musics;
+	cell = PSLinkCell;
+	detail = musicsListController;
+	icon = musics.png;
+	isController = 1;
+	label = musics;
+    };
+}

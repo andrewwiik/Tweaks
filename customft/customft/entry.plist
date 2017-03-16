@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = CustomFT;
+		cell = PSLinkCell;
+		detail = "CustomFTListController";
+		icon = "CustomFT.jpg";
+		isController = 1;
+		label = Traverse;
+	};
+}

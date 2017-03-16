@@ -1,0 +1,15 @@
+Package: com.julioverne.cydiaenable
+Name: Cydia Enable
+Author: julioverne
+Version: 3.2
+Depends: preferenceloader
+Architecture: iphoneos-arm
+Description: Enable any Tweaks in Cydia App!
+	Lets you to use any Tweak inside Cydia and iFile App!
+	
+	Configure options from Settings.
+	
+Homepage: http://twitter.com/ijulioverne
+Maintainer: Julio
+Section: Tweaks
+Icon: file:///Library/PreferenceBundles/CydiaEnable.bundle/Icon.png

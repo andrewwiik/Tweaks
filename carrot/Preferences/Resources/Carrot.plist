@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Settings</string>
+			<key>footerText</key>
+			<string>If you have a dark backround this will make the buttons easier to see.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.carrot</string>
+			<key>PostNotification</key>
+			<string>com.creatix.carrot/saved</string>
+			<key>key</key>
+			<string>isEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.creatix.carrot</string>
+			<key>PostNotification</key>
+			<string>com.creatix.carrot/saved</string>
+			<key>key</key>
+			<string>isWhite</string>
+			<key>label</key>
+			<string>Stay White</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>If you would like the "Shuffle" and "Repeat" toggles to replace the "Heart" and "Share" buttons jsut enable the above switch. </string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.creatix.carrot</string>
+			<key>PostNotification</key>
+			<string>com.creatix.carrot/saved</string>
+			<key>key</key>
+			<string>isSwitched</string>
+			<key>label</key>
+			<string>Switched</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>If you would like the "Shuffle" and "Repeat" toggles to be replaced with "Skip 15 Seconds Back" and "Skip 15 Seconds Forward" buttons.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.creatix.carrot</string>
+			<key>PostNotification</key>
+			<string>com.creatix.carrot/saved</string>
+			<key>key</key>
+			<string>useIntervalInstead</string>
+			<key>label</key>
+			<string>Intervals Instead</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Custom Inset</string>
+			<key>footerText</key>
+			<string>If you need to change the horizontal position to better fit your setup you can set a custom value above.</string>
+		</dict>
+		<dict>
+			<key>defaults</key>
+			<string>com.creatix.carrot</string>
+			<key>PostNotification</key>
+			<string>com.creatix.carrot/saved</string>
+			<key>default</key>
+			<string>0</string>
+			<key>key</key>
+			<string>customInsetValue</string>
+			<key>isNumeric</key>
+			<true/>
+			<key>label</key>
+			<string>Inset Value:</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>High Contrast</string>
+			<key>footerText</key>
+			<string>If your having difficultity seeing if the toggles are enabled or disabled you can enable this to make the background of them solid black or white depending on the selected color above.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.creatix.carrot</string>
+			<key>PostNotification</key>
+			<string>com.creatix.carrot/saved</string>
+			<key>key</key>
+			<string>isHighContrast</string>
+			<key>label</key>
+			<string>High Contrast</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Carrot</string>
+</dict>
+</plist>

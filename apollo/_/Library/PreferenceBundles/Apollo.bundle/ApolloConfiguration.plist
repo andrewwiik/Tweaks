@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>AWApolloGestureListController</string>
+			<key>isController</key>
+			<true/>
+			<key>icon</key>
+			<string>gestureIcon.png</string>
+			<key>label</key>
+			<string>Gestures Configuration</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>AWApolloUIConfigListController</string>
+			<key>isController</key>
+			<true/>
+			<key>icon</key>
+			<string>configurationIcon.png</string>
+			<key>label</key>
+			<string>UI Configuration</string>
+		</dict>
+				<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>AWApolloArtworkListController</string>
+			<key>isController</key>
+			<true/>
+			<key>icon</key>
+			<string>gestureIcon.png</string>
+			<key>label</key>
+			<string>Artwork Configuration</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>CONFIGURATION</string>
+</dict>
+</plist>

@@ -1,0 +1,9 @@
+Package: com.atwiiks.wifitest1
+Name: WiFiTest
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: ATWiiks
+Author: ATWiiks
+Section: Tweaks

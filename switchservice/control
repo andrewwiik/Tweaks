@@ -1,0 +1,9 @@
+Package: com.creatix.switchservice
+Name: SwitchService
+Depends: mobilesubstrate
+Version: 4.0.1
+Architecture: iphoneos-arm
+Description: Hold send button to switch iMsg & SMS
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks

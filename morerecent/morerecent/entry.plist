@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = MoreRecent;
+	cell = PSLinkCell;
+	detail = MoreRecentListController;
+	icon = MoreRecent.png;
+	isController = 1;
+	label = MoreRecent;
+    };
+}

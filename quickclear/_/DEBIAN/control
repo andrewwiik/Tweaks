@@ -1,0 +1,10 @@
+Package: com.creatix.quickclear
+Name: QuickClear
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Creatix & SUPERGIU
+Author: Creatix & SUPERGIU
+Section: Tweaks
+Version: 0.0.1-15
+Installed-Size: 193

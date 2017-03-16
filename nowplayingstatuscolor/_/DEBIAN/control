@@ -1,0 +1,10 @@
+Package: com.atwiiks.nowplayingstatuscolor
+Name: NowPlayingStatusColor
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Andrew Wiik
+Author: Andrew Wiik
+Section: Tweaks
+Version: 0.0.1-29
+Installed-Size: 599

@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = harborprefs;
+		cell = PSLinkCell;
+		detail = HPListController;
+		icon = "harborprefs.png";
+		isController = 1;
+		label = Harbor;
+	};
+}

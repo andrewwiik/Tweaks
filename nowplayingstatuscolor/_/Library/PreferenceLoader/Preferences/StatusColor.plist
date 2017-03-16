@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = StatusColor;
+	cell = PSLinkCell;
+	detail = StatusColorListController;
+	icon = StatusColor.png;
+	isController = 1;
+	label = StatusColor;
+    };
+}

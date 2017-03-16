@@ -1,0 +1,9 @@
+Package: com.creatix.qcpatch
+Name: QuickCenter Patch
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: QuickCenter Patch for 9.3.3
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks

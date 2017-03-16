@@ -1,0 +1,18 @@
+UITableView BG = #UITableView BG = #161616
+UITableViewCell = #1C1C1D
+UILabel = White;
+Seperator = #313133
+_UITableViewHeaderFooterViewLabel - setTextColor = #8E8E93
+
+
+
+%hook PSListController
+- (void)changeToDarkMode {
+	[[UITableView appearance] setBackgroundColor:[UIColor colorWithRed:0.09 green:0.09 blue:0.09 alpha:1.0]];
+	[[NSClassFromString(@"PSTableCell") appearance] setBackgroundColor: [UIColor colorWithRed:0.11 green:0.11 blue:0.11 alpha:1.0]];
+	[[UITableViewLabel appearance] setColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0]];
+	[[UITableView appearance] setSeparatorColor:[UIColor colorWithRed:0.19 green:0.19 blue:0.20 alpha:1.0]];
+	[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.11 green:0.11 blue:0.11 alpha:1.0]];
+	[[NSClassFromString(@"_UITableViewHeaderFooterViewLabel") appearance] setTextColor: [UIColor colorWithRed:0.56 green:0.56 blue:0.58 alpha:1.0]];
+}
+%end

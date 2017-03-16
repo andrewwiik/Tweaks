@@ -1,0 +1,8 @@
+
+
+
+@interface SBIconLabelView : UIView
+
+
+
+@end

@@ -1,0 +1,9 @@
+Package: com.ioscreatix.radish
+Name: Radish
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Toggle to prevent playing Explicit songs in Spotify
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks

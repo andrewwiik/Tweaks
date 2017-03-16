@@ -1,0 +1,2 @@
+@interface MPUChronologicalProgressView : UIView
+@end

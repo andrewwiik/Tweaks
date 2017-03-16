@@ -1,0 +1,147 @@
+%hook MusicApplicationDelegate
+-(void)_supportedTabIdentifiersDidChangeNotification:(id)arg1  { %log; %orig; }
+-(void)_cloudServiceControllerSubscriptionStatusDidChangeNotification:(id)arg1  { %log; %orig; }
+-(void)_cloudServiceControllerCloudLibraryEnabledDidChangeNotification:(id)arg1  { %log; %orig; }
+-(void)_configureRadioOperationQueue { %log; %orig; }
+-(void)_networkingStartNotification:(id)arg1  { %log; %orig; }
+-(void)_networkingStopNotification:(id)arg1  { %log; %orig; }
+-(void)_playerPlaybackLeaseControllerDidPausePlaybackForLeaseEndNotification:(id)arg1  { %log; %orig; }
+-(void)_playerPlaybackErrorNotification:(id)arg1  { %log; %orig; }
+-(void)_updateTabBarItemsAnimated:(char)arg1  { %log; %orig; }
+-(id)_fairPlaySAPSession { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+-(void)radioApplicationWillFinishLaunching:(id)arg1  { %log; %orig; }
+-(char)_isOfflineForReporting { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(unsigned long long)_storeAccountIdentifierForReporting { %log; unsigned long long r = %orig; NSLog(@" = %llu", r); return r; }
+-(void)_setIAmTheIPod { %log; %orig; }
+-(void)_setupWindowIfNecessary { %log; %orig; }
+-(void)_presentWelcomeScreenIfAppropriate { %log; %orig; }
+-(id)_validatedUserActivityContextWithContext:(id)arg1  { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+-(char)_handleUserActivityContext:(id)arg1  { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(void)radioApplicationDidFinishLaunching:(id)arg1  { %log; %orig; }
+-(void)_populateMediaSocialProfileCache { %log; %orig; }
+-(void)_presentNowPlayingViewControllerForSharing { %log; %orig; }
+-(void)presentNowPlayingViewControllerAnimated:(char)arg1  { %log; %orig; }
+-(void)_populateMediaSocialAdminPermissionsCache { %log; %orig; }
+-(void)_disableAllowsNewPlaybackErrorItemIfAppropriate { %log; %orig; }
+-(char)_hasTabWithIdentifier:(id)arg1  { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(void)_switchViewTest:(id)arg1 fromIdentifier:(id)arg2 toIdentifier:(id)arg3  { %log; %orig; }
+-(void)_scrollViewTest:(id)arg1 withOptions:(id)arg2 withIdentifier:(id)arg3  { %log; %orig; }
+-(void)_bringUpActionSheet:(id)arg1  { %log; %orig; }
+-(void)_enterRecentlyAdded:(id)arg1  { %log; %orig; }
+-(void)_switchToLibraryDetailView:(id)arg1  { %log; %orig; }
+-(void)_switchToViewConfigurationTest:(id)arg1  { %log; %orig; }
+-(void)_dismissNowPlayingViewControllerAnimated:(char)arg1  { %log; %orig; }
+-(void)_switchToMyMusicTabAndSegmentWithIdentifier:(id)arg1 completion:(/*^block*/id)arg2  { %log; %orig; }
+-(void)_switchToTabWithIdentifier:(id)arg1 completion:(/*^block*/id)arg2  { %log; %orig; }
+-(void)_playLocalLibrarySongForTestNamed:(id)arg1  { %log; %orig; }
+-(void)_searchLocalLibraryForTestName:(id)arg1 withOptions:(id)arg2  { %log; %orig; }
+-(void)_selectViewConfigurationWithIdentifier:(id)arg1 inLibrarySplitViewController:(id)arg2 completion:(/*^block*/id)arg3  { %log; %orig; }
+-(void)_selectFirstItemFromLibraryBrowseTableViewController:(id)arg1  { %log; %orig; }
+-(void)_switchToDetailSegmentedTabView:(id)arg1 withIdentifier:(id)arg2  { %log; %orig; }
+-(void)_switchToViewConfiguration:(id)arg1 completion:(/*^block*/id)arg2  { %log; %orig; }
+-(void)_switchToSegmentedTabWithIdentifier:(id)arg1 completion:(/*^block*/id)arg2  { %log; %orig; }
+-(void)remoteController:(id)arg1 addStationWithDictionary:(id)arg2 completionHandler:(/*^block*/id)arg3  { %log; %orig; }
+-(void)remoteController:(id)arg1 completeAdditionOfStationWithContext:(id)arg2 animated:(char)arg3  { %log; %orig; }
+-(void)_showAddSharedStationFailedAlertWithErrorCode:(int)arg1  { %log; %orig; }
+-(void)_itemDidChangeNotification:(id)arg1  { %log; %orig; }
+-(void)_playerWillReloadWithPlaybackContextNotification:(id)arg1  { %log; %orig; }
+-(void)_networkTypeDidChangeNotification:(id)arg1  { %log; %orig; }
+-(void)dealloc { %log; %orig; }
+-(id)init { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+-(char)application:(id)arg1 openURL:(id)arg2 sourceApplication:(id)arg3 annotation:(id)arg4  { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(void)applicationDidBecomeActive:(id)arg1  { %log; %orig; }
+-(void)applicationWillResignActive:(id)arg1  { %log; %orig; }
+-(void)applicationDidEnterBackground:(id)arg1  { %log; %orig; }
+-(void)applicationWillEnterForeground:(id)arg1  { %log; %orig; }
+-(char)application:(id)arg1 shouldSaveApplicationState:(id)arg2  { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(char)application:(id)arg1 shouldRestoreApplicationState:(id)arg2  { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(char)application:(id)arg1 willFinishLaunchingWithOptions:(id)arg2  { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(char)application:(id)arg1 didFinishLaunchingWithOptions:(id)arg2  { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(void)setWindow:(UIWindow *)arg1  { %log; %orig; }
+-(char)application:(id)arg1 continueUserActivity:(id)arg2 restorationHandler:(/*^block*/id)arg3  { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(char)application:(id)arg1 willContinueUserActivityWithType:(id)arg2  { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(void)application:(id)arg1 willEncodeRestorableStateWithCoder:(id)arg2  { %log; %orig; }
+-(void)application:(id)arg1 didDecodeRestorableStateWithCoder:(id)arg2  { %log; %orig; }
+-(char)application:(id)arg1 runTest:(id)arg2 options:(id)arg3  { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(void)_playerDidReloadWithPlaybackContextNotification:(id)arg1  { %log; %orig; }
+-(void)transferAggregatorDidChange:(id)arg1  { %log; %orig; }
+-(void)welcomeNavigationControllerDidDisappear:(id)arg1  { %log; %orig; }
+-(void)_itemWillChangeNotification:(id)arg1  { %log; %orig; }
+-(void)_availableMediaLibrariesDidChangeNotification:(id)arg1  { %log; %orig; }
+-(void)_isExplicitTracksEnabledDidChangeNotification:(id)arg1  { %log; %orig; }
+-(id)overlayViewControllerWithBackgroundStyle:(int)arg1  { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+-(char)shouldShowStatusOverlayForViewController:(id)arg1  { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(void)application:(id)arg1 evaluateAppJavaScriptInContext:(id)arg2 JSContext:(id)arg3  { %log; %orig; }
+-(void)application:(id)arg1 didSelectTabBarItem:(id)arg2  { %log; %orig; }
+-(void)applicationDidLoadFromUpdatableAssetsCache:(id)arg1  { %log; %orig; }
+-(id)bundledUpdatableAssetsManifestURL { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+-(char)clearUpdatableAssetsCacheOnLaunch { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(char)loadApplicationAfterUpdatableAssetsRefresh { %log; char r = %orig; NSLog(@" = '%c'", r); return r; }
+-(id)updatableAssetsManifestURL { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+-(id)application:(id)arg1 navigationControllerWithTabBarItem:(id)arg2  { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+-(void)applicationDidChangeClientContext:(id)arg1  { %log; %orig; }
+-(void)_accountStoreDidChangeNotification:(id)arg1  { %log; %orig; }
+%end
+%hook AFConnectionClientServiceDelegate
+- (NSString *)debugDescription { %log; NSString * r = %orig; NSLog(@" = %@", r); return r; }
+- (NSString *)description { %log; NSString * r = %orig; NSLog(@" = %@", r); return r; }
+- (unsigned int )hash { %log; unsigned int  r = %orig; NSLog(@" = %u", r); return r; }
+- (id)_connectionDelegate { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)aceConnectionWillRetryOnError:(id)arg1 { %log; %orig; }
+- (void)acousticIDRequestDidFinishWithSuccess:(BOOL)arg1 { %log; %orig; }
+- (void)acousticIDRequestWillStart { %log; %orig; }
+- (void)getBulletinContext:(id /* block */)arg1 { %log; %orig; }
+- (id)initWithConnection:(id)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)invalidateCurrentUserActivity { %log; %orig; }
+- (void)musicWasDetected { %log; %orig; }
+- (void)requestDidFailWithError:(id)arg1 requestClass:(id)arg2 { %log; %orig; }
+- (void)requestDidFinish { %log; %orig; }
+- (void)requestDidReceiveCommand:(id)arg1 reply:(id /* block */)arg2 { %log; %orig; }
+- (void)requestRequestedDismissAssistant { %log; %orig; }
+- (void)requestRequestedOpenApplicationWithBundleID:(id)arg1 URL:(id)arg2 reply:(id /* block */)arg3 { %log; %orig; }
+- (void)requestRequestedOpenURL:(id)arg1 reply:(id /* block */)arg2 { %log; %orig; }
+- (void)setUserActivityInfo:(id)arg1 webpageURL:(id)arg2 { %log; %orig; }
+- (void)shouldSpeakChanged:(BOOL)arg1 { %log; %orig; }
+- (void)speechRecognitionDidFail:(id)arg1 { %log; %orig; }
+- (void)speechRecognized:(id)arg1 { %log; %orig; }
+- (void)speechRecognizedPartialResult:(id)arg1 { %log; %orig; }
+- (void)speechRecordingDidBeginOnAVRecordRoute:(id)arg1 { %log; %orig; }
+- (void)speechRecordingDidCancel { %log; %orig; }
+- (void)speechRecordingDidChangeAVRecordRoute:(id)arg1 { %log; %orig; }
+- (void)speechRecordingDidEnd { %log; %orig; }
+- (void)speechRecordingDidFail:(id)arg1 { %log; %orig; }
+- (void)speechRecordingWillBeginWithLevelsSharedMem:(id)arg1 { %log; %orig; }
+%end
+%hook AFSiriTask
+- (NSString *)debugDescription { %log; NSString * r = %orig; NSLog(@" = %@", r); return r; }
+- (NSString *)description { %log; NSString * r = %orig; NSLog(@" = %@", r); return r; }
+- (unsigned int )hash { %log; unsigned int  r = %orig; NSLog(@" = %u", r); return r; }
++ (void)initialize { %log; %orig; }
+- (id)_initWithRequest:(id)arg1 remoteResponseListenerEndpoint:(id)arg2 usageResultListenerEndpoint:(id)arg3 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)_responseHandlerConnection { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)_usageResultHandlerConnection { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)completeWithResponse:(id)arg1 { %log; %orig; }
+- (id)description { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)encodeWithCoder:(id)arg1 { %log; %orig; }
+- (void)encodeWithXPCDictionary:(id)arg1 { %log; %orig; }
+- (void)failWithError:(id)arg1 { %log; %orig; }
+- (id)initWithCoder:(id)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)initWithXPCDictionary:(id)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)reportUsageResult:(id)arg1 { %log; %orig; }
+- (id)request { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+%end
+%hook AFUIApplicationSiriTaskDeliverer
+- (NSString *)debugDescription { %log; NSString * r = %orig; NSLog(@" = %@", r); return r; }
+- (NSString *)description { %log; NSString * r = %orig; NSLog(@" = %@", r); return r; }
+- (unsigned int )hash { %log; unsigned int  r = %orig; NSLog(@" = %u", r); return r; }
+- (void)setTaskmaster:(AFSiriTaskmaster *)taskmaster { %log; %orig; }
+- (void)_invalidateAssertionTimer { %log; %orig; }
+- (void)_invalidateBackboardServices { %log; %orig; }
+- (id)_queue { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)deliverSiriTask:(id)arg1 completionHandler:(id /* block */)arg2 { %log; %orig; }
+- (id)description { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (id)initWithAppBundleIdentifier:(id)arg1 { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+- (void)setTaskmaster:(id)arg1 { %log; %orig; }
+- (void)siriTaskDidFinish { %log; %orig; }
+- (id)taskmaster { %log; id r = %orig; NSLog(@" = %@", r); return r; }
+%end

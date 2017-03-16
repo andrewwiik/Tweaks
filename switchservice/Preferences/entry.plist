@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = SwitchService;
+	cell = PSLinkCell;
+	detail = SwitchServiceListController;
+	icon = SwitchService.png;
+	isController = 1;
+	label = SwitchService;
+    };
+}

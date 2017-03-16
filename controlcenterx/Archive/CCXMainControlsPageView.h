@@ -1,0 +1,2 @@
+@interface CCXMainControlsPageView : UIView
+@end

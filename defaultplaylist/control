@@ -1,0 +1,9 @@
+Package: com.atwiiks.defaultplaylist
+Name: DefaultPlaylist
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Music App will default to the playlists tab when you launch it
+Maintainer: ATWiiks
+Author: ATWiiks
+Section: Tweaks

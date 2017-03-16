@@ -1,0 +1,11 @@
+Package: com.golddavid.colorbanners
+Name: ColorBanners
+Depends: firmware (>= 8.0), mobilesubstrate (>= 0.9.5.000), org.thebigboss.libcolorpicker (>= 1.1)
+Version: 1.0.5
+Architecture: iphoneos-arm
+Description: Color your notifications
+Depiction: http://apt.golddavid.com/depictions/ColorBanners.html
+Maintainer: David Goldman <help@golddavid.com>
+Author: David Goldman <help@golddavid.com>
+Section: Tweaks
+Icon: file:///Library/PreferenceBundles/ColorBannersPrefs.bundle/CBRPrefsIcon@3x.png

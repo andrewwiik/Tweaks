@@ -1,0 +1,62 @@
+struct CGRect { struct CGPoint { double x_1_1_1; double x_1_1_2; } x1; struct CGSize { double x_2_1_1; double x_2_1_2; } x2; }
+CGRect
+
+long long
+NSInteger
+
+struct UIEdgeInsets { double x1; double x2; double x3; double x4; }
+UIEdgeInsets
+
+double
+CGFloat
+
+bool
+BOOL
+
+unsigned long long
+NSUInteger
+
+
+
+struct CGPoint { double x1; double x2; }
+CGPoint
+
+remove
+- (void).cxx_destruct;
+
+remove
+- (void)dealloc;
+
+remove
+- (id)description;
+
+
+
+Regex for struct CGRect
+
+struct CGRect {[^s]{0,}struct CGPoint {[^d]{0,}double (?:x|[a-z]_[1-9]_[1-9]_[1-9]);[^d]{0,}double (?:y|[a-z]_[1-9]_[1-9]_[1-9]);[^}]{0,}} (?:origin|x1);[^s]{0,}struct CGSize {[^d]{0,}double (?:width|[a-z]_[1-9]_[1-9]_[1-9]);[^d]{0,}double (?:height|[a-z]_[1-9]_[1-9]_[1-9]);[^}]{0,}} (?:size|x2);[^}]{0,}}
+
+Regex for UIEdgeInsets
+
+struct UIEdgeInsets {[^d]{0,}(?:double (?:top|left|bottom|right|[a-z][1-9]);[^}]{0,}){4}}
+
+Regex for CGSize
+
+struct CGSize {[^d]{0,}(?:double (?:width|height|[a-z][1-9]);[^}]{0,}){2}}
+
+Regex for CGPoint
+
+struct CGPoint {[^d]{0,}(?:double (?:x|y|[a-z][1-9]);[^}]{0,}){2}}
+
+
+1/3/17 9:49:45.205 AM Xcode[498]:  DVTDownloadable: Download Cancelled. Downloadable: https://devimages-cdn.apple.com/downloads/xcode/simulators/com.apple.pkg.iPhoneSimulatorSDK10_0-10.0.1.1474488730.dmg. 
+
+
+1/3/17 9:50:28.112 AM Xcode[498]:  DVTDownloadable: Download Cancelled. Downloadable: https://devimages.apple.com.edgekey.net/downloads/xcode/simulators/com.apple.pkg.iPhoneSimulatorSDK9_3-9.3.1.1460411551.dmg. 
+1/3/17 9:50:28.704 AM Xcode[498]:  DVTDownloadable: Download Cancelled. Downloadable: https://devimages.apple.com.edgekey.net/downloads/xcode/simulators/com.apple.pkg.iPhoneSimulatorSDK9_2-9.2.1.1451951473.dmg. 
+1/3/17 9:50:29.407 AM Xcode[498]:  DVTDownloadable: Download Cancelled. Downloadable: https://devimages.apple.com.edgekey.net/downloads/xcode/simulators/com.apple.pkg.iPhoneSimulatorSDK9_0-9.0.1.1443554484.dmg. 
+1/3/17 9:50:29.978 AM Xcode[498]:  DVTDownloadable: Download Cancelled. Downloadable: https://devimages.apple.com.edgekey.net/downloads/xcode/simulators/com.apple.pkg.iPhoneSimulatorSDK8_4-8.4.1.1435785476.dmg. 
+
+1/3/17 9:51:01.577 AM Xcode[498]:  DVTDownloadable: Download Cancelled. Downloadable: https://devimages.apple.com.edgekey.net/downloads/xcode/simulators/com.apple.pkg.iPhoneSimulatorSDK8_3-8.3.1.1434581536.dmg. 
+1/3/17 9:51:02.323 AM Xcode[498]:  DVTDownloadable: Download Cancelled. Downloadable: https://devimages.apple.com.edgekey.net/downloads/xcode/simulators/com.apple.pkg.iPhoneSimulatorSDK8_2-8.2.1.1434581536.dmg. 
+1/3/17 9:51:02.882 AM Xcode[498]:  DVTDownloadable: Download Cancelled. Downloadable: https://devimages.apple.com.edgekey.net/downloads/xcode/simulators/com.apple.pkg.iPhoneSimulatorSDK8_1-8.1.1.1434581536.dmg. 

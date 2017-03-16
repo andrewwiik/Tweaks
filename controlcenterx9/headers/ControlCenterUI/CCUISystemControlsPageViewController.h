@@ -1,0 +1,4 @@
+#import <ControlCenterUI/CCUIControlCenterSectionViewControllerDelegate-Protocol.h>
+
+@interface CCUISystemControlsPageViewController : UIViewController <CCUIControlCenterSectionViewControllerDelegate>
+@end

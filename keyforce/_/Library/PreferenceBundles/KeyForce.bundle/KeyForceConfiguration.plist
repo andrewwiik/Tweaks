@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>3D Touch Home Screen</string>
+			<key>footerText</key>
+			<string>Home Screen Force Sensitivity</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.keyforce</string>
+			<key>PostNotification</key>
+			<string>com.creatix.keyforce/settingschanged</string>
+			<key>key</key>
+			<string>HomeEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>showValue</key>
+			<true/>
+			<key>footerText</key>
+			<string>Sensitivity</string>
+			<key>max</key>
+			<integer>100</integer>
+			<key>min</key>
+			<integer>1</integer>
+			<key>PostNotification</key>
+			<string>com.creatix.keyforce/settingschanged</string>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>footerText</key>
+			<string>Sensitivity</string>
+			<key>default</key>
+			<real>15</real>
+			<key>defaults</key>
+			<string>com.creatix.keyforce</string>
+			<key>key</key>
+			<string>HomeScreenForceSensitivity</string>
+			<key>footerText</key>
+			<string>Sensitivity</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Peek and Pop</string>
+			<key>footerText</key>
+			<string>Peek and Pop Force Sensitivity</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.creatix.keyforce</string>
+			<key>PostNotification</key>
+			<string>com.creatix.keyforce/settingschanged</string>
+			<key>key</key>
+			<string>PeekPopEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>showValue</key>
+			<true/>
+			<key>footerText</key>
+			<string>Sensitivity</string>
+			<key>max</key>
+			<integer>100</integer>
+			<key>min</key>
+			<integer>1</integer>
+			<key>PostNotification</key>
+			<string>com.creatix.keyforce/settingschanged</string>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>footerText</key>
+			<string>Sensitivity</string>
+			<key>default</key>
+			<real>37</real>
+			<key>defaults</key>
+			<string>com.creatix.keyforce</string>
+			<key>key</key>
+			<string>PeekPopForceSensitivity</string>
+			<key>footerText</key>
+			<string>Sensitivity</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>CONFIGURATION</string>
+</dict>
+</plist>

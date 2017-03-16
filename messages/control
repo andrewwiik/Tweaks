@@ -1,0 +1,9 @@
+Package: com.creatix.messages
+Name: Messages
+Section: Blocks (iOS Blocks)
+Version: 0.0.1
+Depends: mobilesubstrate, com.iosblocks.curago, firmware (>= 7.0)
+Architecture: iphoneos-arm
+Description: A Block for iOS Block!
+Author: Creatix
+Maintainer: Creatix

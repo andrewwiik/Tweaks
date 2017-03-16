@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C92019D51AC869830002AB7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92019D41AC869830002AB7C /* Foundation.framework */; };
+		C92019F21AC889BC0002AB7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C92019F11AC889BC0002AB7C /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C92019D11AC869830002AB7C /* IBKpostInst */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IBKpostInst; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92019D41AC869830002AB7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C92019D91AC869830002AB7C /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C92019DA1AC869830002AB7C /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C92019DC1AC869830002AB7C /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C92019DF1AC869830002AB7C /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		C92019E21AC869830002AB7C /* IBKpostInst-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBKpostInst-Prefix.pch"; sourceTree = "<group>"; };
+		C92019F11AC889BC0002AB7C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C92019CE1AC869830002AB7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92019D51AC869830002AB7C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C92019C81AC869830002AB7C = {
+			isa = PBXGroup;
+			children = (
+				C92019D61AC869830002AB7C /* IBKpostInst */,
+				C92019D31AC869830002AB7C /* Frameworks */,
+				C92019D21AC869830002AB7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C92019D21AC869830002AB7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C92019D11AC869830002AB7C /* IBKpostInst */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C92019D31AC869830002AB7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C92019D41AC869830002AB7C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C92019D61AC869830002AB7C /* IBKpostInst */ = {
+			isa = PBXGroup;
+			children = (
+				C92019D71AC869830002AB7C /* Package */,
+				C92019DB1AC869830002AB7C /* Supporting Files */,
+			);
+			path = IBKpostInst;
+			sourceTree = "<group>";
+		};
+		C92019D71AC869830002AB7C /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C92019F11AC889BC0002AB7C /* main.m */,
+				C92019D81AC869830002AB7C /* DEBIAN */,
+				C92019DD1AC869830002AB7C /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C92019D81AC869830002AB7C /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C92019D91AC869830002AB7C /* control.txt */,
+				C92019DA1AC869830002AB7C /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C92019DB1AC869830002AB7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C92019DC1AC869830002AB7C /* PackageVersion.plist */,
+				C92019E21AC869830002AB7C /* IBKpostInst-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C92019DD1AC869830002AB7C /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				C92019DE1AC869830002AB7C /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		C92019DE1AC869830002AB7C /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				C92019DF1AC869830002AB7C /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C92019D01AC869830002AB7C /* IBKpostInst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C92019E51AC869830002AB7C /* Build configuration list for PBXNativeTarget "IBKpostInst" */;
+			buildPhases = (
+				C92019CD1AC869830002AB7C /* Sources */,
+				C92019CE1AC869830002AB7C /* Frameworks */,
+				C92019CF1AC869830002AB7C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBKpostInst;
+			productName = IBKpostInst;
+			productReference = C92019D11AC869830002AB7C /* IBKpostInst */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C92019C91AC869830002AB7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = C92019CC1AC869830002AB7C /* Build configuration list for PBXProject "IBKpostInst" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C92019C81AC869830002AB7C;
+			productRefGroup = C92019D21AC869830002AB7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C92019D01AC869830002AB7C /* IBKpostInst */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C92019CF1AC869830002AB7C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C92019CD1AC869830002AB7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92019F21AC889BC0002AB7C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C92019E31AC869830002AB7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		C92019E41AC869830002AB7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		C92019E61AC869830002AB7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IBKpostInst/IBKpostInst-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		C92019E71AC869830002AB7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IBKpostInst/IBKpostInst-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C92019CC1AC869830002AB7C /* Build configuration list for PBXProject "IBKpostInst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92019E31AC869830002AB7C /* Debug */,
+				C92019E41AC869830002AB7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C92019E51AC869830002AB7C /* Build configuration list for PBXNativeTarget "IBKpostInst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C92019E61AC869830002AB7C /* Debug */,
+				C92019E71AC869830002AB7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C92019C91AC869830002AB7C /* Project object */;
+}

@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = MoveCellPref;
+	cell = PSLinkCell;
+	detail = MoveCellPrefListController;
+	icon = MoveCellPref.png;
+	isController = 1;
+	label = MoveCellPref;
+    };
+}

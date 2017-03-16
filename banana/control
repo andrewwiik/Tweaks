@@ -1,0 +1,9 @@
+Package: com.creatix.banana
+Name: Banana
+Depends: mobilesubstrate, jp.ashikase.libcrashreport, jp.ashikase.libpackageinfo, jp.ashikase.libsymbolicate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks

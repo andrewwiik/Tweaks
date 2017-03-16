@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSG</string>
+			<key>cellClass</key>
+			<string>CRKeyForceDeveloperTableCell</string>
+			<key>height</key>
+			<integer>100</integer>
+			<key>devImage</key>
+			<string>AndrewWiik</string>
+			<key>devName</key>
+			<string>ATWiiks</string>
+			<key>realName</key>
+			<string>Andrew Wiik</string>
+			<key>twitterUsername</key>
+			<string>ATWiiks</string>
+			<key>job</key>
+			<string>Developer</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSG</string>
+			<key>cellClass</key>
+			<string>CRKeyForceDeveloperTableCell</string>
+			<key>height</key>
+			<integer>100</integer>
+			<key>devImage</key>
+			<string>AOkhtenberg</string>
+			<key>devName</key>
+			<string>AOkhtenberg</string>
+			<key>realName</key>
+			<string>Ariel Okhtenberg</string>
+			<key>twitterUsername</key>
+			<string>aokhtenberg</string>
+			<key>job</key>
+			<string>Designer</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSG</string>
+			<key>cellClass</key>
+			<string>CRKeyForceDeveloperTableCell</string>
+			<key>height</key>
+			<integer>100</integer>
+			<key>devImage</key>
+			<string>Turna</string>
+			<key>devName</key>
+			<string>Turna</string>
+			<key>realName</key>
+			<string>Turna</string>
+			<key>twitterUsername</key>
+			<string>byturna</string>
+			<key>job</key>
+			<string>Designer</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>MAKERS</string>
+</dict>
+</plist>
+

@@ -1,0 +1,10 @@
+Package: com.andy.music2
+Name: music2
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: andy wiik
+Author: andy wiik
+Section: Tweaks
+Version: 0.0.1-53
+Installed-Size: 583

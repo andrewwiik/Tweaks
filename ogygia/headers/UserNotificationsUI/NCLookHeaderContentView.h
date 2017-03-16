@@ -1,0 +1,2 @@
+@interface NCLookHeaderContentView : UIView
+@end

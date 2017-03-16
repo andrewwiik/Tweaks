@@ -1,0 +1,295 @@
+#line 1 "CCXTriButtonLikeSectionSplitView.xm"
+#import "CCXTriButtonLikeSectionSplitView.h"
+
+
+#include <substrate.h>
+#if defined(__clang__)
+#if __has_feature(objc_arc)
+#define _LOGOS_SELF_TYPE_NORMAL __unsafe_unretained
+#define _LOGOS_SELF_TYPE_INIT __attribute__((ns_consumed))
+#define _LOGOS_SELF_CONST const
+#define _LOGOS_RETURN_RETAINED __attribute__((ns_returns_retained))
+#else
+#define _LOGOS_SELF_TYPE_NORMAL
+#define _LOGOS_SELF_TYPE_INIT
+#define _LOGOS_SELF_CONST
+#define _LOGOS_RETURN_RETAINED
+#endif
+#else
+#define _LOGOS_SELF_TYPE_NORMAL
+#define _LOGOS_SELF_TYPE_INIT
+#define _LOGOS_SELF_CONST
+#define _LOGOS_RETURN_RETAINED
+#endif
+
+@class CCXTriButtonLikeSectionSplitView; @class CCUIButtonLikeSectionSplitView; 
+static CCXTriButtonLikeSectionSplitView* (*_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$init)(_LOGOS_SELF_TYPE_INIT CCXTriButtonLikeSectionSplitView*, SEL) _LOGOS_RETURN_RETAINED; static CCXTriButtonLikeSectionSplitView* _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$init(_LOGOS_SELF_TYPE_INIT CCXTriButtonLikeSectionSplitView*, SEL) _LOGOS_RETURN_RETAINED; static CGRect (*_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_frameForSectionSlot$)(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL, int); static CGRect _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_frameForSectionSlot$(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL, int); static CCUIControlCenterPushButton * (*_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_viewForSectionSlot$)(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL, int); static CCUIControlCenterPushButton * _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_viewForSectionSlot$(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL, int); static void (*_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$setLeftSection$)(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL, CCUIControlCenterPushButton *); static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setLeftSection$(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL, CCUIControlCenterPushButton *); static void (*_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$setRightSection$)(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL, CCUIControlCenterPushButton *); static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setRightSection$(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL, CCUIControlCenterPushButton *); static void (*_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$layoutSubviews)(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL); static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$layoutSubviews(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL); static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$addedMiddleSection(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL); static void (*_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateButtonsCorners)(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL); static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateButtonsCorners(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL); static void (*_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateLabelParameters)(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL); static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateLabelParameters(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL); static NSUInteger (*_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$mode)(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL); static NSUInteger _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$mode(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL); static void (*_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$setMode$)(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL, NSUInteger); static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setMode$(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL, NSUInteger); static CGSize (*_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$intrinsicContentSize)(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL); static CGSize _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$intrinsicContentSize(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST, SEL); 
+
+#line 3 "CCXTriButtonLikeSectionSplitView.xm"
+
+static char _logos_property_key$_ungrouped$CCXTriButtonLikeSectionSplitView$middleSection;__attribute__((used)) static CCUIControlCenterPushButton * _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$middleSection$(CCXTriButtonLikeSectionSplitView* self, SEL _cmd){ return objc_getAssociatedObject(self, &_logos_property_key$_ungrouped$CCXTriButtonLikeSectionSplitView$middleSection); }__attribute__((used)) static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setMiddleSection$(CCXTriButtonLikeSectionSplitView* self, SEL _cmd, CCUIControlCenterPushButton * arg){ objc_setAssociatedObject(self, &_logos_property_key$_ungrouped$CCXTriButtonLikeSectionSplitView$middleSection, arg, OBJC_ASSOCIATION_RETAIN_NONATOMIC); }
+static char _logos_property_key$_ungrouped$CCXTriButtonLikeSectionSplitView$secondMiddleSection;__attribute__((used)) static CCUIControlCenterPushButton * _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$secondMiddleSection$(CCXTriButtonLikeSectionSplitView* self, SEL _cmd){ return objc_getAssociatedObject(self, &_logos_property_key$_ungrouped$CCXTriButtonLikeSectionSplitView$secondMiddleSection); }__attribute__((used)) static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setSecondMiddleSection$(CCXTriButtonLikeSectionSplitView* self, SEL _cmd, CCUIControlCenterPushButton * arg){ objc_setAssociatedObject(self, &_logos_property_key$_ungrouped$CCXTriButtonLikeSectionSplitView$secondMiddleSection, arg, OBJC_ASSOCIATION_RETAIN_NONATOMIC); }
+
+static CCXTriButtonLikeSectionSplitView* _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$init(_LOGOS_SELF_TYPE_INIT CCXTriButtonLikeSectionSplitView* self, SEL _cmd) _LOGOS_RETURN_RETAINED {
+	[[NSClassFromString(@"__NSBundleTables") bundleTables] setBundle:[[NSClassFromString(@"__NSBundleTables") bundleTables] bundleForClass:[self superclass]] forClass:[self class]];
+	return _logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$init(self, _cmd);
+}
+static CGRect _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_frameForSectionSlot$(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST self, SEL _cmd, int slot) {
+	if (self.mode == 3) {
+		if (slot == 0) {
+			CGRect frame = CGRectMake(0,0,self.frame.size.height,self.frame.size.height);
+			return frame;
+		} else if (slot == 1) {
+			CGRect frame = CGRectMake(self.frame.size.height + 1,0,self.frame.size.width-2-(2*self.frame.size.height),self.frame.size.height);
+			return frame;
+		} else {
+			CGRect frame = CGRectMake(self.frame.size.width-self.frame.size.height,0,self.frame.size.height,self.frame.size.height);
+			return frame;
+		}
+	} else if (self.mode == 4) {
+		CGRect frame = CGRectMake((self.frame.size.width/4)*slot+1,0,self.frame.size.width/self.mode-1, self.frame.size.height);
+		return frame;
+	}
+	else return _logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_frameForSectionSlot$(self, _cmd, slot);
+}
+
+static CCUIControlCenterPushButton * _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_viewForSectionSlot$(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST self, SEL _cmd, int slot) {
+	if (self.mode == 3) {
+		if (slot == 0) {
+			return self.leftSection;
+		} else if (slot == 1) {
+			return self.middleSection;
+		} else {
+			return self.rightSection;
+		}
+	} else if (self.mode == 4) {
+		if (slot == 0) {
+			return self.leftSection;
+		} else if (slot == 1) {
+			return self.middleSection;
+		} else if (slot == 2) {
+			return self.secondMiddleSection;
+		} else {
+			return self.rightSection;
+		}
+	} else return _logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_viewForSectionSlot$(self, _cmd, slot);
+}
+
+static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setLeftSection$(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST self, SEL _cmd, CCUIControlCenterPushButton * section) {
+	_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$setLeftSection$(self, _cmd, section);
+	if (self.mode == 3 || self.mode == 4) {
+		NSMutableArray *glyphViews = [NSMutableArray new];
+		[glyphViews addObject:[section valueForKey:@"_alteredStateGlyphImageView"]];
+		[glyphViews addObject:[section valueForKey:@"_glyphImageView"]];
+		for (UIImageView *glyphView in glyphViews) {
+			glyphView.translatesAutoresizingMaskIntoConstraints = NO;
+			[section addConstraint:[NSLayoutConstraint constraintWithItem:glyphView
+	                                                      attribute:NSLayoutAttributeCenterX
+	                                                      relatedBy:NSLayoutRelationEqual
+	                                                         toItem:section
+	                                                      attribute:NSLayoutAttributeCenterX
+	                                                     multiplier:1
+	                                                       constant:0]];
+
+			[section addConstraint:[NSLayoutConstraint constraintWithItem:glyphView
+	                                                      attribute:NSLayoutAttributeCenterY
+	                                                      relatedBy:NSLayoutRelationEqual
+	                                                         toItem:section
+	                                                      attribute:NSLayoutAttributeCenterY
+	                                                     multiplier:1
+	                                                       constant:0]];
+		}
+		[(UILabel *)[section valueForKey:@"_alteredStateLabel"] setHidden:YES];
+		[(UILabel *)[section valueForKey:@"_label"] setHidden:YES];
+	}
+}
+
+static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setRightSection$(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST self, SEL _cmd, CCUIControlCenterPushButton * section) {
+	_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$setRightSection$(self, _cmd, section);
+	if (self.mode == 3 || self.mode == 4) {
+
+		NSMutableArray *glyphViews = [NSMutableArray new];
+		[glyphViews addObject:[section valueForKey:@"_alteredStateGlyphImageView"]];
+		[glyphViews addObject:[section valueForKey:@"_glyphImageView"]];
+		for (UIImageView *glyphView in glyphViews) {
+			glyphView.translatesAutoresizingMaskIntoConstraints = NO;
+			[section addConstraint:[NSLayoutConstraint constraintWithItem:glyphView
+	                                                      attribute:NSLayoutAttributeCenterX
+	                                                      relatedBy:NSLayoutRelationEqual
+	                                                         toItem:section
+	                                                      attribute:NSLayoutAttributeCenterX
+	                                                     multiplier:1
+	                                                       constant:0]];
+
+			[section addConstraint:[NSLayoutConstraint constraintWithItem:glyphView
+	                                                      attribute:NSLayoutAttributeCenterY
+	                                                      relatedBy:NSLayoutRelationEqual
+	                                                         toItem:section
+	                                                      attribute:NSLayoutAttributeCenterY
+	                                                     multiplier:1
+	                                                       constant:0]];
+		}
+		[(UILabel *)[section valueForKey:@"_alteredStateLabel"] setHidden:YES];
+		[(UILabel *)[section valueForKey:@"_label"] setHidden:YES];
+	}
+}
+
+static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$layoutSubviews(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST self, SEL _cmd) {
+	_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$layoutSubviews(self, _cmd);
+	if (self.middleSection) {
+		if (self.middleSection.superview != self) {
+			[self.middleSection removeFromSuperview];
+			if (self.secondMiddleSection) {
+					NSMutableArray *glyphViews = [NSMutableArray new];
+					[glyphViews addObject:[self.middleSection valueForKey:@"_alteredStateGlyphImageView"]];
+					[glyphViews addObject:[self.middleSection valueForKey:@"_glyphImageView"]];
+					for (UIImageView *glyphView in glyphViews) {
+						glyphView.center = CGPointMake(self.middleSection.frame.size.width/2,self.middleSection.frame.size.height/2);
+					}
+					[(UILabel *)[self.middleSection valueForKey:@"_alteredStateLabel"] setHidden:YES];
+					[(UILabel *)[self.middleSection valueForKey:@"_label"] setHidden:YES];
+				}
+			[self addSubview:self.middleSection];
+		}
+	}
+	if (self.secondMiddleSection) {
+		if (self.secondMiddleSection.superview != self) {
+			[self.secondMiddleSection removeFromSuperview];
+			if (self.secondMiddleSection) {
+					NSMutableArray *glyphViews = [NSMutableArray new];
+					[glyphViews addObject:[self.secondMiddleSection valueForKey:@"_alteredStateGlyphImageView"]];
+					[glyphViews addObject:[self.secondMiddleSection valueForKey:@"_glyphImageView"]];
+					for (UIImageView *glyphView in glyphViews) {
+						glyphView.center = CGPointMake(self.secondMiddleSection.frame.size.width/2,self.secondMiddleSection.frame.size.height/2);
+					
+					}
+					[(UILabel *)[self.secondMiddleSection valueForKey:@"_alteredStateLabel"] setHidden:YES];
+					[(UILabel *)[self.secondMiddleSection valueForKey:@"_label"] setHidden:YES];
+			}
+
+			[self addSubview:self.secondMiddleSection];
+		}
+	}
+	if (self.mode == 3 || self.mode == 4) {
+		[self _updateButtonsCorners];
+		[self _updateLabelParameters];
+	}
+	if (self.mode == 3) {
+		[self _viewForSectionSlot:0].frame = [self _frameForSectionSlot:0];
+		[self _viewForSectionSlot:1].frame = [self _frameForSectionSlot:1];
+		[self _viewForSectionSlot:2].frame = [self _frameForSectionSlot:2];
+	} else if (self.mode == 4) {
+		[self _viewForSectionSlot:0].frame = [self _frameForSectionSlot:0];
+		[self _viewForSectionSlot:1].frame = [self _frameForSectionSlot:1];
+		[self _viewForSectionSlot:2].frame = [self _frameForSectionSlot:2];
+		[self _viewForSectionSlot:3].frame = [self _frameForSectionSlot:3];
+		if (self.middleSection) {
+			if (self.secondMiddleSection) {
+				NSMutableArray *glyphViews = [NSMutableArray new];
+				[glyphViews addObject:[self.middleSection valueForKey:@"_alteredStateGlyphImageView"]];
+				[glyphViews addObject:[self.middleSection valueForKey:@"_glyphImageView"]];
+				for (UIImageView *glyphView in glyphViews) {
+					glyphView.center = CGPointMake(self.middleSection.frame.size.width/2,self.middleSection.frame.size.height/2);
+				}
+				[(UILabel *)[self.middleSection valueForKey:@"_alteredStateLabel"] setHidden:YES];
+				[(UILabel *)[self.middleSection valueForKey:@"_label"] setHidden:YES];
+			}
+		}
+		if (self.secondMiddleSection) {
+			if (self.secondMiddleSection) {
+				NSMutableArray *glyphViews = [NSMutableArray new];
+				[glyphViews addObject:[self.secondMiddleSection valueForKey:@"_alteredStateGlyphImageView"]];
+				[glyphViews addObject:[self.secondMiddleSection valueForKey:@"_glyphImageView"]];
+				for (UIImageView *glyphView in glyphViews) {
+					glyphView.center = CGPointMake(self.secondMiddleSection.frame.size.width/2,self.secondMiddleSection.frame.size.height/2);
+				}
+				[(UILabel *)[self.secondMiddleSection valueForKey:@"_alteredStateLabel"] setHidden:YES];
+				[(UILabel *)[self.secondMiddleSection valueForKey:@"_label"] setHidden:YES];
+			}
+		}
+	}
+}
+
+
+static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$addedMiddleSection(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST self, SEL _cmd) {
+	[self.middleSection removeFromSuperview];
+	[self addSubview:self.middleSection];
+	self.mode = 3;
+	[self _updateButtonsCorners];
+	[self _updateLabelParameters];
+}
+
+static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateButtonsCorners(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST self, SEL _cmd) {
+	_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateButtonsCorners(self, _cmd);
+	if (self.mode == 3) {
+		[self _viewForSectionSlot:0].roundCorners = 5;
+		[self _viewForSectionSlot:1].roundCorners = 0;
+		[self _viewForSectionSlot:2].roundCorners = 10;
+	} else if (self.mode == 4) {
+		[self _viewForSectionSlot:0].roundCorners = 5;
+		[self _viewForSectionSlot:1].roundCorners = 0;
+		[self _viewForSectionSlot:2].roundCorners = 0;
+		[self _viewForSectionSlot:3].roundCorners = 10;
+
+	}
+}
+static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateLabelParameters(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST self, SEL _cmd) {
+	_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateLabelParameters(self, _cmd);
+	if (self.mode == 3) {
+		[self _viewForSectionSlot:2].text = nil;
+		[self _viewForSectionSlot:0].text = nil;
+	} else if (self.mode == 4) {
+		[self _viewForSectionSlot:0].text = nil;
+		[self _viewForSectionSlot:1].text = nil;
+		[self _viewForSectionSlot:2].text = nil;
+		[self _viewForSectionSlot:3].text = nil;
+	}
+}
+static NSUInteger _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$mode(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST self, SEL _cmd) {
+	if (self.secondMiddleSection) {
+		return 4;
+	} else return 3;
+}
+static void _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setMode$(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST self, SEL _cmd, NSUInteger mode) {
+	if (self.secondMiddleSection) {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$setMode$(self, _cmd, 4);
+		[self layoutSubviews];
+	} else _logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$setMode$(self, _cmd, 3);
+}
+
+static CGSize _logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$intrinsicContentSize(_LOGOS_SELF_TYPE_NORMAL CCXTriButtonLikeSectionSplitView* _LOGOS_SELF_CONST self, SEL _cmd) {
+		return CGSizeMake(-1,60);
+}
+
+static __attribute__((constructor)) void _logosLocalInit() {
+{Class _logos_class$_ungrouped$CCUIButtonLikeSectionSplitView = objc_getClass("CCUIButtonLikeSectionSplitView"); { Class _logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView = objc_allocateClassPair(_logos_class$_ungrouped$CCUIButtonLikeSectionSplitView, "CCXTriButtonLikeSectionSplitView", 0); objc_registerClassPair(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView); if (_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView) {MSHookMessageEx(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(init), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$init, (IMP*)&_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$init);} else {HBLogError(@"logos: nil class %s", "CCXTriButtonLikeSectionSplitView");}if (_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView) {MSHookMessageEx(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(_frameForSectionSlot:), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_frameForSectionSlot$, (IMP*)&_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_frameForSectionSlot$);} else {HBLogError(@"logos: nil class %s", "CCXTriButtonLikeSectionSplitView");}if (_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView) {MSHookMessageEx(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(_viewForSectionSlot:), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_viewForSectionSlot$, (IMP*)&_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_viewForSectionSlot$);} else {HBLogError(@"logos: nil class %s", "CCXTriButtonLikeSectionSplitView");}if (_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView) {MSHookMessageEx(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(setLeftSection:), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setLeftSection$, (IMP*)&_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$setLeftSection$);} else {HBLogError(@"logos: nil class %s", "CCXTriButtonLikeSectionSplitView");}if (_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView) {MSHookMessageEx(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(setRightSection:), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setRightSection$, (IMP*)&_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$setRightSection$);} else {HBLogError(@"logos: nil class %s", "CCXTriButtonLikeSectionSplitView");}if (_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView) {MSHookMessageEx(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(layoutSubviews), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$layoutSubviews, (IMP*)&_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$layoutSubviews);} else {HBLogError(@"logos: nil class %s", "CCXTriButtonLikeSectionSplitView");}{ char _typeEncoding[1024]; unsigned int i = 0; _typeEncoding[i] = 'v'; i += 1; _typeEncoding[i] = '@'; i += 1; _typeEncoding[i] = ':'; i += 1; _typeEncoding[i] = '\0'; class_addMethod(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(addedMiddleSection), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$addedMiddleSection, _typeEncoding); }if (_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView) {MSHookMessageEx(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(_updateButtonsCorners), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateButtonsCorners, (IMP*)&_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateButtonsCorners);} else {HBLogError(@"logos: nil class %s", "CCXTriButtonLikeSectionSplitView");}if (_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView) {MSHookMessageEx(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(_updateLabelParameters), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateLabelParameters, (IMP*)&_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$_updateLabelParameters);} else {HBLogError(@"logos: nil class %s", "CCXTriButtonLikeSectionSplitView");}if (_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView) {MSHookMessageEx(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(mode), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$mode, (IMP*)&_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$mode);} else {HBLogError(@"logos: nil class %s", "CCXTriButtonLikeSectionSplitView");}if (_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView) {MSHookMessageEx(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(setMode:), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setMode$, (IMP*)&_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$setMode$);} else {HBLogError(@"logos: nil class %s", "CCXTriButtonLikeSectionSplitView");}if (_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView) {MSHookMessageEx(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(intrinsicContentSize), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$intrinsicContentSize, (IMP*)&_logos_orig$_ungrouped$CCXTriButtonLikeSectionSplitView$intrinsicContentSize);} else {HBLogError(@"logos: nil class %s", "CCXTriButtonLikeSectionSplitView");}{ class_addMethod(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(middleSection), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$middleSection$, [[NSString stringWithFormat:@"%s@:", @encode(CCUIControlCenterPushButton *)] UTF8String]);class_addMethod(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(setMiddleSection:), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setMiddleSection$, [[NSString stringWithFormat:@"v@:%s", @encode(CCUIControlCenterPushButton *)] UTF8String]);} { class_addMethod(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(secondMiddleSection), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$secondMiddleSection$, [[NSString stringWithFormat:@"%s@:", @encode(CCUIControlCenterPushButton *)] UTF8String]);class_addMethod(_logos_class$_ungrouped$CCXTriButtonLikeSectionSplitView, @selector(setSecondMiddleSection:), (IMP)&_logos_method$_ungrouped$CCXTriButtonLikeSectionSplitView$setSecondMiddleSection$, [[NSString stringWithFormat:@"v@:%s", @encode(CCUIControlCenterPushButton *)] UTF8String]);}  }} }
+#line 267 "CCXTriButtonLikeSectionSplitView.xm"

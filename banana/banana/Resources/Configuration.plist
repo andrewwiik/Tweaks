@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>BNALocationPickerController</string>
+			<key>isController</key>
+			<true/>
+			<key>id</key>
+			<string>LOCATION</string>
+			<key>label</key>
+			<string>City</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Configuration</string>
+</dict>
+</plist>

@@ -1,0 +1,9 @@
+Package: com.atwiiks.hearttransplant2
+Name: HeartTransplant 2
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: When you like a song it will be offlined and added to "My Music"
+Maintainer: Andrew Wiik & CPDigitalDarkroom
+Author: Andrew Wiik & CPDigitalDarkroom
+Section: Tweaks

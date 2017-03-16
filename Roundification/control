@@ -1,0 +1,12 @@
+Package: com.atrocity.roundification
+Name: Roundification
+Priority: optional
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Your one stop shop for all your rounding needs.
+Depiction: http://www.zachatrocity.com/repo/depic/com.atrocity.roundification/index.html
+Maintainer: Zach Russell
+Author: Zach Russell <http://www.zachatrocity.com>
+Homepage: http://www.zachatrocity.com
+Section: Tweaks
+Version: 0.0.2.5-12

@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = Roundification;
+	cell = PSLinkCell;
+	detail = RoundificationListController;
+	icon = "Roundification.png";
+	isController = 1;
+	label = Roundification;
+    };
+}

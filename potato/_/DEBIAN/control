@@ -1,0 +1,11 @@
+Package: com.creatix.potato
+Name: Potato
+Depends: libactivator (>= 1.8.3), mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Creatix
+Author: Creatix
+Section: Tweaks
+Depiction: http://cydia.bolencki13.com/repo/depictions/?p=com.creatix.potato
+Version: 0.0.1-6
+Installed-Size: 105

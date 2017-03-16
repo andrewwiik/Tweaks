@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Music' target in the 'Music' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

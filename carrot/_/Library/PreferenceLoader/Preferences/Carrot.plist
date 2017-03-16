@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = Carrot;
+	cell = PSLinkCell;
+	detail = CarrotListController;
+	icon = Carrot.png;
+	isController = 1;
+	label = Carrot;
+    };
+}

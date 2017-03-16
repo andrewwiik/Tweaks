@@ -1,0 +1,4 @@
+{ Filter = {
+  Bundles = ( "com.timewarnercable.simulcast", "com.espn.WatchESPN" );
+  Mode = "Any";
+}; }

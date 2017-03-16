@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = CydiaEnable;
+		cell = PSLinkCell;
+		detail = CydiaEnableSettingsListController;
+		icon = "Icon.png";
+		isController = 1;
+		label = "Cydia Enable";
+	};
+}

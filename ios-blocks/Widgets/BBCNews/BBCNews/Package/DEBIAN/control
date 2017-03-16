@@ -1,0 +1,17 @@
+Package: com.matchstic.BBCNews
+Name: BBCNews
+Version: 1.0-1
+Description: 
+Section: Addons (Curago)
+Depends: firmware (>= 7.0)
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: Matt Clarke
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: 
+Icon: 
+

@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = PeekaBoo;
+	cell = PSLinkCell;
+	detail = PeekaBooListController;
+	icon = PeekaBoo.png;
+	isController = 1;
+	label = Peek-a-Boo;
+    };
+}
