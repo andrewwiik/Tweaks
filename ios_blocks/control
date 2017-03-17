@@ -1,9 +1,0 @@
-Package: com.bolencki13.iOSBlocks
-Name: iOSBlocks
-Depends: mobilesubstrate
-Version: 0.0.1
-Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
-Maintainer: Brian Olencki
-Author: Brian Olencki
-Section: Tweaks
